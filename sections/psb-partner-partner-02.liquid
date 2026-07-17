@@ -1,0 +1,480 @@
+{%- comment -%}
+  {
+    "name": "Partner 02",
+    "author": "PusherCommerce"
+    "description": "Please DO NOT copy in any form. Any act of copying will be sued and held responsible with the law",
+    "Semiwrite": "Yes"
+  }
+{%- endcomment -%}
+
+{%- capture minify -%}
+  <style>
+    #psb-{{ section.id }} {
+      --psb-gutter-x: 25px;
+      color: {{section.settings.text_color}};
+      background-color: {{section.settings.background_color}};
+      {% if section.settings.section_height == true %}
+        min-height: 100vh;
+      {% endif %}
+      padding-top: {{section.settings.section_padding_top}}px;
+      padding-bottom: {{section.settings.section_padding_bottom}}px;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+
+    #psb-{{ section.id }} .psb-section-title::before,
+    #psb-{{ section.id }} .psb-section-title::after {
+      display: none;
+    }
+
+    #psb-{{ section.id }} .psb-section-title {
+      color: {{section.settings.text_color}};
+      margin-top: 0;
+      margin-bottom: 30px;
+      position: relative;
+      max-width: 550px;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    #psb-{{ section.id }} .psb-section-subtitle {
+      color: {{section.settings.text_color}};
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      position: relative;
+    }
+
+    #psb-{{ section.id }} .psb-section-subtitle::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 180px;
+      height: 4px;
+      background-color: {{section.settings.subtitle_underline_color}};
+    }
+
+    #psb-{{ section.id }} .psb-section-text {
+      color: {{section.settings.text_color}};
+      margin-bottom: 30px;
+    }
+
+    #psb-{{ section.id }} .psb-section-text p {
+      margin-top: 0;
+      color: {{section.settings.text_color}};
+      opacity: 0.65;
+    }
+
+    #psb-{{ section.id }} .psb-partner {
+      display: block;
+      padding-top: {{section.settings.logo_ratio}};
+      height: 0;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    #psb-{{ section.id }} .psb-partner img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: contain;
+         object-fit: contain;
+    }
+
+    #psb-{{ section.id }} .psb-align-items-center {
+      align-items: center;
+    }
+
+    #psb-{{ section.id }} .psb-mb-30 {
+      margin-bottom: 30px;
+    }
+
+    #psb-{{ section.id }} .psb-col-md-4 .psb-partner.placeholder {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/adidas-black.png?v=1664893411') no-repeat center/contain;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #psb-{{ section.id }} {
+        min-height: auto;
+        padding-top: {{section.settings.section_padding_top_mobile}}px;
+        padding-bottom: {{section.settings.section_padding_bottom_mobile}}px;
+      }
+    }
+  </style>
+{%- endcapture -%}
+{{ minify | strip_newlines }}
+
+<div id="psb-{{ section.id }}" class="psb-{{ section.id }} psb-section psb-partner-partner-02" style="display: none;">
+  <div class="{{ section.settings.container_width }}">
+    <div class="psb-row psb-align-items-center">
+      <div class="psb-col-lg-6 psb-mb-30">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'heading' %}
+              {% if block.settings.sub_heading_text != blank %}
+                <p class="psb-section-subtitle" {{ block.shopify_attributes }}>{{ block.settings.sub_heading_text | escape }}</p>
+              {% endif %}
+              {% if block.settings.heading_text != blank %}
+                <{{ block.settings.heading_tag }} class="psb-section-title" {{ block.shopify_attributes }}>
+                  {{ block.settings.heading_text | escape }}
+                </{{ block.settings.heading_tag }}>
+              {% endif %}
+            {% when 'buttons' %}
+              {% if block.settings.button_label_1 != blank %}
+                <div class="psb-btn-group">
+                  <a
+                    href="{{block.settings.button_link_1}}"
+                    {{ block.shopify_attributes }}
+                    class="psb-btn {% if block.settings.button_is_rounded == true %} psb-btn-rounded {% endif %}"
+                    style="background-color: {{block.settings.btn_bg_1}}; color: {{block.settings.btn_color_1}}"
+                  >
+                    {{ block.settings.button_label_1 }}
+                  </a>
+                </div>
+              {% endif %}
+            {% when 'text' %}
+              {% if block.settings.section_text != blank %}
+                <div class="psb-section-text" {{ block.shopify_attributes }}>
+                  {{ block.settings.section_text }}
+                </div>
+              {% endif %}
+          {% endcase %}
+        {% endfor %}
+      </div>
+
+      <div class="psb-col-lg-6 mb-30">
+        <div class="psb-row">
+          {% for block in section.blocks %}
+            {% if block.type == 'partner' %}
+              <div class="psb-col-md-4 psb-col-6" {{ block.shopify_attributes }}>
+                {% if block.settings.partner_logo == blank %}
+                  <div class="psb-partner placeholder"></div>
+                {% else %}
+                  {% if block.settings.partner_link == blank %}
+                    <div class="psb-partner">
+                      <img
+                        srcset="
+                                                                                                                                                                                                                                                                                                                                                                                                                          {%- if block.settings.partner_logo >= 750 -%}{{ block.settings.partner_logo | img_url: '750x' }} 750w,{%- endif -%}
+                        "
+                        src="{{ block.settings.partner_logo | img_url: '750x' }}"
+                        alt="{{ block.settings.partner_logo.alt | escape }}"
+                        sizes="(min-width: 750px) 750px"
+                        width="100%"
+                        height="100%"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% else %}
+                    <a href="{{block.settings.partner_link}}" class="psb-partner">
+                      <img
+                        srcset="
+                                                                                                                                                                                                                                                                                                                                                                                                                            {%- if block.settings.partner_logo >= 750 -%}{{ block.settings.partner_logo | img_url: '750x' }} 750w,{%- endif -%}
+                        "
+                        src="{{ block.settings.partner_logo | img_url: '750x' }}"
+                        alt="{{ block.settings.partner_logo.alt | escape }}"
+                        sizes="(min-width: 750px) 750px"
+                        width="100%"
+                        height="100%"
+                        loading="lazy"
+                      >
+                    </a>
+                  {% endif %}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "⚡︎PSB: Partner 02",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container_width",
+      "options": [
+        {
+          "value": "psb-container",
+          "label": "Container"
+        },
+        {
+          "value": "psb-container-fluid",
+          "label": "Container Fluid"
+        },
+        {
+          "value": "psb-container-fullwidth",
+          "label": "Container Fullwidth"
+        }
+      ],
+      "default": "psb-container",
+      "label": "Container width"
+    },
+    {
+      "type": "header",
+      "content": "Main settings"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#262424"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_underline_color",
+      "label": "Line under subheading color",
+      "default": "#ff6303"
+    },
+    {
+      "type": "select",
+      "id": "logo_ratio",
+      "label": "Partner logo shape",
+      "options": [
+        {
+          "value": "100%",
+          "label": "Square(1x1)"
+        },
+        {
+          "value": "50%",
+          "label": "Rectangle (2x1)"
+        },
+        {
+          "value": "33%",
+          "label": "Rectangle (3x1)"
+        },
+        {
+          "value": "75%",
+          "label": "Rectangle (4x3)"
+        }
+      ],
+      "default": "50%"
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_height",
+      "default": false,
+      "label": "Full screen"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Heading",
+      "type": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "sub_heading_text",
+          "label": "Sub heading text",
+          "default": "Sub heading text"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "textarea",
+          "id": "heading_text",
+          "label": "Heading text",
+          "default": "Heading text"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "type": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "section_text",
+          "label": "Section text",
+          "default": "<p>Section text</p>"
+        }
+      ]
+    },
+    {
+      "name": "Buttons",
+      "type": "buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "btn_bg_1",
+          "label": "Background color",
+          "default": "#ff6303"
+        },
+        {
+          "type": "color",
+          "id": "btn_color_1",
+          "label": "Label color",
+          "default": "#fff"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_is_rounded",
+          "default": true,
+          "label": "Rounded"
+        }
+      ]
+    },
+    {
+      "name": "Partner",
+      "type": "partner",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "partner_logo",
+          "label": "Partner logo"
+        },
+        {
+          "type": "url",
+          "id": "partner_link",
+          "label": "Partner link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "⚡︎PSB: Partner 02",
+      "blocks": [
+        {
+          "type": "heading",
+          "settings": {
+            "sub_heading_text": "PUSHER COMMERCE",
+            "heading_text": "Showcase your partners"
+          }
+        },
+        {
+          "type": "text",
+          "settings": {
+            "section_text": "<p>Using logo showcase, you can display any number of logos you want on any page you want. Just like what you can see below.</p>"
+          }
+        },
+        {
+          "type": "buttons"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

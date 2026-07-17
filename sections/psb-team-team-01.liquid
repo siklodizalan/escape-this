@@ -1,0 +1,418 @@
+{%- comment -%}
+  {
+    "name": "Team 01",
+    "author": "PusherCommerce"
+    "description": "Please DO NOT copy in any form. Any act of copying will be sued and held responsible with the law",
+    "Semiwrite": "Yes"
+  }
+{%- endcomment -%}
+{%- comment -%}
+  {% include 'pusher-sections-builder-settings' %}
+{%- endcomment -%}
+
+{%- capture minify -%}
+  <style>
+    #psb-{{ section.id }} {
+      --psb-gutter-x: 15px;
+      color: {{section.settings.text_color}};
+      background-color: {{section.settings.background_color}};
+      {% if section.settings.section_height == true %}
+        min-height: 100vh;
+      {% endif %}
+      padding-top: {{section.settings.section_padding_top}}px;
+      padding-bottom: {{section.settings.section_padding_bottom}}px;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+
+    #psb-{{ section.id }} .psb-section-title::before,
+    #psb-{{ section.id }} .psb-section-title::after {
+      display: none;
+    }
+
+    #psb-{{ section.id }} .psb-section-title {
+      color: {{section.settings.text_color}};
+      margin-top: 0;
+      margin-bottom: 30px;
+      position: relative;
+      max-width: 600px;
+      text-align: {{section.settings.text_align}};
+      {% if section.settings.text_align == 'center' %}
+        margin-left: auto;
+        margin-right: auto;
+      {% endif %}
+    }
+
+    #psb-{{ section.id }} .psb-section-subtitle {
+      color: {{section.settings.text_color}};
+      margin-bottom: 30px;
+      max-width: 600px;
+      text-align: {{section.settings.text_align}};
+      {% if section.settings.text_align == 'center' %}
+        margin-left: auto;
+        margin-right: auto;
+      {% endif %}
+    }
+
+    #psb-{{ section.id }} .psb-team-member {
+      margin: 0 auto 30px;
+    }
+
+    #psb-{{ section.id }} .psb-img-wrapper {
+      display: block;
+      height: 0;
+      padding-top: 125%;
+      {% if section.settings.is_rounded == true %}
+        padding-top: 100%;
+        border-radius: 50%;
+      {% endif %}
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+      {% if section.settings.is_grayscale == true %}
+      -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+      {% endif %}
+    }
+
+    #psb-{{ section.id }} .psb-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+
+    #psb-{{ section.id }} .psb-member-name {
+      margin: 0;
+      text-align: left;
+      {% if section.settings.is_rounded == true %}
+        text-align: center;
+      {% endif %}
+    }
+
+    #psb-{{ section.id }} .psb-member-position {
+      opacity: 0.65;
+      text-align: left;
+      {% if section.settings.is_rounded == true %}
+        text-align: center;
+      {% endif %}
+    }
+
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(1) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team01.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(2) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team02.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(3) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team03.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(4) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team04.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(5) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team01.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(6) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team01.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(7) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team01.jpg') no-repeat center/cover;
+    }
+    #psb-{{ section.id }} .psb-col-md-6:nth-of-type(8) .psb-team-member .placeholder.psb-img-wrapper {
+      background: url('https://cdn.shopify.com/s/files/1/0663/5887/0235/files/team01.jpg') no-repeat center/cover;
+    }
+
+
+    {% if section.settings.inherit_fonts == false %}
+      #psb-{{ section.id }} .psb-member-position {
+        font-size: 18px;
+      }
+      #psb-{{ section.id }} .psb-member-name {
+        font-size: 28px;
+      }
+      #psb-{{ section.id }} h1.psb-section-title {
+        font-size: 72px;
+      }
+      #psb-{{ section.id }} h2.psb-section-title {
+        font-size: 56px;
+      }
+      #psb-{{ section.id }} h3.psb-section-title {
+        font-size: 32px;
+      }
+      #psb-{{ section.id }} .psb-section-text p {
+        font-size: 24px; margin-bottom: 24px;
+      }
+    {% endif %}
+
+    @media only screen and (max-width: 749px) {
+      #psb-{{ section.id }} {
+        min-height: auto;
+        padding-top: {{section.settings.section_padding_top_mobile}}px;
+        padding-bottom: {{section.settings.section_padding_bottom_mobile}}px;
+      }
+      {% if section.settings.inherit_fonts == false %}
+        #psb-{{ section.id }} .psb-member-position {
+          font-size: 16px;
+        }
+        #psb-{{ section.id }} .psb-member-name {
+          font-size: 24px;
+        }
+        #psb-{{ section.id }} h1.psb-section-title {
+          font-size: 50px;
+        }
+        #psb-{{ section.id }} h2.psb-section-title {
+          font-size: 40px;
+        }
+        #psb-{{ section.id }} h3.psb-section-title {
+          font-size: 26px;
+        }
+        #psb-{{ section.id }} .psb-section-text p {
+          font-size: 20px;
+        }
+      {% endif %}
+    }
+  </style>
+{%- endcapture -%}
+{{ minify | strip_newlines }}
+
+<div id="psb-{{ section.id }}" class="psb-{{ section.id }} psb-section psb-team-team-01" style="display: none;">
+  <div class="{{ section.settings.container_width }}">
+    <div class="psb-row">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'member' %}
+            <div class="psb-col-lg-3 psb-col-md-6" {{ block.shopify_attributes }}>
+              <div class="psb-team-member">
+                {% if block.settings.member_image == blank %}
+                  <div class="psb-img-wrapper placeholder"></div>
+                {% else %}
+                  <div class="psb-img-wrapper">
+                    <img
+                      srcset="
+                                                                                                                                                                  {%- if block.settings.member_image >= 750 -%}{{ block.settings.member_image | img_url: '750x' }} 750w,{%- endif -%}
+                      "
+                      src="{{ block.settings.member_image | img_url: '750x' }}"
+                      alt="{{ block.settings.member_image.alt | escape }}"
+                      sizes="(min-width: 750px) 750px"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                    >
+                  </div>
+                {% endif %}
+                {% if block.settings.member_name != blank %}
+                  <h3 class="psb-member-name">{{ block.settings.member_name | escape }}</h3>
+                {% endif %}
+                {% if block.settings.member_position != blank %}
+                  <div class="psb-member-position">{{ block.settings.member_position | escape }}</div>
+                {% endif %}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "⚡︎PSB: Team 01",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container_width",
+      "options": [
+        {
+          "value": "psb-container",
+          "label": "Container"
+        },
+        {
+          "value": "psb-container-fluid",
+          "label": "Container Fluid"
+        },
+        {
+          "value": "psb-container-fullwidth",
+          "label": "Container Fullwidth"
+        }
+      ],
+      "default": "psb-container",
+      "label": "Container width"
+    },
+    {
+      "type": "header",
+      "content": "Main settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "inherit_fonts",
+      "default": false,
+      "label": "Inherit font sizes from theme"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#262424"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Title and subtitle alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_rounded",
+      "label": "Rounded photo",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "is_grayscale",
+      "label": "Grayscale photo",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_height",
+      "default": false,
+      "label": "Full screen height"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Member",
+      "type": "member",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "member_image",
+          "label": "Member photo"
+        },
+        {
+          "type": "text",
+          "id": "member_name",
+          "label": "Member name",
+          "default": "Member name"
+        },
+        {
+          "type": "text",
+          "id": "member_position",
+          "label": "Member position",
+          "default": "Member position"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "⚡︎PSB: Team 01",
+      "settings": {
+        "is_rounded": false,
+        "is_grayscale": true
+      },
+      "blocks": [
+        {
+          "type": "member",
+          "settings": {
+            "member_name": "Tommie Jack",
+            "member_position": "Founder & CEO"
+          }
+        },
+        {
+          "type": "member",
+          "settings": {
+            "member_name": "Delores Peter",
+            "member_position": "Marketing Manager"
+          }
+        },
+        {
+          "type": "member",
+          "settings": {
+            "member_name": "Christopher Melin",
+            "member_position": "Product Manager"
+          }
+        },
+        {
+          "type": "member",
+          "settings": {
+            "member_name": "Irina Alisa",
+            "member_position": "Support Manager"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

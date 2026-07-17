@@ -1,0 +1,297 @@
+{%- comment -%}
+  {
+    "name": "Stats 01",
+    "author": "PusherCommerce"
+    "description": "Please DO NOT copy in any form. Any act of copying will be sued and held responsible with the law"
+  }
+{%- endcomment -%}
+
+{%- comment -%} CSS {%- endcomment -%}
+{% capture minify %}
+  <style>
+    #psb-{{ section.id }} {
+      background-color: {{ section.settings.background_color }};
+      padding-top: {{section.settings.section_padding_top_mobile}}px;
+      padding-bottom: {{section.settings.section_padding_bottom_mobile}}px;
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__item:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__item .psb-stats-01__number {
+      text-align: center;
+      color: {{ section.settings.number_color }};
+      font-size: {{ section.settings.number_font_size_mobile }}px;
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__item .psb-stats-01__heading {
+      text-align: center;
+      color: {{ section.settings.heading_color }};
+      {% if section.settings.inherit_fonts == false %}
+      font-size: 22px;
+      {% endif %}
+    }
+
+    @media (min-width: 768px) {
+      #psb-{{ section.id }} {
+        padding-top: {{section.settings.section_padding_top}}px;
+        padding-bottom: {{section.settings.section_padding_bottom}}px;
+      }
+      #psb-{{ section.id }} .psb-stats-01__item:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      #psb-{{ section.id }} .psb-stats-01__item .psb-stats-01__number {
+        font-size: {{ section.settings.number_font_size_desktop }}px;
+      }
+
+      #psb-{{ section.id }} .psb-stats-01__item .psb-stats-01__heading {
+        {% if section.settings.inherit_fonts == false %}
+        font-size: 22px;
+        {% endif %}
+      }
+    }
+  </style>
+{% endcapture %}
+{{ minify | strip_newlines }}
+
+<div id="psb-{{ section.id }}" class="psb-{{ section.id }} psb-section psb-stats-01" style="display: none;">
+  <div class="{{ section.settings.container_width }}">
+    <div class="psb-row">
+      {%- for block in section.blocks -%}
+        {% liquid
+          case section.blocks.size
+            when 1
+              assign column_size_class = 'psb-col-12'
+            when 2
+              assign column_size_class = 'psb-col-12 psb-col-md-6'
+            when 3
+              assign column_size_class = 'psb-col-12 psb-col-md-4'
+            when 4
+              assign column_size_class = 'psb-col-12 psb-col-md-6 psb-col-xl-3'
+            else
+              assign column_size_class = 'psb-col'
+          endcase
+        %}
+
+        <div class="{{ column_size_class }} psb-stats-01__item" {{ block.shopify_attributes }}>
+          <psb-stats
+            data-end-val="{{ block.settings.number }}"
+            data-duration="2"
+            {% if block.settings.prefix != blank %}
+              data-prefix="{{ block.settings.prefix }}"
+            {% endif %}
+            {% if block.settings.suffix != blank %}
+              data-suffix="{{ block.settings.suffix }}"
+            {% endif %}
+          >
+            <div class="psb-stats__number psb-stats-01__number">0</div>
+          </psb-stats>
+          <div class="psb-stats-01__heading psb-rte">{{ block.settings.heading }}</div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "⚡︎PSB: Stats 01",
+  "tag": "section",
+  "class": "psb-section-wrapper",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container_width",
+      "options": [
+        {
+          "value": "psb-container",
+          "label": "Container"
+        },
+        {
+          "value": "psb-container-fluid",
+          "label": "Container Fluid"
+        },
+        {
+          "value": "psb-container-fullwidth",
+          "label": "Container Fullwidth"
+        }
+      ],
+      "default": "psb-container",
+      "label": "Content width"
+    },
+    {
+      "type": "checkbox",
+      "id": "inherit_fonts",
+      "default": false,
+      "label": "Inherit font sizes from theme"
+    },
+    {
+      "type": "header",
+      "content": "⚡︎ Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#edecff"
+    },
+    {
+      "type": "paragraph",
+      "content": "Content color"
+    },
+    {
+      "type": "color",
+      "id": "number_color",
+      "label": "Number color",
+      "default": "#554bf2"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#111111"
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "range",
+      "id": "number_font_size_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Number font size",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "number_font_size_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Number font size",
+      "default": 58
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stats",
+      "name": "Stats",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "default": "100",
+          "label": "Number",
+          "info": "Must be an integer, excluding letters"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "default": "<p>Feature</p>",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "prefix",
+          "label": "Prefix",
+          "info": "E.g. $1000 - Prefix is $"
+        },
+        {
+          "type": "text",
+          "id": "suffix",
+          "label": "Suffix",
+          "info": "E.g. 1000+ - Suffix is +"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "⚡︎PSB: Stats 01",
+      "blocks": [
+        {
+          "type": "stats",
+          "settings": {
+            "number": "12",
+            "heading": "<p>Years of experience</p>",
+            "suffix": "+"
+          }
+        },
+        {
+          "type": "stats",
+          "settings": {
+            "number": "48",
+            "heading": "<p>Awards win</p>"
+          }
+        },
+        {
+          "type": "stats",
+          "settings": {
+            "number": "27",
+            "heading": "<p>Happy clients</p>",
+            "suffix": "k"
+          }
+        },
+        {
+          "type": "stats",
+          "settings": {
+            "number": "15",
+            "heading": "<p>Perfect products</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,196 @@
+{% doc %}
+  @prompt
+    es soll das Escape This! Logo zu sehen sein mit einem kleinen Textfeld darunter
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-logo-text-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.padding }}px;
+    text-align: {{ block.settings.alignment }};
+  }
+
+  .ai-logo-container-{{ ai_gen_id }} {
+    display: inline-block;
+    margin-bottom: {{ block.settings.spacing }}px;
+  }
+
+  .ai-logo-image-{{ ai_gen_id }} {
+    width: {{ block.settings.logo_width }}px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ai-logo-placeholder-{{ ai_gen_id }} {
+    width: {{ block.settings.logo_width }}px;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .ai-logo-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .ai-text-field-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-logo-image-{{ ai_gen_id }},
+    .ai-logo-placeholder-{{ ai_gen_id }} {
+      width: {{ block.settings.logo_width | times: 0.8 }}px;
+    }
+
+    .ai-text-field-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-logo-text-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-logo-container-{{ ai_gen_id }}">
+    {% if block.settings.logo %}
+      <img
+        src="{{ block.settings.logo | image_url: width: 600 }}"
+        alt="{{ block.settings.logo.alt | default: 'Escape This! Logo' | escape }}"
+        loading="lazy"
+        width="{{ block.settings.logo.width }}"
+        height="{{ block.settings.logo.height }}"
+        class="ai-logo-image-{{ ai_gen_id }}"
+      >
+    {% else %}
+      <div class="ai-logo-placeholder-{{ ai_gen_id }}">
+        {{ 'image' | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if block.settings.text != blank %}
+    <div class="ai-text-field-{{ ai_gen_id }}">
+      {{ block.settings.text }}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Logo mit Text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Bild"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "label": "Logo Breite",
+      "min": 50,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 200
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Textfeld",
+      "default": "<p>Willkommen bei Escape This!</p>"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Textfarbe",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Textgröße",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Ausrichtung",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Zentriert"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "spacing",
+      "label": "Abstand zwischen Logo und Text",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Innenabstand",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop Breite",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo mit Text"
+    }
+  ]
+}
+{% endschema %}

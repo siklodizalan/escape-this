@@ -1,0 +1,288 @@
+{% doc %}
+  @prompt
+    es soll ein banner sein der zu einer anderen Seite führt. Ich brauche links etwas text um was es geht und rechts den banner.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-banner-link-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    text-decoration: none;
+  }
+
+  .ai-banner-container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.gap }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: {{ block.settings.padding }}px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-banner-link-{{ ai_gen_id }}:hover .ai-banner-container-{{ ai_gen_id }} {
+    transform: translateY(-2px);
+  }
+
+  .ai-banner-text-section-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-banner-heading-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    font-weight: 700;
+  }
+
+  .ai-banner-description-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.5;
+  }
+
+  .ai-banner-image-section-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.image_width }}px;
+    height: {{ block.settings.image_height }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-banner-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-banner-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-banner-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-banner-container-{{ ai_gen_id }} {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .ai-banner-image-section-{{ ai_gen_id }} {
+      width: 100%;
+      max-width: {{ block.settings.image_width }}px;
+    }
+  }
+{% endstyle %}
+
+<a
+  href="{{ block.settings.link_url }}"
+  class="ai-banner-link-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-banner-container-{{ ai_gen_id }}">
+    <div class="ai-banner-text-section-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-banner-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      {% if block.settings.description != blank %}
+        <div class="ai-banner-description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ai-banner-image-section-{{ ai_gen_id }}">
+      {% if block.settings.banner_image %}
+        <img
+          src="{{ block.settings.banner_image | image_url: width: 800 }}"
+          alt="{{ block.settings.banner_image.alt | escape }}"
+          class="ai-banner-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.banner_image.width }}"
+          height="{{ block.settings.banner_image.height }}"
+        >
+      {% else %}
+        <div class="ai-banner-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</a>
+
+{% schema %}
+{
+  "name": "Banner mit Link",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Inhalt"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Entdecke unsere neue Kollektion"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Beschreibung",
+      "default": "<p>Klicke hier, um mehr über unsere neuesten Produkte zu erfahren.</p>"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Banner Bild"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Bild"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 100,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Bildbreite",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 100,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Bildhöhe",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Bild Eckenradius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop Breite",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Abstand zwischen Text und Bild",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Innenabstand",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Eckenradius",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Farben"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Hintergrund",
+      "default": "#f9f544"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Überschrift",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Typografie"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Überschriftgröße",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Textgröße",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner mit Link"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,361 @@
+{%- comment -%}
+  {
+    "name": "Quote 01",
+    "author": "PusherCommerce"
+    "description": "Please DO NOT copy in any form. Any act of copying will be sued and held responsible with the law"
+    "Semiwrite": "Yes",
+  }
+{%- endcomment -%}
+
+{%- capture minify -%}
+  <style>
+    #psb-{{ section.id }} {
+      --psb-gutter-x: 25px;
+      color: {{section.settings.text_color}};
+      {% if section.settings.section_height == true %}
+        min-height: 100vh;
+      {% endif %}
+      padding-top: {{section.settings.section_padding_top}}px;
+      padding-bottom: {{section.settings.section_padding_bottom}}px;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+
+    #psb-{{ section.id }} .psb-section-inner {
+      text-align: {{section.settings.section_inner_align}};
+      border-radius: 20px;
+      padding: 50px 10%;
+      background-color: {{section.settings.background_color}};
+    }
+
+    #psb-{{ section.id }} blockquote {
+      text-align: {{section.settings.section_inner_align}};
+    }
+
+    #psb-{{ section.id }} .psb-section-title::before,
+    #psb-{{ section.id }} .psb-section-title::after {
+      display: none;
+    }
+
+    #psb-{{ section.id }} .psb-section-title {
+      color: {{section.settings.text_color}};
+      margin-top: 0;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    #psb-{{ section.id }} .psb-section-text {
+      color: {{section.settings.text_color}};
+      margin: 0;
+      padding-left: 0;
+      border-left: 0;
+      font-style: normal;
+      position: relative;
+      padding-top: 50px;
+      border: none;
+      width: 100%;
+    }
+
+    #psb-{{ section.id }} .psb-section-text p {
+      margin-top: 0;
+      color: {{section.settings.text_color}};
+    }
+
+    #psb-{{ section.id }} .psb-section-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -11px;
+      width: 22px;
+      height: 18px;
+      background: url("data:image/svg+xml,%3Csvg width='22' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.804 0 .314 17.65h5.924L9.805 0H5.804Zm11.88 0-4.87 17.65h5.925L21.686 0h-4.002Z' fill='{{section.settings.quote_color | replace: '#', '%23'}}'/%3E%3C/svg%3E") no-repeat center/contain;
+    }
+
+    #psb-{{ section.id }} .psb-quote-author {
+      color: {{section.settings.text_color}};
+      font-size: 14px;
+    }
+
+    {% if section.settings.inherit_fonts == false %}
+      #psb-{{ section.id }} h1.psb-section-title {
+        font-size: 72px;
+      }
+      #psb-{{ section.id }} h2.psb-section-title {
+        font-size: 56px;
+      }
+      #psb-{{ section.id }} h3.psb-section-title {
+        font-size: 32px;
+      }
+      #psb-{{ section.id }} .psb-section-text p {
+        font-size: 24px; margin-bottom: 24px;
+      }
+    {% endif %}
+
+    @media only screen and (max-width: 767px) {
+      #psb-{{ section.id }} {
+        min-height: auto;
+        padding-top: {{section.settings.section_padding_top_mobile}}px;
+        padding-bottom: {{section.settings.section_padding_bottom_mobile}}px;
+      }
+      #psb-{{ section.id }} .psb-section-inner {
+        padding: 25px 15px;
+      }
+      {% if section.settings.inherit_fonts == false %}
+        #psb-{{ section.id }} h1.psb-section-title {
+          font-size: 50px;
+        }
+        #psb-{{ section.id }} h2.psb-section-title {
+          font-size: 40px;
+        }
+        #psb-{{ section.id }} h3.psb-section-title {
+          font-size: 26px;
+        }
+        #psb-{{ section.id }} .psb-section-text p {
+          font-size: 20px;
+        }
+      {% endif %}
+    }
+  </style>
+{%- endcapture -%}
+{{ minify | strip_newlines }}
+
+<div id="psb-{{ section.id }}" class="psb-{{ section.id }} psb-section psb-quote-quote-01" style="display: none;">
+  <div class="{{ section.settings.container_width }}">
+    <div class="psb-section-inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            {% if block.settings.heading_text != blank %}
+              <{{ block.settings.heading_tag }} class="psb-section-title" {{ block.shopify_attributes }}>
+                {{ block.settings.heading_text | escape }}
+              </{{ block.settings.heading_tag }}>
+            {% endif %}
+          {% when 'text' %}
+            {% if block.settings.section_text != blank %}
+              <blockquote class="psb-section-text" {{ block.shopify_attributes }}>
+                {{ block.settings.section_text }}
+              </blockquote>
+            {% endif %}
+          {% when 'author' %}
+            {% if block.settings.quote_author != blank %}
+              <div class="psb-quote-author" {{ block.shopify_attributes }}>
+                {{ block.settings.quote_author | escape }}
+              </div>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "⚡︎PSB: Quote 01",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container_width",
+      "options": [
+        {
+          "value": "psb-container",
+          "label": "Container"
+        },
+        {
+          "value": "psb-container-fluid",
+          "label": "Container Fluid"
+        },
+        {
+          "value": "psb-container-fullwidth",
+          "label": "Container Fullwidth"
+        }
+      ],
+      "default": "psb-container",
+      "label": "Container width"
+    },
+    {
+      "type": "header",
+      "content": "Main settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "inherit_fonts",
+      "default": false,
+      "label": "Inherit font sizes from theme"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#262424"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "id": "quote_color",
+      "label": "Quotes color",
+      "default": "#ff6303"
+    },
+    {
+      "type": "select",
+      "id": "section_inner_align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "section_height",
+      "default": false,
+      "label": "Full screen height"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 150
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Heading",
+      "type": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "textarea",
+          "id": "heading_text",
+          "label": "Heading text",
+          "default": "What people says"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "type": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "section_text",
+          "label": "Section text",
+          "default": "<p>“Quote text”</p>"
+        }
+      ]
+    },
+    {
+      "name": "Author",
+      "type": "author",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "quote_author",
+          "label": "Quote Author",
+          "default": "Quote Author"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "⚡︎PSB: Quote 01",
+      "settings": {
+        "background_color": "#F2F4FE"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "section_text": "<p>“Customer service shouldn’t just be a department; it should be the entire company.”</p>"
+          }
+        },
+        {
+          "type": "author",
+          "settings": {
+            "quote_author": " - Tony Hsieh, CEO of Zappos"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
