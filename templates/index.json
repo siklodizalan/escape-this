@@ -250,102 +250,102 @@
                 "lazy": false
             }
         },
-        "psb_stats_stats_01_RVy68Q": {
-            "type": "psb-stats-stats-01",
-            "blocks": {
-                "stats_TpHeqN": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "11",
-                        "heading": "<p>Städte<\/p>",
-                        "prefix": "",
-                        "suffix": "+"
-                    }
-                },
-                "stats_r6NgQr": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "25000",
-                        "heading": "<p>Spieler<\/p>",
-                        "prefix": "",
-                        "suffix": "+"
-                    }
-                },
-                "stats_h6JWyW": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "100",
-                        "heading": "<p>Team Events<\/p>",
-                        "prefix": "",
-                        "suffix": "+"
-                    }
-                },
-                "stats_yLcxJP": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "365",
-                        "heading": "<p>Tage Spielspaß<\/p>",
-                        "prefix": "",
-                        "suffix": ""
-                    }
-                }
-            },
-            "block_order": [
-                "stats_TpHeqN",
-                "stats_r6NgQr",
-                "stats_h6JWyW",
-                "stats_yLcxJP"
-            ],
-            "name": "⚡︎PSB: Stats 01",
-            "settings": {
-                "container_width": "psb-container",
-                "inherit_fonts": false,
-                "background_color": "#1f1f21",
-                "number_color": "#f9f544",
-                "heading_color": "#a1d9ee",
-                "number_font_size_desktop": 70,
-                "section_padding_top": 100,
-                "section_padding_bottom": 100,
-                "number_font_size_mobile": 50,
-                "section_padding_top_mobile": 60,
-                "section_padding_bottom_mobile": 50
-            }
-        },
-        "multicolumn_kbePmn": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_PqcyhA": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/4_8_Sterne-Bewertung.svg",
-                        "title": "",
-                        "text": "<h2><strong>4,8 Sterne<\/strong><\/h2>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_PqcyhA"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h2",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 1,
-                "column_alignment": "center",
-                "background_style": "none",
-                "color_scheme": "",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 24,
-                "padding_bottom": 0
-            }
-        },
+        // "psb_stats_stats_01_RVy68Q": {
+        //     "type": "psb-stats-stats-01",
+        //     "blocks": {
+        //         "stats_TpHeqN": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "11",
+        //                 "heading": "<p>Städte<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": "+"
+        //             }
+        //         },
+        //         "stats_r6NgQr": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "25000",
+        //                 "heading": "<p>Spieler<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": "+"
+        //             }
+        //         },
+        //         "stats_h6JWyW": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "100",
+        //                 "heading": "<p>Team Events<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": "+"
+        //             }
+        //         },
+        //         "stats_yLcxJP": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "365",
+        //                 "heading": "<p>Tage Spielspaß<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": ""
+        //             }
+        //         }
+        //     },
+        //     "block_order": [
+        //         "stats_TpHeqN",
+        //         "stats_r6NgQr",
+        //         "stats_h6JWyW",
+        //         "stats_yLcxJP"
+        //     ],
+        //     "name": "⚡︎PSB: Stats 01",
+        //     "settings": {
+        //         "container_width": "psb-container",
+        //         "inherit_fonts": false,
+        //         "background_color": "#1f1f21",
+        //         "number_color": "#f9f544",
+        //         "heading_color": "#a1d9ee",
+        //         "number_font_size_desktop": 70,
+        //         "section_padding_top": 100,
+        //         "section_padding_bottom": 100,
+        //         "number_font_size_mobile": 50,
+        //         "section_padding_top_mobile": 60,
+        //         "section_padding_bottom_mobile": 50
+        //     }
+        // },
+        // "multicolumn_kbePmn": {
+        //     "type": "multicolumn",
+        //     "blocks": {
+        //         "column_PqcyhA": {
+        //             "type": "column",
+        //             "settings": {
+        //                 "image": "shopify:\/\/shop_images\/4_8_Sterne-Bewertung.svg",
+        //                 "title": "",
+        //                 "text": "<h2><strong>4,8 Sterne<\/strong><\/h2>",
+        //                 "link_label": "",
+        //                 "link": ""
+        //             }
+        //         }
+        //     },
+        //     "block_order": [
+        //         "column_PqcyhA"
+        //     ],
+        //     "name": "t:sections.multicolumn.presets.name",
+        //     "settings": {
+        //         "title": "",
+        //         "heading_size": "h2",
+        //         "image_width": "third",
+        //         "image_ratio": "adapt",
+        //         "button_label": "",
+        //         "button_link": "",
+        //         "columns_desktop": 1,
+        //         "column_alignment": "center",
+        //         "background_style": "none",
+        //         "color_scheme": "",
+        //         "columns_mobile": "1",
+        //         "swipe_on_mobile": false,
+        //         "padding_top": 24,
+        //         "padding_bottom": 0
+        //     }
+        // },
         "ss_scrolling_images_5_98pCX6": {
             "type": "ss-scrolling-images-5",
             "blocks": {
@@ -1671,8 +1671,8 @@
         "ss_hero_pro_PexJc4",
         "ss_logo_cloud_2_ccTmUq",
         "ss_video_grid_socials_6_DpTpaV",
-        "psb_stats_stats_01_RVy68Q",
-        "multicolumn_kbePmn",
+        // "psb_stats_stats_01_RVy68Q",
+        // "multicolumn_kbePmn",
         "ss_scrolling_images_5_98pCX6",
         "video_hpK6LC",
         "ss_hero_pro_FFEege",
