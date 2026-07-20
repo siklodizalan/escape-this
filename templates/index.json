@@ -1112,6 +1112,73 @@
         //         "padding_bottom": 0
         //     }
         // },
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
+            "type": "newsletter",
+            "blocks": {
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "10% Newsletter-Rabatt",
+                        "heading_size": "h1"
+                    }
+                },
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
+                    "type": "paragraph",
+                    "settings": {
+                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam! Als neues Mitglied der Escape This! Community erhältst du nach Newsletter-Anmeldung einen 10% Rabattcode für deine erste Escape This! Bestellung.<\/p>"
+                    }
+                },
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
+                    "type": "email_form",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
+            ],
+            "settings": {
+                "color_scheme": "accent-1",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        },
+        "newsletter_nUFw98": {
+            "type": "newsletter",
+            "blocks": {
+                "heading_xpnB74": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Pssst, es gibt News - top secret!",
+                        "heading_size": "h1"
+                    }
+                },
+                "paragraph_TJVkBB": {
+                    "type": "paragraph",
+                    "settings": {
+                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam!<\/p>"
+                    }
+                },
+                "email_form_PdLWTz": {
+                    "type": "email_form",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "heading_xpnB74",
+                "paragraph_TJVkBB",
+                "email_form_PdLWTz"
+            ],
+            "disabled": true,
+            "settings": {
+                "color_scheme": "accent-1",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        },
         "ss_scrolling_images_5_98pCX6": {
             "type": "ss-scrolling-images-5",
             "blocks": {
@@ -1239,71 +1306,38 @@
                 "lazy": false
             }
         },
-        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
-            "type": "newsletter",
+        "multirow_TiMPym": {
+            "type": "multirow",
             "blocks": {
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
-                    "type": "heading",
+                "row_bLwjeT": {
+                    "type": "row",
                     "settings": {
-                        "heading": "10% Newsletter-Rabatt",
-                        "heading_size": "h1"
+                        "image": "shopify:\/\/shop_images\/HERO-Konzert-2026-scaled.jpg",
+                        "caption": "Spendenkategorie I",
+                        "heading": "Mensch für Mensch.",
+                        "text": "<p>AKTIVES Spendenprojekt:<\/p><p><strong>Herzenswünsche für Kinder: MainLichtblick e. V.<\/strong><br\/>\u2028MainLichtblick erfüllt schwer kranken, körperlich beeinträchtigten und traumatisierten Kindern und Jugendlichen persönliche Herzenswünsche – kleine Lichtblicke, die große Wirkung zeigen. Von Reittherapien über spezielle Therapiegeräte bis hin zu Tablets: Mit deiner Spende schenkst du ein Stück Lebensfreude und Hoffnung.<\/p>",
+                        "button_label": "Ticket kaufen & Gutes tun",
+                        "button_link": "shopify:\/\/collections"
                     }
                 },
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
-                    "type": "paragraph",
-                    "settings": {
-                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam! Als neues Mitglied der Escape This! Community erhältst du nach Newsletter-Anmeldung einen 10% Rabattcode für deine erste Escape This! Bestellung.<\/p>"
-                    }
-                },
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
-                    "type": "email_form",
-                    "settings": {}
-                }
             },
             "block_order": [
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
+                "row_bLwjeT",
             ],
             "settings": {
-                "color_scheme": "accent-1",
-                "full_width": true,
-                "padding_top": 40,
-                "padding_bottom": 52
-            }
-        },
-        "newsletter_nUFw98": {
-            "type": "newsletter",
-            "blocks": {
-                "heading_xpnB74": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Pssst, es gibt News - top secret!",
-                        "heading_size": "h1"
-                    }
-                },
-                "paragraph_TJVkBB": {
-                    "type": "paragraph",
-                    "settings": {
-                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam!<\/p>"
-                    }
-                },
-                "email_form_PdLWTz": {
-                    "type": "email_form",
-                    "settings": {}
-                }
-            },
-            "block_order": [
-                "heading_xpnB74",
-                "paragraph_TJVkBB",
-                "email_form_PdLWTz"
-            ],
-            "disabled": true,
-            "settings": {
-                "color_scheme": "accent-1",
-                "full_width": true,
-                "padding_top": 40,
-                "padding_bottom": 52
+                "image_height": "medium",
+                "desktop_image_width": "medium",
+                "image_layout": "alternate-left",
+                "heading_size": "h1",
+                "text_style": "body",
+                "button_style": "primary",
+                "desktop_content_position": "middle",
+                "desktop_content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "section_color_scheme": "",
+                "row_color_scheme": "",
+                "padding_top": 36,
+                "padding_bottom": 36
             }
         },
         "video_hpK6LC": {
@@ -1883,11 +1917,13 @@
         "ss_logo_cloud_2_ccTmUq",
         "ss_hero_pro_socials",
         "ss_video_grid_socials_6_DpTpaV",
+        
         // "psb_stats_stats_01_RVy68Q",
         // "multicolumn_kbePmn",
-        "ss_scrolling_images_5_98pCX6",
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
         "newsletter_nUFw98",
+        "ss_scrolling_images_5_98pCX6",
+        "multirow_TiMPym",
         "video_hpK6LC",
         "ss_hero_pro_FFEege",
         "ss_slider_7_MBHAqm",
