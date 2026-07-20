@@ -1,0 +1,896 @@
+{%- liquid
+  assign padding_horizontal = section.settings.padding_horizontal
+  assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign border_color = section.settings.border_color
+  assign border_thickness = section.settings.border_thickness
+  assign margin_top = section.settings.margin_top
+  assign margin_bottom = section.settings.margin_bottom
+  assign margin_horizontal_mobile = section.settings.margin_horizontal_mobile
+  assign margin_horizontal = section.settings.margin_horizontal
+  assign background_color = section.settings.background_color
+  assign background_gradient = section.settings.background_gradient
+  assign full_width = section.settings.full_width
+  assign content_width = section.settings.content_width
+  assign section_radius = section.settings.section_radius
+
+  assign cards_gap = section.settings.cards_gap
+  assign cards_gap_mobile = section.settings.cards_gap_mobile
+  assign stagger_offset = section.settings.stagger_offset
+  assign show_footprints = section.settings.show_footprints
+  assign footprint_color = section.settings.footprint_color
+
+  assign card_padding_horizontal = section.settings.card_padding_horizontal
+  assign card_padding_horizontal_mobile = section.settings.card_padding_horizontal_mobile
+  assign card_padding_vertical = section.settings.card_padding_vertical
+  assign card_padding_vertical_mobile = section.settings.card_padding_vertical_mobile
+  assign card_radius = section.settings.card_radius
+  assign card_border_thickness = section.settings.card_border_thickness
+
+  assign number_size = section.settings.number_size
+  assign number_size_mobile = section.settings.number_size_mobile
+  assign number_font_size = section.settings.number_font_size
+  assign number_font_size_mobile = section.settings.number_font_size_mobile
+  assign number_gap = section.settings.number_gap
+  assign number_gap_mobile = section.settings.number_gap_mobile
+  assign number_bg_color = section.settings.number_bg_color
+  assign number_text_color = section.settings.number_text_color
+
+  assign title_font = section.settings.title_font
+  assign title_custom = section.settings.title_custom
+  assign title_size = section.settings.title_size
+  assign title_size_mobile = section.settings.title_size_mobile
+  assign title_height = section.settings.title_height
+  assign title_color = section.settings.title_color
+
+  assign text_font = section.settings.text_font
+  assign text_custom = section.settings.text_custom
+  assign text_size = section.settings.text_size
+  assign text_size_mobile = section.settings.text_size_mobile
+  assign text_height = section.settings.text_height
+  assign text_mt = section.settings.text_mt
+  assign text_mt_mobile = section.settings.text_mt_mobile
+  assign text_color = section.settings.text_color
+
+  assign step_blocks = section.blocks | where: 'type', 'step'
+  assign step_count = step_blocks.size
+-%}
+
+{%- style -%}
+  {{ title_font | font_face: font_display: 'swap' }}
+  {{ text_font | font_face: font_display: 'swap' }}
+
+  .section-{{ section.id }} {
+    border-top: solid {{ border_color }} {{ border_thickness }}px;
+    border-bottom: solid {{ border_color }} {{ border_thickness }}px;
+    margin-top: {{ margin_top | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ margin_bottom | times: 0.75 | round: 0 }}px;
+    margin-left: {{ margin_horizontal_mobile }}rem;
+    margin-right: {{ margin_horizontal_mobile }}rem;
+    border-radius: {{ section_radius | times: 0.6 | round: 0 }}px;
+    overflow: hidden;
+  }
+
+  .section-{{ section.id }}-settings {
+    margin: 0 auto;
+    padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-left: {{ padding_horizontal_mobile }}rem;
+    padding-right: {{ padding_horizontal_mobile }}rem;
+  }
+
+  .steps-row-{{ section.id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ cards_gap_mobile }}px;
+  }
+
+  .step-card-{{ section.id }} {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    border-radius: {{ card_radius }}px;
+    border: {{ card_border_thickness }}px solid transparent;
+    padding: {{ card_padding_vertical_mobile }}px {{ card_padding_horizontal_mobile }}px;
+  }
+
+  .step-card-head-{{ section.id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ number_gap_mobile }}px;
+  }
+
+  .step-number-{{ section.id }} {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: {{ number_size_mobile }}px;
+    height: {{ number_size_mobile }}px;
+    border-radius: 50%;
+    background-color: {{ number_bg_color }};
+    color: {{ number_text_color }};
+    font-size: {{ number_font_size_mobile }}px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .step-title-{{ section.id }} {
+    margin: 0;
+    font-size: {{ title_size_mobile }}px;
+    line-height: {{ title_height }}%;
+    color: {{ title_color }};
+    text-transform: uppercase;
+    word-break: break-word;
+    font-weight: 800;
+  }
+
+  .step-text-{{ section.id }} {
+    margin: 0;
+    margin-top: {{ text_mt_mobile }}px;
+    font-size: {{ text_size_mobile }}px;
+    line-height: {{ text_height }}%;
+    color: {{ text_color }};
+    word-break: break-word;
+  }
+
+  .step-text-{{ section.id }} * {
+    margin: 0;
+    font-size: {{ text_size_mobile }}px;
+    line-height: {{ text_height }}%;
+    color: {{ text_color }};
+  }
+
+  .step-footprints-{{ section.id }} {
+    display: none;
+  }
+
+  @media(min-width: 1024px) {
+    .section-{{ section.id }} {
+      margin-top: {{ margin_top }}px;
+      margin-bottom: {{ margin_bottom }}px;
+      margin-left: {{ margin_horizontal }}rem;
+      margin-right: {{ margin_horizontal }}rem;
+      border-radius: {{ section_radius }}px;
+    }
+
+    .section-{{ section.id }}-settings {
+      padding-top: {{ padding_top }}px;
+      padding-bottom: {{ padding_bottom }}px;
+      padding-left: {{ padding_horizontal }}rem;
+      padding-right: {{ padding_horizontal }}rem;
+    }
+
+    .steps-row-{{ section.id }} {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: {{ cards_gap }}px;
+    }
+
+    .step-card-{{ section.id }} {
+      padding: {{ card_padding_vertical }}px {{ card_padding_horizontal }}px;
+    }
+
+    .step-card-{{ section.id }}.step-card-offset-{{ section.id }} {
+      margin-top: {{ stagger_offset }}px;
+    }
+
+    .step-card-head-{{ section.id }} {
+      gap: {{ number_gap }}px;
+    }
+
+    .step-number-{{ section.id }} {
+      width: {{ number_size }}px;
+      height: {{ number_size }}px;
+      font-size: {{ number_font_size }}px;
+    }
+
+    .step-title-{{ section.id }} {
+      font-size: {{ title_size }}px;
+    }
+
+    .step-text-{{ section.id }} {
+      margin-top: {{ text_mt }}px;
+      font-size: {{ text_size }}px;
+    }
+
+    .step-text-{{ section.id }} * {
+      font-size: {{ text_size }}px;
+    }
+
+    {% if show_footprints %}
+      .step-footprints-{{ section.id }} {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        width: 110px;
+        height: {{ stagger_offset }}px;
+        pointer-events: none;
+      }
+
+      .step-footprints-{{ section.id }} svg {
+        position: absolute;
+        width: 52px;
+        height: auto;
+      }
+
+      .step-footprints-{{ section.id }} svg:nth-child(1) {
+        left: 40px;
+        top: -15%;
+        transform: rotate(140deg);
+      }
+
+      .step-footprints-{{ section.id }} svg:nth-child(2) {
+        left: 90px;
+        top: 25%;
+        transform: rotate(120deg);
+      }
+
+      /* This (FROM) card is offset/lower and the next card is back up higher, so
+         the trail runs upward, above this card's own top edge - mirror the angle
+         (not the artwork) so the stride keeps pointing left-to-right, uphill. */
+      .step-card-offset-{{ section.id }} .step-footprints-{{ section.id }} {
+        top: auto;
+        bottom: 100%;
+      }
+
+      .step-card-offset-{{ section.id }} .step-footprints-{{ section.id }} svg:nth-child(1) {
+        left: 35px;
+        top: 65%;
+        transform: scaleX(-1) rotate(-45deg);
+      }
+
+      .step-card-offset-{{ section.id }} .step-footprints-{{ section.id }} svg:nth-child(2) {
+        left: 90px;
+        top: 30%;
+        transform: scaleX(-1) rotate(-60deg);
+      }
+
+      .step-footprints-{{ section.id }} svg path {
+        fill: {{ footprint_color }};
+      }
+    {% endif %}
+  }
+
+  {% if title_custom %}
+    .step-title-{{ section.id }} {
+      font-family: {{ title_font.family }}, {{ title_font.fallback_families }};
+      font-weight: {{ title_font.weight }};
+      font-style: {{ title_font.style }};
+    }
+  {% endif %}
+
+  {% if text_custom %}
+    .step-text-{{ section.id }},
+    .step-text-{{ section.id }} * {
+      font-family: {{ text_font.family }}, {{ text_font.fallback_families }};
+      font-weight: {{ text_font.weight }};
+      font-style: {{ text_font.style }};
+    }
+  {% endif %}
+
+  {% for block in step_blocks %}
+    .step-card-{{ block.id }} {
+      background-color: {{ block.settings.card_bg_color }};
+      border-color: {{ block.settings.card_border_color }};
+    }
+  {% endfor %}
+{%- endstyle -%}
+
+{% unless full_width %}
+  <style>
+    .section-{{ section.id }}-settings {
+      max-width: {{ content_width }}px;
+    }
+  </style>
+{% endunless %}
+
+{% if margin_horizontal_mobile > 0 %}
+  <style>
+    .section-{{ section.id }} {
+      border-left: solid {{ border_color }} {{ border_thickness }}px;
+      border-right: solid {{ border_color }} {{ border_thickness }}px;
+    }
+
+    @media(min-width: 1024px) {
+      .section-{{ section.id }} {
+        border-left: 0px;
+        border-right: 0px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if margin_horizontal > 0 %}
+  <style>
+    @media(min-width: 1024px) {
+      .section-{{ section.id }} {
+        border-left: solid {{ border_color }} {{ border_thickness }}px;
+        border-right: solid {{ border_color }} {{ border_thickness }}px;
+      }
+    }
+  </style>
+{% endif %}
+
+{%- capture footprint_svg -%}
+  <svg viewBox="0 0 78.7567 115.209" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M72.2861 93.7652L58.5741 93.6134C57.0908 93.6017 55.9695 92.6323 55.7242 91.184C54.965 86.7223 53.5635 82.5877 51.4611 78.5582C48.5178 72.9519 48.144 66.201 51.0173 60.4779C52.9795 56.5652 56.9856 54.054 61.2721 53.5751C65.5586 53.0963 69.5881 54.9417 72.3913 58.1653C77.25 63.7599 79.5626 71.0481 78.5231 78.4531C77.8574 83.195 76.5376 87.645 74.7506 92.06C74.3535 93.0177 73.4775 93.7769 72.2978 93.7652H72.2861Z"/>
+    <path d="M24.5976 38.4613L10.7337 41.72C9.91616 41.9068 8.8533 41.3345 8.38611 40.6571C5.55961 36.5809 3.14189 32.3528 1.46001 27.6692C-1.03947 20.7431 -0.256922 13.198 3.24701 6.78576C5.18585 3.2351 8.43283 0.770672 12.5091 0.151643C17.0408 -0.525784 21.8062 1.09771 24.6794 4.7418C28.6739 9.81082 29.6667 16.4566 27.9731 22.6002C26.7818 26.9217 26.4664 31.2082 26.6299 35.6582C26.6766 36.9313 25.9525 38.1343 24.5976 38.4613Z"/>
+    <path d="M25.9641 60.3027C22.7522 60.8633 19.7155 60.4428 17.1109 58.539C13.7705 55.5257 11.6447 51.4494 11.1308 46.9527C10.979 45.5862 11.8083 44.4182 13.1047 44.0678L25.9992 40.6106C27.2022 40.2836 28.3702 40.961 28.9308 41.9654C30.8346 45.3526 32.4464 49.3704 32.2946 53.2247C32.1427 57.0791 29.5966 59.6603 25.9525 60.3027H25.9641Z"/>
+    <path d="M70.102 111.565C67.8128 114.1 64.776 115.186 61.4707 115.209C58.1653 115.233 55.0818 113.165 54.1708 109.79C53.143 105.959 53.8438 101.637 55.0234 97.8065C55.3738 96.6852 56.3432 95.9494 57.5463 95.9961L70.6743 96.51C72.1109 96.5684 73.2322 97.5028 73.3957 98.9511C73.8863 103.436 72.765 107.839 70.102 111.554V111.565Z"/>
+  </svg>
+{%- endcapture -%}
+
+<div class="section-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
+  <div class="section-{{ section.id }}-settings">
+    <div class="steps-row-{{ section.id }}">
+      {% for block in step_blocks %}
+        {%- liquid
+          assign is_offset = false
+          assign index_remainder = forloop.index0 | modulo: 2
+          if index_remainder == 1
+            assign is_offset = true
+          endif
+          assign card_stack_order = step_count | minus: forloop.index
+        -%}
+        <div class="step-card-{{ section.id }} step-card-{{ block.id }}{% if is_offset %} step-card-offset-{{ section.id }}{% endif %}" style="z-index: {{ card_stack_order }};" {{ block.shopify_attributes }}>
+          {% unless forloop.last %}
+            {% if show_footprints %}
+              <div class="step-footprints-{{ section.id }}">
+                {{ footprint_svg }}
+                {{ footprint_svg }}
+              </div>
+            {% endif %}
+          {% endunless %}
+
+          <div class="step-card-head-{{ section.id }}">
+            <div class="step-number-{{ section.id }}">{{ forloop.index }}</div>
+            {% if block.settings.title != blank %}
+              <p class="step-title-{{ section.id }}">{{ block.settings.title }}</p>
+            {% endif %}
+          </div>
+          {% if block.settings.text != blank %}
+            <div class="step-text-{{ section.id }}">{{ block.settings.text }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "SS - Steps #1",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout settings"
+      },
+      {
+        "type": "range",
+        "id": "cards_gap",
+        "min": 0,
+        "max": 80,
+        "step": 2,
+        "unit": "px",
+        "label": "Gap",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "cards_gap_mobile",
+        "min": 0,
+        "max": 80,
+        "step": 2,
+        "unit": "px",
+        "label": "Gap - mobile",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "stagger_offset",
+        "min": 0,
+        "max": 240,
+        "step": 4,
+        "unit": "px",
+        "label": "Stagger offset (alternating cards)",
+        "default": 140
+      },
+      {
+        "type": "checkbox",
+        "id": "show_footprints",
+        "label": "Show footprint icons between cards",
+        "default": true
+      },
+      {
+        "type": "color",
+        "label": "Footprint color",
+        "id": "footprint_color",
+        "default": "#f9f544"
+      },
+      {
+        "type": "header",
+        "content": "Card settings"
+      },
+      {
+        "type": "range",
+        "id": "card_padding_horizontal",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding horizontal",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "card_padding_horizontal_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding horizontal - mobile",
+        "default": 24
+      },
+      {
+        "type": "range",
+        "id": "card_padding_vertical",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding vertical",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "card_padding_vertical_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding vertical - mobile",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "card_radius",
+        "min": 0,
+        "max": 60,
+        "step": 1,
+        "unit": "px",
+        "label": "Roundness",
+        "default": 6
+      },
+      {
+        "type": "range",
+        "id": "card_border_thickness",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Border thickness",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Number settings"
+      },
+      {
+        "type": "range",
+        "id": "number_size",
+        "min": 20,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Size",
+        "default": 52
+      },
+      {
+        "type": "range",
+        "id": "number_size_mobile",
+        "min": 20,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Size - mobile",
+        "default": 44
+      },
+      {
+        "type": "range",
+        "id": "number_font_size",
+        "min": 10,
+        "max": 60,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 26
+      },
+      {
+        "type": "range",
+        "id": "number_font_size_mobile",
+        "min": 10,
+        "max": 60,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size - mobile",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "number_gap",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Gap to title",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "number_gap_mobile",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Gap to title - mobile",
+        "default": 16
+      },
+      {
+        "type": "color",
+        "label": "Background",
+        "id": "number_bg_color",
+        "default": "#f9f544"
+      },
+      {
+        "type": "color",
+        "label": "Text",
+        "id": "number_text_color",
+        "default": "#1f1f21"
+      },
+      {
+        "type": "header",
+        "content": "Title settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "title_custom",
+        "label": "Use custom font",
+        "default": true
+      },
+      {
+        "type": "font_picker",
+        "id": "title_font",
+        "label": "Font family",
+        "default": "red_hat_display_n8"
+      },
+      {
+        "type": "range",
+        "id": "title_size",
+        "min": 0,
+        "max": 48,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 24
+      },
+      {
+        "type": "range",
+        "id": "title_size_mobile",
+        "min": 0,
+        "max": 48,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size - mobile",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "title_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Line height",
+        "default": 130
+      },
+      {
+        "type": "color",
+        "label": "Color",
+        "id": "title_color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Text settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "text_custom",
+        "label": "Use custom font",
+        "default": true
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Font family",
+        "default": "red_hat_display_n4"
+      },
+      {
+        "type": "range",
+        "id": "text_size",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "text_size_mobile",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size - mobile",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "text_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Line height",
+        "default": 150
+      },
+      {
+        "type": "range",
+        "id": "text_mt",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Margin top",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "text_mt_mobile",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Margin top - mobile",
+        "default": 10
+      },
+      {
+        "type": "color",
+        "label": "Color",
+        "id": "text_color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Section colors"
+      },
+      {
+        "type": "color",
+        "label": "Section background",
+        "id": "background_color",
+        "default": "#1f1f21"
+      },
+      {
+        "type": "color_background",
+        "id": "background_gradient",
+        "label": "Section background gradient",
+        "info": "Remove gradient to replace with solid colors"
+      },
+      {
+        "type": "color",
+        "label": "Border",
+        "id": "border_color",
+        "default": "#1f1f21"
+      },
+      {
+        "type": "header",
+        "content": "Section margin (outside)"
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin bottom",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_horizontal",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "rem",
+        "label": "Margin sides",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_horizontal_mobile",
+        "min": 0,
+        "max": 15,
+        "step": 0.5,
+        "unit": "rem",
+        "label": "Margin sides mobile",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Section padding (inside)"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_horizontal",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "rem",
+        "label": "Padding sides",
+        "default": 5
+      },
+      {
+        "type": "range",
+        "id": "padding_horizontal_mobile",
+        "min": 0,
+        "max": 15,
+        "step": 0.5,
+        "unit": "rem",
+        "label": "Padding sides mobile",
+        "default": 1.5
+      },
+      {
+        "type": "header",
+        "content": "Section settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full width",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "content_width",
+        "min": 800,
+        "max": 2000,
+        "step": 100,
+        "unit": "px",
+        "label": "Section content width",
+        "default": 1200
+      },
+      {
+        "type": "range",
+        "id": "border_thickness",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Border thickness",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_radius",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Section roundness",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "step",
+        "name": "Step",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Step title"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Describe this step.</p>"
+          },
+          {
+            "type": "header",
+            "content": "Card colors"
+          },
+          {
+            "type": "color",
+            "label": "Background",
+            "id": "card_bg_color",
+            "default": "#1c1c1c"
+          },
+          {
+            "type": "color",
+            "label": "Border",
+            "id": "card_border_color",
+            "default": "#1c1c1c"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "SS - Steps #1",
+        "blocks": [
+          {
+            "type": "step",
+            "settings": {
+              "title": "Step one",
+              "card_bg_color": "#1c1c1c",
+              "card_border_color": "#1c1c1c"
+            }
+          },
+          {
+            "type": "step",
+            "settings": {
+              "title": "Step two",
+              "card_bg_color": "#1e1e1e",
+              "card_border_color": "#1e1e1e"
+            }
+          },
+          {
+            "type": "step",
+            "settings": {
+              "title": "Step three",
+              "card_bg_color": "#1e1e1e",
+              "card_border_color": "#1e1e1e"
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

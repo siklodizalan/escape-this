@@ -361,61 +361,92 @@
                 "lazy": false
             }
         },
-        "multicolumn_how_it_works_steps": {
-            "type": "multicolumn",
+        "ss_steps_1_how_it_works": {
+            "type": "ss-steps-1",
             "blocks": {
-                "column_QE9KHq": {
-                    "type": "column",
+                "step_St3ps01": {
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-one.png",
                         "title": "Stadt & Spiel wählen",
                         "text": "<p>Wähle deine Stadt und dein Lieblingsspiel. Tickets sind flexibel — ein ganzes Jahr gültig, kein Zeitfenster nötig.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1c1c1c",
+                        "card_border_color": "#1c1c1c"
                     }
                 },
-                "column_WtbKKc": {
-                    "type": "column",
+                "step_St3ps02": {
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-2.png",
                         "title": "App starten",
                         "text": "<p>Lade die kostenlose Escape This!-App herunter. Scanne dein Ticket und tauche am Startpunkt in die Story ein.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
-                "column_xty6q6": {
-                    "type": "column",
+                "step_St3ps03": {
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-3.png",
                         "title": "Stadt erkunden",
                         "text": "<p>Folge den Hinweisen, löse Rätsel an echten Orten und entdecke deine Stadt auf völlig neue Art.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 }
             },
             "block_order": [
-                "column_QE9KHq",
-                "column_WtbKKc",
-                "column_xty6q6"
+                "step_St3ps01",
+                "step_St3ps02",
+                "step_St3ps03"
             ],
-            "name": "t:sections.multicolumn.presets.name",
+            "name": "SS - Steps #1",
             "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "square",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "background-1",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "stagger_offset": 140,
+                "show_footprints": true,
+                "footprint_color": "#f9f544",
+                "card_padding_horizontal": 40,
+                "card_padding_horizontal_mobile": 24,
+                "card_padding_vertical": 40,
+                "card_padding_vertical_mobile": 28,
+                "card_radius": 6,
+                "card_border_thickness": 0,
+                "number_size": 52,
+                "number_size_mobile": 44,
+                "number_font_size": 26,
+                "number_font_size_mobile": 20,
+                "number_gap": 20,
+                "number_gap_mobile": 16,
+                "number_bg_color": "#f9f544",
+                "number_text_color": "#1f1f21",
+                "title_custom": true,
+                "title_font": "red_hat_display_n8",
+                "title_size": 24,
+                "title_size_mobile": 20,
+                "title_height": 130,
+                "title_color": "#ffffff",
+                "text_custom": true,
+                "text_font": "red_hat_display_n4",
+                "text_size": 16,
+                "text_size_mobile": 14,
+                "text_height": 150,
+                "text_mt": 12,
+                "text_mt_mobile": 10,
+                "text_color": "#ffffff",
+                "background_color": "#1f1f21",
+                "background_gradient": "",
+                "border_color": "#1f1f21",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
                 "padding_top": 0,
-                "padding_bottom": 36
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": true,
+                "content_width": 1200,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "ss_hero_pro_choose_city": {
@@ -1878,7 +1909,7 @@
     "order": [
         "ss_hero_pro_main",
         "ss_hero_pro_how_it_works",
-        "multicolumn_how_it_works_steps",
+        "ss_steps_1_how_it_works",
         "ss_hero_pro_choose_city",
         "ss_logo_cloud_cities",
         "ss_hero_pro_socials",
