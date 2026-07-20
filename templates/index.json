@@ -525,6 +525,7 @@
                 "caption_AmkkNC",
                 "heading_mA3h7p"
             ],
+            "disabled": true,
             "name": "SS - Hero pro 💎",
             "settings": {
                 "hero_height": "auto",
@@ -587,11 +588,38 @@
         "ss_logo_cloud_2_ccTmUq": {
             "type": "ss-logo-cloud-2",
             "blocks": {
+                "text_c4pt10n": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<h3>WÄHLE DEINE STADT<\/h3>",
+                        "text_custom": false,
+                        "text_font": "josefin_sans_n4",
+                        "text_size": 12,
+                        "text_size_mobile": 12,
+                        "text_height": 130,
+                        "text_mt": 0,
+                        "text_mt_mobile": 0,
+                        "text_color": "#f9f544"
+                    }
+                },
+                "heading_h34d1ng": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "<h2>Escape Games in ganz Deutschland<strong>.<\/strong><\/h2>",
+                        "heading_custom": false,
+                        "heading_font": "josefin_sans_n4",
+                        "heading_size": 56,
+                        "heading_size_mobile": 36,
+                        "heading_height": 130,
+                        "heading_color": "#ffffff"
+                    }
+                },
                 "card_khar3B": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/1.png",
+                        "image": "shopify:\/\/shop_images\/DARMSTADT.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-darmstadt",
+                        "title": "Darmstadt",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#a1d9ee"
                     }
@@ -601,6 +629,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/5.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-duesseldorf",
+                        "title": "Düsseldorf",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#ffffff"
                     }
@@ -610,6 +639,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/4.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-frankfurt",
+                        "title": "Frankfurt",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#a1d9ee"
                     }
@@ -619,6 +649,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/8.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-freiburg",
+                        "title": "Freiburg",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#1f1f21"
                     }
@@ -628,6 +659,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/6.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-hamburg",
+                        "title": "Hamburg",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#a1d9ee"
                     }
@@ -637,6 +669,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/9.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-heidelberg",
+                        "title": "Heidelberg",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#969696"
                     }
@@ -646,6 +679,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/7.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-heilbronn?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxIL5FqUmNOnTPNNugzZavB7TzwWdZDc6N9OgOWTez3H-rh2OlY_-RwaAkPiEALw_wcB",
+                        "title": "Heilbronn",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#969696"
                     }
@@ -655,6 +689,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/3.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-karlsruhe",
+                        "title": "Karlsruhe",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#6067ae"
                     }
@@ -664,6 +699,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/11.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-koeln",
+                        "title": "Köln",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#f9f544"
                     }
@@ -673,6 +709,7 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/2.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-mainz",
+                        "title": "Mainz",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#f9f544"
                     }
@@ -682,41 +719,44 @@
                     "settings": {
                         "image": "shopify:\/\/shop_images\/10.png",
                         "url": "shopify:\/\/pages\/escape-game-munchen",
+                        "title": "München",
                         "card_bg_color": "#1f1f21",
                         "card_border_color": "#ffffff"
                     }
                 },
-                "button_6gxygp": {
-                    "type": "button",
-                    "settings": {
-                        "button": "Mehr Details zu den Städten",
-                        "button_url": "shopify:\/\/pages\/stadte",
-                        "button_custom": false,
-                        "button_font": "josefin_sans_n4",
-                        "button_size": 13,
-                        "button_size_mobile": 12,
-                        "button_height": 100,
-                        "button_padding_horizontal": 24,
-                        "button_padding_horizontal_mobile": 16,
-                        "button_padding_vertical": 18,
-                        "button_padding_vertical_mobile": 12,
-                        "button_radius": 100,
-                        "button_border_thickness": 0,
-                        "button_mt": 32,
-                        "button_mt_mobile": 32,
-                        "button_style": "non_outline_arrow",
-                        "button_align": "center",
-                        "button_align_mobile": "center",
-                        "button_color": "#2c2b2b",
-                        "button_hover_color": "#f9f544",
-                        "button_bg_color": "#f9f544",
-                        "button_bg_hover_color": "#1f1f21",
-                        "button_border_color": "#000000",
-                        "button_border_hover_color": "#000000"
-                    }
-                }
+                // "button_6gxygp": {
+                //     "type": "button",
+                //     "settings": {
+                //         "button": "Mehr Details zu den Städten",
+                //         "button_url": "shopify:\/\/pages\/stadte",
+                //         "button_custom": false,
+                //         "button_font": "josefin_sans_n4",
+                //         "button_size": 13,
+                //         "button_size_mobile": 12,
+                //         "button_height": 100,
+                //         "button_padding_horizontal": 24,
+                //         "button_padding_horizontal_mobile": 16,
+                //         "button_padding_vertical": 18,
+                //         "button_padding_vertical_mobile": 12,
+                //         "button_radius": 100,
+                //         "button_border_thickness": 0,
+                //         "button_mt": 32,
+                //         "button_mt_mobile": 32,
+                //         "button_style": "non_outline_arrow",
+                //         "button_align": "center",
+                //         "button_align_mobile": "center",
+                //         "button_color": "#2c2b2b",
+                //         "button_hover_color": "#f9f544",
+                //         "button_bg_color": "#f9f544",
+                //         "button_bg_hover_color": "#1f1f21",
+                //         "button_border_color": "#000000",
+                //         "button_border_hover_color": "#000000"
+                //     }
+                // }
             },
             "block_order": [
+                "text_c4pt10n",
+                "heading_h34d1ng",
                 "card_khar3B",
                 "card_AcyY4B",
                 "card_tXemrb",
@@ -733,24 +773,27 @@
             "name": "SS - Logo cloud #2",
             "settings": {
                 "content_align": "left",
-                "content_align_mobile": "center",
-                "cards_gap": 0,
-                "cards_gap_mobile": 0,
-                "cards_mt": 48,
-                "cards_mt_mobile": 40,
-                "card_padding_horizontal": 32,
-                "card_padding_horizontal_mobile": 24,
-                "card_padding_vertical": 32,
-                "card_padding_vertical_mobile": 18,
+                "content_align_mobile": "left",
+                "cards_gap": 20,
+                "cards_gap_mobile": 12,
+                "cards_mt": 0,
+                "cards_mt_mobile": 0,
+                "card_padding_horizontal": 0,
+                "card_padding_horizontal_mobile": 0,
+                "card_padding_vertical": 0,
+                "card_padding_vertical_mobile": 0,
                 "card_width": 300,
                 "card_width_mobile": 160,
-                "card_radius": 8,
+                "card_radius": 4,
                 "card_border_thickness": 0,
                 "card_overlay": 0.5,
-                "image_radius": 18,
+                "label_font": "red_hat_display_n8",
+                "label_size": 16,
+                "label_size_mobile": 12,
+                "image_radius": 4,
                 "image_border_thickness": 0,
-                "image_ratio": "square",
-                "image_ratio_mobile": "original",
+                "image_ratio": "landscape",
+                "image_ratio_mobile": "landscape",
                 "card_overlay_color": "#000000",
                 "background_color": "#1f1f21",
                 "background_gradient": "",
@@ -761,10 +804,10 @@
                 "margin_horizontal_mobile": 0,
                 "padding_top": 36,
                 "padding_bottom": 36,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
+                "padding_horizontal": 0,
+                "padding_horizontal_mobile": 0,
                 "full_width": false,
-                "content_width": 1200,
+                "content_width": 1600,
                 "border_thickness": 0,
                 "section_radius": 0,
                 "lazy": true

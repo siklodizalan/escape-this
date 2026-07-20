@@ -52,9 +52,15 @@ For inquiries or permissions, contact daniel@section.store
   assign image_border_color = section.settings.image_border_color
   assign image_ratio = section.settings.image_ratio
   assign image_ratio_mobile = section.settings.image_ratio_mobile
+
+  assign label_font = section.settings.label_font
+  assign label_size = section.settings.label_size
+  assign label_size_mobile = section.settings.label_size_mobile
 -%}
 
-{%- style -%}  
+{%- style -%}
+  {{ label_font | font_face: font_display: 'swap' }}
+
   .section-{{ section.id }} {
     border-top: solid {{ border_color }} {{ border_thickness }}px;
     border-bottom: solid {{ border_color }} {{ border_thickness }}px;
@@ -75,24 +81,26 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .cloud-cards-{{ section.id }} {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: {{ cards_gap_mobile }}px;
     margin-top: {{ cards_mt_mobile }}px;
   }
 
+  .cloud-cards-heading-{{ section.id }}:empty {
+    display: none;
+  }
+
   .cloud-card-{{ section.id }} {
     position: relative;
-    flex-shrink: 0;
-    width: {{ card_width_mobile }}px;
+    display: block;
     border-radius: {{ card_radius }}px;
     padding: {{ card_padding_vertical_mobile }}px {{ card_padding_horizontal_mobile }}px;
     overflow: hidden;
   }
 
   .cloud-card-image-{{ section.id }} {
+    position: relative;
     border-radius: {{ image_radius }}px;
     border: {{ image_border_thickness }}px solid {{ image_border_color }};
     overflow: hidden;
@@ -105,7 +113,32 @@ For inquiries or permissions, contact daniel@section.store
     height: 100%;
     object-fit: cover;
   }
-  
+
+  .cloud-card-overlay-{{ section.id }} {
+    position: absolute;
+    inset: 0;
+    background-color: {{ card_overlay_color | hex_to_rgba: card_overlay }};
+    pointer-events: none;
+  }
+
+  .cloud-card-label-{{ section.id }} {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    z-index: 2;
+    background-color: #191919;
+    padding: 8px 14px;
+    border-radius: {{ image_radius }}px;
+    font-family: {{ label_font.family }}, {{ label_font.fallback_families }};
+    font-weight: {{ label_font.weight }};
+    font-style: {{ label_font.style }};
+    font-size: {{ label_size_mobile }}px;
+    line-height: 130%;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
   @media(min-width: 1024px) {
 
     .section-{{ section.id }} {
@@ -115,7 +148,7 @@ For inquiries or permissions, contact daniel@section.store
       margin-right: {{ margin_horizontal }}rem;
       border-radius: {{ section_radius }}px;
     }
-    
+
     .section-{{ section.id }}-settings {
       padding: 0 5rem;
       padding-top: {{ padding_top }}px;
@@ -125,34 +158,23 @@ For inquiries or permissions, contact daniel@section.store
     }
 
     .cloud-cards-{{ section.id }} {
+      grid-template-columns: repeat(3, 1fr);
       gap: {{ cards_gap }}px;
       margin-top: {{ cards_mt }}px;
     }
 
     .cloud-card-{{ section.id }} {
-      width: {{ card_width }}px;
       padding: {{ card_padding_vertical }}px {{ card_padding_horizontal }}px;
     }
 
-    .cloud-card-{{ section.id }}::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      background-color: {{ card_overlay_color | hex_to_rgba: card_overlay }};
-      opacity: 0;
-      transition: all 0.25s ease 0s;
-    }
-
-    .cloud-card-{{ section.id }}:hover::after {
-      transition: all 0.25s ease 0s;
-      opacity: 1;
+    .cloud-card-label-{{ section.id }} {
+      left: 20px;
+      bottom: 20px;
+      padding: 10px 16px;
+      font-size: {{ label_size }}px;
     }
   }
-  
+
 {%- endstyle -%}
 
 {% unless full_width %}
@@ -199,7 +221,7 @@ For inquiries or permissions, contact daniel@section.store
 {% elsif image_ratio_mobile == "landscape" %}
   <style>
   .cloud-card-image-{{ section.id }} {
-    aspect-ratio: 12/8;
+    aspect-ratio: 493/250;
   }
   </style>
 {% elsif image_ratio_mobile == "square" %}
@@ -229,9 +251,9 @@ For inquiries or permissions, contact daniel@section.store
   <style>
     @media(min-width: 1024px) {
       .cloud-card-image-{{ section.id }} {
-        aspect-ratio: 12/8;
+        aspect-ratio: 493/250;
       }
-    }  
+    }
   </style>
 {% elsif image_ratio == "square" %}
   <style>
@@ -479,29 +501,35 @@ For inquiries or permissions, contact daniel@section.store
 <div class="section-{{ section.id }} cloud-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
     <div class="section-{{ section.id }}-settings">
       <div class="cloud-body-{{ section.id }}">
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when 'heading' %}
-              {% if block.settings.heading != blank %}
-                <div class="cloud-heading-{{ block.id }}">{{ block.settings.heading }}</div>
-              {% endif %}
-            {% when 'text' %}  
-              {% if block.settings.text != blank %}
-                <div class="cloud-text-{{ block.id }}">{{ block.settings.text }}</div>
-              {% endif %}  
-          {% endcase %}
-        {% endfor %}
         <div class="cloud-cards-{{ section.id }}">
+          <div class="cloud-cards-heading-{{ section.id }}">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'heading' %}
+                  {% if block.settings.heading != blank %}
+                    <div class="cloud-heading-{{ block.id }}">{{ block.settings.heading }}</div>
+                  {% endif %}
+                {% when 'text' %}
+                  {% if block.settings.text != blank %}
+                    <div class="cloud-text-{{ block.id }}">{{ block.settings.text }}</div>
+                  {% endif %}
+              {% endcase %}
+            {% endfor %}
+          </div>
           {% for block in section.blocks %}
             {% if block.type == 'card' %}
               <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %} class="cloud-card-{{ section.id }} cloud-card-{{ block.id }}">
                 <div class="cloud-card-image-{{ section.id }}">
                   {%- if block.settings.image != blank -%}
-                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>    
-                  {% else %}  
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | default: block.settings.title }}" {% if lazy %}loading="lazy"{% endif %}>
+                  {% else %}
                     {{ 'image' | placeholder_svg_tag }}
                   {%- endif -%}
-                </div>         
+                  <div class="cloud-card-overlay-{{ section.id }}"></div>
+                  {% if block.settings.title != blank %}
+                    <div class="cloud-card-label-{{ section.id }}">{{ block.settings.title }}</div>
+                  {% endif %}
+                </div>
               </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
             {% endif %}
           {% endfor %}
@@ -684,9 +712,9 @@ For inquiries or permissions, contact daniel@section.store
         "min": 0,
         "max": 1,
         "step": 0.1,
-        "label": "Hover overlay",
+        "label": "Image overlay",
         "default": 0.5
-      },       
+      },
       {
         "type": "header",
         "content": "Image settings"
@@ -761,11 +789,41 @@ For inquiries or permissions, contact daniel@section.store
       }, 
       {
         "type": "header",
+        "content": "Label settings"
+      },
+      {
+        "type": "font_picker",
+        "id": "label_font",
+        "label": "Label font",
+        "default": "red_hat_display_n8"
+      },
+      {
+        "type": "range",
+        "id": "label_size",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Label font size",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "label_size_mobile",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Label font size - mobile",
+        "default": 12
+      },
+      {
+        "type": "header",
         "content": "Card colors"
-      },  
+      },
       {
         "type": "color",
-        "label": "Hover overlay",
+        "label": "Image overlay",
         "id": "card_overlay_color",
         "default": "#000000"
       },
@@ -1083,6 +1141,12 @@ For inquiries or permissions, contact daniel@section.store
             "type": "url",
             "id": "url",
             "label": "URL"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "info": "Shown as a pill over the image. Leave blank to hide."
           },
           {
             "type": "color",
