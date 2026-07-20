@@ -1,0 +1,36 @@
+{% comment %}
+  Renders the HTML for a hero-pro 'review' block: star rating + review text.
+  The 5 stars are threshold-driven (star N lights up at rating >= N, with a
+  half-star gradient at N - 0.5) instead of 5 hand-written copies.
+
+  Accepts:
+  - block: {Object} the review block
+  - lazy: {Boolean} section.settings.lazy
+
+  Usage:
+  {% render 'hero-pro-block-review', block: block, lazy: lazy %}
+{% endcomment %}
+<div class="hero-review-{{ block.id }}">
+  {% if block.settings.stars_count != 0 %}
+    <div class="hero-stars-{{ block.id }}">
+      {% if block.settings.stars_icon != blank %}
+        {% assign stars_count_round = block.settings.stars_count | round: 0 %}
+        {% for item in (1..stars_count_round) %}
+          <img src="{{ block.settings.stars_icon | image_url }}" alt="{{ block.settings.stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+        {% endfor %}
+      {% else %}
+        {% for star in (1..5) %}
+          {% assign half_threshold = star | minus: 0.5 %}
+          <svg width="32" height="32" viewBox="5 5 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {% if block.settings.stars_count == half_threshold %}<defs><linearGradient id="grad{{ block.id }}{{ star }}"><stop offset="0%" stop-color="{{ block.settings.stars_bg_color }}" /><stop offset="50%" stop-color="{{ block.settings.stars_bg_color }}" /><stop offset="50%" stop-color="{{ block.settings.stars_bg_half_color }}" /><stop offset="100%" stop-color="{{ block.settings.stars_bg_half_color }}" /></linearGradient></defs>{% endif %}
+            <rect width="32" height="32" fill="{% if block.settings.stars_count == half_threshold %}url(#grad{{ block.id }}{{ star }}){% elsif block.settings.stars_count >= star %}{{ block.settings.stars_bg_color }}{% else %}{{ block.settings.stars_bg_half_color }}{% endif %}"/>
+            <g clip-path="url(#clip0_25_4)"><path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ block.settings.stars_color }}"/></g><defs><clipPath id="clip0_25_4"><rect width="22" height="22" fill="{{ block.settings.stars_color }}" transform="translate(5 5)"/></clipPath></defs>
+          </svg>
+        {% endfor %}
+      {% endif %}
+    </div>
+  {% endif %}
+  {% if block.settings.review != blank %}
+    <div class="hero-review-text-{{ block.id }}">{{ block.settings.review }}</div>
+  {% endif %}
+</div>

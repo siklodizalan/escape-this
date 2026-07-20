@@ -1,0 +1,14 @@
+{% comment %}
+  Renders the HTML for a hero-pro 'text' block.
+
+  Accepts:
+  - block: {Object} the text block
+
+  Usage:
+  {% render 'hero-pro-block-text', block: block %}
+{% endcomment %}
+{% if block.settings.text != blank %}
+  <div class="hero-text-{{ block.id }}">
+    {{ block.settings.text }}
+  </div>
+{% endif %}

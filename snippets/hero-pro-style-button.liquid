@@ -1,0 +1,167 @@
+{% comment %}
+  Renders the scoped CSS for a hero-pro 'button' block.
+
+  Accepts:
+  - block: {Object} the button block
+
+  Usage:
+  {% render 'hero-pro-style-button', block: block %}
+{% endcomment %}
+<style>
+  {{  block.settings.button_font | font_face: font_display: 'swap' }}
+
+  .hero-button-{{ block.id }} {
+    position: relative;
+    text-decoration: none;
+    margin-top: {{ block.settings.button_mt_mobile }}px !important;
+    {% if block.settings.button_full_width_mobile %}
+      width: 100%;
+    {% else %}
+      width: fit-content;
+    {% endif %}
+  }
+
+  .hero-button-inner-{{ block.id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    {% if block.settings.button_full_width_mobile %}
+      max-width: 100%;
+    {% else %}
+      max-width: fit-content;
+    {% endif %}
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    font-size: {{ block.settings.button_size_mobile }}px;
+    color: {{ block.settings.button_color }};
+    line-height: {{ block.settings.button_height }}%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: {{ block.settings.button_padding_vertical_mobile }}px {{ block.settings.button_padding_horizontal_mobile }}px;
+    border-radius: {{ block.settings.button_radius }}px;
+    transition: all 0.25s ease 0s;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    {% if block.settings.button_custom_styling and block.settings.button_style != "link" %}
+      position: relative;
+      overflow: hidden;
+    {% endif %}
+  }
+
+  {% if block.settings.button_custom_styling and block.settings.button_style != "link" %}
+    .hero-button-inner-{{ block.id }} {
+      background: linear-gradient(145deg, {{ block.settings.button_bg_color }}, {{ block.settings.button_bg_color | color_darken: 7.5 }});
+      box-shadow: 0 8px 16px {{ block.settings.button_shadow_color }}4d, 0 4px 8px {{ block.settings.button_shadow_color }}33, inset 0 1px 0 #ffffff1a, inset 0 -1px 0 {{ block.settings.button_shadow_color }}4d;
+      backdrop-filter: saturate(1.05);
+      transition: all 0.25s ease 0s;
+    }
+
+    .hero-button-inner-{{ block.id }}::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .hero-button-inner-{{ block.id }}:hover::before {
+      left: 100%;
+    }
+
+    .hero-button-inner-{{ block.id }}:hover {
+      color: {{ block.settings.button_hover_color }};
+      background: linear-gradient(145deg, {{ block.settings.button_bg_hover_color }}, {{ block.settings.button_bg_hover_color | color_darken: 7.5 }});
+      transform: translateY(-2px);
+      transition: all 0.25s ease 0s;
+      box-shadow: 0 12px 24px {{ block.settings.button_shadow_color }}66, 0 6px 12px {{ block.settings.button_shadow_color }}4d, inset 0 1px 0 #ffffff26, inset 0 -1px 0 {{ block.settings.button_shadow_color }}66;
+    }
+
+    .hero-button-inner-{{ block.id }}:active {
+      transform: translateY(1px);
+      filter: brightness(1.00208);
+      box-shadow: 0 4px 8px {{ block.settings.button_shadow_color }}4d, 0 2px 4px {{ block.settings.button_shadow_color }}33, inset 0 1px 0 #ffffff0d, inset 0 -1px 0 {{ block.settings.button_shadow_color }}33;
+    }
+  {% else %}
+    .hero-button-inner-{{ block.id }}:hover {
+      color: {{ block.settings.button_hover_color }};
+      transition: all 0.25s ease 0s;
+    }
+  {% endif %}
+
+  .hero-button-inner-{{ block.id }} svg {
+    width: 14px !important;
+    height: 14px !important;
+    background: transparent;
+    min-height: auto !important;
+  }
+
+  .hero-button-inner-{{ block.id }} svg path {
+    fill: {{ block.settings.button_color }};
+    transition: all 0.25s ease 0s;
+  }
+
+  .hero-button-inner-{{ block.id }}:hover svg path {
+    fill: {{ block.settings.button_hover_color }};
+    transition: all 0.25s ease 0s;
+  }
+
+  @media(min-width: 1024px) {
+    .hero-button-{{ block.id }} {
+      margin-top: {{ block.settings.button_mt }}px !important;
+      width: fit-content;
+    }
+
+    .hero-button-inner-{{ block.id }} {
+      display: flex !important;
+      max-width: fit-content;
+      padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+      font-size: {{ block.settings.button_size }}px;
+    }
+  }
+</style>
+
+{% if block.settings.button_custom %}
+  <style>
+    .hero-button-inner-{{ block.id }} {
+      font-family: {{ block.settings.button_font.family }}, {{ block.settings.button_font.fallback_families }};
+      font-weight: {{ block.settings.button_font.weight }};
+      font-style: {{ block.settings.button_font.style }};
+    }
+  </style>
+{% endif %}
+
+{% if block.settings.button_style == "non_outline" or block.settings.button_style == "non_outline_arrow" %}
+  <style>
+    .hero-button-inner-{{ block.id }} {
+      background-color: {{ block.settings.button_bg_color }};
+    }
+
+    .hero-button-inner-{{ block.id }}:hover {
+      background-color: {{ block.settings.button_bg_hover_color }};
+    }
+  </style>
+{% elsif block.settings.button_style == "outline" or block.settings.button_style == "outline_arrow" %}
+  <style>
+    .hero-button-inner-{{ block.id }} {
+      background-color: {{ block.settings.button_bg_color }};
+      border: {{ block.settings.button_border_thickness }}px solid {{ block.settings.button_border_color }};
+    }
+
+    .hero-button-inner-{{ block.id }}:hover {
+      background-color: {{ block.settings.button_bg_hover_color }};
+      border: {{ block.settings.button_border_thickness }}px solid {{ block.settings.button_border_hover_color }};
+    }
+  </style>
+{% elsif block.settings.button_style == "link" %}
+  <style>
+    .hero-button-inner-{{ block.id }} {
+      padding: 0px !important;
+    }
+  </style>
+{% endif %}

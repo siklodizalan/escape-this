@@ -1,0 +1,78 @@
+{% comment %}
+  Renders the scoped CSS for a hero-pro 'caption' block.
+
+  Accepts:
+  - block: {Object} the caption block
+  - content_align: {String} section.settings.content_align
+  - content_align_mobile: {String} section.settings.content_align_mobile
+  - content_horizontal_align: {String} derived alignment (start/center/end) for desktop
+  - content_horizontal_align_mobile: {String} derived alignment (start/center/end) for mobile
+
+  Usage:
+  {% render 'hero-pro-style-caption',
+    block: block,
+    content_align: content_align,
+    content_align_mobile: content_align_mobile,
+    content_horizontal_align: content_horizontal_align,
+    content_horizontal_align_mobile: content_horizontal_align_mobile
+  %}
+{% endcomment %}
+<style>
+  {{ block.settings.caption_font | font_face: font_display: 'swap' }}
+
+  .hero-caption-{{ block.id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    {% if block.settings.background %}
+      border: {{ block.settings.caption_border_thickness }}px solid {{ block.settings.caption_border_color }};
+      border-radius: {{ block.settings.caption_radius }}px;
+      background-color: {{ block.settings.caption_bg_color |  hex_to_rgba: block.settings.caption_bg_opacity }};
+      padding: {{ block.settings.caption_padding_vertical_mobile }}px {{ block.settings.caption_padding_horizontal_mobile }}px;
+      {% if block.settings.enable_blur %}
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+      {% endif %}
+    {% endif %}
+    justify-content: {{ content_horizontal_align_mobile }};
+    margin-top: {{ block.settings.caption_mt_mobile }}px;
+    text-align: {{ content_align_mobile }};
+    z-index: 2;
+  }
+
+  .hero-caption-{{ block.id }} * {
+    margin: 0;
+    font-size: {{ block.settings.caption_size_mobile }}px;
+    color: {{ block.settings.caption_color }};
+    line-height: {{ block.settings.caption_height }}%;
+    text-transform: unset;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  @media(min-width: 1024px) {
+    .hero-caption-{{ block.id }} {
+      {% if block.settings.background %}
+        padding: {{ block.settings.caption_padding_vertical }}px {{ block.settings.caption_padding_horizontal }}px;
+      {% endif %}
+      justify-content: {{ content_horizontal_align }};
+      margin-top: {{ block.settings.caption_mt }}px;
+      text-align: {{ content_align }};
+    }
+
+    .hero-caption-{{ block.id }} * {
+      font-size: {{ block.settings.caption_size }}px;
+    }
+  }
+</style>
+
+{% if block.settings.caption_custom %}
+  <style>
+    .hero-caption-{{ block.id }} * {
+      font-family: {{ block.settings.caption_font.family }}, {{ block.settings.caption_font.fallback_families }};
+      font-weight: {{ block.settings.caption_font.weight }};
+      font-style: {{ block.settings.caption_font.style }};
+    }
+  </style>
+{% endif %}

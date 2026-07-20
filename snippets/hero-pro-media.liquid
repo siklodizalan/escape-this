@@ -1,0 +1,117 @@
+{% comment %}
+  Renders the hero-pro background media: video (YouTube/Vimeo/uploaded) or
+  desktop/mobile responsive images, falling back to a placeholder.
+
+  Accepts:
+  - layout_bg_type: {String} 'video' or 'image'
+  - bg_video: {Video} uploaded background video
+  - bg_video_url: {VideoUrl} external video URL (YouTube/Vimeo)
+  - bg_image: {Image} desktop background image
+  - bg_image_mobile: {Image} mobile background image
+  - hero_fixed_height: {Number} desktop image height
+  - hero_fixed_height_mobile: {Number} mobile image height
+  - loading_attribute: {String} 'lazy' or 'eager'
+  - lazy: {Boolean} section.settings.lazy
+
+  Usage:
+  {% render 'hero-pro-media',
+    layout_bg_type: layout_bg_type,
+    bg_video: bg_video,
+    bg_video_url: bg_video_url,
+    bg_image: bg_image,
+    bg_image_mobile: bg_image_mobile,
+    hero_fixed_height: hero_fixed_height,
+    hero_fixed_height_mobile: hero_fixed_height_mobile,
+    loading_attribute: loading_attribute,
+    lazy: lazy
+  %}
+{% endcomment %}
+{% if layout_bg_type == 'video' %}
+  {% assign video_id = bg_video.id | default: bg_video_url.id %}
+  {% assign loop = '&loop=1&playlist=' | append: video_id %}
+  {%- if bg_video == null and bg_video_url != null -%}
+    {%- if bg_video_url.type == 'youtube' -%}
+      <iframe
+        {% if lazy %}data-{% endif %}src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&mute=1&autoplay=1&controls=0&modestbranding=1&showinfo=0&rel=0{{ loop }}"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="lazy"
+      ></iframe>
+      {%- else -%}
+      <iframe
+        {% if lazy %}data-{% endif %}src="https://player.vimeo.com/video/{{ video_id }}?enablejsapi=1&mute=1&muted=1&autoplay=1&controls=0&modestbranding=1&showinfo=0&rel=0{{ loop }}"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="lazy"
+      ></iframe>
+    {% endif %}
+  {% else %}
+    {% assign placeholder_video = 'https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4' %}
+    <video {% if lazy %}data-{% endif %}src="{% if bg_video != blank %}{{ bg_video.sources[1].url }}{% else %}{{ placeholder_video }}{% endif %}" muted autoplay playsinline preload="none" loop class="lazy"></video>
+  {% endif %}
+{% elsif layout_bg_type == 'image' %}
+  {% if bg_image_mobile != blank %}
+    {% if bg_image != blank %}
+      {%- liquid
+        assign image_height = hero_fixed_height
+        if bg_image_mobile != blank
+          assign image_class = "hero-media-image-desktop"
+        endif
+        assign sizes = "100vw"
+      -%}
+      {{ bg_image | image_url: width: 3840 | image_tag:
+        loading: loading_attribute,
+        width: bg_image.width,
+        height: image_height,
+        sizes: sizes,
+        class: image_class,
+        widths: '2400, 3000, 3840',
+        alt: bg_image.alt | escape
+      }}
+    {% endif %}
+
+    {% if bg_image_mobile != blank %}
+      {%- liquid
+        assign image_height_mobile = hero_fixed_height_mobile
+        if bg_image_mobile != blank
+          assign image_class = "hero-media-image-mobile"
+        endif
+        if bg_image_mobile
+          assign sizes_mobile = "(min-width: 750px) 50vw, 100vw"
+        else
+          assign sizes_mobile = "100vw"
+        endif
+      -%}
+      {{ bg_image_mobile | image_url: width: 1500 | image_tag:
+        loading: loading_attribute,
+        width: bg_image_mobile.width,
+        height: image_height_mobile,
+        class: image_class,
+        sizes: sizes_mobile,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: bg_image_mobile.alt | escape
+      }}
+    {% endif %}
+  {% else %}
+    {% if bg_image != blank %}
+      {%- liquid
+        assign image_height = hero_fixed_height
+        if bg_image_mobile
+          assign sizes = "(min-width: 750px) 50vw, 100vw"
+        else
+          assign sizes = "100vw"
+        endif
+      -%}
+      {{ bg_image | image_url: width: 3840 | image_tag:
+        loading: loading_attribute,
+        width: bg_image.width,
+        height: image_height,
+        sizes: sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: bg_image.alt | escape
+      }}
+    {% else %}
+      {{ 'image' | placeholder_svg_tag }}
+    {% endif %}
+  {% endif %}
+{% endif %}

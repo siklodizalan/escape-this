@@ -1,0 +1,24 @@
+{% comment %}
+  Renders the HTML for a hero-pro 'heading' block. Opens the shared
+  heading-row wrapper when immediately followed by a social_icons block
+  (closed again in hero-pro-block-social-icons.liquid).
+
+  Accepts:
+  - block: {Object} the heading block
+  - blocks: {Array} section.blocks, used to peek at the next block
+  - forloop: {Object} the parent for-loop's forloop object
+  - section_id: {String} section.id
+
+  Usage:
+  {% render 'hero-pro-block-heading', block: block, blocks: section.blocks, forloop: forloop, section_id: section.id %}
+{% endcomment %}
+{% assign next_index = forloop.index0 | plus: 1 %}
+{% assign next_block = blocks[next_index] %}
+{% if next_block.type == 'social_icons' %}
+  <div class="hero-heading-row-{{ section_id }}">
+{% endif %}
+{% if block.settings.heading != blank %}
+  <div class="hero-heading-{{ block.id }}">
+    {{ block.settings.heading }}
+  </div>
+{% endif %}

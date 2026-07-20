@@ -1,0 +1,49 @@
+{% comment %}
+  Renders the scoped CSS for a hero-pro 'text' block.
+
+  Accepts:
+  - block: {Object} the text block
+  - content_align: {String} section.settings.content_align
+  - content_align_mobile: {String} section.settings.content_align_mobile
+
+  Usage:
+  {% render 'hero-pro-style-text', block: block, content_align: content_align, content_align_mobile: content_align_mobile %}
+{% endcomment %}
+<style>
+  {{  block.settings.text_font | font_face: font_display: 'swap' }}
+
+  .hero-text-{{ block.id }} {
+    position: relative;
+    text-align: {{ content_align_mobile }};
+    margin-top: {{ block.settings.text_mt_mobile }}px;
+  }
+
+  .hero-text-{{ block.id }} * {
+    margin: 0;
+    font-size: {{ block.settings.text_size_mobile }}px;
+    color: {{ block.settings.text_color }};
+    line-height: {{ block.settings.text_height }}%;
+    text-transform: unset;
+  }
+
+  @media(min-width: 1024px) {
+    .hero-text-{{ block.id }} {
+      text-align: {{ content_align }};
+      margin-top: {{ block.settings.text_mt }}px;
+    }
+
+    .hero-text-{{ block.id }} * {
+      font-size: {{ block.settings.text_size }}px;
+    }
+  }
+</style>
+
+{% if block.settings.text_custom %}
+  <style>
+    .hero-text-{{ block.id }} * {
+      font-family: {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
+      font-weight: {{ block.settings.text_font.weight }};
+      font-style: {{ block.settings.text_font.style }};
+    }
+  </style>
+{% endif %}

@@ -1,0 +1,102 @@
+{% comment %}
+  Renders the scoped CSS for a hero-pro 'verified' block (icon + text).
+
+  Accepts:
+  - block: {Object} the verified block
+  - section_id: {String} section.id, used for the shared .refresh-{{ section.id }} icon selector
+  - content_align: {String} section.settings.content_align
+  - content_align_mobile: {String} section.settings.content_align_mobile
+  - content_horizontal_align: {String} derived alignment (start/center/end) for desktop
+  - content_horizontal_align_mobile: {String} derived alignment (start/center/end) for mobile
+
+  Usage:
+  {% render 'hero-pro-style-verified',
+    block: block,
+    section_id: section.id,
+    content_align: content_align,
+    content_align_mobile: content_align_mobile,
+    content_horizontal_align: content_horizontal_align,
+    content_horizontal_align_mobile: content_horizontal_align_mobile
+  %}
+{% endcomment %}
+<style>
+  {{  block.settings.text_font | font_face: font_display: 'swap' }}
+  .hero-verified-{{ block.id }} {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: {{ content_horizontal_align_mobile }};
+  }
+
+  .hero-verified-icon-{{ block.id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.icon_size_mobile }}px;
+    height: {{ block.settings.icon_size_mobile }}px;
+  }
+
+  .hero-verified-icon-{{ block.id }} img,
+  .hero-verified-icon-{{ block.id }} svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-verified-{{ block.id }} {
+    position: relative;
+    text-align: {{ content_align_mobile }};
+    margin-top: {{ block.settings.text_mt_mobile }}px;
+  }
+
+  .hero-verified-{{ block.id }} * {
+    margin: 0;
+    font-size: {{ block.settings.text_size_mobile }}px;
+    color: {{ block.settings.text_color }};
+    line-height: {{ block.settings.text_height }}%;
+    text-transform: unset;
+  }
+
+  .hero-verified-icon-{{ block.id }} svg path {
+    fill: {{ block.settings.icon_color }};
+  }
+
+  .hero-verified-icon-{{ block.id }} svg circle {
+    fill: {{ block.settings.icon_color }};
+  }
+
+  .hero-verified-icon-{{ block.id }} .refresh-{{ section_id }} path,
+  .hero-verified-icon-{{ block.id }} .refresh-{{ section_id }} polyline {
+    fill: none;
+    stroke: {{ block.settings.icon_color }};
+  }
+
+  @media(min-width: 1024px) {
+    .hero-verified-{{ block.id }} {
+      justify-content: {{ content_horizontal_align }};
+    }
+
+    .hero-verified-icon-{{ block.id }} {
+      width: {{ block.settings.icon_size }}px;
+      height: {{ block.settings.icon_size }}px;
+    }
+
+    .hero-verified-{{ block.id }} {
+      text-align: {{ content_align }};
+      margin-top: {{ block.settings.text_mt }}px;
+    }
+
+    .hero-verified-{{ block.id }} * {
+      font-size: {{ block.settings.text_size }}px;
+    }
+  }
+</style>
+
+{% if block.settings.text_custom %}
+  <style>
+    .hero-verified-{{ block.id }} * {
+      font-family: {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
+      font-weight: {{ block.settings.text_font.weight }};
+      font-style: {{ block.settings.text_font.style }};
+    }
+  </style>
+{% endif %}

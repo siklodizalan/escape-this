@@ -1,0 +1,12 @@
+{% comment %}
+  Renders the HTML for a hero-pro 'caption' block.
+
+  Accepts:
+  - block: {Object} the caption block
+
+  Usage:
+  {% render 'hero-pro-block-caption', block: block %}
+{% endcomment %}
+{% if block.settings.caption != blank %}
+  <div class="hero-caption-{{ block.id }}">{{ block.settings.caption }}</div>
+{% endif %}

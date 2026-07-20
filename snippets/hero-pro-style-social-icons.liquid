@@ -1,0 +1,48 @@
+{% comment %}
+  Renders the scoped CSS for a hero-pro 'social_icons' block.
+
+  Accepts:
+  - block: {Object} the social_icons block
+
+  Usage:
+  {% render 'hero-pro-style-social-icons', block: block %}
+{% endcomment %}
+<style>
+  .hero-social-icons-{{ block.id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.icon_gap }}px;
+    flex-shrink: 0;
+  }
+
+  .hero-social-icon-{{ block.id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: {{ block.settings.icon_size_mobile | plus: 16 }}px;
+    height: {{ block.settings.icon_size_mobile | plus: 16 }}px;
+    border-radius: 8px;
+    background-color: {{ block.settings.icon_bg_color }};
+    transition: all 0.25s ease 0s;
+  }
+
+  .hero-social-icon-{{ block.id }} svg {
+    width: {{ block.settings.icon_size_mobile }}px;
+  }
+
+  .hero-social-icon-{{ block.id }} svg path {
+    fill: {{ block.settings.icon_color }};
+    transition: all 0.25s ease 0s;
+  }
+
+  @media(min-width: 1024px) {
+    .hero-social-icon-{{ block.id }} {
+      width: {{ block.settings.icon_size | plus: 16 }}px;
+      height: {{ block.settings.icon_size | plus: 16 }}px;
+    }
+
+    .hero-social-icon-{{ block.id }} svg {
+      width: {{ block.settings.icon_size }}px;
+    }
+  }
+</style>

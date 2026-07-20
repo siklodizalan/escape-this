@@ -1,0 +1,30 @@
+{% comment %}
+  Renders the HTML for a single hero-pro 'feature' block item (icon + text).
+  Note: the `.hero-features-{{ section.id }}` wrapper open/close logic stays
+  in the section file's block loop, since it tracks a `feature_open` flag
+  across loop iterations and {% render %} scope is isolated per-call.
+
+  Accepts:
+  - block: {Object} the feature block
+  - section_id: {String} section.id
+  - content_width: {Number} section.settings.content_width
+  - loading_attribute: {String} 'lazy' or 'eager'
+
+  Usage:
+  {% render 'hero-pro-block-feature', block: block, section_id: section.id, content_width: content_width, loading_attribute: loading_attribute %}
+{% endcomment %}
+<div class="hero-feature-{{ block.id }} hero-feature-{{ section_id }}">
+  {% if block.settings.custom_icon != blank or block.settings.icon != "none" %}
+    <div class="hero-feature-icon-{{ section_id }}">
+      {% render 'hero-pro-icon',
+        custom_icon: block.settings.custom_icon,
+        icon: block.settings.icon,
+        content_width: content_width,
+        loading_attribute: loading_attribute
+      %}
+    </div>
+  {% endif %}
+  {% if block.settings.text != blank %}
+    <p class="hero-feature-text-{{ section_id }}">{{ block.settings.text }}</p>
+  {% endif %}
+</div>

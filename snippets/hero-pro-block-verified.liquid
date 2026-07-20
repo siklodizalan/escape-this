@@ -1,0 +1,26 @@
+{% comment %}
+  Renders the HTML for a hero-pro 'verified' block: icon + text.
+
+  Accepts:
+  - block: {Object} the verified block
+  - content_width: {Number} section.settings.content_width
+  - loading_attribute: {String} 'lazy' or 'eager'
+
+  Usage:
+  {% render 'hero-pro-block-verified', block: block, content_width: content_width, loading_attribute: loading_attribute %}
+{% endcomment %}
+<div class="hero-verified-{{ block.id }}">
+  {% if block.settings.custom_icon != blank or block.settings.icon != "none" %}
+    <div class="hero-verified-icon-{{ block.id }}">
+      {% render 'hero-pro-icon',
+        custom_icon: block.settings.custom_icon,
+        icon: block.settings.icon,
+        content_width: content_width,
+        loading_attribute: loading_attribute
+      %}
+    </div>
+  {% endif %}
+  {% if block.settings.text != blank %}
+    <div class="hero-verified-text-{{ block.id }}">{{ block.settings.text }}</div>
+  {% endif %}
+</div>

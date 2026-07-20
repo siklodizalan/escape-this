@@ -1,0 +1,63 @@
+{% comment %}
+  Renders the scoped CSS for a hero-pro 'heading' block.
+
+  Accepts:
+  - block: {Object} the heading block
+  - content_align: {String} section.settings.content_align
+  - content_align_mobile: {String} section.settings.content_align_mobile
+
+  Usage:
+  {% render 'hero-pro-style-heading', block: block, content_align: content_align, content_align_mobile: content_align_mobile %}
+{% endcomment %}
+<style>
+  .hero-heading-{{ block.id }} {
+    position: relative;
+    text-align: {{ content_align_mobile }};
+    margin-top: {{ block.settings.heading_mt_mobile }}px;
+  }
+
+  .hero-heading-{{ block.id }} * {
+    margin: 0;
+    font-size: {{ block.settings.heading_size_mobile }}px;
+    color: {{ block.settings.heading_color }};
+    line-height: {{ block.settings.heading_height }}%;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700;
+  }
+
+  .hero-heading-{{ block.id }} strong {
+    color: {{ block.settings.heading_accent_color }};
+  }
+
+  @media(min-width: 1024px) {
+
+    .hero-heading-{{ block.id }} {
+      text-align: {{ content_align }};
+      margin-top: {{ block.settings.heading_mt }}px;
+    }
+
+    .hero-heading-{{ block.id }} * {
+      font-size: {{ block.settings.heading_size }}px;
+    }
+  }
+</style>
+
+{% if block.settings.heading_custom %}
+  <style>
+    {{  block.settings.heading_font | font_face: font_display: 'swap' }}
+    {{  block.settings.heading_accent_font | font_face: font_display: 'swap' }}
+
+    .hero-heading-{{ block.id }} * {
+      font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+      font-weight: {{ block.settings.heading_font.weight }};
+      font-style: {{ block.settings.heading_font.style }};
+    }
+
+    .hero-heading-{{ block.id }} strong {
+      font-family: {{ block.settings.heading_accent_font.family }}, {{ block.settings.heading_accent_font.fallback_families }};
+      font-weight: {{ block.settings.heading_accent_font.weight }};
+      font-style: {{ block.settings.heading_accent_font.style }};
+    }
+  </style>
+{% endif %}
