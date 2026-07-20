@@ -1,6 +1,6 @@
 {
     "sections": {
-        "ss_hero_pro_QtaEnK": {
+        "ss_hero_pro_main": {
             "type": "ss-hero-pro",
             "blocks": {
                 "caption_8YTpEc": {
@@ -251,7 +251,7 @@
                 "lazy": false
             }
         },
-        "ss_hero_pro_hwJ3di": {
+        "ss_hero_pro_how_it_works": {
             "type": "ss-hero-pro",
             "blocks": {
                 "caption_bdGbR6": {
@@ -361,7 +361,7 @@
                 "lazy": false
             }
         },
-        "multicolumn_DiXPYx": {
+        "multicolumn_how_it_works_steps": {
             "type": "multicolumn",
             "blocks": {
                 "column_QE9KHq": {
@@ -418,7 +418,7 @@
                 "padding_bottom": 36
             }
         },
-        "ss_hero_pro_PexJc4": {
+        "ss_hero_pro_choose_city": {
             "type": "ss-hero-pro",
             "blocks": {
                 "caption_AmkkNC": {
@@ -529,7 +529,7 @@
                 "lazy": false
             }
         },
-        "ss_logo_cloud_2_ccTmUq": {
+        "ss_logo_cloud_cities": {
             "type": "ss-logo-cloud-2",
             "blocks": {
                 "text_c4pt10n": {
@@ -883,7 +883,7 @@
                 "lazy": false
             }
         },
-        "ss_video_grid_socials_6_DpTpaV": {
+        "ss_video_grid_socials": {
             "type": "ss-video-grid-socials-6",
             "blocks": {
                 "slide_gcAMY3": {
@@ -1145,7 +1145,7 @@
                 "padding_bottom": 52
             }
         },
-        "newsletter_nUFw98": {
+        "newsletter_alt": {
             "type": "newsletter",
             "blocks": {
                 "heading_xpnB74": {
@@ -1179,7 +1179,7 @@
                 "padding_bottom": 52
             }
         },
-        "ss_scrolling_images_5_98pCX6": {
+        "ss_scrolling_images_partners": {
             "type": "ss-scrolling-images-5",
             "blocks": {
                 "image_ef73UU": {
@@ -1306,7 +1306,7 @@
                 "lazy": false
             }
         },
-        "multirow_TiMPym": {
+        "multirow_charity": {
             "type": "multirow",
             "blocks": {
                 "row_bLwjeT": {
@@ -1340,7 +1340,7 @@
                 "padding_bottom": 36
             }
         },
-        "video_hpK6LC": {
+        "video_youtube_promo": {
             "type": "video",
             "disabled": true,
             "name": "t:sections.video.presets.name",
@@ -1356,7 +1356,7 @@
                 "padding_bottom": 36
             }
         },
-        "ss_hero_pro_FFEege": {
+        "ss_hero_pro_games_teaser": {
             "type": "ss-hero-pro",
             "blocks": {
                 "caption_zHptNV": {
@@ -1467,7 +1467,7 @@
                 "lazy": false
             }
         },
-        "ss_slider_7_MBHAqm": {
+        "ss_slider_games": {
             "type": "ss-slider-7",
             "blocks": {
                 "card_JhwmWr": {
@@ -1666,7 +1666,7 @@
                 "lazy": true
             }
         },
-        "multicolumn_HaWqhh": {
+        "multicolumn_cta_app": {
             "type": "multicolumn",
             "blocks": {
                 "column_GxCW7g": {
@@ -1714,7 +1714,7 @@
                 "padding_bottom": 36
             }
         },
-        "ss_hero_pro_XdGMVD": {
+        "ss_hero_pro_cta": {
             "type": "ss-hero-pro",
             "disabled": true,
             "blocks": {
@@ -1910,25 +1910,24 @@
         }
     },
     "order": [
-        "ss_hero_pro_QtaEnK",
-        "ss_hero_pro_hwJ3di",
-        "multicolumn_DiXPYx",
-        "ss_hero_pro_PexJc4",
-        "ss_logo_cloud_2_ccTmUq",
+        "ss_hero_pro_main",
+        "ss_hero_pro_how_it_works",
+        "multicolumn_how_it_works_steps",
+        "ss_hero_pro_choose_city",
+        "ss_logo_cloud_cities",
         "ss_hero_pro_socials",
-        "ss_video_grid_socials_6_DpTpaV",
-        
+        "ss_video_grid_socials",
         // "psb_stats_stats_01_RVy68Q",
         // "multicolumn_kbePmn",
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
-        "newsletter_nUFw98",
-        "ss_scrolling_images_5_98pCX6",
-        "multirow_TiMPym",
-        "video_hpK6LC",
-        "ss_hero_pro_FFEege",
-        "ss_slider_7_MBHAqm",
-        "multicolumn_HaWqhh",
-        "ss_hero_pro_XdGMVD",
+        "newsletter_alt",
+        "ss_scrolling_images_partners",
+        "multirow_charity",
+        "video_youtube_promo",
+        "ss_hero_pro_games_teaser",
+        "ss_slider_games",
+        "multicolumn_cta_app",
+        "ss_hero_pro_cta",
         "9695d220-eec3-430a-bd2d-bb753afaa25d",
     ]
 }
