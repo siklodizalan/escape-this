@@ -1306,40 +1306,6 @@
                 "lazy": false
             }
         },
-        "multirow_charity": {
-            "type": "multirow",
-            "blocks": {
-                "row_bLwjeT": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/HERO-Konzert-2026-scaled.jpg",
-                        "caption": "Spendenkategorie I",
-                        "heading": "Mensch für Mensch.",
-                        "text": "<p>AKTIVES Spendenprojekt:<\/p><p><strong>Herzenswünsche für Kinder: MainLichtblick e. V.<\/strong><br\/>\u2028MainLichtblick erfüllt schwer kranken, körperlich beeinträchtigten und traumatisierten Kindern und Jugendlichen persönliche Herzenswünsche – kleine Lichtblicke, die große Wirkung zeigen. Von Reittherapien über spezielle Therapiegeräte bis hin zu Tablets: Mit deiner Spende schenkst du ein Stück Lebensfreude und Hoffnung.<\/p>",
-                        "button_label": "Ticket kaufen & Gutes tun",
-                        "button_link": "shopify:\/\/collections"
-                    }
-                },
-            },
-            "block_order": [
-                "row_bLwjeT",
-            ],
-            "settings": {
-                "image_height": "medium",
-                "desktop_image_width": "medium",
-                "image_layout": "alternate-left",
-                "heading_size": "h1",
-                "text_style": "body",
-                "button_style": "primary",
-                "desktop_content_position": "middle",
-                "desktop_content_alignment": "left",
-                "mobile_content_alignment": "left",
-                "section_color_scheme": "",
-                "row_color_scheme": "",
-                "padding_top": 36,
-                "padding_bottom": 36
-            }
-        },
         "video_youtube_promo": {
             "type": "video",
             "disabled": true,
@@ -1922,7 +1888,6 @@
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
         "newsletter_alt",
         "ss_scrolling_images_partners",
-        "multirow_charity",
         "video_youtube_promo",
         "ss_hero_pro_games_teaser",
         "ss_slider_games",
