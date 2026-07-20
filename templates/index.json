@@ -251,227 +251,171 @@
                 "lazy": false
             }
         },
-        // "psb_stats_stats_01_RVy68Q": {
-        //     "type": "psb-stats-stats-01",
-        //     "blocks": {
-        //         "stats_TpHeqN": {
-        //             "type": "stats",
-        //             "settings": {
-        //                 "number": "11",
-        //                 "heading": "<p>Städte<\/p>",
-        //                 "prefix": "",
-        //                 "suffix": "+"
-        //             }
-        //         },
-        //         "stats_r6NgQr": {
-        //             "type": "stats",
-        //             "settings": {
-        //                 "number": "25000",
-        //                 "heading": "<p>Spieler<\/p>",
-        //                 "prefix": "",
-        //                 "suffix": "+"
-        //             }
-        //         },
-        //         "stats_h6JWyW": {
-        //             "type": "stats",
-        //             "settings": {
-        //                 "number": "100",
-        //                 "heading": "<p>Team Events<\/p>",
-        //                 "prefix": "",
-        //                 "suffix": "+"
-        //             }
-        //         },
-        //         "stats_yLcxJP": {
-        //             "type": "stats",
-        //             "settings": {
-        //                 "number": "365",
-        //                 "heading": "<p>Tage Spielspaß<\/p>",
-        //                 "prefix": "",
-        //                 "suffix": ""
-        //             }
-        //         }
-        //     },
-        //     "block_order": [
-        //         "stats_TpHeqN",
-        //         "stats_r6NgQr",
-        //         "stats_h6JWyW",
-        //         "stats_yLcxJP"
-        //     ],
-        //     "name": "⚡︎PSB: Stats 01",
-        //     "settings": {
-        //         "container_width": "psb-container",
-        //         "inherit_fonts": false,
-        //         "background_color": "#1f1f21",
-        //         "number_color": "#f9f544",
-        //         "heading_color": "#a1d9ee",
-        //         "number_font_size_desktop": 70,
-        //         "section_padding_top": 100,
-        //         "section_padding_bottom": 100,
-        //         "number_font_size_mobile": 50,
-        //         "section_padding_top_mobile": 60,
-        //         "section_padding_bottom_mobile": 50
-        //     }
-        // },
-        // "multicolumn_kbePmn": {
-        //     "type": "multicolumn",
-        //     "blocks": {
-        //         "column_PqcyhA": {
-        //             "type": "column",
-        //             "settings": {
-        //                 "image": "shopify:\/\/shop_images\/4_8_Sterne-Bewertung.svg",
-        //                 "title": "",
-        //                 "text": "<h2><strong>4,8 Sterne<\/strong><\/h2>",
-        //                 "link_label": "",
-        //                 "link": ""
-        //             }
-        //         }
-        //     },
-        //     "block_order": [
-        //         "column_PqcyhA"
-        //     ],
-        //     "name": "t:sections.multicolumn.presets.name",
-        //     "settings": {
-        //         "title": "",
-        //         "heading_size": "h2",
-        //         "image_width": "third",
-        //         "image_ratio": "adapt",
-        //         "button_label": "",
-        //         "button_link": "",
-        //         "columns_desktop": 1,
-        //         "column_alignment": "center",
-        //         "background_style": "none",
-        //         "color_scheme": "",
-        //         "columns_mobile": "1",
-        //         "swipe_on_mobile": false,
-        //         "padding_top": 24,
-        //         "padding_bottom": 0
-        //     }
-        // },
-        "ss_scrolling_images_5_98pCX6": {
-            "type": "ss-scrolling-images-5",
+        "ss_hero_pro_hwJ3di": {
+            "type": "ss-hero-pro",
             "blocks": {
-                "image_ef73UU": {
-                    "type": "image",
+                "caption_bdGbR6": {
+                    "type": "caption",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/Website-Assets-3.png"
+                        "caption": "<h3>SO EINFACH GEHT'S<\/h3>",
+                        "caption_custom": false,
+                        "caption_font": "josefin_sans_n4",
+                        "caption_size": 12,
+                        "caption_size_mobile": 12,
+                        "caption_advanced": false,
+                        "caption_height": 130,
+                        "caption_mt": 0,
+                        "caption_mt_mobile": 0,
+                        "background": false,
+                        "caption_bg_opacity": 0.3,
+                        "enable_blur": true,
+                        "caption_radius": 100,
+                        "caption_border_thickness": 1,
+                        "caption_padding_horizontal": 12,
+                        "caption_padding_horizontal_mobile": 12,
+                        "caption_padding_vertical": 6,
+                        "caption_padding_vertical_mobile": 6,
+                        "caption_color": "#f9f544",
+                        "caption_bg_color": "#ffffff",
+                        "caption_border_color": "#ffffff"
                     }
                 },
-                "image_NJRixr": {
-                    "type": "image",
+                "heading_LiHbh9": {
+                    "type": "heading",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/newcomers-festival.png"
-                    }
-                },
-                "image_bVTfxk": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/kompass-trust.png"
-                    }
-                },
-                "image_xe4tja": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/campusdirekt.png"
-                    }
-                },
-                "image_YgbXRq": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/beerpongbar-hamburg.png"
-                    }
-                },
-                "image_m8Bidw": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/hanse-mondial.png"
-                    }
-                },
-                "image_LfYYHg": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/mr-koeln.png"
-                    }
-                },
-                "image_bMXADV": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/bmy-partner.png"
-                    }
-                },
-                "image_WayWcT": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/konfetti-partner.png"
-                    }
-                },
-                "image_KJaRmi": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/jochen-schweizer-trustbadge.png"
-                    }
-                },
-                "image_VaC67f": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/mydays-partner.png"
-                    }
-                },
-                "image_gKhe79": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/tripadvisor-partner.png"
+                        "heading": "<h2>In 3 Schritten zum Abenteuer<strong>.<\/strong><\/h2>",
+                        "heading_custom": false,
+                        "heading_font": "josefin_sans_n4",
+                        "heading_accent_font": "playfair_n4",
+                        "heading_size": 56,
+                        "heading_size_mobile": 36,
+                        "heading_advanced": false,
+                        "heading_height": 130,
+                        "heading_mt": 8,
+                        "heading_mt_mobile": 8,
+                        "heading_color": "#ffffff",
+                        "heading_accent_color": "#f9f544"
                     }
                 }
             },
             "block_order": [
-                "image_ef73UU",
-                "image_NJRixr",
-                "image_bVTfxk",
-                "image_xe4tja",
-                "image_YgbXRq",
-                "image_m8Bidw",
-                "image_LfYYHg",
-                "image_bMXADV",
-                "image_WayWcT",
-                "image_KJaRmi",
-                "image_VaC67f",
-                "image_gKhe79"
+                "caption_bdGbR6",
+                "heading_LiHbh9"
             ],
-            "name": "SS - Scrolling images #5",
+            "name": "SS - Hero pro 💎",
             "settings": {
-                "scrolling_velocity": 92,
-                "scrolling_velocity_mobile": 86,
-                "scrolling_gap": 32,
-                "scrolling_gap_mobile": 24,
-                "position_abjustment": "none",
-                "reverse_direction": false,
-                "pause_hover": true,
-                "use_dragging": true,
-                "image_width": 150,
-                "image_width_mobile": 130,
-                "image_ratio": "square",
-                "image_ratio_mobile": "square",
-                "image_radius": 0,
-                "image_border_thickness": 0,
-                "image_border_color": "#000000",
-                "first_bg_color": "#1f1f21",
-                "second_bg_color": "",
+                "hero_height": "fixed_height",
+                "hero_fixed_height": 200,
+                "hero_fixed_height_mobile": 200,
+                "content_max_width": 50,
+                "enable_split_layout": false,
+                "content_align": "left",
+                "content_align_mobile": "left",
+                "content_vertical_align": "center",
+                "content_vertical_align_mobile": "end",
+                "features_advanced": false,
+                "features_mt": 20,
+                "features_mt_mobile": 20,
+                "features_gap": 24,
+                "features_gap_mobile": 12,
+                "feature_background": false,
+                "feature_bg_opacity": 0.3,
+                "feature_enable_blur": true,
+                "feature_radius": 100,
+                "feature_border_thickness": 1,
+                "feature_padding_horizontal": 12,
+                "feature_padding_horizontal_mobile": 12,
+                "feature_padding_vertical": 6,
+                "feature_padding_vertical_mobile": 6,
+                "feature_icon_size": 18,
+                "feature_icon_size_mobile": 16,
+                "feature_text_custom": false,
+                "feature_text_font": "josefin_sans_n4",
+                "feature_text_size": 16,
+                "feature_text_size_mobile": 14,
+                "feature_text_height": 150,
+                "feature_icon_color": "#ffffff",
+                "feature_text_color": "#ffffff",
+                "feature_bg_color": "#ffffff",
+                "feature_border_color": "#ffffff",
+                "layout_bg_type": "color",
+                "bg_video_url": "",
+                "bg_overlay": 0.2,
+                "bg_overlay_color": "#121212",
+                "background_style": "solid",
                 "background_color": "#1f1f21",
-                "background_gradient": "",
-                "border_color": "#000000",
+                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+                "border_color": "#1f1f21",
                 "margin_top": 0,
-                "margin_bottom": 0,
+                "margin_bottom": 16,
                 "margin_horizontal": 0,
                 "margin_horizontal_mobile": 0,
-                "padding_top": 36,
-                "padding_bottom": 36,
-                "padding_horizontal": 0,
-                "padding_horizontal_mobile": 0,
-                "full_width": true,
+                "padding_top": 32,
+                "padding_bottom": 16,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "width": "page",
                 "content_width": 1200,
                 "border_thickness": 0,
                 "section_radius": 0,
                 "lazy": false
+            }
+        },
+        "multicolumn_DiXPYx": {
+            "type": "multicolumn",
+            "blocks": {
+                "column_QE9KHq": {
+                    "type": "column",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/number-one.png",
+                        "title": "Stadt & Spiel wählen",
+                        "text": "<p>Wähle deine Stadt und dein Lieblingsspiel. Tickets sind flexibel — ein ganzes Jahr gültig, kein Zeitfenster nötig.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_WtbKKc": {
+                    "type": "column",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/number-2.png",
+                        "title": "App starten",
+                        "text": "<p>Lade die kostenlose Escape This!-App herunter. Scanne dein Ticket und tauche am Startpunkt in die Story ein.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_xty6q6": {
+                    "type": "column",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/number-3.png",
+                        "title": "Stadt erkunden",
+                        "text": "<p>Folge den Hinweisen, löse Rätsel an echten Orten und entdecke deine Stadt auf völlig neue Art.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": [
+                "column_QE9KHq",
+                "column_WtbKKc",
+                "column_xty6q6"
+            ],
+            "name": "t:sections.multicolumn.presets.name",
+            "settings": {
+                "title": "",
+                "heading_size": "h1",
+                "image_width": "third",
+                "image_ratio": "square",
+                "button_label": "",
+                "button_link": "",
+                "columns_desktop": 3,
+                "column_alignment": "center",
+                "background_style": "primary",
+                "color_scheme": "background-1",
+                "columns_mobile": "1",
+                "swipe_on_mobile": false,
+                "padding_top": 0,
+                "padding_bottom": 36
             }
         },
         "ss_hero_pro_PexJc4": {
@@ -1072,171 +1016,294 @@
                 "lazy": false
             }
         },
-        "ss_hero_pro_hwJ3di": {
-            "type": "ss-hero-pro",
+        // "psb_stats_stats_01_RVy68Q": {
+        //     "type": "psb-stats-stats-01",
+        //     "blocks": {
+        //         "stats_TpHeqN": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "11",
+        //                 "heading": "<p>Städte<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": "+"
+        //             }
+        //         },
+        //         "stats_r6NgQr": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "25000",
+        //                 "heading": "<p>Spieler<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": "+"
+        //             }
+        //         },
+        //         "stats_h6JWyW": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "100",
+        //                 "heading": "<p>Team Events<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": "+"
+        //             }
+        //         },
+        //         "stats_yLcxJP": {
+        //             "type": "stats",
+        //             "settings": {
+        //                 "number": "365",
+        //                 "heading": "<p>Tage Spielspaß<\/p>",
+        //                 "prefix": "",
+        //                 "suffix": ""
+        //             }
+        //         }
+        //     },
+        //     "block_order": [
+        //         "stats_TpHeqN",
+        //         "stats_r6NgQr",
+        //         "stats_h6JWyW",
+        //         "stats_yLcxJP"
+        //     ],
+        //     "name": "⚡︎PSB: Stats 01",
+        //     "settings": {
+        //         "container_width": "psb-container",
+        //         "inherit_fonts": false,
+        //         "background_color": "#1f1f21",
+        //         "number_color": "#f9f544",
+        //         "heading_color": "#a1d9ee",
+        //         "number_font_size_desktop": 70,
+        //         "section_padding_top": 100,
+        //         "section_padding_bottom": 100,
+        //         "number_font_size_mobile": 50,
+        //         "section_padding_top_mobile": 60,
+        //         "section_padding_bottom_mobile": 50
+        //     }
+        // },
+        // "multicolumn_kbePmn": {
+        //     "type": "multicolumn",
+        //     "blocks": {
+        //         "column_PqcyhA": {
+        //             "type": "column",
+        //             "settings": {
+        //                 "image": "shopify:\/\/shop_images\/4_8_Sterne-Bewertung.svg",
+        //                 "title": "",
+        //                 "text": "<h2><strong>4,8 Sterne<\/strong><\/h2>",
+        //                 "link_label": "",
+        //                 "link": ""
+        //             }
+        //         }
+        //     },
+        //     "block_order": [
+        //         "column_PqcyhA"
+        //     ],
+        //     "name": "t:sections.multicolumn.presets.name",
+        //     "settings": {
+        //         "title": "",
+        //         "heading_size": "h2",
+        //         "image_width": "third",
+        //         "image_ratio": "adapt",
+        //         "button_label": "",
+        //         "button_link": "",
+        //         "columns_desktop": 1,
+        //         "column_alignment": "center",
+        //         "background_style": "none",
+        //         "color_scheme": "",
+        //         "columns_mobile": "1",
+        //         "swipe_on_mobile": false,
+        //         "padding_top": 24,
+        //         "padding_bottom": 0
+        //     }
+        // },
+        "ss_scrolling_images_5_98pCX6": {
+            "type": "ss-scrolling-images-5",
             "blocks": {
-                "caption_bdGbR6": {
-                    "type": "caption",
+                "image_ef73UU": {
+                    "type": "image",
                     "settings": {
-                        "caption": "<h3>SO EINFACH GEHT'S<\/h3>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
-                        "caption_advanced": false,
-                        "caption_height": 130,
-                        "caption_mt": 0,
-                        "caption_mt_mobile": 0,
-                        "background": false,
-                        "caption_bg_opacity": 0.3,
-                        "enable_blur": true,
-                        "caption_radius": 100,
-                        "caption_border_thickness": 1,
-                        "caption_padding_horizontal": 12,
-                        "caption_padding_horizontal_mobile": 12,
-                        "caption_padding_vertical": 6,
-                        "caption_padding_vertical_mobile": 6,
-                        "caption_color": "#f9f544",
-                        "caption_bg_color": "#ffffff",
-                        "caption_border_color": "#ffffff"
+                        "image": "shopify:\/\/shop_images\/Website-Assets-3.png"
                     }
                 },
-                "heading_LiHbh9": {
-                    "type": "heading",
+                "image_NJRixr": {
+                    "type": "image",
                     "settings": {
-                        "heading": "<h2>In 3 Schritten zum Abenteuer<strong>.<\/strong><\/h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
-                        "heading_advanced": false,
-                        "heading_height": 130,
-                        "heading_mt": 8,
-                        "heading_mt_mobile": 8,
-                        "heading_color": "#ffffff",
-                        "heading_accent_color": "#f9f544"
+                        "image": "shopify:\/\/shop_images\/newcomers-festival.png"
+                    }
+                },
+                "image_bVTfxk": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/kompass-trust.png"
+                    }
+                },
+                "image_xe4tja": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/campusdirekt.png"
+                    }
+                },
+                "image_YgbXRq": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/beerpongbar-hamburg.png"
+                    }
+                },
+                "image_m8Bidw": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/hanse-mondial.png"
+                    }
+                },
+                "image_LfYYHg": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/mr-koeln.png"
+                    }
+                },
+                "image_bMXADV": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/bmy-partner.png"
+                    }
+                },
+                "image_WayWcT": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/konfetti-partner.png"
+                    }
+                },
+                "image_KJaRmi": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/jochen-schweizer-trustbadge.png"
+                    }
+                },
+                "image_VaC67f": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/mydays-partner.png"
+                    }
+                },
+                "image_gKhe79": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/tripadvisor-partner.png"
                     }
                 }
             },
             "block_order": [
-                "caption_bdGbR6",
-                "heading_LiHbh9"
+                "image_ef73UU",
+                "image_NJRixr",
+                "image_bVTfxk",
+                "image_xe4tja",
+                "image_YgbXRq",
+                "image_m8Bidw",
+                "image_LfYYHg",
+                "image_bMXADV",
+                "image_WayWcT",
+                "image_KJaRmi",
+                "image_VaC67f",
+                "image_gKhe79"
             ],
-            "name": "SS - Hero pro 💎",
+            "name": "SS - Scrolling images #5",
             "settings": {
-                "hero_height": "fixed_height",
-                "hero_fixed_height": 200,
-                "hero_fixed_height_mobile": 200,
-                "content_max_width": 50,
-                "enable_split_layout": false,
-                "content_align": "left",
-                "content_align_mobile": "left",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "end",
-                "features_advanced": false,
-                "features_mt": 20,
-                "features_mt_mobile": 20,
-                "features_gap": 24,
-                "features_gap_mobile": 12,
-                "feature_background": false,
-                "feature_bg_opacity": 0.3,
-                "feature_enable_blur": true,
-                "feature_radius": 100,
-                "feature_border_thickness": 1,
-                "feature_padding_horizontal": 12,
-                "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 6,
-                "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 18,
-                "feature_icon_size_mobile": 16,
-                "feature_text_custom": false,
-                "feature_text_font": "josefin_sans_n4",
-                "feature_text_size": 16,
-                "feature_text_size_mobile": 14,
-                "feature_text_height": 150,
-                "feature_icon_color": "#ffffff",
-                "feature_text_color": "#ffffff",
-                "feature_bg_color": "#ffffff",
-                "feature_border_color": "#ffffff",
-                "layout_bg_type": "color",
-                "bg_video_url": "",
-                "bg_overlay": 0.2,
-                "bg_overlay_color": "#121212",
-                "background_style": "solid",
+                "scrolling_velocity": 92,
+                "scrolling_velocity_mobile": 86,
+                "scrolling_gap": 32,
+                "scrolling_gap_mobile": 24,
+                "position_abjustment": "none",
+                "reverse_direction": false,
+                "pause_hover": true,
+                "use_dragging": true,
+                "image_width": 150,
+                "image_width_mobile": 130,
+                "image_ratio": "square",
+                "image_ratio_mobile": "square",
+                "image_radius": 0,
+                "image_border_thickness": 0,
+                "image_border_color": "#000000",
+                "first_bg_color": "#1f1f21",
+                "second_bg_color": "",
                 "background_color": "#1f1f21",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#1f1f21",
+                "background_gradient": "",
+                "border_color": "#000000",
                 "margin_top": 0,
-                "margin_bottom": 16,
+                "margin_bottom": 0,
                 "margin_horizontal": 0,
                 "margin_horizontal_mobile": 0,
-                "padding_top": 32,
-                "padding_bottom": 16,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "width": "page",
+                "padding_top": 36,
+                "padding_bottom": 36,
+                "padding_horizontal": 0,
+                "padding_horizontal_mobile": 0,
+                "full_width": true,
                 "content_width": 1200,
                 "border_thickness": 0,
                 "section_radius": 0,
                 "lazy": false
             }
         },
-        "multicolumn_DiXPYx": {
-            "type": "multicolumn",
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
+            "type": "newsletter",
             "blocks": {
-                "column_QE9KHq": {
-                    "type": "column",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
+                    "type": "heading",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-one.png",
-                        "title": "Stadt & Spiel wählen",
-                        "text": "<p>Wähle deine Stadt und dein Lieblingsspiel. Tickets sind flexibel — ein ganzes Jahr gültig, kein Zeitfenster nötig.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "heading": "10% Newsletter-Rabatt",
+                        "heading_size": "h1"
                     }
                 },
-                "column_WtbKKc": {
-                    "type": "column",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
+                    "type": "paragraph",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-2.png",
-                        "title": "App starten",
-                        "text": "<p>Lade die kostenlose Escape This!-App herunter. Scanne dein Ticket und tauche am Startpunkt in die Story ein.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam! Als neues Mitglied der Escape This! Community erhältst du nach Newsletter-Anmeldung einen 10% Rabattcode für deine erste Escape This! Bestellung.<\/p>"
                     }
                 },
-                "column_xty6q6": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/number-3.png",
-                        "title": "Stadt erkunden",
-                        "text": "<p>Folge den Hinweisen, löse Rätsel an echten Orten und entdecke deine Stadt auf völlig neue Art.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
+                    "type": "email_form",
+                    "settings": {}
                 }
             },
             "block_order": [
-                "column_QE9KHq",
-                "column_WtbKKc",
-                "column_xty6q6"
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
             ],
-            "name": "t:sections.multicolumn.presets.name",
             "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "square",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "background-1",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 0,
-                "padding_bottom": 36
+                "color_scheme": "accent-1",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        },
+        "newsletter_nUFw98": {
+            "type": "newsletter",
+            "blocks": {
+                "heading_xpnB74": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Pssst, es gibt News - top secret!",
+                        "heading_size": "h1"
+                    }
+                },
+                "paragraph_TJVkBB": {
+                    "type": "paragraph",
+                    "settings": {
+                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam!<\/p>"
+                    }
+                },
+                "email_form_PdLWTz": {
+                    "type": "email_form",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "heading_xpnB74",
+                "paragraph_TJVkBB",
+                "email_form_PdLWTz"
+            ],
+            "disabled": true,
+            "settings": {
+                "color_scheme": "accent-1",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
             }
         },
         "video_hpK6LC": {
@@ -1819,11 +1886,13 @@
         // "psb_stats_stats_01_RVy68Q",
         // "multicolumn_kbePmn",
         "ss_scrolling_images_5_98pCX6",
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
+        "newsletter_nUFw98",
         "video_hpK6LC",
         "ss_hero_pro_FFEege",
         "ss_slider_7_MBHAqm",
         "multicolumn_HaWqhh",
         "ss_hero_pro_XdGMVD",
-        "9695d220-eec3-430a-bd2d-bb753afaa25d"
+        "9695d220-eec3-430a-bd2d-bb753afaa25d",
     ]
 }

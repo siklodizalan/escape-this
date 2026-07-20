@@ -1,1 +1,311 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":28,"padding_bottom":28}},"image_banner_wFqbD9":{"type":"image-banner","blocks":{"heading_g4LjJn":{"type":"heading","settings":{"heading":"So geht's","heading_size":"h1"}},"text_jYBFHm":{"type":"text","settings":{"text":"Wir möchten dir alle Informationen zur Verfügung stellen, die du für deinen Escape This! Tag benötigst. Sind noch Fragen offen geblieben, scheue dich nicht uns anzuschreiben!","text_style":"body"}},"buttons_EKTJaw":{"type":"buttons","settings":{"button_label_1":"Zu den Games","button_link_1":"shopify:\/\/collections","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_g4LjJn","text_jYBFHm","buttons_EKTJaw"],"settings":{"image":"shopify:\/\/shop_images\/Digitale_Schnitzeljagd_So_gehts_83880478-dbcf-4d19-a24e-713706901dce.svg","image_overlay_opacity":50,"image_height":"small","image_behavior":"none","desktop_content_position":"middle-center","desktop_content_alignment":"center","show_text_box":false,"color_scheme":"","stack_images_on_mobile":true,"mobile_content_alignment":"center","show_text_below":true}},"image_banner_dzQTcP":{"type":"image-banner","settings":{"image":"shopify:\/\/shop_images\/Prozessgrafik_a069da02-7745-4df9-ad87-72893e3b8dfd.svg","image_overlay_opacity":0,"image_height":"adapt","image_behavior":"none","desktop_content_position":"middle-center","desktop_content_alignment":"center","show_text_box":true,"color_scheme":"","stack_images_on_mobile":true,"mobile_content_alignment":"center","show_text_below":true}},"video_kJpaB7":{"type":"video","settings":{"heading":"Alles was du wissen musst:","heading_size":"h1","enable_video_looping":false,"video_url":"https:\/\/youtu.be\/D9StSfaOUvE","cover_image":"shopify:\/\/shop_images\/Logo_Standard_a8a60fe2-5436-4374-9f8b-fd0ea3306717.jpg","description":"","full_width":false,"color_scheme":"","padding_top":36,"padding_bottom":36}},"rich_text_CzVQcN":{"type":"rich-text","blocks":{"heading_E6cf4F":{"type":"heading","settings":{"heading":"Escape This! App herunterladen","heading_size":"h1"}},"text_p7pkc6":{"type":"text","settings":{"text":"<p>Hast du dir dein Ticket auf unserer Website bereits gesichert? Lade dir nun die Escape This! App im Store deiner Wahl herunter. Die Anmeldung in der App geht ganz einfach mit dem Spielcode auf deinem Ticket. Viel Spaß beim Spielen!<\/p>"}},"button_r3hh9a":{"type":"button","settings":{"button_label":"App Store","button_link":"https:\/\/apps.apple.com\/de\/app\/escape-this\/id6479637602","button_style_secondary":true,"button_label_2":"Google Play","button_link_2":"https:\/\/play.google.com\/store\/apps\/details?id=com.escapethis","button_style_secondary_2":true}}},"block_order":["heading_E6cf4F","text_p7pkc6","button_r3hh9a"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":52}},"collapsible_content_zxG4bc":{"type":"collapsible-content","blocks":{"collapsible_row_NFXreN":{"type":"collapsible_row","settings":{"heading":"Wie kann ich euch bei Fragen oder Problemen erreichen?","icon":"question_mark","row_content":"<p>Solltest du Fragen oder Probleme vor, während oder nach deinem Spielerlebnis haben, kannst du uns ganz einfach anrufen (+49 172 6077173) oder uns eine Mail schreiben (service@escape-this.com). Wir werden dir dann schnellst möglich zur Hilfe eilen (Antwortzeit per Mail max. 1-2 Werktage).<\/p>","page":""}},"collapsible_row_aNH3UC":{"type":"collapsible_row","settings":{"heading":"Findet das Spiel nur Online statt?","icon":"question_mark","row_content":"<p>Das Spielerlebnis findet vollumfänglich online statt. Jedoch kommt bei unserem digitalen Outdoor Escape Room auch der Outdoor-Aspekt nicht zu kurz: Unsere App leitet dich und dein Team von dem Startpunkt in deiner Stadt zu den verschiedenen Hinweispunkten. Faul auf der Couch liegen, gibt es bei uns also nicht. ;)<\/p><p>Nach Erwerb eines Tickets kannst du wann immer du möchtest das Spiel starten. Du bist ausschließlich beim Gastro Escape Game an die Öffnungszeiten der Bars gebunden und ansonsten voll flexibel. Über dein Handy steuerst du nicht nur die Bedienung, sondern erlebst auch spannende Rätsel und Abenteuer.<\/p><p>Lass auch du dich von der Neugier greifen und durchlaufe noch heute dein Abenteuer.<\/p>","page":""}},"collapsible_row_nijUep":{"type":"collapsible_row","settings":{"heading":"Was ist der Unterschied zu einem \"normalen\" Escape Room?","icon":"question_mark","row_content":"<p>Unser Escape Game unterscheidet sich in einigen Eigenschaften von einem herkömmlichen Escape Room: Zum einen wirst du bei uns nicht physisch in einen Raum eingesperrt und musst daraus entkommen, sondern spielst unterwegs am Handy.<\/p><p>Hier musst du und dein Team auf spannenden Strecken in der Stadt oder in vielfältigen Lokalitäten Rätsel lösen, gegen die Zeit spielen und die Köpfe zusammenstecken. Desweiteren hast du die Möglichkeit, unter verschiedenen Spielmodi auszuwählen.<\/p>","page":""}},"collapsible_row_NcwntQ":{"type":"collapsible_row","settings":{"heading":"Wie lange dauert das Escape Game?","icon":"question_mark","row_content":"<p>Das ist natürlich immer voll und ganz von deiner Spielweise abhängig. Grundsätzlich kann man jedoch sagen, dass ein City Escape Game im Durchschnitt ungefähr 1,5 - 2 Stunden dauert, wobei die reine Laufzeit dabei max. 50 Minuten beträgt. Beachte, dass der Endpunkt des Games bis zu 30min. zu Fuß vom Startpunkt entfernt sein kann. Bei einem Gastro Escape Game kannst du mit 2 - 2,5 Stunden Spielzeit rechnen, wobei die Laufzeit max. bei 25min liegt.<\/p>","page":""}},"collapsible_row_CEPwdp":{"type":"collapsible_row","settings":{"heading":"Wie viele Personen können zusammen in einer Gruppe spielen?","icon":"question_mark","row_content":"<p>Mit einem Ticket können bis zu 8 Personen mit ihrem eigenen Smartphone in einem Team spielen. Natürlich können gerne auch mehr Personen mit euch miträtseln, die ohne Smartphone teilnehmen.<\/p><p>Falls du mit einer größeren Gruppe teilnehmen möchtest, kannst du dir mehrere Tickets kaufen und so gegeneinander spielen. Alternativ kannst du uns jedoch auch sehr gerne kontaktieren, um ein individuelles Angebot für mehr als 8 Personen zu erhalten.<\/p><p>Unternehmen, Vereine oder andere Gruppierungen können gerne in deutlich größeren Gruppen spielen und sogar ihr eigenes Escape Game entwerfen! Kontaktiere uns dafür gerne direkt.<\/p>","page":""}},"collapsible_row_beR86E":{"type":"collapsible_row","settings":{"heading":"Was benötige ich für ein Escape Game?","icon":"question_mark","row_content":"<p>Du und dein Team benötigt mindestens ein Smartphone, auf dem die neuste Version der \"Escape This!\"-App heruntergeladen werden kann. Um in der App loszuspielen, müsst ihr ein Ticket online erwerben. Mit dem Ticket erhaltet ihr dann einen Spiel-Code, mit dem ihr euer Adventure in der App starten könnt. Zur Nutzung der App ist eine Internetverbindung sowie eine Erlaubnis des Zugriffs auf deine Bewegungsdaten und deinen Standort erforderlich. Achte darauf, mit einem möglichst vollen Handyakku zu starten oder dir eine Powerbank mitzunehmen.<\/p><p>Schnapp dir dein Handy und deine Liebsten & los geht das Abenteuer!<\/p>","page":""}},"collapsible_row_9d8Kj4":{"type":"collapsible_row","settings":{"heading":"Ist das Escape Game auch für Familien mit Kindern geeignet?","icon":"question_mark","row_content":"<p>Auch Familien mit ihren kleinen Detektiven sind für unsere Escape Games willkommen. Es finden sich auch für die Kleinen Spiele mit Interaktion bei denen sie mitmachen können, jedoch werden auch einige Rätsel dabei sein, bei denen die Eltern im Vordergrund knobeln. Da die Gastro Escape Games in Bars spielen, empfehlen wir für Familien allerdings unsere City Escape Games.<\/p><p>Da unsere City Escape Game draußen und digital stattfindet, sind selbstverständlich Kinderwagen, Bollerwagen oder Ähnliches gewünscht! Die Wege, die du und deine Familie bestreiten werdet sind nicht nur kinderfreundlich, sondern auch gut gelegen.<\/p><p>Mehr Infos speziell für Familien findest du beim <a href=\"https:\/\/escape-this.com\/pages\/familienspass\" title=\"Familienspaß\">Familienspaß<\/a>.<\/p>","page":""}},"collapsible_row_KEhCqn":{"type":"collapsible_row","settings":{"heading":"Was passiert mit meinen Daten?","icon":"question_mark","row_content":"<p>Keine Sorge, deine Daten, die bei der App-Nutzung entstehen, sind bei uns sicher! Sie werden nur kurzzeitig gespeichert, um deine Bewegung während des Spiels zu lokalisieren, die Funktionalität zu ermöglichen oder werden zu Analysezwecke gespeichert und nicht an Dritte weitergegeben. Eine Löschung deiner Daten kannst du jederzeit bei uns anfordern: Schreibe uns dafür einfach eine Nachricht über unser Kontaktformular oder per Mail.<\/p>","page":""}}},"block_order":["collapsible_row_NFXreN","collapsible_row_aNH3UC","collapsible_row_nijUep","collapsible_row_NcwntQ","collapsible_row_CEPwdp","collapsible_row_beR86E","collapsible_row_9d8Kj4","collapsible_row_KEhCqn"],"settings":{"caption":"","heading":"Häufige Fragen","heading_size":"h1","heading_alignment":"center","layout":"none","container_color_scheme":"","color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"bab84565-f8be-4cbc-a4c8-bdfff3d3f302":{"type":"newsletter","blocks":{"template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1":{"type":"heading","settings":{"heading":"10% Newsletter-Rabatt","heading_size":"h1"}},"template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1":{"type":"paragraph","settings":{"text":"<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam! Als neues Mitglied der Escape This! Community erhältst du nach Newsletter-Anmeldung einen 10% Rabattcode für deine erste Escape This! Bestellung.<\/p>"}},"template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1":{"type":"email_form","settings":{}}},"block_order":["template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1","template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1","template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"],"settings":{"color_scheme":"accent-1","full_width":true,"padding_top":40,"padding_bottom":52}},"newsletter_nUFw98":{"type":"newsletter","blocks":{"heading_xpnB74":{"type":"heading","settings":{"heading":"Pssst, es gibt News - top secret!","heading_size":"h1"}},"paragraph_TJVkBB":{"type":"paragraph","settings":{"text":"<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam!<\/p>"}},"email_form_PdLWTz":{"type":"email_form","settings":{}}},"block_order":["heading_xpnB74","paragraph_TJVkBB","email_form_PdLWTz"],"disabled":true,"settings":{"color_scheme":"accent-1","full_width":true,"padding_top":40,"padding_bottom":52}}},"order":["main","image_banner_wFqbD9","image_banner_dzQTcP","video_kJpaB7","rich_text_CzVQcN","collapsible_content_zxG4bc","bab84565-f8be-4cbc-a4c8-bdfff3d3f302","newsletter_nUFw98"]}
+{
+    "sections": {
+        "main": {
+            "type": "main-page",
+            "disabled": true,
+            "settings": {
+                "padding_top": 28,
+                "padding_bottom": 28
+            }
+        },
+        "image_banner_wFqbD9": {
+            "type": "image-banner",
+            "blocks": {
+                "heading_g4LjJn": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "So geht's",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_jYBFHm": {
+                    "type": "text",
+                    "settings": {
+                        "text": "Wir möchten dir alle Informationen zur Verfügung stellen, die du für deinen Escape This! Tag benötigst. Sind noch Fragen offen geblieben, scheue dich nicht uns anzuschreiben!",
+                        "text_style": "body"
+                    }
+                },
+                "buttons_EKTJaw": {
+                    "type": "buttons",
+                    "settings": {
+                        "button_label_1": "Zu den Games",
+                        "button_link_1": "shopify:\/\/collections",
+                        "button_style_secondary_1": false,
+                        "button_label_2": "",
+                        "button_link_2": "",
+                        "button_style_secondary_2": false
+                    }
+                }
+            },
+            "block_order": [
+                "heading_g4LjJn",
+                "text_jYBFHm",
+                "buttons_EKTJaw"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/Digitale_Schnitzeljagd_So_gehts_83880478-dbcf-4d19-a24e-713706901dce.svg",
+                "image_overlay_opacity": 50,
+                "image_height": "small",
+                "image_behavior": "none",
+                "desktop_content_position": "middle-center",
+                "desktop_content_alignment": "center",
+                "show_text_box": false,
+                "color_scheme": "",
+                "stack_images_on_mobile": true,
+                "mobile_content_alignment": "center",
+                "show_text_below": true
+            }
+        },
+        "image_banner_dzQTcP": {
+            "type": "image-banner",
+            "settings": {
+                "image": "shopify:\/\/shop_images\/Prozessgrafik_a069da02-7745-4df9-ad87-72893e3b8dfd.svg",
+                "image_overlay_opacity": 0,
+                "image_height": "adapt",
+                "image_behavior": "none",
+                "desktop_content_position": "middle-center",
+                "desktop_content_alignment": "center",
+                "show_text_box": true,
+                "color_scheme": "",
+                "stack_images_on_mobile": true,
+                "mobile_content_alignment": "center",
+                "show_text_below": true
+            }
+        },
+        "video_kJpaB7": {
+            "type": "video",
+            "settings": {
+                "heading": "Alles was du wissen musst:",
+                "heading_size": "h1",
+                "enable_video_looping": false,
+                "video_url": "https:\/\/youtu.be\/D9StSfaOUvE",
+                "cover_image": "shopify:\/\/shop_images\/Logo_Standard_a8a60fe2-5436-4374-9f8b-fd0ea3306717.jpg",
+                "description": "",
+                "full_width": false,
+                "color_scheme": "",
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        },
+        "rich_text_CzVQcN": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_E6cf4F": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Escape This! App herunterladen",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_p7pkc6": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Hast du dir dein Ticket auf unserer Website bereits gesichert? Lade dir nun die Escape This! App im Store deiner Wahl herunter. Die Anmeldung in der App geht ganz einfach mit dem Spielcode auf deinem Ticket. Viel Spaß beim Spielen!<\/p>"
+                    }
+                },
+                "button_r3hh9a": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "App Store",
+                        "button_link": "https:\/\/apps.apple.com\/de\/app\/escape-this\/id6479637602",
+                        "button_style_secondary": true,
+                        "button_label_2": "Google Play",
+                        "button_link_2": "https:\/\/play.google.com\/store\/apps\/details?id=com.escapethis",
+                        "button_style_secondary_2": true
+                    }
+                }
+            },
+            "block_order": [
+                "heading_E6cf4F",
+                "text_p7pkc6",
+                "button_r3hh9a"
+            ],
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        },
+        "collapsible_content_zxG4bc": {
+            "type": "collapsible-content",
+            "blocks": {
+                "collapsible_row_NFXreN": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Wie kann ich euch bei Fragen oder Problemen erreichen?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Solltest du Fragen oder Probleme vor, während oder nach deinem Spielerlebnis haben, kannst du uns ganz einfach anrufen (+49 172 6077173) oder uns eine Mail schreiben (service@escape-this.com). Wir werden dir dann schnellst möglich zur Hilfe eilen (Antwortzeit per Mail max. 1-2 Werktage).<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_aNH3UC": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Findet das Spiel nur Online statt?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Das Spielerlebnis findet vollumfänglich online statt. Jedoch kommt bei unserem digitalen Outdoor Escape Room auch der Outdoor-Aspekt nicht zu kurz: Unsere App leitet dich und dein Team von dem Startpunkt in deiner Stadt zu den verschiedenen Hinweispunkten. Faul auf der Couch liegen, gibt es bei uns also nicht. ;)<\/p><p>Nach Erwerb eines Tickets kannst du wann immer du möchtest das Spiel starten. Du bist ausschließlich beim Gastro Escape Game an die Öffnungszeiten der Bars gebunden und ansonsten voll flexibel. Über dein Handy steuerst du nicht nur die Bedienung, sondern erlebst auch spannende Rätsel und Abenteuer.<\/p><p>Lass auch du dich von der Neugier greifen und durchlaufe noch heute dein Abenteuer.<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_nijUep": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Was ist der Unterschied zu einem \"normalen\" Escape Room?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Unser Escape Game unterscheidet sich in einigen Eigenschaften von einem herkömmlichen Escape Room: Zum einen wirst du bei uns nicht physisch in einen Raum eingesperrt und musst daraus entkommen, sondern spielst unterwegs am Handy.<\/p><p>Hier musst du und dein Team auf spannenden Strecken in der Stadt oder in vielfältigen Lokalitäten Rätsel lösen, gegen die Zeit spielen und die Köpfe zusammenstecken. Desweiteren hast du die Möglichkeit, unter verschiedenen Spielmodi auszuwählen.<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_NcwntQ": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Wie lange dauert das Escape Game?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Das ist natürlich immer voll und ganz von deiner Spielweise abhängig. Grundsätzlich kann man jedoch sagen, dass ein City Escape Game im Durchschnitt ungefähr 1,5 - 2 Stunden dauert, wobei die reine Laufzeit dabei max. 50 Minuten beträgt. Beachte, dass der Endpunkt des Games bis zu 30min. zu Fuß vom Startpunkt entfernt sein kann. Bei einem Gastro Escape Game kannst du mit 2 - 2,5 Stunden Spielzeit rechnen, wobei die Laufzeit max. bei 25min liegt.<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_CEPwdp": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Wie viele Personen können zusammen in einer Gruppe spielen?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Mit einem Ticket können bis zu 8 Personen mit ihrem eigenen Smartphone in einem Team spielen. Natürlich können gerne auch mehr Personen mit euch miträtseln, die ohne Smartphone teilnehmen.<\/p><p>Falls du mit einer größeren Gruppe teilnehmen möchtest, kannst du dir mehrere Tickets kaufen und so gegeneinander spielen. Alternativ kannst du uns jedoch auch sehr gerne kontaktieren, um ein individuelles Angebot für mehr als 8 Personen zu erhalten.<\/p><p>Unternehmen, Vereine oder andere Gruppierungen können gerne in deutlich größeren Gruppen spielen und sogar ihr eigenes Escape Game entwerfen! Kontaktiere uns dafür gerne direkt.<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_beR86E": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Was benötige ich für ein Escape Game?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Du und dein Team benötigt mindestens ein Smartphone, auf dem die neuste Version der \"Escape This!\"-App heruntergeladen werden kann. Um in der App loszuspielen, müsst ihr ein Ticket online erwerben. Mit dem Ticket erhaltet ihr dann einen Spiel-Code, mit dem ihr euer Adventure in der App starten könnt. Zur Nutzung der App ist eine Internetverbindung sowie eine Erlaubnis des Zugriffs auf deine Bewegungsdaten und deinen Standort erforderlich. Achte darauf, mit einem möglichst vollen Handyakku zu starten oder dir eine Powerbank mitzunehmen.<\/p><p>Schnapp dir dein Handy und deine Liebsten & los geht das Abenteuer!<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_9d8Kj4": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Ist das Escape Game auch für Familien mit Kindern geeignet?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Auch Familien mit ihren kleinen Detektiven sind für unsere Escape Games willkommen. Es finden sich auch für die Kleinen Spiele mit Interaktion bei denen sie mitmachen können, jedoch werden auch einige Rätsel dabei sein, bei denen die Eltern im Vordergrund knobeln. Da die Gastro Escape Games in Bars spielen, empfehlen wir für Familien allerdings unsere City Escape Games.<\/p><p>Da unsere City Escape Game draußen und digital stattfindet, sind selbstverständlich Kinderwagen, Bollerwagen oder Ähnliches gewünscht! Die Wege, die du und deine Familie bestreiten werdet sind nicht nur kinderfreundlich, sondern auch gut gelegen.<\/p><p>Mehr Infos speziell für Familien findest du beim <a href=\"https:\/\/escape-this.com\/pages\/familienspass\" title=\"Familienspaß\">Familienspaß<\/a>.<\/p>",
+                        "page": ""
+                    }
+                },
+                "collapsible_row_KEhCqn": {
+                    "type": "collapsible_row",
+                    "settings": {
+                        "heading": "Was passiert mit meinen Daten?",
+                        "icon": "question_mark",
+                        "row_content": "<p>Keine Sorge, deine Daten, die bei der App-Nutzung entstehen, sind bei uns sicher! Sie werden nur kurzzeitig gespeichert, um deine Bewegung während des Spiels zu lokalisieren, die Funktionalität zu ermöglichen oder werden zu Analysezwecke gespeichert und nicht an Dritte weitergegeben. Eine Löschung deiner Daten kannst du jederzeit bei uns anfordern: Schreibe uns dafür einfach eine Nachricht über unser Kontaktformular oder per Mail.<\/p>",
+                        "page": ""
+                    }
+                }
+            },
+            "block_order": [
+                "collapsible_row_NFXreN",
+                "collapsible_row_aNH3UC",
+                "collapsible_row_nijUep",
+                "collapsible_row_NcwntQ",
+                "collapsible_row_CEPwdp",
+                "collapsible_row_beR86E",
+                "collapsible_row_9d8Kj4",
+                "collapsible_row_KEhCqn"
+            ],
+            "settings": {
+                "caption": "",
+                "heading": "Häufige Fragen",
+                "heading_size": "h1",
+                "heading_alignment": "center",
+                "layout": "none",
+                "container_color_scheme": "",
+                "color_scheme": "",
+                "open_first_collapsible_row": false,
+                "image_ratio": "adapt",
+                "desktop_layout": "image_second",
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        },
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
+            "type": "newsletter",
+            "blocks": {
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "10% Newsletter-Rabatt",
+                        "heading_size": "h1"
+                    }
+                },
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
+                    "type": "paragraph",
+                    "settings": {
+                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam! Als neues Mitglied der Escape This! Community erhältst du nach Newsletter-Anmeldung einen 10% Rabattcode für deine erste Escape This! Bestellung.<\/p>"
+                    }
+                },
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
+                    "type": "email_form",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
+                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
+            ],
+            "settings": {
+                "color_scheme": "accent-1",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        },
+        "newsletter_nUFw98": {
+            "type": "newsletter",
+            "blocks": {
+                "heading_xpnB74": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Pssst, es gibt News - top secret!",
+                        "heading_size": "h1"
+                    }
+                },
+                "paragraph_TJVkBB": {
+                    "type": "paragraph",
+                    "settings": {
+                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam!<\/p>"
+                    }
+                },
+                "email_form_PdLWTz": {
+                    "type": "email_form",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "heading_xpnB74",
+                "paragraph_TJVkBB",
+                "email_form_PdLWTz"
+            ],
+            "disabled": true,
+            "settings": {
+                "color_scheme": "accent-1",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        }
+    },
+    "order": [
+        "main",
+        "image_banner_wFqbD9",
+        "image_banner_dzQTcP",
+        "video_kJpaB7",
+        "rich_text_CzVQcN",
+        "collapsible_content_zxG4bc",
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
+        "newsletter_nUFw98"
+    ]
+}
