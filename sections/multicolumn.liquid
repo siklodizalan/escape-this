@@ -13,6 +13,67 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {% if section.settings.vertical_center_columns %}
+    #Slider-{{ section.id }} {
+      align-items: center;
+    }
+  {% endif %}
+
+  #Slider-{{ section.id }} .multicolumn-card__caption {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: rgb(var(--color-button));
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card__info h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: normal;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin: 0 0 1.2rem;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card__info .rte {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    max-width: 35em;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 0.7rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    background-color: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    transition: opacity var(--duration-short) ease;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card__button:hover {
+    opacity: 0.85;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card-spacing {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -119,6 +180,9 @@
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
+                {%- if block.settings.caption != blank -%}
+                  <p class="multicolumn-card__caption">{{ block.settings.caption | escape }}</p>
+                {%- endif -%}
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -126,19 +190,32 @@
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
-                  <a
-                    class="link animate-arrow"
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                  >
-                    {{- block.settings.link_label | escape -}}
-                    <span class="svg-wrapper"
-                      ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
+                  {%- if block.settings.button_style == 'solid' -%}
+                    <a
+                      class="multicolumn-card__button"
+                      {% if block.settings.link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.link }}"
+                      {% endif %}
                     >
-                  </a>
+                      {{- block.settings.link_label | escape -}}
+                    </a>
+                  {%- else -%}
+                    <a
+                      class="link animate-arrow"
+                      {% if block.settings.link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.link }}"
+                      {% endif %}
+                    >
+                      {{- block.settings.link_label | escape -}}
+                      <span class="svg-wrapper"
+                        ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
+                      >
+                    </a>
+                  {%- endif -%}
                 {%- endif -%}
               </div>
             </div>
@@ -327,6 +404,12 @@
       "label": "t:sections.multicolumn.settings.column_alignment.label"
     },
     {
+      "type": "checkbox",
+      "id": "vertical_center_columns",
+      "default": false,
+      "label": "Vertically center columns"
+    },
+    {
       "type": "select",
       "id": "background_style",
       "options": [
@@ -410,6 +493,12 @@
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
         {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption",
+          "info": "Small line shown above the title"
+        },
+        {
           "type": "inline_richtext",
           "id": "title",
           "default": "t:sections.multicolumn.blocks.column.settings.title.default",
@@ -431,6 +520,22 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "link",
+              "label": "Text link"
+            },
+            {
+              "value": "solid",
+              "label": "Solid button"
+            }
+          ],
+          "default": "link",
+          "label": "Button style"
         }
       ]
     }

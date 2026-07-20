@@ -1571,10 +1571,12 @@
                 "column_GxCW7g": {
                     "type": "column",
                     "settings": {
-                        "title": "",
-                        "text": "",
-                        "link_label": "",
-                        "link": ""
+                        "caption": "JETZT LOSSPIELEN",
+                        "title": "BEREIT FÜR DEIN ABENTEUER?",
+                        "text": "<p>WÄHLE DEIN SPIEL UND STARTE DEIN NÄCHSTES ESCAPE GAME — DIREKT IN DEINER STADT.<\/p>",
+                        "link_label": "SPIEL WÄHLEN",
+                        "link": "",
+                        "button_style": "solid"
                     }
                 },
                 "column_Xnd94m": {
@@ -1586,21 +1588,11 @@
                         "link_label": "",
                         "link": ""
                     }
-                },
-                "column_yKkKgb": {
-                    "type": "column",
-                    "settings": {
-                        "title": "",
-                        "text": "",
-                        "link_label": "",
-                        "link": ""
-                    }
                 }
             },
             "block_order": [
                 "column_GxCW7g",
-                "column_Xnd94m",
-                "column_yKkKgb"
+                "column_Xnd94m"
             ],
             "name": "t:sections.multicolumn.presets.name",
             "settings": {
@@ -1610,10 +1602,11 @@
                 "image_ratio": "adapt",
                 "button_label": "",
                 "button_link": "",
-                "columns_desktop": 3,
+                "columns_desktop": 2,
                 "column_alignment": "left",
+                "vertical_center_columns": true,
                 "background_style": "none",
-                "color_scheme": "",
+                "color_scheme": "background-1",
                 "columns_mobile": "1",
                 "swipe_on_mobile": false,
                 "padding_top": 36,
@@ -1622,6 +1615,7 @@
         },
         "ss_hero_pro_XdGMVD": {
             "type": "ss-hero-pro",
+            "disabled": true,
             "blocks": {
                 "caption_jUENjY": {
                     "type": "caption",
