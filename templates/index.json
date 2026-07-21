@@ -1144,36 +1144,73 @@
         //     }
         // },
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
-            "type": "newsletter",
+            "type": "ss-newsletter-1",
             "blocks": {
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
+                "caption_n3wsC01": {
+                    "type": "caption",
+                    "settings": {
+                        "caption": "ANMELDEN & SPAREN",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
+                        "caption_color": "#f9f544"
+                    }
+                },
+                "heading_n3wsH01": {
                     "type": "heading",
                     "settings": {
                         "heading": "10% NEWSLETTER-RABATT",
-                        "heading_size": "h1"
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
+                        "heading_color": "#ffffff"
                     }
                 },
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
-                    "type": "paragraph",
+                "text_n3wsT01": {
+                    "type": "text",
                     "settings": {
-                        "text": "<p>ES GIBT NEUES AUS UNSERER ADVENTUREWERKSTATT. BLEIBE MIT UNSEREM NEWSLETTER AUF DEM LAUFENDEN: ERFAHRE ALS ERSTER VON NEUEN GAMES, SPECIAL EVENTS, NEUEN STÄDTEN UND BESONDEREN AKTIONEN. KEIN SPAM! ALS NEUES MITGLIED DER ESCAPE THIS! COMMUNITY ERHÄLTST DU NACH NEWSLETTER-ANMELDUNG EINEN 10% RABATTCODE FÜR DEINE ERSTE ESCAPE THIS! BESTELLUNG.<\/p>"
+                        "text": "<p>JETZT ANMELDEN & 10% AUF DEIN ERSTES ABENTEUER SPAREN! ERFAHRE ALS ERSTER VON NEUEN GAMES, EVENTS UND AKTIONEN AUS UNSERER ADVENTUREWERKSTATT.<\/p>",
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n4",
+                        "text_size": 16,
+                        "text_size_mobile": 14,
+                        "text_color": "#ffffff"
                     }
                 },
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
+                "email_form_n3wsF01": {
                     "type": "email_form",
-                    "settings": {}
+                    "settings": {
+                        "placeholder": "EMAIL ADRESSE",
+                        "input_radius": 5,
+                        "input_border_color": "#f9f544",
+                        "input_text_color": "#ffffff"
+                    }
                 }
             },
             "block_order": [
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
+                "caption_n3wsC01",
+                "heading_n3wsH01",
+                "text_n3wsT01",
+                "email_form_n3wsF01"
             ],
+            "name": "SS - Newsletter #1",
             "settings": {
-                "color_scheme": "accent-1",
-                "full_width": true,
+                "background_color": "#1f1f21",
+                "background_gradient": "",
+                "border_color": "#1f1f21",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
                 "padding_top": 40,
-                "padding_bottom": 52
+                "padding_bottom": 52,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "newsletter_alt": {
