@@ -343,9 +343,9 @@
                 "bg_overlay": 0.2,
                 "bg_overlay_color": "#121212",
                 "background_style": "solid",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 16,
                 "margin_horizontal": 0,
@@ -432,9 +432,9 @@
                 "text_mt": 12,
                 "text_mt_mobile": 10,
                 "text_color": "#ffffff",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "margin_horizontal": 0,
@@ -541,9 +541,9 @@
                 "bg_overlay": 0.2,
                 "bg_overlay_color": "#121212",
                 "background_style": "solid",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 16,
                 "margin_horizontal": 0,
@@ -594,7 +594,7 @@
                         "image": "shopify:\/\/shop_images\/DARMSTADT.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-darmstadt",
                         "title": "DARMSTADT",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#a1d9ee"
                     }
                 },
@@ -604,7 +604,7 @@
                         "image": "shopify:\/\/shop_images\/5.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-duesseldorf",
                         "title": "DÜSSELDORF",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#ffffff"
                     }
                 },
@@ -614,7 +614,7 @@
                         "image": "shopify:\/\/shop_images\/4.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-frankfurt",
                         "title": "FRANKFURT",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#a1d9ee"
                     }
                 },
@@ -624,8 +624,8 @@
                         "image": "shopify:\/\/shop_images\/8.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-freiburg",
                         "title": "FREIBURG",
-                        "card_bg_color": "#1f1f21",
-                        "card_border_color": "#1f1f21"
+                        "card_bg_color": "#191919",
+                        "card_border_color": "#191919"
                     }
                 },
                 "card_GygxTb": {
@@ -634,7 +634,7 @@
                         "image": "shopify:\/\/shop_images\/6.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-hamburg",
                         "title": "HAMBURG",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#a1d9ee"
                     }
                 },
@@ -644,7 +644,7 @@
                         "image": "shopify:\/\/shop_images\/9.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-heidelberg",
                         "title": "HEIDELBERG",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#969696"
                     }
                 },
@@ -654,7 +654,7 @@
                         "image": "shopify:\/\/shop_images\/7.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-heilbronn?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxIL5FqUmNOnTPNNugzZavB7TzwWdZDc6N9OgOWTez3H-rh2OlY_-RwaAkPiEALw_wcB",
                         "title": "HEILBRONN",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#969696"
                     }
                 },
@@ -664,7 +664,7 @@
                         "image": "shopify:\/\/shop_images\/3.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-karlsruhe",
                         "title": "KARLSRUHE",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#6067ae"
                     }
                 },
@@ -674,7 +674,7 @@
                         "image": "shopify:\/\/shop_images\/11.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-koeln",
                         "title": "KÖLN",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#f9f544"
                     }
                 },
@@ -684,7 +684,7 @@
                         "image": "shopify:\/\/shop_images\/2.png",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-mainz",
                         "title": "MAINZ",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#f9f544"
                     }
                 },
@@ -694,7 +694,7 @@
                         "image": "shopify:\/\/shop_images\/10.png",
                         "url": "shopify:\/\/pages\/escape-game-munchen",
                         "title": "MÜNCHEN",
-                        "card_bg_color": "#1f1f21",
+                        "card_bg_color": "#191919",
                         "card_border_color": "#ffffff"
                     }
                 },
@@ -722,7 +722,7 @@
                 //         "button_color": "#2c2b2b",
                 //         "button_hover_color": "#f9f544",
                 //         "button_bg_color": "#f9f544",
-                //         "button_bg_hover_color": "#1f1f21",
+                //         "button_bg_hover_color": "#191919",
                 //         "button_border_color": "#000000",
                 //         "button_border_hover_color": "#000000"
                 //     }
@@ -769,7 +769,7 @@
                 "image_ratio": "landscape",
                 "image_ratio_mobile": "landscape",
                 "card_overlay_color": "#000000",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
                 "border_color": "#000000",
                 "margin_top": 0,
@@ -895,9 +895,9 @@
                 "bg_overlay": 0.2,
                 "bg_overlay_color": "#121212",
                 "background_style": "solid",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "margin_horizontal": 0,
@@ -1026,10 +1026,10 @@
                 "arrow_color": "#121212",
                 "arrow_hover_color": "#f9f544",
                 "arrow_bg_color": "#f9f544",
-                "arrow_bg_hover_color": "#1f1f21",
+                "arrow_bg_hover_color": "#191919",
                 "arrow_border_color": "#121212",
                 "arrow_border_hover_color": "#121212",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
                 "border_color": "#121212",
                 "margin_top": 0,
@@ -1097,7 +1097,7 @@
         //     "settings": {
         //         "container_width": "psb-container",
         //         "inherit_fonts": false,
-        //         "background_color": "#1f1f21",
+        //         "background_color": "#191919",
         //         "number_color": "#f9f544",
         //         "heading_color": "#a1d9ee",
         //         "number_font_size_desktop": 70,
@@ -1197,9 +1197,9 @@
             ],
             "name": "SS - Newsletter #1",
             "settings": {
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "margin_horizontal": 0,
@@ -1354,9 +1354,9 @@
                 "image_radius": 0,
                 "image_border_thickness": 0,
                 "image_border_color": "#000000",
-                "first_bg_color": "#1f1f21",
+                "first_bg_color": "#191919",
                 "second_bg_color": "",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
                 "border_color": "#000000",
                 "margin_top": 0,
@@ -1490,9 +1490,9 @@
                 "category_text_size_mobile": 14,
                 "category_text_color": "#ffffff",
                 "category_image_radius": 5,
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "margin_horizontal": 0,
@@ -1615,9 +1615,9 @@
                 "bg_overlay": 0.2,
                 "bg_overlay_color": "#121212",
                 "background_style": "solid",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 16,
                 "margin_horizontal": 0,
@@ -1814,7 +1814,7 @@
                 "arrow_bg_hover_color": "#fafafa",
                 "arrow_border_color": "#eaeaea",
                 "arrow_border_hover_color": "#cbcbcb",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
                 "border_color": "#000000",
                 "margin_top": 0,
@@ -1876,9 +1876,9 @@
             ],
             "name": "SS - CTA App #1",
             "settings": {
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "image_radius": 5,
                 "margin_top": 0,
                 "margin_bottom": 0,
@@ -2035,9 +2035,9 @@
                 "bg_overlay": 0.2,
                 "bg_overlay_color": "#121212",
                 "background_style": "solid",
-                "background_color": "#1f1f21",
+                "background_color": "#191919",
                 "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#1f1f21",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 32,
                 "margin_horizontal": 0,
