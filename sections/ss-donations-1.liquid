@@ -140,7 +140,7 @@
     align-items: center;
     justify-content: center;
     height: 41px;
-    padding: 0 25px;
+    padding: 0 16px;
     border-radius: {{ tab_radius }}px;
     border: 1px solid {{ tab_inactive_border }};
     background-color: transparent;
@@ -156,6 +156,36 @@
     background-color: {{ tab_active_bg }};
     border-color: {{ tab_active_bg }};
     color: {{ tab_active_text }};
+  }
+
+  .donations-tab-full-{{ section.id }} {
+    display: none;
+  }
+
+  @media (max-width: 1023.98px) {
+    .donations-tabs-{{ section.id }} {
+      flex-wrap: nowrap;
+    }
+
+    .donations-tab-{{ section.id }} {
+      flex: 0 0 auto;
+      width: 56px;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .donations-tab-{{ section.id }} {
+      padding: 0 25px;
+    }
+
+    .donations-tab-index-{{ section.id }} {
+      display: none;
+    }
+
+    .donations-tab-full-{{ section.id }} {
+      display: inline;
+    }
   }
 
   .donations-panels-{{ section.id }} {
@@ -403,7 +433,7 @@
             aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
             {{ block.shopify_attributes }}
           >
-            {{ block.settings.tab_label }}
+            <span class="donations-tab-index-{{ section.id }}">{{ forloop.index }}</span><span class="donations-tab-full-{{ section.id }}">{{ block.settings.tab_label }}</span>
           </button>
         {% endfor %}
       </div>
