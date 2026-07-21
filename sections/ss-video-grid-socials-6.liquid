@@ -97,6 +97,12 @@ For inquiries or permissions, contact daniel@section.store
     padding-bottom: 64px !important;
   }
 
+  @media (max-width: 1023.98px) {
+    .video-social-slider-{{ section.id }} {
+      padding-bottom: 50px !important;
+    }
+  }
+
   .video-social-video-{{ section.id }} {
     position: relative !important;
     z-index: 2 !important;
@@ -386,6 +392,18 @@ For inquiries or permissions, contact daniel@section.store
   </style>
 {% endif %}
 
+<style>
+  @media (max-width: 1023.98px) {
+    .video-social-video-{{ section.id }} {
+      height: 300px !important;
+    }
+
+    .section-{{ section.id }}-settings {
+      padding-right: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal_mobile }}rem);
+    }
+  }
+</style>
+
 {% if video_ratio == "portrait" %}
   <style>
     @media (min-width: 1024px) {
@@ -463,33 +481,39 @@ For inquiries or permissions, contact daniel@section.store
 
 {% if arrow_hover_effect == "color" %}
   <style>
-    .video-social-btn-prev-{{ section.id }}:hover,
-    .video-social-btn-next-{{ section.id }}:hover {
-      transition: all 0.3s ease 0s;
-      border: {{ arrow_border_thickness }}px solid {{ arrow_border_hover_color }};
-      background: {{ arrow_bg_hover_color }};
-    }
-  
-    .video-social-btn-prev-{{ section.id }}:hover .animate-icon,
-    .video-social-btn-next-{{ section.id }}:hover .animate-icon {
-      color: {{ arrow_hover_color }};
+    @media (hover: hover) and (pointer: fine) {
+      .video-social-btn-prev-{{ section.id }}:hover,
+      .video-social-btn-next-{{ section.id }}:hover {
+        transition: all 0.3s ease 0s;
+        border: {{ arrow_border_thickness }}px solid {{ arrow_border_hover_color }};
+        background: {{ arrow_bg_hover_color }};
+      }
+
+      .video-social-btn-prev-{{ section.id }}:hover .animate-icon,
+      .video-social-btn-next-{{ section.id }}:hover .animate-icon {
+        color: {{ arrow_hover_color }};
+      }
     }
   </style>
 {% elsif arrow_hover_effect == "scale" %}
   <style>
-    .video-social-btn-prev-{{ section.id }}:hover,
-    .video-social-btn-next-{{ section.id }}:hover {
-      transform: scale(0.9);
+    @media (hover: hover) and (pointer: fine) {
+      .video-social-btn-prev-{{ section.id }}:hover,
+      .video-social-btn-next-{{ section.id }}:hover {
+        transform: scale(0.9);
+      }
     }
   </style>
 {% elsif arrow_hover_effect == "arrow" %}
   <style>
-    .video-social-btn-next-{{ section.id }}:hover .animate-icon {
-      transform: translateX(2px);
-    }
+    @media (hover: hover) and (pointer: fine) {
+      .video-social-btn-next-{{ section.id }}:hover .animate-icon {
+        transform: translateX(2px);
+      }
 
-    .video-social-btn-prev-{{ section.id }}:hover .animate-icon {
-      transform: translateX(-2px);
+      .video-social-btn-prev-{{ section.id }}:hover .animate-icon {
+        transform: translateX(-2px);
+      }
     }
   </style>
 {% endif %}
