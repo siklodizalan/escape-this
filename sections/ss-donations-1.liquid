@@ -1,0 +1,859 @@
+{%- liquid
+  assign padding_horizontal = section.settings.padding_horizontal
+  assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign border_color = section.settings.border_color
+  assign border_thickness = section.settings.border_thickness
+  assign margin_top = section.settings.margin_top
+  assign margin_bottom = section.settings.margin_bottom
+  assign margin_horizontal_mobile = section.settings.margin_horizontal_mobile
+  assign margin_horizontal = section.settings.margin_horizontal
+  assign background_color = section.settings.background_color
+  assign background_gradient = section.settings.background_gradient
+  assign full_width = section.settings.full_width
+  assign section_radius = section.settings.section_radius
+
+  assign caption_block = section.blocks | where: 'type', 'caption' | first
+  assign heading_block = section.blocks | where: 'type', 'heading' | first
+  assign text_block = section.blocks | where: 'type', 'text' | first
+  assign feature_blocks = section.blocks | where: 'type', 'feature'
+  assign category_blocks = section.blocks | where: 'type', 'category'
+
+  assign tab_active_bg = section.settings.tab_active_bg
+  assign tab_active_text = section.settings.tab_active_text
+  assign tab_inactive_border = section.settings.tab_inactive_border
+  assign tab_inactive_text = section.settings.tab_inactive_text
+  assign tab_radius = section.settings.tab_radius
+
+  assign category_heading_color = section.settings.category_heading_color
+  assign category_heading_size = section.settings.category_heading_size
+  assign category_heading_size_mobile = section.settings.category_heading_size_mobile
+  assign category_text_color = section.settings.category_text_color
+  assign category_text_size = section.settings.category_text_size
+  assign category_text_size_mobile = section.settings.category_text_size_mobile
+  assign category_image_radius = section.settings.category_image_radius
+
+  assign feature_icon_bg_color = section.settings.feature_icon_bg_color
+  assign feature_icon_color = section.settings.feature_icon_color
+  assign feature_text_color = section.settings.feature_text_color
+-%}
+
+{%- style -%}
+  .section-{{ section.id }} {
+    border-top: solid {{ border_color }} {{ border_thickness }}px;
+    border-bottom: solid {{ border_color }} {{ border_thickness }}px;
+    margin-top: {{ margin_top | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ margin_bottom | times: 0.75 | round: 0 }}px;
+    margin-left: {{ margin_horizontal_mobile }}rem;
+    margin-right: {{ margin_horizontal_mobile }}rem;
+    border-radius: {{ section_radius | times: 0.6 | round: 0 }}px;
+    overflow: hidden;
+  }
+
+  .section-{{ section.id }}-settings {
+    margin: 0 auto;
+    padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-left: {{ padding_horizontal_mobile }}rem;
+    padding-right: {{ padding_horizontal_mobile }}rem;
+  }
+
+  .donations-caption-{{ section.id }} {
+    margin: 0;
+    font-size: 16px;
+    color: #f9f544;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .donations-heading-{{ section.id }} {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    word-break: break-word;
+  }
+
+  .donations-intro-{{ section.id }} {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .donations-features-{{ section.id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .donations-feature-{{ section.id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .donations-feature-icon-{{ section.id }} {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: {{ feature_icon_bg_color }};
+  }
+
+  .donations-feature-icon-{{ section.id }} svg {
+    width: 16px;
+    height: auto;
+  }
+
+  .donations-feature-icon-{{ section.id }} svg path {
+    fill: {{ feature_icon_color }};
+  }
+
+  .donations-feature-text-{{ section.id }} {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: {{ feature_text_color }};
+    text-transform: uppercase;
+  }
+
+  .donations-tabs-{{ section.id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .donations-tab-{{ section.id }} {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    padding: 0 25px;
+    border-radius: {{ tab_radius }}px;
+    border: 1px solid {{ tab_inactive_border }};
+    background-color: transparent;
+    color: {{ tab_inactive_text }};
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+
+  .donations-tab-{{ section.id }}.is-active {
+    background-color: {{ tab_active_bg }};
+    border-color: {{ tab_active_bg }};
+    color: {{ tab_active_text }};
+  }
+
+  .donations-panels-{{ section.id }} {
+    margin-top: 32px;
+  }
+
+  .donations-panel-{{ section.id }} {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .donations-panel-{{ section.id }}.is-active {
+    display: flex;
+  }
+
+  .donations-panel-content-{{ section.id }} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .donations-panel-heading-{{ section.id }} {
+    margin: 0;
+    font-size: {{ category_heading_size_mobile }}px;
+    color: {{ category_heading_color }};
+    text-transform: uppercase;
+    font-weight: 800;
+    word-break: break-word;
+  }
+
+  .donations-panel-text-{{ section.id }} {
+    margin: 0;
+    margin-top: 16px;
+    font-size: {{ category_text_size_mobile }}px;
+    line-height: 150%;
+    color: {{ category_text_color }};
+    text-transform: uppercase;
+  }
+
+  .donations-panel-text-{{ section.id }} * {
+    margin: 0;
+    font-size: {{ category_text_size_mobile }}px;
+    line-height: 150%;
+    color: {{ category_text_color }};
+    text-transform: uppercase;
+  }
+
+  .donations-panel-button-{{ section.id }} {
+    align-self: flex-start;
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    padding: 0 25px;
+    border-radius: {{ tab_radius }}px;
+    background-color: {{ tab_active_bg }};
+    color: {{ tab_active_text }};
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+  }
+
+  .donations-panel-image-{{ section.id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 15 / 7;
+    border-radius: {{ category_image_radius }}px;
+    overflow: hidden;
+  }
+
+  .donations-panel-image-{{ section.id }} img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media(min-width: 1024px) {
+    .section-{{ section.id }} {
+      margin-top: {{ margin_top }}px;
+      margin-bottom: {{ margin_bottom }}px;
+      margin-left: {{ margin_horizontal }}rem;
+      margin-right: {{ margin_horizontal }}rem;
+      border-radius: {{ section_radius }}px;
+    }
+
+    .section-{{ section.id }}-settings {
+      padding-top: {{ padding_top }}px;
+      padding-bottom: {{ padding_bottom }}px;
+      padding-left: {{ padding_horizontal }}rem;
+      padding-right: {{ padding_horizontal }}rem;
+    }
+
+    .donations-caption-{{ section.id }} {
+      font-size: 20px;
+    }
+
+    .donations-heading-{{ section.id }} {
+      font-size: 40px;
+    }
+
+    .donations-intro-{{ section.id }} {
+      font-size: 16px;
+    }
+
+    .donations-panel-{{ section.id }} {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .donations-panel-content-{{ section.id }},
+    .donations-panel-image-{{ section.id }} {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .donations-panel-heading-{{ section.id }} {
+      font-size: {{ category_heading_size }}px;
+    }
+
+    .donations-panel-text-{{ section.id }},
+    .donations-panel-text-{{ section.id }} * {
+      font-size: {{ category_text_size }}px;
+    }
+
+    .donations-panel-image-{{ section.id }} {
+      aspect-ratio: 15 / 7;
+    }
+
+    /* Image always on the right, text always on the left - no alternating. */
+    .donations-panel-content-{{ section.id }} {
+      order: 1;
+    }
+
+    .donations-panel-image-{{ section.id }} {
+      order: 2;
+    }
+  }
+{%- endstyle -%}
+
+{% unless full_width %}
+  <style>
+    .section-{{ section.id }}-settings {
+      max-width: clamp(100px, var(--page-content-width, var(--page-width)), 100%);
+    }
+  </style>
+{% endunless %}
+
+{% if margin_horizontal_mobile > 0 %}
+  <style>
+    .section-{{ section.id }} {
+      border-left: solid {{ border_color }} {{ border_thickness }}px;
+      border-right: solid {{ border_color }} {{ border_thickness }}px;
+    }
+
+    @media(min-width: 1024px) {
+      .section-{{ section.id }} {
+        border-left: 0px;
+        border-right: 0px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if margin_horizontal > 0 %}
+  <style>
+    @media(min-width: 1024px) {
+      .section-{{ section.id }} {
+        border-left: solid {{ border_color }} {{ border_thickness }}px;
+        border-right: solid {{ border_color }} {{ border_thickness }}px;
+      }
+    }
+  </style>
+{% endif %}
+
+<div class="section-{{ section.id }}" data-section-id="{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
+  <div class="section-{{ section.id }}-settings">
+    {% if caption_block and caption_block.settings.caption != blank %}
+      <p class="donations-caption-{{ section.id }}" {{ caption_block.shopify_attributes }}>{{ caption_block.settings.caption }}</p>
+    {% endif %}
+
+    {% if heading_block and heading_block.settings.heading != blank %}
+      <h2 class="donations-heading-{{ section.id }}" {{ heading_block.shopify_attributes }}>{{ heading_block.settings.heading }}</h2>
+    {% endif %}
+
+    {% if text_block and text_block.settings.text != blank %}
+      <div class="donations-intro-{{ section.id }}" {{ text_block.shopify_attributes }}>{{ text_block.settings.text }}</div>
+    {% endif %}
+
+    {% if feature_blocks.size > 0 %}
+      <div class="donations-features-{{ section.id }}">
+        {% for block in feature_blocks %}
+          <div class="donations-feature-{{ section.id }}" {{ block.shopify_attributes }}>
+            <div class="donations-feature-icon-{{ section.id }}">
+              {% case block.settings.icon %}
+                {% when 'refresh' %}
+                  <svg viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.09055 0C5.24445 0.0716374 5.29682 0.198471 5.29682 0.382457V2.02033L10.3046 2.01798C11.2564 2.01759 12.0004 2.7324 12 3.66681L11.9988 7.23576C11.9988 7.38804 11.9029 7.50157 11.7442 7.50157H9.95083C9.79172 7.50196 9.68579 7.38961 9.68579 7.23694V4.65995C9.68619 4.45757 9.53388 4.28493 9.31561 4.28493L5.29562 4.28415V6.00893C5.29522 6.1291 5.20168 6.23558 5.11613 6.27199C4.9934 6.32444 4.89067 6.3037 4.77553 6.23362L0.190286 3.43938C0.076754 3.37048 0.00839496 3.28906 0.0019988 3.1771C-0.0039976 3.0761 0.0351789 2.95944 0.137517 2.89681L4.89986 0.000391461H5.09015L5.09055 0Z"/>
+                    <path d="M11.8541 11.59C11.9728 11.6624 12.0032 11.7755 11.9968 11.8816C11.9912 11.9756 11.9296 12.0664 11.8261 12.1294L7.20368 14.9456C7.09934 15.009 6.98821 15.0153 6.88627 14.9722C6.79872 14.9354 6.70438 14.8293 6.70438 14.7107V12.9828L1.665 12.982C0.726364 12.9824 -0.00039976 12.2484 0 11.3383L0.0019988 7.73723C0.0019988 7.59747 0.120728 7.50157 0.255047 7.50157H2.04957C2.20867 7.50157 2.31461 7.61352 2.31461 7.76619V10.3444C2.31421 10.5248 2.45173 10.717 2.65881 10.717L6.70478 10.7194V8.99382C6.70478 8.88381 6.78873 8.77773 6.86548 8.74015C6.96782 8.69043 7.08455 8.6826 7.18889 8.74602L11.8545 11.5892L11.8541 11.59Z"/>
+                  </svg>
+                {% when 'globe' %}
+                  <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5109 9.6994H4.50562C4.32752 9.6994 4.1725 9.59577 4.15072 9.41419C3.99962 8.14532 3.98482 6.88298 4.10021 5.60976C4.11589 5.43602 4.25915 5.30277 4.43986 5.30277H10.5597C10.7404 5.30277 10.8837 5.43602 10.8994 5.60976C11.0143 6.88342 11.0008 8.14488 10.8493 9.41332C10.8292 9.5814 10.696 9.68982 10.5109 9.6994Z"/>
+                    <path d="M10.3137 4.20634L4.70114 4.20808C4.58966 4.20808 4.47122 4.14451 4.42201 4.07789C4.35408 3.98688 4.34058 3.86931 4.3654 3.74826C4.60011 2.61046 4.93584 1.5162 5.46405 0.483773C5.5163 0.381445 5.58118 0.251684 5.69788 0.222945C6.88797 -0.0740246 8.11246 -0.0731537 9.30212 0.221638C9.41882 0.250377 9.48413 0.382315 9.53595 0.483337C10.0663 1.51707 10.3977 2.60959 10.6363 3.74869C10.6803 3.95814 10.5854 4.20634 10.3141 4.20634H10.3137Z"/>
+                    <path d="M8.99643 14.8489C8.02015 15.0505 7.06302 15.0435 6.09893 14.8702C5.98398 14.8498 5.87163 14.7975 5.81067 14.6978C5.16489 13.644 4.70854 12.3856 4.45162 11.1786C4.40721 10.97 4.59271 10.795 4.79781 10.795H10.2013C10.3158 10.795 10.4291 10.8551 10.4822 10.9247C10.5418 11.0031 10.5693 11.1263 10.544 11.23C10.2436 12.4736 9.85775 13.6035 9.18933 14.6987C9.16059 14.7457 9.06654 14.8341 8.99643 14.8485V14.8489Z"/>
+                    <path d="M2.69414 9.69897H0.590037C0.408889 9.69984 0.286963 9.57661 0.243417 9.40809C-0.0831712 8.14401 -0.0827358 6.83117 0.252126 5.56883C0.29393 5.41076 0.423259 5.30321 0.589601 5.30321H2.64319C2.8509 5.30321 3.00897 5.46737 2.99199 5.67899C2.89488 6.89997 2.90882 8.10308 3.03074 9.32318C3.05034 9.51957 2.9049 9.6994 2.6937 9.6994L2.69414 9.69897Z"/>
+                    <path d="M14.7518 9.41942C14.7061 9.59446 14.5767 9.69853 14.4095 9.69897L12.3233 9.69984C12.1164 9.69984 11.9466 9.54221 11.9688 9.32231C12.0903 8.10352 12.1038 6.89909 12.0071 5.67856C11.9906 5.46694 12.1478 5.30234 12.3559 5.30234H14.4095C14.575 5.30234 14.7056 5.41033 14.7474 5.56839C15.0806 6.8316 15.0858 8.13966 14.7518 9.41942Z"/>
+                    <path d="M11.5726 13.7982C11.4132 13.9027 11.2651 13.8935 11.1476 13.8047C11.0108 13.7015 10.9782 13.5465 11.0396 13.3845C11.3287 12.6238 11.536 11.8535 11.7067 11.0588C11.7398 10.9047 11.8748 10.7958 12.0298 10.7954L13.6623 10.7945C13.7738 10.7945 13.8974 10.8655 13.9479 10.9452C14.0093 11.0419 14.032 11.1829 13.9654 11.2957C13.3692 12.3077 12.5623 13.1494 11.5721 13.7978L11.5726 13.7982Z"/>
+                    <path d="M3.95564 13.3715C4.0227 13.5478 3.99048 13.7006 3.852 13.806C3.73792 13.8927 3.5829 13.9001 3.43963 13.806C2.45203 13.1594 1.63338 12.3164 1.03463 11.2957C0.97367 11.1921 0.988475 11.0601 1.03855 10.967C1.08863 10.8738 1.2136 10.795 1.33771 10.795L2.96934 10.7958C3.1248 10.7958 3.25935 10.9047 3.29288 11.0588C3.46228 11.8444 3.66432 12.6051 3.95564 13.371V13.3715Z"/>
+                    <path d="M13.6788 4.20634L12.1278 4.20765C11.9627 4.20765 11.8168 4.10053 11.7855 3.93201C11.644 3.16956 11.4633 2.4341 11.2251 1.69429C11.178 1.54755 11.2516 1.39994 11.3509 1.32896C11.4842 1.2336 11.6374 1.24448 11.7742 1.33985C12.6634 1.96122 13.3988 2.75067 13.9545 3.68425C14.0172 3.78962 14.0181 3.91024 13.9728 4.01344C13.9344 4.10096 13.8138 4.20634 13.6793 4.20634H13.6788Z"/>
+                    <path d="M2.88879 4.20634L1.33771 4.20765C1.21491 4.20765 1.08819 4.12665 1.03942 4.03608C0.981508 3.92897 0.978024 3.7992 1.04595 3.68468C1.60595 2.74414 2.34708 1.95077 3.24586 1.32722C3.37257 1.23926 3.52629 1.24274 3.64778 1.32809C3.74837 1.39907 3.82239 1.54799 3.77493 1.69429C3.5363 2.43454 3.35603 3.16869 3.2145 3.93201C3.18663 4.0818 3.056 4.2059 2.88922 4.2059L2.88879 4.20634Z"/>
+                  </svg>
+                {% else %}
+                  <svg viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1972 10.9932L11.0471 10.9995V8.96215C11.0471 8.66171 10.8182 8.44453 10.5516 8.43626C10.2692 8.42749 10.0212 8.64954 10.0212 8.96215V10.9995L1.82855 10.9966C0.780736 10.9966 -0.00190423 10.1157 3.48005e-06 9.07415L0.00381891 6.99248L0.325746 6.99394C1.16562 6.99783 1.84715 6.35507 1.85859 5.5185C1.86956 4.68291 1.20139 4.0012 0.362469 4.00606L0.00334198 4.00801V1.89274C0.00334198 0.833643 0.823182 0 1.86432 0H10.0217V2.03687C10.0217 2.33634 10.2521 2.55449 10.5172 2.56375C10.8001 2.57348 11.0476 2.34852 11.0476 2.03785V0L14.1734 0.00389553C15.2197 0.00535635 16.0014 0.88039 15.9995 1.92731L15.9957 4.00655L15.6018 4.00801C14.79 4.01142 14.149 4.6795 14.14 5.48247C14.1309 6.30248 14.7767 6.98858 15.6013 6.99199L15.9971 6.99345L15.9957 9.11067C15.9948 10.1216 15.2226 10.9912 14.1972 10.9932ZM11.0514 6.50407L11.0481 4.44236C11.0476 4.14874 10.8158 3.93741 10.5511 3.92767C10.3045 3.9189 10.0274 4.11173 10.0274 4.40584V6.59464C10.0274 6.90093 10.3284 7.09619 10.5826 7.0699C10.8621 7.04068 11.0514 6.81864 11.0509 6.50407H11.0514Z"/>
+                  </svg>
+              {% endcase %}
+            </div>
+            {% if block.settings.text != blank %}
+              <p class="donations-feature-text-{{ section.id }}">{{ block.settings.text }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if category_blocks.size > 0 %}
+      <div class="donations-tabs-{{ section.id }}" role="tablist">
+        {% for block in category_blocks %}
+          <button
+            type="button"
+            class="donations-tab-{{ section.id }}{% if forloop.first %} is-active{% endif %}"
+            data-donations-tab-{{ section.id }}
+            data-target="donations-panel-{{ block.id }}-{{ section.id }}"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.tab_label }}
+          </button>
+        {% endfor %}
+      </div>
+
+      <div class="donations-panels-{{ section.id }}">
+        {% for block in category_blocks %}
+          <div
+            class="donations-panel-{{ section.id }}{% if forloop.first %} is-active{% endif %}"
+            id="donations-panel-{{ block.id }}-{{ section.id }}"
+            role="tabpanel"
+          >
+            <div class="donations-panel-content-{{ section.id }}">
+              {% if block.settings.heading != blank %}
+                <h3 class="donations-panel-heading-{{ section.id }}">{{ block.settings.heading }}</h3>
+              {% endif %}
+              {% if block.settings.text != blank %}
+                <div class="donations-panel-text-{{ section.id }}">{{ block.settings.text }}</div>
+              {% endif %}
+              {% if block.settings.button_label != blank %}
+                <a href="{{ block.settings.button_link }}" class="donations-panel-button-{{ section.id }}">{{ block.settings.button_label }}</a>
+              {% endif %}
+            </div>
+            <div class="donations-panel-image-{{ section.id }}">
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | image_url: width: 1500 }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+              {% else %}
+                {{ 'image' | placeholder_svg_tag }}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  function initDonationsTabs{{ section.id | replace: '-', '_' }}() {
+    var section = document.querySelector('[data-section-id="{{ section.id }}"]') || document;
+    var tabs = section.querySelectorAll('[data-donations-tab-{{ section.id }}]');
+
+    tabs.forEach(function (tab) {
+      if (tab.dataset.donationsBound) return;
+      tab.dataset.donationsBound = 'true';
+
+      tab.addEventListener('click', function () {
+        var targetId = tab.getAttribute('data-target');
+
+        tabs.forEach(function (otherTab) {
+          otherTab.classList.remove('is-active');
+          otherTab.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+
+        section.querySelectorAll('.donations-panel-{{ section.id }}').forEach(function (panel) {
+          panel.classList.toggle('is-active', panel.id === targetId);
+        });
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initDonationsTabs{{ section.id | replace: '-', '_' }});
+  document.addEventListener('shopify:section:load', initDonationsTabs{{ section.id | replace: '-', '_' }});
+</script>
+
+{% schema %}
+  {
+    "name": "SS - Donations #1",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Feature colors"
+      },
+      {
+        "type": "color",
+        "label": "Icon background",
+        "id": "feature_icon_bg_color",
+        "default": "#1c1c1c"
+      },
+      {
+        "type": "color",
+        "label": "Icon",
+        "id": "feature_icon_color",
+        "default": "#f9f544"
+      },
+      {
+        "type": "color",
+        "label": "Text",
+        "id": "feature_text_color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Category tab colors"
+      },
+      {
+        "type": "range",
+        "id": "tab_radius",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Roundness",
+        "default": 5
+      },
+      {
+        "type": "color",
+        "label": "Active background",
+        "id": "tab_active_bg",
+        "default": "#f9f544"
+      },
+      {
+        "type": "color",
+        "label": "Active text",
+        "id": "tab_active_text",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "label": "Inactive border",
+        "id": "tab_inactive_border",
+        "default": "#f9f544"
+      },
+      {
+        "type": "color",
+        "label": "Inactive text",
+        "id": "tab_inactive_text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Category content"
+      },
+      {
+        "type": "range",
+        "id": "category_heading_size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Heading font size",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "category_heading_size_mobile",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Heading font size - mobile",
+        "default": 28
+      },
+      {
+        "type": "color",
+        "label": "Heading color",
+        "id": "category_heading_color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "range",
+        "id": "category_text_size",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Text font size",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "category_text_size_mobile",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Text font size - mobile",
+        "default": 14
+      },
+      {
+        "type": "color",
+        "label": "Text color",
+        "id": "category_text_color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "range",
+        "id": "category_image_radius",
+        "min": 0,
+        "max": 60,
+        "step": 1,
+        "unit": "px",
+        "label": "Image roundness",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Section colors"
+      },
+      {
+        "type": "color",
+        "label": "Section background",
+        "id": "background_color",
+        "default": "#1f1f21"
+      },
+      {
+        "type": "color_background",
+        "id": "background_gradient",
+        "label": "Section background gradient",
+        "info": "Remove gradient to replace with solid colors"
+      },
+      {
+        "type": "color",
+        "label": "Border",
+        "id": "border_color",
+        "default": "#1f1f21"
+      },
+      {
+        "type": "header",
+        "content": "Section margin (outside)"
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin bottom",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_horizontal",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "rem",
+        "label": "Margin sides",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_horizontal_mobile",
+        "min": 0,
+        "max": 15,
+        "step": 0.5,
+        "unit": "rem",
+        "label": "Margin sides mobile",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Section padding (inside)"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_horizontal",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "rem",
+        "label": "Padding sides",
+        "default": 5
+      },
+      {
+        "type": "range",
+        "id": "padding_horizontal_mobile",
+        "min": 0,
+        "max": 15,
+        "step": 0.5,
+        "unit": "rem",
+        "label": "Padding sides mobile",
+        "default": 1.5
+      },
+      {
+        "type": "header",
+        "content": "Section settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full width",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "border_thickness",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Border thickness",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_radius",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Section roundness",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "caption",
+        "name": "Caption",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption",
+            "default": "SPENDENPROJEKTE"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "name": "Heading",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "GEMEINSAM GUTES TUN"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Intro text",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Wir möchten gemeinsam mit dir etwas bewegen. Deshalb fließt ein Teil jedes Ticketkaufs in ein Spendenprojekt.</p>"
+          }
+        ]
+      },
+      {
+        "type": "feature",
+        "name": "Feature",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon",
+            "default": "ticket",
+            "options": [
+              { "label": "Ticket", "value": "ticket" },
+              { "label": "Refresh", "value": "refresh" },
+              { "label": "Globe", "value": "globe" }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Feature text"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "name": "Donation category",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_label",
+            "label": "Tab label",
+            "default": "Spendenkategorie"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Category heading"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Describe this donation project.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label",
+            "default": "Ticket kaufen & Gutes tun"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "SS - Donations #1",
+        "blocks": [
+          { "type": "caption" },
+          { "type": "heading" },
+          { "type": "text" },
+          { "type": "feature", "settings": { "icon": "ticket", "text": "Jede Ticket Spendet" } },
+          { "type": "feature", "settings": { "icon": "refresh", "text": "Wechselnde Projekte" } },
+          { "type": "feature", "settings": { "icon": "globe", "text": "Für Mensch, Tier & die Welt" } },
+          { "type": "category" },
+          { "type": "category" }
+        ]
+      }
+    ]
+  }
+{% endschema %}

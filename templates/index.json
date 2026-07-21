@@ -1374,6 +1374,138 @@
                 "lazy": false
             }
         },
+        "ss_donations_1_spenden": {
+            "type": "ss-donations-1",
+            "blocks": {
+                "caption_sp3nd01": {
+                    "type": "caption",
+                    "settings": {
+                        "caption": "SPENDENPROJEKTE"
+                    }
+                },
+                "heading_sp3nd01": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "GEMEINSAM GUTES TUN"
+                    }
+                },
+                "text_sp3nd01": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>WIR M\u00d6CHTEN GEMEINSAM MIT DIR ETWAS BEWEGEN. DESHALB FLIESST EIN TEIL JEDES TICKETKAUFS IN EIN SPENDENPROJEKT. SUCH DIR BEIM KAUF EINFACH DEINEN FAVORITEN AUS ZWEI WECHSELNDEN KATEGORIEN AUS \u2013 SO UNTERST\u00dcTZEN WIR ZUSAMMEN, WAS DIR AM HERZEN LIEGT!<\/p>"
+                    }
+                },
+                "feature_sp3ndF1": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "ticket",
+                        "text": "JEDE TICKET SPENDET"
+                    }
+                },
+                "feature_sp3ndF2": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "refresh",
+                        "text": "WECHSELNDE PROJEKTE"
+                    }
+                },
+                "feature_sp3ndF3": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "globe",
+                        "text": "F\u00dcR MENSCH, TIER & DIE WELT"
+                    }
+                },
+                "category_sp3ndC1": {
+                    "type": "category",
+                    "settings": {
+                        "tab_label": "SPENDENKATEGORIE 1",
+                        "heading": "MENSCH F\u00dcR MENSCH.",
+                        "text": "<p>AKTIVES SPENDENPROJEKT:<\/p><p><strong>HERZENSW\u00dcNSCHE F\u00dcR KINDER: MAINLICHTBLICK E. V.<\/strong><br\/><br\/>MAINLICHTBLICK ERF\u00dcLLT SCHWER KRANKEN, K\u00d6RPERLICH BEEINTR\u00c4CHTIGTEN UND TRAUMATISIERTEN KINDERN UND JUGENDLICHEN PERS\u00d6NLICHE HERZENSW\u00dcNSCHE \u2013 KLEINE LICHTBLICKE, DIE GROSSE WIRKUNG ZEIGEN. VON REITTHERAPIEN \u00dcBER SPEZIELLE THERAPIEGER\u00c4TE BIS HIN ZU TABLETS: MIT DEINER SPENDE SCHENKST DU EIN ST\u00dcCK LEBENSFREUDE UND HOFFNUNG.<\/p>",
+                        "image": "shopify:\/\/shop_images\/HERO-Konzert-2026-scaled.jpg",
+                        "button_label": "TICKET KAUFEN & GUTES TUN",
+                        "button_link": "shopify:\/\/collections"
+                    }
+                },
+                "category_sp3ndC2": {
+                    "type": "category",
+                    "settings": {
+                        "tab_label": "SPENDENKATEGORIE 2",
+                        "heading": "UNSERE TIERWELT.",
+                        "text": "<p>AKTIVES SPENDENPROJEKT:<br\/><br\/><strong>HILFE F\u00dcR TIERE VOR ORT: TIERHEIM MAINZ<\/strong><br\/>DAS TIERHEIM MAINZ, GEF\u00dcHRT VOM TIERSCHUTZVEREIN MAINZ UND UMGEBUNG, LEISTET WERTVOLLE ARBEIT F\u00dcR FUND- UND PFLEGETIERE. MIT DEINER SPENDE UNTERST\u00dcTZT DU DAS T\u00c4GLICHE ENGAGEMENT: VERSORGUNG, TIER\u00c4RZTLICHE VERSORGUNG UND LIEBEVOLLE BETREUUNG \u2013 BESONDERS IN SITUATIONEN, IN DENEN \u00d6FFENTLICHE MITTEL NICHT AUSREICHEN.<\/p>",
+                        "image": "shopify:\/\/shop_images\/csm_Siva_13ab902168.jpg",
+                        "button_label": "TICKET KAUFEN & GUTES TUN",
+                        "button_link": "shopify:\/\/collections"
+                    }
+                },
+                "category_sp3ndC3": {
+                    "type": "category",
+                    "settings": {
+                        "tab_label": "SPENDENKATEGORIE 3",
+                        "heading": "UNSER PLANET ERDE.",
+                        "text": "<p>INAKTIVE SPENDENKATEGORIE<\/p>",
+                        "image": "shopify:\/\/shop_images\/Klimawandel_lustig.jpg",
+                        "button_label": "TICKET KAUFEN & GUTES TUN",
+                        "button_link": "shopify:\/\/collections"
+                    }
+                },
+                "category_sp3ndC4": {
+                    "type": "category",
+                    "settings": {
+                        "tab_label": "SPENDENKATEGORIE 4",
+                        "heading": "START-UP F\u00dcR START-UP.",
+                        "text": "<p>INAKTIVE SPENDENKATEGORIE<\/p>",
+                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-04-04_um_13.28.22.png",
+                        "button_label": "TICKET KAUFEN & GUTES TUN",
+                        "button_link": "shopify:\/\/collections"
+                    }
+                }
+            },
+            "block_order": [
+                "caption_sp3nd01",
+                "heading_sp3nd01",
+                "text_sp3nd01",
+                "feature_sp3ndF1",
+                "feature_sp3ndF2",
+                "feature_sp3ndF3",
+                "category_sp3ndC1",
+                "category_sp3ndC2",
+                "category_sp3ndC3",
+                "category_sp3ndC4"
+            ],
+            "name": "SS - Donations #1",
+            "settings": {
+                "feature_icon_bg_color": "#1c1c1c",
+                "feature_icon_color": "#f9f544",
+                "feature_text_color": "#ffffff",
+                "tab_radius": 5,
+                "tab_active_bg": "#f9f544",
+                "tab_active_text": "#191919",
+                "tab_inactive_border": "#f9f544",
+                "tab_inactive_text": "#ffffff",
+                "category_heading_size": 40,
+                "category_heading_size_mobile": 28,
+                "category_heading_color": "#ffffff",
+                "category_text_size": 16,
+                "category_text_size_mobile": 14,
+                "category_text_color": "#ffffff",
+                "category_image_radius": 5,
+                "background_color": "#1f1f21",
+                "background_gradient": "",
+                "border_color": "#1f1f21",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 36,
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
+            }
+        },
         "video_youtube_promo": {
             "type": "video",
             "disabled": true,
@@ -1956,6 +2088,7 @@
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
         "newsletter_alt",
         "ss_scrolling_images_partners",
+        "ss_donations_1_spenden",
         "video_youtube_promo",
         "ss_hero_pro_games_teaser",
         "ss_slider_games",
