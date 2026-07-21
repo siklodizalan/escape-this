@@ -104,14 +104,14 @@
                 "feature_w4LhRY": {
                     "type": "feature",
                     "settings": {
-                        "icon": "refresh_2",
+                        "icon": "calendar",
                         "text": "OHNE TERMINBINDUNG"
                     }
                 },
                 "feature_zeF64a": {
                     "type": "feature",
                     "settings": {
-                        "icon": "earth",
+                        "icon": "city",
                         "text": "IN 11 STÄDTEN"
                     }
                 },
@@ -283,7 +283,7 @@
                 "heading_LiHbh9": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>IN 3 SCHRITTEN ZUM ABENTEUER<strong>.<\/strong><\/h2>",
+                        "heading": "<h2>IN 3 SCHRITTEN ZUM<br\/>ABENTEUER<\/h2>",
                         "heading_custom": true,
                         "heading_font": "red_hat_display_n8",
                         "heading_accent_font": "red_hat_display_n8",
@@ -367,17 +367,17 @@
                 "step_St3ps01": {
                     "type": "step",
                     "settings": {
-                        "title": "STADT & SPIEL WÄHLEN",
-                        "text": "<p>WÄHLE DEINE STADT UND DEIN LIEBLINGSSPIEL. TICKETS SIND FLEXIBEL — EIN GANZES JAHR GÜLTIG, KEIN ZEITFENSTER NÖTIG.<\/p>",
-                        "card_bg_color": "#1c1c1c",
-                        "card_border_color": "#1c1c1c"
+                        "title": "SPIEL WÄHLEN",
+                        "text": "<p>Wähle zwischen Cellblock X und Rätsel der Tierwelt. Dein Ticket ist dann ganz flexibel ein ganzes Jahr gültig und ohne Zeitfenster spielbereit.<\/p>",
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "step_St3ps02": {
                     "type": "step",
                     "settings": {
                         "title": "APP STARTEN",
-                        "text": "<p>LADE DIE KOSTENLOSE ESCAPE THIS!-APP HERUNTER. SCANNE DEIN TICKET UND TAUCHE AM STARTPUNKT IN DIE STORY EIN.<\/p>",
+                        "text": "<p>Lade die kostenlose Escape This!-App herunter. Scanne dein Ticket und tauche am Startpunkt in die Story ein.<\/p>",
                         "card_bg_color": "#1e1e1e",
                         "card_border_color": "#1e1e1e"
                     }
@@ -385,8 +385,8 @@
                 "step_St3ps03": {
                     "type": "step",
                     "settings": {
-                        "title": "STADT ERKUNDEN",
-                        "text": "<p>FOLGE DEN HINWEISEN, LÖSE RÄTSEL AN ECHTEN ORTEN UND ENTDECKE DEINE STADT AUF VÖLLIG NEUE ART.<\/p>",
+                        "title": "Düsseldorf erkunden",
+                        "text": "<p>Folge den Hinweisen, löse Rätsel an echten Orten und entdecke Düsseldorf auf völlig neue Art.<\/p>",
                         "card_bg_color": "#1e1e1e",
                         "card_border_color": "#1e1e1e"
                     }
@@ -579,7 +579,7 @@
                 "heading_h34d1ng": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>ESCAPE GAMES IN GANZ DEUTSCHLAND<strong>.<\/strong><\/h2>",
+                        "heading": "<h2>ESCAPE GAMES IN<br\/>GANZ DEUTSCHLAND<\/h2>",
                         "heading_custom": true,
                         "heading_font": "red_hat_display_n8",
                         "heading_size": 36,
@@ -845,7 +845,7 @@
                         "icon_size_mobile": 14,
                         "icon_gap": 8,
                         "icon_color": "#f9f544",
-                        "icon_bg_color": "#121212"
+                        "icon_bg_color": "#1c1c1c"
                     }
                 }
             },
@@ -1392,7 +1392,7 @@
                 "text_sp3nd01": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>WIR M\u00d6CHTEN GEMEINSAM MIT DIR ETWAS BEWEGEN. DESHALB FLIESST EIN TEIL JEDES TICKETKAUFS IN EIN SPENDENPROJEKT. SUCH DIR BEIM KAUF EINFACH DEINEN FAVORITEN AUS ZWEI WECHSELNDEN KATEGORIEN AUS \u2013 SO UNTERST\u00dcTZEN WIR ZUSAMMEN, WAS DIR AM HERZEN LIEGT!<\/p>"
+                        "text": "<p>WIR M\u00d6CHTEN GEMEINSAM MIT DIR ETWAS BEWEGEN. DESHALB FLIESST EIN TEIL JEDES TICKETKAUFS IN EIN SPENDENPROJEKT.<br\/><br\/>SUCH DIR BEIM KAUF EINFACH DEINEN FAVORITEN AUS ZWEI WECHSELNDEN KATEGORIEN AUS \u2013 SO UNTERST\u00dcTZEN WIR ZUSAMMEN, WAS DIR AM HERZEN LIEGT!<\/p>"
                     }
                 },
                 "feature_sp3ndF1": {
