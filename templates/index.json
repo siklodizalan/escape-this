@@ -70,7 +70,7 @@
                         "stars_size_mobile": 16,
                         "stars_gap": 2,
                         "review": "<p><strong>4.8 STERNE<\/strong> | 25.000+ SPIELER<\/p>",
-                        "review_custom": true,
+                        "review_custom": false,
                         "review_font": "red_hat_display_n8",
                         "review_size": 14,
                         "review_size_mobile": 13,
@@ -218,7 +218,7 @@
                 "feature_padding_vertical_mobile": 6,
                 "feature_icon_size": 30,
                 "feature_icon_size_mobile": 26,
-                "feature_text_custom": true,
+                "feature_text_custom": false,
                 "feature_text_font": "red_hat_display_n8",
                 "feature_text_size": 16,
                 "feature_text_size_mobile": 14,
@@ -601,7 +601,7 @@
                 "card_AcyY4B": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/5.png",
+                        "image": "shopify:\/\/shop_images\/DUSSELDORF.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-duesseldorf",
                         "title": "DÜSSELDORF",
                         "card_bg_color": "#191919",
@@ -611,7 +611,7 @@
                 "card_tXemrb": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/4.png",
+                        "image": "shopify:\/\/shop_images\/FRANKFURT.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-frankfurt",
                         "title": "FRANKFURT",
                         "card_bg_color": "#191919",
@@ -621,7 +621,7 @@
                 "card_L4jNid": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/8.png",
+                        "image": "shopify:\/\/shop_images\/FREIBURG.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-freiburg",
                         "title": "FREIBURG",
                         "card_bg_color": "#191919",
@@ -631,7 +631,7 @@
                 "card_GygxTb": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/6.png",
+                        "image": "shopify:\/\/shop_images\/HAMBURG.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-hamburg",
                         "title": "HAMBURG",
                         "card_bg_color": "#191919",
@@ -641,7 +641,7 @@
                 "card_DrhEdn": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/9.png",
+                        "image": "shopify:\/\/shop_images\/HEIDELBERG.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-heidelberg",
                         "title": "HEIDELBERG",
                         "card_bg_color": "#191919",
@@ -651,7 +651,7 @@
                 "card_QU9EDz": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/7.png",
+                        "image": "shopify:\/\/shop_images\/HEILBRONN.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-heilbronn?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxIL5FqUmNOnTPNNugzZavB7TzwWdZDc6N9OgOWTez3H-rh2OlY_-RwaAkPiEALw_wcB",
                         "title": "HEILBRONN",
                         "card_bg_color": "#191919",
@@ -661,7 +661,7 @@
                 "card_KekVXU": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/3.png",
+                        "image": "shopify:\/\/shop_images\/KARLSRUHE.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-karlsruhe",
                         "title": "KARLSRUHE",
                         "card_bg_color": "#191919",
@@ -671,7 +671,7 @@
                 "card_PajCxP": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/11.png",
+                        "image": "shopify:\/\/shop_images\/KOLN.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-koeln",
                         "title": "KÖLN",
                         "card_bg_color": "#191919",
@@ -681,7 +681,7 @@
                 "card_dqrRLq": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/2.png",
+                        "image": "shopify:\/\/shop_images\/MAINZ.jpg",
                         "url": "https:\/\/escape-this.com\/pages\/escape-game-mainz",
                         "title": "MAINZ",
                         "card_bg_color": "#191919",
@@ -691,7 +691,7 @@
                 "card_aybaz4": {
                     "type": "card",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/10.png",
+                        "image": "shopify:\/\/shop_images\/MUNCHEN.jpg",
                         "url": "shopify:\/\/pages\/escape-game-munchen",
                         "title": "MÜNCHEN",
                         "card_bg_color": "#191919",
