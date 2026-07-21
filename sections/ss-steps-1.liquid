@@ -96,7 +96,7 @@
 
   .step-card-head-{{ section.id }} {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: {{ number_gap_mobile }}px;
   }
 
@@ -113,6 +113,11 @@
     font-size: {{ number_font_size_mobile }}px;
     font-weight: 800;
     line-height: 1;
+  }
+
+  .step-card-body-{{ section.id }} {
+    min-width: 0;
+    flex: 1 1 auto;
   }
 
   .step-title-{{ section.id }} {
@@ -143,6 +148,51 @@
 
   .step-footprints-{{ section.id }} {
     display: none;
+  }
+
+  .step-footprints-mobile-{{ section.id }} {
+    display: none;
+  }
+
+  @media (max-width: 1023px) {
+    {% if show_footprints %}
+      .step-card-{{ section.id }}:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      .step-footprints-mobile-{{ section.id }} {
+        display: block;
+        position: absolute;
+        left: 70%;
+        top: 85%;
+        transform: translateX(-50%) rotate(140deg);
+        width: 72px;
+        height: 105px;
+        pointer-events: none;
+      }
+
+      .step-footprints-mobile-{{ section.id }} svg {
+        display: block;
+        width: 72px;
+        height: auto;
+      }
+
+      .step-card-offset-{{ section.id }} .step-footprints-mobile-{{ section.id }} {
+        left: 40%;
+        top: 85%;
+        transform: scaleX(-1) translateX(50%) rotate(140deg);
+        width: 72px;
+        height: 105px;
+      }
+
+      .step-card-offset-{{ section.id }} .step-footprints-mobile-{{ section.id }} svg {
+        width: 72px;
+      }
+
+      .step-footprints-mobile-{{ section.id }} svg path {
+        fill: {{ footprint_color }};
+      }
+    {% endif %}
   }
 
   @media(min-width: 1024px) {
@@ -341,18 +391,23 @@
                 {{ footprint_svg }}
                 {{ footprint_svg }}
               </div>
+              <div class="step-footprints-mobile-{{ section.id }}">
+                {{ footprint_svg }}
+              </div>
             {% endif %}
           {% endunless %}
 
           <div class="step-card-head-{{ section.id }}">
             <div class="step-number-{{ section.id }}">{{ forloop.index }}</div>
-            {% if block.settings.title != blank %}
-              <p class="step-title-{{ section.id }}">{{ block.settings.title }}</p>
-            {% endif %}
+            <div class="step-card-body-{{ section.id }}">
+              {% if block.settings.title != blank %}
+                <p class="step-title-{{ section.id }}">{{ block.settings.title }}</p>
+              {% endif %}
+              {% if block.settings.text != blank %}
+                <div class="step-text-{{ section.id }}">{{ block.settings.text }}</div>
+              {% endif %}
+            </div>
           </div>
-          {% if block.settings.text != blank %}
-            <div class="step-text-{{ section.id }}">{{ block.settings.text }}</div>
-          {% endif %}
         </div>
       {% endfor %}
     </div>

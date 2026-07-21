@@ -858,7 +858,7 @@
             "settings": {
                 "hero_height": "fixed_height",
                 "hero_fixed_height": 100,
-                "hero_fixed_height_mobile": 100,
+                "hero_fixed_height_mobile": 200,
                 "content_max_width": 100,
                 "enable_split_layout": false,
                 "content_align": "left",
