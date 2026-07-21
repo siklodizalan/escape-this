@@ -186,19 +186,27 @@ For inquiries or permissions, contact daniel@section.store
 
   .hero-buttons-{{ section.id }} {
     display: flex;
-    align-items: center;
-    gap: 16px;
-    justify-content: {{ content_horizontal_align_mobile }};
+    flex-direction: column;
+    align-items: {{ content_horizontal_align_mobile }};
+    gap: 10px;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
   }
 
+  @media (max-width: 1023px) {
+    .section-{{ section.id }} .hero-buttons-{{ section.id }} > *:not(:first-child) {
+      margin-top: 0px !important;
+    }
+  }
+
   .hero-features-{{ section.id }} {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: {{ content_horizontal_align_mobile }};
     flex-wrap: wrap;
     gap: {{ features_gap_mobile }}px;
-    justify-content: {{ content_horizontal_align_mobile }};
+    justify-content: flex-start;
     margin-top: {{ features_mt_mobile }}px;
   }
   
@@ -308,10 +316,15 @@ For inquiries or permissions, contact daniel@section.store
     }
     
     .hero-buttons-{{ section.id }} {
+      flex-direction: row;
+      align-items: center;
       justify-content: {{ content_horizontal_align }};
+      gap: 16px;
     }
-    
+
     .hero-features-{{ section.id }} {
+      flex-direction: row;
+      align-items: center;
       justify-content: {{ content_horizontal_align }};
       gap: {{ features_gap }}px;
       margin-top: {{ features_mt }}px;
