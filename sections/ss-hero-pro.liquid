@@ -11,6 +11,7 @@ For inquiries or permissions, contact daniel@section.store
 {%- liquid 
   assign padding_horizontal = section.settings.padding_horizontal
   assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
+  assign padding_right_none = section.settings.padding_right_none
   assign padding_top = section.settings.padding_top
   assign padding_bottom = section.settings.padding_bottom
   assign border_color = section.settings.border_color
@@ -118,7 +119,7 @@ For inquiries or permissions, contact daniel@section.store
     padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
     padding-left: {{ padding_horizontal_mobile }}rem;
-    padding-right: {{ padding_horizontal_mobile }}rem;
+    padding-right: {% if padding_right_none %}0{% else %}{{ padding_horizontal_mobile }}rem{% endif %};
     height: 100%;
   }
   
@@ -284,8 +285,8 @@ For inquiries or permissions, contact daniel@section.store
       padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
       padding-left: {{ padding_horizontal }}rem;
-      padding-right: {{ padding_horizontal }}rem;
-    }  
+      padding-right: {% if padding_right_none %}0{% else %}{{ padding_horizontal }}rem{% endif %};
+    }
 
     .hero-content-{{ section.id }} {
       height: 100%;
@@ -1166,6 +1167,13 @@ For inquiries or permissions, contact daniel@section.store
         "unit": "rem",
         "label": "Sides - mobile",
         "default": 1.5
+      },
+      {
+        "type": "checkbox",
+        "id": "padding_right_none",
+        "label": "Remove right side padding",
+        "info": "Keeps the left gutter but lets content bleed to the right edge",
+        "default": false
       },
       {
         "type": "header",

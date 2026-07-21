@@ -12,7 +12,6 @@
   assign background_color = section.settings.background_color
   assign background_gradient = section.settings.background_gradient
   assign full_width = section.settings.full_width
-  assign content_width = section.settings.content_width
   assign section_radius = section.settings.section_radius
 
   assign cards_gap = section.settings.cards_gap
@@ -282,7 +281,7 @@
 {% unless full_width %}
   <style>
     .section-{{ section.id }}-settings {
-      max-width: {{ content_width }}px;
+      max-width: clamp(100px, var(--page-content-width, var(--page-width)), 100%);
     }
   </style>
 {% endunless %}
@@ -792,17 +791,7 @@
         "type": "checkbox",
         "id": "full_width",
         "label": "Full width",
-        "default": true
-      },
-      {
-        "type": "range",
-        "id": "content_width",
-        "min": 800,
-        "max": 2000,
-        "step": 100,
-        "unit": "px",
-        "label": "Section content width",
-        "default": 1200
+        "default": false
       },
       {
         "type": "range",
