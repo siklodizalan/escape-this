@@ -138,6 +138,7 @@
       flex: 1 1 0;
       min-width: 0;
       max-width: 560px;
+      container-type: inline-size;
     }
 
     .cta-app-caption-{{ section.id }} {
@@ -145,7 +146,8 @@
     }
 
     .cta-app-heading-{{ section.id }} {
-      font-size: 40px;
+      font-size: clamp(20px, 6.5cqw, 40px);
+      white-space: nowrap;
     }
 
     .cta-app-text-{{ section.id }} {

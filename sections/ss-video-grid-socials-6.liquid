@@ -410,6 +410,14 @@ For inquiries or permissions, contact daniel@section.store
       }
     }
   </style>
+{% elsif video_ratio == "custom_750_650" %}
+  <style>
+    @media (min-width: 1024px) {
+      .video-social-video-{{ section.id }} {
+        aspect-ratio: 750/650;
+      }
+    }
+  </style>
 {% else %}
   <style>
     @media (min-width: 1024px) {
@@ -808,7 +816,7 @@ if (Shopify.designMode) {
         "id": "slider_view",
         "min": 1,
         "max": 5,
-        "step": 0.5,
+        "step": 0.1,
         "label": "Slides to show",
         "default": 3.5
       },      
@@ -886,6 +894,10 @@ if (Shopify.designMode) {
           {
             "label": "Original",
             "value": "original"
+          },
+          {
+            "label": "Custom (750×650)",
+            "value": "custom_750_650"
           }
         ]
       },
