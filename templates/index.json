@@ -1832,52 +1832,65 @@
                 "lazy": true
             }
         },
-        "multicolumn_cta_app": {
-            "type": "multicolumn",
+        "ss_cta_app_1_games": {
+            "type": "ss-cta-app-1",
             "blocks": {
-                "column_GxCW7g": {
-                    "type": "column",
+                "caption_ctaApp1": {
+                    "type": "caption",
                     "settings": {
-                        "caption": "JETZT LOSSPIELEN",
-                        "title": "BEREIT FÜR DEIN ABENTEUER?",
-                        "text": "<p>WÄHLE DEIN SPIEL UND STARTE DEIN NÄCHSTES ESCAPE GAME — DIREKT IN DEINER STADT.<\/p>",
-                        "link_label": "SPIEL WÄHLEN",
-                        "link": "",
-                        "button_style": "solid"
+                        "caption": "JETZT LOSSPIELEN"
                     }
                 },
-                "column_Xnd94m": {
-                    "type": "column",
+                "heading_ctaApp1": {
+                    "type": "heading",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/Escape-This-App-Einblick.svg",
-                        "title": "",
-                        "text": "",
-                        "link_label": "",
-                        "link": ""
+                        "heading": "BEREIT FÜR DEIN ABENTEUER?"
+                    }
+                },
+                "text_ctaApp1": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>WÄHLE DEIN SPIEL UND STARTE DEIN NÄCHSTES ESCAPE GAME — DIREKT IN DEINER STADT.<\/p>"
+                    }
+                },
+                "button_ctaApp1": {
+                    "type": "button",
+                    "settings": {
+                        "label": "SPIEL WÄHLEN",
+                        "link": "shopify:\/\/pages\/stadte"
+                    }
+                },
+                "image_ctaApp1": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/Escape-This-App-Einblick.svg"
                     }
                 }
             },
             "block_order": [
-                "column_GxCW7g",
-                "column_Xnd94m"
+                "caption_ctaApp1",
+                "heading_ctaApp1",
+                "text_ctaApp1",
+                "button_ctaApp1",
+                "image_ctaApp1"
             ],
-            "name": "t:sections.multicolumn.presets.name",
+            "name": "SS - CTA App #1",
             "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 2,
-                "column_alignment": "left",
-                "vertical_center_columns": true,
-                "background_style": "none",
-                "color_scheme": "background-1",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
+                "background_color": "#1f1f21",
+                "background_gradient": "",
+                "border_color": "#1f1f21",
+                "image_radius": 5,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
                 "padding_top": 36,
-                "padding_bottom": 36
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "ss_hero_pro_cta": {
@@ -2092,7 +2105,7 @@
         "video_youtube_promo",
         "ss_hero_pro_games_teaser",
         "ss_slider_games",
-        "multicolumn_cta_app",
+        "ss_cta_app_1_games",
         "ss_hero_pro_cta",
         "9695d220-eec3-430a-bd2d-bb753afaa25d",
     ]
