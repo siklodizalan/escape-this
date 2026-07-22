@@ -7,12 +7,33 @@
 {%- endcomment -%}
 
 {%- comment -%} CSS {%- endcomment -%}
+{%- liquid
+  assign number_font = section.settings.number_font
+  assign heading_font = section.settings.heading_font
+-%}
 {% capture minify %}
   <style>
+    {{ number_font | font_face: font_display: 'swap' }}
+    {{ heading_font | font_face: font_display: 'swap' }}
+
     #psb-{{ section.id }} {
       background-color: {{ section.settings.background_color }};
       padding-top: {{section.settings.section_padding_top_mobile}}px;
       padding-bottom: {{section.settings.section_padding_bottom_mobile}}px;
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__item {
+      flex: 1 1 100%;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 16px;
     }
 
     #psb-{{ section.id }} .psb-stats-01__item:not(:last-child) {
@@ -23,14 +44,30 @@
       text-align: center;
       color: {{ section.settings.number_color }};
       font-size: {{ section.settings.number_font_size_mobile }}px;
+      font-weight: 800;
+      line-height: 1.1;
     }
 
     #psb-{{ section.id }} .psb-stats-01__item .psb-stats-01__heading {
       text-align: center;
       color: {{ section.settings.heading_color }};
+      text-transform: uppercase;
       {% if section.settings.inherit_fonts == false %}
-      font-size: 22px;
+      font-size: 16px;
       {% endif %}
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__number {
+      font-family: {{ number_font.family }}, {{ number_font.fallback_families }};
+      font-weight: {{ number_font.weight }};
+      font-style: {{ number_font.style }};
+    }
+
+    #psb-{{ section.id }} .psb-stats-01__heading,
+    #psb-{{ section.id }} .psb-stats-01__heading * {
+      font-family: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+      font-weight: {{ heading_font.weight }};
+      font-style: {{ heading_font.style }};
     }
 
     @media (min-width: 768px) {
@@ -38,6 +75,24 @@
         padding-top: {{section.settings.section_padding_top}}px;
         padding-bottom: {{section.settings.section_padding_bottom}}px;
       }
+
+      #psb-{{ section.id }} .psb-stats-01__row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+      }
+
+      #psb-{{ section.id }} .psb-stats-01__item {
+        flex: 1 1 0;
+        max-width: none;
+        padding: 0 32px;
+        border-left: 2px solid {{ section.settings.divider_color }};
+      }
+
+      #psb-{{ section.id }} .psb-stats-01__item:first-child {
+        border-left: 0;
+      }
+
       #psb-{{ section.id }} .psb-stats-01__item:not(:last-child) {
         margin-bottom: 0;
       }
@@ -48,7 +103,7 @@
 
       #psb-{{ section.id }} .psb-stats-01__item .psb-stats-01__heading {
         {% if section.settings.inherit_fonts == false %}
-        font-size: 22px;
+        font-size: 18px;
         {% endif %}
       }
     }
@@ -56,26 +111,11 @@
 {% endcapture %}
 {{ minify | strip_newlines }}
 
-<div id="psb-{{ section.id }}" class="psb-{{ section.id }} psb-section psb-stats-01" style="display: none;">
+<div id="psb-{{ section.id }}" class="psb-{{ section.id }} psb-section psb-stats-01">
   <div class="{{ section.settings.container_width }}">
-    <div class="psb-row">
+    <div class="psb-stats-01__row">
       {%- for block in section.blocks -%}
-        {% liquid
-          case section.blocks.size
-            when 1
-              assign column_size_class = 'psb-col-12'
-            when 2
-              assign column_size_class = 'psb-col-12 psb-col-md-6'
-            when 3
-              assign column_size_class = 'psb-col-12 psb-col-md-4'
-            when 4
-              assign column_size_class = 'psb-col-12 psb-col-md-6 psb-col-xl-3'
-            else
-              assign column_size_class = 'psb-col'
-          endcase
-        %}
-
-        <div class="{{ column_size_class }} psb-stats-01__item" {{ block.shopify_attributes }}>
+        <div class="psb-stats-01__item" {{ block.shopify_attributes }}>
           <psb-stats
             data-end-val="{{ block.settings.number }}"
             data-duration="2"
@@ -152,6 +192,24 @@
       "id": "heading_color",
       "label": "Heading color",
       "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#1f1f1f"
+    },
+    {
+      "type": "font_picker",
+      "id": "number_font",
+      "label": "Number font",
+      "default": "red_hat_display_n8"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "red_hat_display_n4"
     },
     {
       "type": "header",
