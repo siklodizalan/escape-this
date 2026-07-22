@@ -1,1 +1,550 @@
-{"sections":{"ss_hero_pro_VKwVdh":{"type":"ss-hero-pro","blocks":{"caption_CTdDLr":{"type":"caption","settings":{"caption":"<h3>WÄHLE DEINE STADT<\/h3>","caption_custom":false,"caption_font":"josefin_sans_n4","caption_size":15,"caption_size_mobile":12,"caption_advanced":false,"caption_height":130,"caption_mt":0,"caption_mt_mobile":0,"background":false,"caption_bg_opacity":0.3,"enable_blur":true,"caption_radius":100,"caption_border_thickness":1,"caption_padding_horizontal":12,"caption_padding_horizontal_mobile":12,"caption_padding_vertical":6,"caption_padding_vertical_mobile":6,"caption_color":"#a1d9ee","caption_bg_color":"#ffffff","caption_border_color":"#ffffff"}},"heading_XyPMQk":{"type":"heading","settings":{"heading":"<h1>Escape Games in ganz Deutschland.<\/h1>","heading_custom":false,"heading_font":"josefin_sans_n4","heading_accent_font":"playfair_n4","heading_size":56,"heading_size_mobile":36,"heading_advanced":true,"heading_height":130,"heading_mt":8,"heading_mt_mobile":8,"heading_color":"#f9f544","heading_accent_color":"#f9f544"}},"text_DKVyax":{"type":"text","settings":{"text":"<p>Erlebt die Stadt durch Rätsel und Orte, die in keinem Reiseführer stehen. In eurem Tempo und ohne festen Zeitslot.<\/p>","text_custom":false,"text_font":"josefin_sans_n4","text_size":18,"text_size_mobile":14,"text_advanced":false,"text_height":150,"text_mt":20,"text_mt_mobile":20,"text_color":"#ffffff"}},"feature_9DL7GE":{"type":"feature","settings":{"icon":"earth","text":"In 11 Städten"}},"feature_9jzriW":{"type":"feature","settings":{"icon":"rocket","text":"27 Spiele"}},"feature_xHRcRR":{"type":"feature","settings":{"icon":"scallop_checkmark","text":"auf deutsch & englisch"}},"button_XMgiFP":{"type":"button","settings":{"button":"Stadt wählen","url":"","open_in_new_tab":false,"button_style":"non_outline","button_custom":false,"button_font":"josefin_sans_n4","button_size":14,"button_size_mobile":14,"button_advanced":false,"button_height":100,"button_padding_horizontal":40,"button_padding_horizontal_mobile":32,"button_padding_vertical":20,"button_padding_vertical_mobile":20,"button_radius":100,"button_border_thickness":1,"button_mt":24,"button_mt_mobile":24,"button_custom_styling":true,"button_full_width_mobile":true,"button_color":"#1f1f21","button_hover_color":"#f9f544","button_bg_color":"#f9f544","button_bg_hover_color":"#2d2d2d","button_border_color":"#1a1a1a","button_border_hover_color":"#1a1a1a","button_shadow_color":"#000000"}}},"block_order":["caption_CTdDLr","heading_XyPMQk","text_DKVyax","feature_9DL7GE","feature_9jzriW","feature_xHRcRR","button_XMgiFP"],"name":"SS - Hero pro 💎","settings":{"hero_height":"full_screen","hero_fixed_height":600,"hero_fixed_height_mobile":600,"content_max_width":50,"enable_split_layout":false,"content_align":"left","content_align_mobile":"center","content_vertical_align":"center","content_vertical_align_mobile":"end","features_advanced":false,"features_mt":20,"features_mt_mobile":20,"features_gap":24,"features_gap_mobile":12,"feature_background":false,"feature_bg_opacity":0.3,"feature_enable_blur":true,"feature_radius":100,"feature_border_thickness":1,"feature_padding_horizontal":12,"feature_padding_horizontal_mobile":12,"feature_padding_vertical":6,"feature_padding_vertical_mobile":6,"feature_icon_size":18,"feature_icon_size_mobile":16,"feature_text_custom":false,"feature_text_font":"josefin_sans_n4","feature_text_size":16,"feature_text_size_mobile":14,"feature_text_height":150,"feature_icon_color":"#ffffff","feature_text_color":"#ffffff","feature_bg_color":"#ffffff","feature_border_color":"#ffffff","layout_bg_type":"image","bg_video_url":"","bg_overlay":0.2,"bg_overlay_color":"#121212","background_style":"solid","background_color":"#121212","background_gradient":"radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)","border_color":"#121212","margin_top":0,"margin_bottom":0,"margin_horizontal":0,"margin_horizontal_mobile":0,"padding_top":36,"padding_bottom":36,"padding_horizontal":5,"padding_horizontal_mobile":1.5,"width":"page","content_width":1200,"border_thickness":0,"section_radius":0,"lazy":false}},"main":{"type":"main-page","disabled":true,"settings":{"padding_top":28,"padding_bottom":28}},"ss_logo_cloud_2_gHbDMW":{"type":"ss-logo-cloud-2","blocks":{"heading_cXpVPN":{"type":"heading","settings":{"heading":"<h2>Jede Stadt hat eigene Geheimnisse - Welche entdeckst du?<\/h2>","heading_custom":false,"heading_font":"josefin_sans_n4","heading_size":42,"heading_size_mobile":36,"heading_height":130,"heading_color":"#f3f5e8"}},"card_NMFDga":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/1.png","url":"https:\/\/escape-this.com\/pages\/escape-game-darmstadt","card_bg_color":"#2c2b2b","card_border_color":"#a1d9ee"}},"card_EEAp3G":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/5.png","url":"https:\/\/escape-this.com\/pages\/escape-game-duesseldorf","card_bg_color":"#2c2b2b","card_border_color":"#ffffff"}},"card_VkLQQT":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/4.png","url":"https:\/\/escape-this.com\/pages\/escape-game-frankfurt?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxJpNsFbnpEduUAstPavdcKOx8mqW3BELCOKU4WA39VZ2rf_6hJDL_EaAhVOEALw_wcB","card_bg_color":"#2c2b2b","card_border_color":"#a1d9ee"}},"card_FDpeiK":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/8.png","url":"https:\/\/escape-this.com\/pages\/escape-game-freiburg","card_bg_color":"#2c2b2b","card_border_color":"#ffffff"}},"card_tDcAK8":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/6.png","url":"https:\/\/escape-this.com\/pages\/escape-game-hamburg","card_bg_color":"#2c2b2b","card_border_color":"#a1d9ee"}},"card_riyEHR":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/9.png","url":"https:\/\/escape-this.com\/pages\/escape-game-heidelberg","card_bg_color":"#2c2b2b","card_border_color":"#969696"}},"card_jzUwdt":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/7.png","url":"https:\/\/escape-this.com\/pages\/escape-game-heilbronn?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxJpJBqqLUAcunDnqo7P-vmsEs8Y-jnRoLqmRQ3HwH-VnvnsAFrMI64aAh03EALw_wcB","card_bg_color":"#2c2b2b","card_border_color":"#969696"}},"card_qPAQ9m":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/3.png","url":"https:\/\/escape-this.com\/pages\/escape-game-karlsruhe","card_bg_color":"#2c2b2b","card_border_color":"#969696"}},"card_ADmFaJ":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/11.png","url":"https:\/\/escape-this.com\/pages\/escape-game-koeln","card_bg_color":"#2c2b2b","card_border_color":"#f9f544"}},"card_RjAfFD":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/2.png","url":"https:\/\/escape-this.com\/pages\/escape-game-mainz?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxJVAp7C-x4nC1G_94CgxZbwrguYbfPoAYJ_UfTxJgW205FV_7crvA8aAuTlEALw_wcB","card_bg_color":"#2c2b2b","card_border_color":"#f9f544"}},"card_NVWPmC":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/10.png","url":"shopify:\/\/pages\/escape-game-munchen","card_bg_color":"#2c2b2b","card_border_color":"#f9f544"}}},"block_order":["heading_cXpVPN","card_NMFDga","card_EEAp3G","card_VkLQQT","card_FDpeiK","card_tDcAK8","card_riyEHR","card_jzUwdt","card_qPAQ9m","card_ADmFaJ","card_RjAfFD","card_NVWPmC"],"name":"SS - Logo cloud #2","settings":{"content_align":"center","content_align_mobile":"center","cards_gap":0,"cards_gap_mobile":0,"cards_mt":48,"cards_mt_mobile":40,"card_padding_horizontal":32,"card_padding_horizontal_mobile":24,"card_padding_vertical":32,"card_padding_vertical_mobile":18,"card_width":300,"card_width_mobile":160,"card_radius":8,"card_border_thickness":0,"card_overlay":0.5,"image_radius":18,"image_border_thickness":0,"image_ratio":"square","image_ratio_mobile":"original","card_overlay_color":"#000000","background_color":"#2c2b2b","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":0,"margin_horizontal":0,"margin_horizontal_mobile":0,"padding_top":36,"padding_bottom":36,"padding_horizontal":5,"padding_horizontal_mobile":1.5,"full_width":false,"content_width":1200,"border_thickness":0,"section_radius":0,"lazy":false}},"24406470-6a55-4446-b506-fbe24fb74e2d":{"type":"multicolumn","blocks":{"template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-1":{"type":"column","settings":{"title":"","text":"<h4><a href=\"\/pages\/escape-game-darmstadt\" title=\"Darmstadt\">Darmstadt<\/a><\/h4><h4><a href=\"\/pages\/escape-game-duesseldorf\" title=\"Düsseldorf\">Düsseldorf<\/a><\/h4><h4><a href=\"\/pages\/escape-game-frankfurt\" title=\"Frankfurt\">Frankfurt am Main<\/a><\/h4><h4><a href=\"\/pages\/escape-game-freiburg\" title=\"Freiburg\">Freiburg<\/a><\/h4><h4><a href=\"\/pages\/escape-game-hamburg\" title=\"Hamburg\">Hamburg<\/a><\/h4><h4><a href=\"\/pages\/escape-game-heidelberg\" title=\"Heidelberg\">Heidelberg<\/a><\/h4><h4><a href=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-heilbronn\" title=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-heilbronn\">Heilbronn<\/a><\/h4><p><\/p>","link_label":"","link":""}},"template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-2":{"type":"column","settings":{"title":"","text":"<h4><a href=\"\/pages\/escape-game-karlsruhe\" title=\"Karlsruhe\">Karlsruhe<\/a><\/h4><h4><a href=\"\/pages\/koeln\" title=\"Köln\">Köln<\/a><\/h4><h4><a href=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-mainz\" title=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-mainz\">Mainz<\/a><\/h4><h4><a href=\"\/pages\/escape-game-munchen\" title=\"München\">München<\/a><\/h4>","link_label":"","link":""}},"433f57f5-89eb-4fd7-a3e6-39cf53d534bf":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Kartenansicht_animiert.gif","title":"","text":"","link_label":"","link":""}}},"block_order":["template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-1","template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-2","433f57f5-89eb-4fd7-a3e6-39cf53d534bf"],"disabled":true,"custom_css":[],"settings":{"title":"Jede Stadt hat eigene Geheimnisse - Welche entdeckst du?","heading_size":"h1","image_width":"full","image_ratio":"adapt","button_label":"Zu den Games","button_link":"shopify:\/\/collections\/escape-games","columns_desktop":3,"column_alignment":"center","background_style":"none","color_scheme":"","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":28}},"0cf58770-1bee-4f17-ad4e-d6d4fc7447a3":{"type":"contact-form","settings":{"heading":"Welche Stadt wünschst du dir für die Zukunft?","heading_size":"h1","color_scheme":"","padding_top":36,"padding_bottom":36}},"5e48aef1-4708-4bae-880b-a1cba63286f7":{"type":"newsletter","blocks":{"template--20307304186198__5e48aef1-4708-4bae-880b-a1cba63286f7-heading-1":{"type":"heading","settings":{"heading":"Deine Stadt ist nicht dabei?","heading_size":"h1"}},"template--20307304186198__5e48aef1-4708-4bae-880b-a1cba63286f7-paragraph-1":{"type":"paragraph","settings":{"text":"<p>Wir sind schon mitten drin unsere Städteauswahl für dich zu vergrößern. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Städten, neuen Games, Special Events und besonderen Aktionen. Kein Spam!<\/p>"}},"template--20307304186198__5e48aef1-4708-4bae-880b-a1cba63286f7-email_form-1":{"type":"email_form","settings":{}}},"block_order":["template--20307304186198__5e48aef1-4708-4bae-880b-a1cba63286f7-heading-1","template--20307304186198__5e48aef1-4708-4bae-880b-a1cba63286f7-paragraph-1","template--20307304186198__5e48aef1-4708-4bae-880b-a1cba63286f7-email_form-1"],"settings":{"color_scheme":"scheme-c830f276-9546-4455-aeac-0933ad1dce39","full_width":true,"padding_top":40,"padding_bottom":52}},"custom_liquid_ftdmyb":{"type":"custom-liquid","disabled":true,"settings":{"custom_liquid":"<script src=\"https:\/\/unpkg.com\/@dotlottie\/player-component@latest\/dist\/dotlottie-player.mjs\" type=\"module\"><\/script> \n\n    <dotlottie-player src=\"https:\/\/lottie.host\/3c89d6d1-be71-412b-96a7-7624a8c3513a\/dsVYFPrwbR.json\" background=\"transparent\" speed=\"1\" style=\"width: 300px; height: 300px;\" loop autoplay><\/dotlottie-player>","color_scheme":"","padding_top":0,"padding_bottom":0}}},"order":["ss_hero_pro_VKwVdh","main","ss_logo_cloud_2_gHbDMW","24406470-6a55-4446-b506-fbe24fb74e2d","0cf58770-1bee-4f17-ad4e-d6d4fc7447a3","5e48aef1-4708-4bae-880b-a1cba63286f7","custom_liquid_ftdmyb"]}
+{
+    "sections": {
+        "ss_hero_pro_VKwVdh": {
+            "type": "ss-hero-pro",
+            "blocks": {
+                "caption_CTdDLr": {
+                    "type": "caption",
+                    "disabled": true,
+                    "settings": {
+                        "caption": "<h3>WÄHLE DEINE STADT<\/h3>",
+                        "caption_custom": false,
+                        "caption_font": "josefin_sans_n4",
+                        "caption_size": 15,
+                        "caption_size_mobile": 12,
+                        "caption_advanced": false,
+                        "caption_height": 130,
+                        "caption_mt": 0,
+                        "caption_mt_mobile": 0,
+                        "background": false,
+                        "caption_bg_opacity": 0.3,
+                        "enable_blur": true,
+                        "caption_radius": 100,
+                        "caption_border_thickness": 1,
+                        "caption_padding_horizontal": 12,
+                        "caption_padding_horizontal_mobile": 12,
+                        "caption_padding_vertical": 6,
+                        "caption_padding_vertical_mobile": 6,
+                        "caption_color": "#a1d9ee",
+                        "caption_bg_color": "#ffffff",
+                        "caption_border_color": "#ffffff"
+                    }
+                },
+                "heading_XyPMQk": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "<h1>ESCAPE GAMES IN GANZ DEUTSCHLAND<\/h1>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 60,
+                        "heading_size_mobile": 36,
+                        "heading_advanced": true,
+                        "heading_height": 130,
+                        "heading_mt": 24,
+                        "heading_mt_mobile": 16,
+                        "heading_color": "#f9f544",
+                        "heading_accent_color": "#f9f544"
+                    }
+                },
+                "text_DKVyax": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>ERLEBT DIE STADT DURCH RÄTSEL UND ORTE, DIE IN KEINEM REISEFÜHRER STEHEN. IN EUREM TEMPO UND OHNE FESTEN ZEITSLOT.<\/p>",
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n8",
+                        "text_size": 20,
+                        "text_size_mobile": 14,
+                        "text_advanced": false,
+                        "text_height": 150,
+                        "text_mt": 20,
+                        "text_mt_mobile": 20,
+                        "text_color": "#ffffff"
+                    }
+                },
+                "feature_9DL7GE": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "city",
+                        "text": "IN 11 STÄDTEN"
+                    }
+                },
+                "feature_9jzriW": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "controller",
+                        "text": "27 SPIELE"
+                    }
+                },
+                "feature_xHRcRR": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "chat",
+                        "text": "AUF DEUTSCH & ENGLISCH"
+                    }
+                },
+                "button_XMgiFP": {
+                    "type": "button",
+                    "settings": {
+                        "button": "STADT WÄHLEN",
+                        "url": "",
+                        "open_in_new_tab": false,
+                        "button_style": "outline",
+                        "button_custom": true,
+                        "button_font": "red_hat_display_n8",
+                        "button_size": 14,
+                        "button_size_mobile": 14,
+                        "button_advanced": false,
+                        "button_height": 100,
+                        "button_padding_horizontal": 24,
+                        "button_padding_horizontal_mobile": 20,
+                        "button_padding_vertical": 12,
+                        "button_padding_vertical_mobile": 12,
+                        "button_radius": 6,
+                        "button_border_thickness": 1,
+                        "button_mt": 24,
+                        "button_mt_mobile": 24,
+                        "button_custom_styling": false,
+                        "button_full_width_mobile": false,
+                        "button_color": "#191919",
+                        "button_hover_color": "#f9f544",
+                        "button_bg_color": "#f9f544",
+                        "button_bg_hover_color": "#2d2d2d",
+                        "button_border_color": "#f9f544",
+                        "button_border_hover_color": "#f9f544",
+                        "button_shadow_color": "#000000"
+                    }
+                }
+            },
+            "block_order": [
+                "caption_CTdDLr",
+                "heading_XyPMQk",
+                "text_DKVyax",
+                "feature_9DL7GE",
+                "feature_9jzriW",
+                "feature_xHRcRR",
+                "button_XMgiFP"
+            ],
+            "name": "SS - Hero pro 💎",
+            "settings": {
+                "hero_height": "full_screen",
+                "hero_fixed_height": 600,
+                "hero_fixed_height_mobile": 600,
+                "content_max_width": 50,
+                "enable_split_layout": false,
+                "content_align": "left",
+                "content_align_mobile": "left",
+                "content_vertical_align": "center",
+                "content_vertical_align_mobile": "center",
+                "features_advanced": false,
+                "features_mt": 20,
+                "features_mt_mobile": 20,
+                "features_gap": 24,
+                "features_gap_mobile": 12,
+                "feature_background": true,
+                "feature_bg_opacity": 1,
+                "feature_enable_blur": false,
+                "feature_radius": 6,
+                "feature_border_thickness": 0,
+                "feature_padding_horizontal": 12,
+                "feature_padding_horizontal_mobile": 12,
+                "feature_padding_vertical": 7,
+                "feature_padding_vertical_mobile": 6,
+                "feature_icon_size": 30,
+                "feature_icon_size_mobile": 26,
+                "feature_text_custom": false,
+                "feature_text_font": "red_hat_display_n8",
+                "feature_text_size": 16,
+                "feature_text_size_mobile": 14,
+                "feature_text_height": 150,
+                "feature_icon_color": "#f9f544",
+                "feature_text_color": "#ffffff",
+                "feature_bg_color": "#1c1c1c",
+                "feature_border_color": "#1c1c1c",
+                "layout_bg_type": "image",
+                "bg_image": "shopify:\/\/shop_images\/hero-duesseldorf-skyline.jpg",
+                "bg_video_url": "",
+                "bg_overlay": 0.75,
+                "bg_overlay_color": "#000000",
+                "background_style": "solid",
+                "background_color": "#121212",
+                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+                "border_color": "#121212",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 36,
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "width": "page",
+                "content_width": 1200,
+                "border_thickness": 0,
+                "section_radius": 0,
+                "lazy": false
+            }
+        },
+        "main": {
+            "type": "main-page",
+            "disabled": true,
+            "settings": {
+                "padding_top": 28,
+                "padding_bottom": 28
+            }
+        },
+        "ss_logo_cloud_2_gHbDMW": {
+            "type": "ss-logo-cloud-2",
+            "blocks": {
+                "text_St4dtUb": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<h3>STÄDTEÜBERSICHT<\/h3>",
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n7",
+                        "text_size": 20,
+                        "text_size_mobile": 16,
+                        "text_height": 130,
+                        "text_mt": 0,
+                        "text_mt_mobile": 0,
+                        "text_color": "#f9f544"
+                    }
+                },
+                "heading_cXpVPN": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "<h2>FINDE DEIN NÄCHSTES ABENTEUER<\/h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_size": 36,
+                        "heading_size_mobile": 28,
+                        "heading_height": 130,
+                        "heading_color": "#ffffff"
+                    }
+                },
+                "card_NMFDga": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/DARMSTADT.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-darmstadt",
+                        "title": "DARMSTADT",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#a1d9ee"
+                    }
+                },
+                "card_EEAp3G": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/DUSSELDORF.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-duesseldorf",
+                        "title": "DÜSSELDORF",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#ffffff"
+                    }
+                },
+                "card_VkLQQT": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/FRANKFURT.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-frankfurt?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxJpNsFbnpEduUAstPavdcKOx8mqW3BELCOKU4WA39VZ2rf_6hJDL_EaAhVOEALw_wcB",
+                        "title": "FRANKFURT",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#a1d9ee"
+                    }
+                },
+                "card_FDpeiK": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/FREIBURG.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-freiburg",
+                        "title": "FREIBURG",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#ffffff"
+                    }
+                },
+                "card_tDcAK8": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/HAMBURG.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-hamburg",
+                        "title": "HAMBURG",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#a1d9ee"
+                    }
+                },
+                "card_riyEHR": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/HEIDELBERG.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-heidelberg",
+                        "title": "HEIDELBERG",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#969696"
+                    }
+                },
+                "card_jzUwdt": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/HEILBRONN.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-heilbronn?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxJpJBqqLUAcunDnqo7P-vmsEs8Y-jnRoLqmRQ3HwH-VnvnsAFrMI64aAh03EALw_wcB",
+                        "title": "HEILBRONN",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#969696"
+                    }
+                },
+                "card_qPAQ9m": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/KARLSRUHE.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-karlsruhe",
+                        "title": "KARLSRUHE",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#969696"
+                    }
+                },
+                "card_ADmFaJ": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/KOLN.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-koeln",
+                        "title": "KÖLN",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#f9f544"
+                    }
+                },
+                "card_RjAfFD": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/MAINZ.jpg",
+                        "url": "https:\/\/escape-this.com\/pages\/escape-game-mainz?gad_source=1&gad_campaignid=23162616478&gbraid=0AAAAAqteeMDTYE7iWulzUNiNtXXW1BuNS&gclid=Cj0KCQjw_vnQBhCxARIsADcZyxJVAp7C-x4nC1G_94CgxZbwrguYbfPoAYJ_UfTxJgW205FV_7crvA8aAuTlEALw_wcB",
+                        "title": "MAINZ",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#f9f544"
+                    }
+                },
+                "card_NVWPmC": {
+                    "type": "card",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/MUNCHEN.jpg",
+                        "url": "shopify:\/\/pages\/escape-game-munchen",
+                        "title": "MÜNCHEN",
+                        "card_bg_color": "#2c2b2b",
+                        "card_border_color": "#f9f544"
+                    }
+                }
+            },
+            "block_order": [
+                "text_St4dtUb",
+                "heading_cXpVPN",
+                "card_NMFDga",
+                "card_EEAp3G",
+                "card_VkLQQT",
+                "card_FDpeiK",
+                "card_tDcAK8",
+                "card_riyEHR",
+                "card_jzUwdt",
+                "card_qPAQ9m",
+                "card_ADmFaJ",
+                "card_RjAfFD",
+                "card_NVWPmC"
+            ],
+            "name": "SS - Logo cloud #2",
+            "settings": {
+                "content_align": "left",
+                "content_align_mobile": "left",
+                "cards_gap": 20,
+                "cards_gap_mobile": 12,
+                "cards_mt": 0,
+                "cards_mt_mobile": 0,
+                "card_padding_horizontal": 0,
+                "card_padding_horizontal_mobile": 0,
+                "card_padding_vertical": 0,
+                "card_padding_vertical_mobile": 0,
+                "card_width": 300,
+                "card_width_mobile": 160,
+                "card_radius": 4,
+                "card_border_thickness": 0,
+                "card_overlay": 0.5,
+                "label_font": "red_hat_display_n8",
+                "label_size": 16,
+                "label_size_mobile": 18,
+                "image_radius": 4,
+                "image_border_thickness": 0,
+                "image_ratio": "landscape",
+                "image_ratio_mobile": "landscape",
+                "card_overlay_color": "#000000",
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#000000",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 36,
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "content_width": 1600,
+                "border_thickness": 0,
+                "section_radius": 0,
+                "lazy": true
+            }
+        },
+        "24406470-6a55-4446-b506-fbe24fb74e2d": {
+            "type": "multicolumn",
+            "blocks": {
+                "template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-1": {
+                    "type": "column",
+                    "settings": {
+                        "title": "",
+                        "text": "<h4><a href=\"\/pages\/escape-game-darmstadt\" title=\"Darmstadt\">Darmstadt<\/a><\/h4><h4><a href=\"\/pages\/escape-game-duesseldorf\" title=\"Düsseldorf\">Düsseldorf<\/a><\/h4><h4><a href=\"\/pages\/escape-game-frankfurt\" title=\"Frankfurt\">Frankfurt am Main<\/a><\/h4><h4><a href=\"\/pages\/escape-game-freiburg\" title=\"Freiburg\">Freiburg<\/a><\/h4><h4><a href=\"\/pages\/escape-game-hamburg\" title=\"Hamburg\">Hamburg<\/a><\/h4><h4><a href=\"\/pages\/escape-game-heidelberg\" title=\"Heidelberg\">Heidelberg<\/a><\/h4><h4><a href=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-heilbronn\" title=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-heilbronn\">Heilbronn<\/a><\/h4><p><\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-2": {
+                    "type": "column",
+                    "settings": {
+                        "title": "",
+                        "text": "<h4><a href=\"\/pages\/escape-game-karlsruhe\" title=\"Karlsruhe\">Karlsruhe<\/a><\/h4><h4><a href=\"\/pages\/koeln\" title=\"Köln\">Köln<\/a><\/h4><h4><a href=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-mainz\" title=\"https:\/\/escape-this.com\/pages\/gastro-escape-game-mainz\">Mainz<\/a><\/h4><h4><a href=\"\/pages\/escape-game-munchen\" title=\"München\">München<\/a><\/h4>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "433f57f5-89eb-4fd7-a3e6-39cf53d534bf": {
+                    "type": "column",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/Kartenansicht_animiert.gif",
+                        "title": "",
+                        "text": "",
+                        "link_label": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": [
+                "template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-1",
+                "template--20307304186198__24406470-6a55-4446-b506-fbe24fb74e2d-column-2",
+                "433f57f5-89eb-4fd7-a3e6-39cf53d534bf"
+            ],
+            "disabled": true,
+            "custom_css": [],
+            "settings": {
+                "title": "Jede Stadt hat eigene Geheimnisse - Welche entdeckst du?",
+                "heading_size": "h1",
+                "image_width": "full",
+                "image_ratio": "adapt",
+                "button_label": "Zu den Games",
+                "button_link": "shopify:\/\/collections\/escape-games",
+                "columns_desktop": 3,
+                "column_alignment": "center",
+                "background_style": "none",
+                "color_scheme": "",
+                "columns_mobile": "2",
+                "swipe_on_mobile": true,
+                "padding_top": 0,
+                "padding_bottom": 28
+            }
+        },
+        // "0cf58770-1bee-4f17-ad4e-d6d4fc7447a3": {
+        //     "type": "contact-form",
+        //     "settings": {
+        //         "heading": "Welche Stadt wünschst du dir für die Zukunft?",
+        //         "heading_size": "h1",
+        //         "color_scheme": "",
+        //         "padding_top": 36,
+        //         "padding_bottom": 36
+        //     }
+        // },
+        "5e48aef1-4708-4bae-880b-a1cba63286f7": {
+            "type": "ss-newsletter-1",
+            "blocks": {
+                "caption_n3wsC01": {
+                    "type": "caption",
+                    "settings": {
+                        "caption": "STÄDTEWUNSCH",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
+                        "caption_color": "#f9f544"
+                    }
+                },
+                "heading_n3wsH01": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "DEINE STADT IST NICHT DABEI?",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
+                        "heading_color": "#ffffff"
+                    }
+                },
+                "text_n3wsT01": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>WIR SIND SCHON MITTEN DRIN UNSERE STÄDTEAUSWAHL FÜR DICH ZU VERGRÖSSERN. BLEIBE MIT UNSEREM NEWSLETTER AUF DEM LAUFENDEN: ERFAHRE ALS ERSTER VON NEUEN STÄDTEN, NEUEN GAMES, SPECIAL EVENTS UND BESONDEREN AKTIONEN. KEIN SPAM!<\/p>",
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n4",
+                        "text_size": 16,
+                        "text_size_mobile": 14,
+                        "text_color": "#ffffff"
+                    }
+                },
+                "email_form_n3wsF01": {
+                    "type": "email_form",
+                    "settings": {
+                        "placeholder": "WUNSCHSTADT EINGEBEN",
+                        "input_radius": 5,
+                        "input_border_color": "#f9f544",
+                        "input_text_color": "#ffffff"
+                    }
+                }
+            },
+            "block_order": [
+                "caption_n3wsC01",
+                "heading_n3wsH01",
+                "text_n3wsT01",
+                "email_form_n3wsF01"
+            ],
+            "name": "SS - Newsletter #1",
+            "settings": {
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 40,
+                "padding_bottom": 96,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
+            }
+        },
+        "custom_liquid_ftdmyb": {
+            "type": "custom-liquid",
+            "disabled": true,
+            "settings": {
+                "custom_liquid": "<script src=\"https:\/\/unpkg.com\/@dotlottie\/player-component@latest\/dist\/dotlottie-player.mjs\" type=\"module\"><\/script> \n\n    <dotlottie-player src=\"https:\/\/lottie.host\/3c89d6d1-be71-412b-96a7-7624a8c3513a\/dsVYFPrwbR.json\" background=\"transparent\" speed=\"1\" style=\"width: 300px; height: 300px;\" loop autoplay><\/dotlottie-player>",
+                "color_scheme": "",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        }
+    },
+    "order": [
+        "ss_hero_pro_VKwVdh",
+        "main",
+        "ss_logo_cloud_2_gHbDMW",
+        "24406470-6a55-4446-b506-fbe24fb74e2d",
+        // "0cf58770-1bee-4f17-ad4e-d6d4fc7447a3",
+        "5e48aef1-4708-4bae-880b-a1cba63286f7",
+        "custom_liquid_ftdmyb"
+    ]
+}
