@@ -119,6 +119,11 @@ For inquiries or permissions, contact daniel@section.store
     inset: 0;
     background-color: {{ card_overlay_color | hex_to_rgba: card_overlay }};
     pointer-events: none;
+    transition: opacity 0.25s ease 0s;
+  }
+
+  .cloud-card-{{ section.id }}:hover .cloud-card-overlay-{{ section.id }} {
+    opacity: 0;
   }
 
   .cloud-card-label-{{ section.id }} {
@@ -137,6 +142,11 @@ For inquiries or permissions, contact daniel@section.store
     color: #ffffff;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: color 0.25s ease 0s;
+  }
+
+  .cloud-card-{{ section.id }}:hover .cloud-card-label-{{ section.id }} {
+    color: #f9f544;
   }
 
   @media(min-width: 1024px) {
