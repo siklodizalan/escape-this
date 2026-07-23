@@ -25,6 +25,29 @@
   assign image_overlay_color = section.settings.image_overlay_color
   assign image_overlay_opacity = section.settings.image_overlay_opacity
 
+  assign features_mt = section.settings.features_mt
+  assign features_mt_mobile = section.settings.features_mt_mobile
+  assign features_gap = section.settings.features_gap
+  assign features_gap_mobile = section.settings.features_gap_mobile
+  assign feature_background = section.settings.feature_background
+  assign feature_bg_opacity = section.settings.feature_bg_opacity
+  assign feature_enable_blur = section.settings.feature_enable_blur
+  assign feature_radius = section.settings.feature_radius
+  assign feature_border_thickness = section.settings.feature_border_thickness
+  assign feature_padding_horizontal = section.settings.feature_padding_horizontal
+  assign feature_padding_horizontal_mobile = section.settings.feature_padding_horizontal_mobile
+  assign feature_padding_vertical = section.settings.feature_padding_vertical
+  assign feature_padding_vertical_mobile = section.settings.feature_padding_vertical_mobile
+  assign feature_icon_size = section.settings.feature_icon_size
+  assign feature_icon_size_mobile = section.settings.feature_icon_size_mobile
+  assign feature_icon_color = section.settings.feature_icon_color
+  assign feature_text_size = section.settings.feature_text_size
+  assign feature_text_size_mobile = section.settings.feature_text_size_mobile
+  assign feature_text_color = section.settings.feature_text_color
+  assign feature_text_height = section.settings.feature_text_height
+  assign feature_bg_color = section.settings.feature_bg_color
+  assign feature_border_color = section.settings.feature_border_color
+
   assign content_align = 'left'
   assign content_align_mobile = 'left'
   assign content_horizontal_align = 'flex-start'
@@ -91,6 +114,78 @@
     gap: 16px;
   }
 
+  .cta-split-features-{{ section.id }} {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: {{ features_gap_mobile }}px;
+    justify-content: flex-start;
+    margin-top: {{ features_mt_mobile }}px;
+  }
+
+  .cta-split-feature-{{ section.id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-split-feature-text-{{ section.id }} {
+    margin: 0;
+    font-size: {{ feature_text_size_mobile }}px;
+    color: {{ feature_text_color }};
+    line-height: {{ feature_text_height }}%;
+    text-transform: unset;
+    font-weight: var(--font-body-weight);
+    text-wrap: balance;
+    word-break: break-word;
+  }
+
+  .cta-split-feature-icon-{{ section.id }} {
+    flex-shrink: 0;
+    height: {{ feature_icon_size_mobile }}px;
+    width: {{ feature_icon_size_mobile }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    {% if feature_background %}
+      padding: {{ feature_padding_vertical_mobile }}px;
+      border: {{ feature_border_thickness }}px solid {{ feature_border_color }};
+      border-radius: {{ feature_radius }}px;
+      background-color: {{ feature_bg_color | hex_to_rgba: feature_bg_opacity }};
+      {% if feature_enable_blur %}
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+      {% endif %}
+    {% endif %}
+  }
+
+  .cta-split-feature-icon-{{ section.id }} img,
+  .cta-split-feature-icon-{{ section.id }} svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cta-split-feature-icon-{{ section.id }} svg path {
+    fill: {{ feature_icon_color }};
+  }
+
+  .cta-split-feature-icon-{{ section.id }} svg circle {
+    fill: {{ feature_icon_color }};
+  }
+
+  .cta-split-feature-icon-{{ section.id }} .refresh-{{ section.id }} path,
+  .cta-split-feature-icon-{{ section.id }} .refresh-{{ section.id }} polyline {
+    fill: none;
+    stroke: {{ feature_icon_color }};
+  }
+
   @media(min-width: 750px) {
     .cta-split-{{ section.id }} {
       flex-direction: row;
@@ -100,7 +195,8 @@
 
     .cta-split-image-{{ section.id }} {
       flex: {{ image_width }} 1 0;
-      height: {{ card_height }}px;
+      height: auto;
+      min-height: {{ card_height }}px;
     }
 
     .cta-split-card-{{ section.id }} {
@@ -109,6 +205,25 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+
+    .cta-split-features-{{ section.id }} {
+      flex-direction: row;
+      align-items: center;
+      gap: {{ features_gap }}px;
+      margin-top: {{ features_mt }}px;
+    }
+
+    .cta-split-feature-text-{{ section.id }} {
+      font-size: {{ feature_text_size }}px;
+    }
+
+    .cta-split-feature-icon-{{ section.id }} {
+      height: {{ feature_icon_size }}px;
+      width: {{ feature_icon_size }}px;
+      {% if feature_background %}
+        padding: {{ feature_padding_vertical }}px;
+      {% endif %}
     }
   }
 
@@ -194,6 +309,36 @@
               <div class="hero-text-{{ block.id }}" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
+            {% when 'feature' %}
+              {% assign next_index = forloop.index0 | plus: 1 %}
+              {% assign next_block = section.blocks[next_index] %}
+
+              {% unless feature_open %}
+                <div class="cta-split-features-{{ section.id }}">
+              {% endunless %}
+
+              <div class="cta-split-feature-{{ section.id }}" {{ block.shopify_attributes }}>
+                {% if block.settings.custom_icon != blank or block.settings.icon != "none" %}
+                  <div class="cta-split-feature-icon-{{ section.id }}">
+                    {% render 'hero-pro-icon',
+                      custom_icon: block.settings.custom_icon,
+                      icon: block.settings.icon,
+                      content_width: 1200,
+                      loading_attribute: 'lazy'
+                    %}
+                  </div>
+                {% endif %}
+                {% if block.settings.text != blank %}
+                  <p class="cta-split-feature-text-{{ section.id }}">{{ block.settings.text }}</p>
+                {% endif %}
+              </div>
+
+              {% assign feature_open = true %}
+
+              {% if next_block.type != "feature" %}
+                </div>
+                {% assign feature_open = false %}
+              {% endif %}
             {% when 'button' %}
               {% render 'hero-pro-style-button', block: block %}
           {% endcase %}
@@ -331,6 +476,205 @@
         "id": "card_bg_color",
         "label": "Card background",
         "default": "#f9f544"
+      },
+      {
+        "type": "header",
+        "content": "Features"
+      },
+      {
+        "type": "range",
+        "id": "features_mt",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Margin top",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "features_mt_mobile",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Margin top - mobile",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "features_gap",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Gap",
+        "default": 24
+      },
+      {
+        "type": "range",
+        "id": "features_gap_mobile",
+        "min": 0,
+        "max": 60,
+        "step": 2,
+        "unit": "px",
+        "label": "Gap - mobile",
+        "default": 12
+      },
+      {
+        "type": "checkbox",
+        "id": "feature_background",
+        "label": "Show icon background",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "feature_bg_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Icon background opacity",
+        "default": 1
+      },
+      {
+        "type": "checkbox",
+        "id": "feature_enable_blur",
+        "label": "Enable blur",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "feature_radius",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon roundness",
+        "default": 6
+      },
+      {
+        "type": "range",
+        "id": "feature_border_thickness",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon border thickness",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "feature_padding_horizontal",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon padding horizontal",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "feature_padding_horizontal_mobile",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon padding horizontal - mobile",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "feature_padding_vertical",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon padding vertical",
+        "default": 7
+      },
+      {
+        "type": "range",
+        "id": "feature_padding_vertical_mobile",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon padding vertical - mobile",
+        "default": 6
+      },
+      {
+        "type": "range",
+        "id": "feature_icon_size",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon size",
+        "default": 30
+      },
+      {
+        "type": "range",
+        "id": "feature_icon_size_mobile",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon size - mobile",
+        "default": 26
+      },
+      {
+        "type": "range",
+        "id": "feature_text_size",
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Text font size",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "feature_text_size_mobile",
+        "min": 10,
+        "max": 32,
+        "step": 1,
+        "unit": "px",
+        "label": "Text font size - mobile",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "feature_text_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Text line height",
+        "default": 150
+      },
+      {
+        "type": "color",
+        "id": "feature_icon_color",
+        "label": "Icon color",
+        "default": "#f9f544"
+      },
+      {
+        "type": "color",
+        "id": "feature_text_color",
+        "label": "Text color",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "id": "feature_bg_color",
+        "label": "Icon background",
+        "default": "#1c1c1c"
+      },
+      {
+        "type": "color",
+        "id": "feature_border_color",
+        "label": "Icon border",
+        "default": "#1c1c1c"
       },
       {
         "type": "header",
@@ -536,6 +880,260 @@
         ]
       },
       {
+        "type": "feature",
+        "name": "Feature",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon",
+            "default": "scallop_checkmark",
+            "options": [
+               {
+                "label": "None",
+                "value": "none"
+              },
+              {
+                "label": "Clock",
+                "value": "clock",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Person",
+                "value": "person",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "CreditCard",
+                "value": "credit_card",
+                "group": "Cart & Payment"
+              },
+              {
+                "label": "Basketball",
+                "value": "ball_basket",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Money",
+                "value": "money_bill_coin",
+                "group": "Cart & Payment"
+              },
+              {
+                "label": "Coupon",
+                "value": "scissors_coupon_2",
+                "group": "Cart & Payment"
+              },
+              {
+                "label": "Shop",
+                "value": "shop",
+                "group": "Cart & Payment"
+              },
+              {
+                "label": "Wallet",
+                "value": "wallet_2",
+                "group": "Cart & Payment"
+              },
+              {
+                "label": "Tags",
+                "value": "tags",
+                "group": "Cart & Payment"
+              },
+              {
+                "label": "Box",
+                "value": "box",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "Earth",
+                "value": "earth",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "Calendar",
+                "value": "calendar",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "City",
+                "value": "city",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "Leaf",
+                "value": "leaf",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "Feather",
+                "value": "feather",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "Gift",
+                "value": "gift",
+                "group": "Shipping & Logistics"
+              },
+              {
+                "label": "Award",
+                "value": "award",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Anchor",
+                "value": "anchor",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Gem",
+                "value": "gem_sparkle",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Hand",
+                "value": "hand",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Care",
+                "value": "heart_hand",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Lock",
+                "value": "lock",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Shield",
+                "value": "shield_check",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Lifebuoy",
+                "value": "life_ring",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Star",
+                "value": "star_sparkle",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Basic checkmark",
+                "value": "checkmark",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Scallop checkmark",
+                "value": "scallop_checkmark",
+                "group": "Trust & Assurance"
+              },
+              {
+                "label": "Bookmark",
+                "value": "bookmark",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Envelope",
+                "value": "envelope",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Headset",
+                "value": "headset",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Heart",
+                "value": "heart",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Smile",
+                "value": "face_smile_2",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Image",
+                "value": "image_mountain",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Pin",
+                "value": "pin_tack",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Target",
+                "value": "target",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Bolt",
+                "value": "bolt",
+                "group": "Status & Ops"
+              },
+              {
+                "label": "Rotate",
+                "value": "arrow_dotted_rotate_anticlockwise",
+                "group": "Status & Ops"
+              },
+              {
+                "label": "Rocket",
+                "value": "rocket",
+                "group": "Status & Ops"
+              },
+              {
+                "label": "Refresh",
+                "value": "refresh_2",
+                "group": "Status & Ops"
+              },
+              {
+                "label": "Sliders",
+                "value": "sliders",
+                "group": "Status & Ops"
+              },
+              {
+                "label": "Game controller",
+                "value": "controller",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Chat",
+                "value": "chat",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Grid",
+                "value": "grid",
+                "group": "Status & Ops"
+              },
+              {
+                "label": "Family",
+                "value": "family",
+                "group": "Customer Engagement"
+              },
+              {
+                "label": "Headset person",
+                "value": "headset_person",
+                "group": "Customer Engagement"
+              }
+            ]
+          },
+          {
+            "type": "image_picker",
+            "label": "Custom icon",
+            "id": "custom_icon"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Feature"
+          }
+        ]
+      },
+      {
         "type": "button",
         "name": "Button",
         "limit": 2,
@@ -586,6 +1184,8 @@
           { "type": "caption" },
           { "type": "heading" },
           { "type": "text" },
+          { "type": "feature" },
+          { "type": "feature" },
           { "type": "button" }
         ]
       }

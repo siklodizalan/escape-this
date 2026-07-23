@@ -168,7 +168,7 @@
                 "content_align": "left",
                 "content_align_mobile": "left",
                 "content_vertical_align": "center",
-                "content_vertical_align_mobile": "end",
+                "content_vertical_align_mobile": "center",
                 "features_advanced": false,
                 "features_mt": 20,
                 "features_mt_mobile": 20,
@@ -343,30 +343,29 @@
             }
         },
         "ss_hero_pro_KeYa76": {
-            "type": "ss-hero-pro",
+            "type": "ss-cta-split-1",
             "blocks": {
                 "caption_DCD3Wf": {
                     "type": "caption",
                     "settings": {
-                        "caption": "<p>FÜR UNTERNEHMEN<\/p>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
-                        "caption_advanced": false,
+                        "caption": "<h3>FÜR UNTERNEHMEN<\/h3>",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
                         "caption_height": 130,
                         "caption_mt": 0,
                         "caption_mt_mobile": 0,
                         "background": false,
                         "caption_bg_opacity": 0.3,
-                        "enable_blur": true,
+                        "enable_blur": false,
                         "caption_radius": 100,
                         "caption_border_thickness": 1,
                         "caption_padding_horizontal": 12,
                         "caption_padding_horizontal_mobile": 12,
                         "caption_padding_vertical": 6,
                         "caption_padding_vertical_mobile": 6,
-                        "caption_color": "#f9f544",
+                        "caption_color": "#191919",
                         "caption_bg_color": "#ffffff",
                         "caption_border_color": "#ffffff"
                     }
@@ -374,85 +373,82 @@
                 "heading_WmrRBx": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>Teambuilding, das wirklich Spaß macht.<\/h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
-                        "heading_advanced": false,
+                        "heading": "<h2>TEAMBUILDING, DAS WIRKLICH SPASS MACHT<\/h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
                         "heading_height": 130,
                         "heading_mt": 8,
                         "heading_mt_mobile": 8,
-                        "heading_color": "#ffffff",
-                        "heading_accent_color": "#f9f544"
+                        "heading_color": "#191919",
+                        "heading_accent_color": "#191919"
                     }
                 },
                 "text_dtHRQE": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Escape Games als Teamevent — unkompliziert, flexibel und garantiert kein langweiliger Workshop. Perfekt für Teams ab 4 Personen. Individuelle Pakete auf Anfrage.<\/p>",
-                        "text_custom": false,
-                        "text_font": "josefin_sans_n4",
-                        "text_size": 18,
+                        "text": "<p>ESCAPE GAMES ALS TEAMEVENT — UNKOMPLIZIERT, FLEXIBEL UND GARANTIERT KEIN LANGWEILIGER WORKSHOP. PERFEKT FÜR TEAMS AB 4 PERSONEN. INDIVIDUELLE PAKETE AUF ANFRAGE.<\/p>",
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n4",
+                        "text_size": 16,
                         "text_size_mobile": 14,
-                        "text_advanced": false,
                         "text_height": 150,
                         "text_mt": 20,
                         "text_mt_mobile": 20,
-                        "text_color": "#ffffff"
+                        "text_color": "#191919"
                     }
                 },
                 "feature_HQ4YXq": {
                     "type": "feature",
                     "settings": {
-                        "icon": "scallop_checkmark",
-                        "text": "Minimaler Aufwand"
+                        "icon": "clock",
+                        "text": "MINIMALER AUFWAND"
                     }
                 },
                 "feature_zwb8RW": {
                     "type": "feature",
                     "settings": {
-                        "icon": "headset",
-                        "text": "Individuelle Beratung"
+                        "icon": "headset_person",
+                        "text": "INDIVIDUELLE BERATUNG"
                     }
                 },
                 "feature_i3t6eb": {
                     "type": "feature",
                     "settings": {
-                        "icon": "award",
-                        "text": "98%Weiterempfehlung"
+                        "icon": "scallop_checkmark",
+                        "text": "98% WEITEREMPFEHLUNG"
                     }
                 },
                 "button_4xFbaG": {
                     "type": "button",
                     "settings": {
-                        "button": "Mehr erfahren",
+                        "button": "MEHR ERFAHREN",
                         "url": "shopify:\/\/pages\/unternehmen",
                         "open_in_new_tab": false,
-                        "button_style": "non_outline",
-                        "button_custom": false,
-                        "button_font": "josefin_sans_n4",
-                        "button_size": 14,
-                        "button_size_mobile": 14,
-                        "button_advanced": false,
+                        "button_style": "outline",
+                        "button_custom": true,
+                        "button_font": "red_hat_display_n8",
+                        "button_size": 16,
+                        "button_size_mobile": 16,
                         "button_height": 100,
-                        "button_padding_horizontal": 40,
-                        "button_padding_horizontal_mobile": 32,
-                        "button_padding_vertical": 20,
-                        "button_padding_vertical_mobile": 20,
-                        "button_radius": 100,
+                        "button_padding_horizontal": 24,
+                        "button_padding_horizontal_mobile": 24,
+                        "button_padding_vertical": 12,
+                        "button_padding_vertical_mobile": 12,
+                        "button_radius": 5,
                         "button_border_thickness": 1,
                         "button_mt": 24,
                         "button_mt_mobile": 24,
-                        "button_custom_styling": true,
-                        "button_full_width_mobile": true,
-                        "button_color": "#1f1f21",
-                        "button_hover_color": "#ffffff",
-                        "button_bg_color": "#f9f544",
-                        "button_bg_hover_color": "#2d2d2d",
-                        "button_border_color": "#1a1a1a",
-                        "button_border_hover_color": "#1a1a1a",
+                        "button_custom_styling": false,
+                        "button_full_width_mobile": false,
+                        "button_color": "#191919",
+                        "button_hover_color": "#191919",
+                        "button_bg_color": "rgba(0,0,0,0)",
+                        "button_bg_hover_color": "rgba(0,0,0,0)",
+                        "button_border_color": "#191919",
+                        "button_border_hover_color": "#191919",
                         "button_shadow_color": "#000000"
                     }
                 }
@@ -466,63 +462,125 @@
                 "feature_i3t6eb",
                 "button_4xFbaG"
             ],
-            "name": "SS - Hero pro 💎",
+            "name": "SS - CTA Split #1",
             "settings": {
-                "hero_height": "fixed_height",
-                "hero_fixed_height": 390,
-                "hero_fixed_height_mobile": 600,
-                "content_max_width": 100,
-                "enable_split_layout": false,
-                "content_align": "center",
-                "content_align_mobile": "center",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "end",
-                "features_advanced": false,
+                "image": "shopify:\/\/shop_images\/Teambuilding.jpg",
+                "image_overlay_opacity": 0,
+                "image_overlay_color": "#000000",
+                "image_width": 57,
+                "gap": 20,
+                "gap_mobile": 16,
+                "card_radius": 5,
+                "card_height": 200,
+                "card_height_mobile": 220,
+                "card_padding": 40,
+                "card_padding_mobile": 24,
+                "card_bg_color": "#f9f544",
                 "features_mt": 20,
                 "features_mt_mobile": 20,
                 "features_gap": 24,
                 "features_gap_mobile": 12,
-                "feature_background": false,
-                "feature_bg_opacity": 0.3,
-                "feature_enable_blur": true,
-                "feature_radius": 100,
-                "feature_border_thickness": 1,
+                "feature_background": true,
+                "feature_bg_opacity": 0.15,
+                "feature_enable_blur": false,
+                "feature_radius": 6,
+                "feature_border_thickness": 0,
                 "feature_padding_horizontal": 12,
                 "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 6,
+                "feature_padding_vertical": 7,
                 "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 18,
-                "feature_icon_size_mobile": 16,
-                "feature_text_custom": false,
-                "feature_text_font": "josefin_sans_n4",
+                "feature_icon_size": 30,
+                "feature_icon_size_mobile": 26,
                 "feature_text_size": 16,
                 "feature_text_size_mobile": 14,
                 "feature_text_height": 150,
-                "feature_icon_color": "#fafafa",
-                "feature_text_color": "#fafafa",
-                "feature_bg_color": "#ffffff",
-                "feature_border_color": "#ffffff",
-                "layout_bg_type": "color",
-                "bg_video_url": "",
-                "bg_overlay": 0.2,
-                "bg_overlay_color": "#121212",
-                "background_style": "solid",
-                "background_color": "#a1d9ee",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+                "feature_icon_color": "#191919",
+                "feature_text_color": "#191919",
+                "feature_bg_color": "#191919",
+                "feature_border_color": "#191919",
+                "background_color": "#191919",
                 "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
+                "margin_top": 60,
+                "margin_bottom": 60,
                 "margin_horizontal": 0,
                 "margin_horizontal_mobile": 0,
                 "padding_top": 36,
                 "padding_bottom": 36,
                 "padding_horizontal": 5,
                 "padding_horizontal_mobile": 1.5,
-                "width": "page",
-                "content_width": 1200,
-                "border_thickness": 3,
-                "section_radius": 0,
-                "lazy": false
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
+            }
+        },
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
+            "type": "ss-newsletter-1",
+            "blocks": {
+                "caption_n3wsC01": {
+                    "type": "caption",
+                    "settings": {
+                        "caption": "ANMELDEN & SPAREN",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
+                        "caption_color": "#f9f544"
+                    }
+                },
+                "heading_n3wsH01": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "10% NEWSLETTER-RABATT",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
+                        "heading_color": "#ffffff"
+                    }
+                },
+                "text_n3wsT01": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>JETZT ANMELDEN & 10% AUF DEIN ERSTES ABENTEUER SPAREN! ERFAHRE ALS ERSTER VON NEUEN GAMES, EVENTS UND AKTIONEN AUS UNSERER ADVENTUREWERKSTATT.<\/p>",
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n4",
+                        "text_size": 16,
+                        "text_size_mobile": 14,
+                        "text_color": "#ffffff"
+                    }
+                },
+                "email_form_n3wsF01": {
+                    "type": "email_form",
+                    "settings": {
+                        "placeholder": "EMAIL ADRESSE",
+                        "input_radius": 5,
+                        "input_border_color": "#f9f544",
+                        "input_text_color": "#ffffff"
+                    }
+                }
+            },
+            "block_order": [
+                "caption_n3wsC01",
+                "heading_n3wsH01",
+                "text_n3wsT01",
+                "email_form_n3wsF01"
+            ],
+            "name": "SS - Newsletter #1",
+            "settings": {
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 40,
+                "padding_bottom": 100,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         }
     },
@@ -533,6 +591,7 @@
         "featured_collection_EnEcTG",
         "featured_collection_8zzY8K",
         "featured_collection_AqDfGD",
-        "ss_hero_pro_KeYa76"
+        "ss_hero_pro_KeYa76",
+        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302"
     ]
 }
