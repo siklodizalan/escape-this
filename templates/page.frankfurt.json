@@ -176,6 +176,7 @@
         },
         "ss_hero_pro_z3aznY": {
             "type": "ss-hero-pro",
+            "disabled": true,
             "blocks": {
                 "caption_fixpV4": {
                     "type": "caption",
@@ -286,6 +287,7 @@
         },
         "multicolumn_yiqQXW": {
             "type": "multicolumn",
+            "disabled": true,
             "blocks": {
                 "column_A8JxMi": {
                     "type": "column",
@@ -347,11 +349,11 @@
                 "caption_jjjdAb": {
                     "type": "caption",
                     "settings": {
-                        "caption": "<h3>Wähle dein Abenteuer!</h3>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
+                        "caption": "<h3>WÄHLE DEIN ABENTEUER!</h3>",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
                         "caption_advanced": false,
                         "caption_height": 130,
                         "caption_mt": 0,
@@ -373,27 +375,27 @@
                 "heading_imPHzA": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>Spiele in Frankfurt.</h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
+                        "heading": "<h2>SPIELE IN FRANKFURT.</h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
                         "heading_advanced": false,
                         "heading_height": 130,
                         "heading_mt": 8,
                         "heading_mt_mobile": 8,
                         "heading_color": "#ffffff",
-                        "heading_accent_color": "#afafaf"
+                        "heading_accent_color": "#f9f544"
                     }
                 },
                 "text_aMwY3C": {
                     "type": "text",
                     "settings": {
                         "text": "<p>ZWEI EINZIGARTIGE STORIES, EINE STADT VOLLER GEHEIMNISSE.<br/>WELCHES ABENTEUER WARTET AUF DICH?</p>",
-                        "text_custom": false,
-                        "text_font": "josefin_sans_n4",
-                        "text_size": 18,
+                        "text_custom": true,
+                        "text_font": "red_hat_display_n4",
+                        "text_size": 16,
                         "text_size_mobile": 14,
                         "text_advanced": false,
                         "text_height": 150,
@@ -406,14 +408,14 @@
                     "type": "feature",
                     "settings": {
                         "icon": "clock",
-                        "text": "2-3 Stunden Spielspaß"
+                        "text": "2-3 STUNDEN SPIELSPASS"
                     }
                 },
                 "feature_YPNzFm": {
                     "type": "feature",
                     "settings": {
                         "icon": "person",
-                        "text": "bis zu 8 Spieler"
+                        "text": "BIS ZU 8 SPIELER"
                     }
                 },
                 "button_gm3sB1": {
@@ -530,8 +532,8 @@
                 "hero_fixed_height_mobile": 600,
                 "content_max_width": 50,
                 "enable_split_layout": false,
-                "content_align": "center",
-                "content_align_mobile": "center",
+                "content_align": "left",
+                "content_align_mobile": "left",
                 "content_vertical_align": "center",
                 "content_vertical_align_mobile": "center",
                 "features_advanced": false,
@@ -671,6 +673,7 @@
         },
         "ss_testimonials_39_AVDhip": {
             "type": "ss-testimonials-39",
+            "disabled": true,
             "blocks": {
                 "video_card_cCHcUx": {
                     "type": "video_card",
@@ -1109,6 +1112,7 @@
         },
         "multicolumn_r8jDrp": {
             "type": "multicolumn",
+            "disabled": true,
             "blocks": {
                 "column_3bhGG3": {
                     "type": "column",
@@ -1164,6 +1168,7 @@
         },
         "ss_hero_pro_TiLwTb": {
             "type": "ss-hero-pro",
+            "disabled": true,
             "blocks": {
                 "caption_wLYk4T": {
                     "type": "caption",
@@ -1578,6 +1583,44 @@
                 "border_thickness": 0,
                 "section_radius": 0
             }
+        },
+        "ss_feedback_slider_1": {
+            "type": "ss-feedback-slider-1",
+            "blocks": {
+                "slide_1": {
+                    "type": "slide",
+                    "settings": {
+                        "image": "shopify://shop_images/EscapeGame_Frankfurt.heic",
+                        "stars_count": 5,
+                        "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
+                        "author": "Nik & Tom"
+                    }
+                },
+                "slide_2": {
+                    "type": "slide",
+                    "settings": {
+                        "image": "shopify://shop_images/Frankfurt11.heic",
+                        "stars_count": 5,
+                        "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
+                        "author": "Name"
+                    }
+                },
+                "slide_3": {
+                    "type": "slide",
+                    "settings": {
+                        "image": "shopify://shop_images/Frankfurt_Escape_Welt.jpg",
+                        "stars_count": 5,
+                        "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
+                        "author": "Nik & Tom"
+                    }
+                }
+            },
+            "block_order": [
+                "slide_1",
+                "slide_2",
+                "slide_3"
+            ],
+            "settings": {}
         }
     },
     "order": [
@@ -1590,6 +1633,7 @@
         "ss_hero_pro_B7gyRP",
         "featured_collection_zCRNJU",
         "image_with_text_TmezDj",
+        "ss_feedback_slider_1",
         "ss_testimonials_39_AVDhip",
         "psb_stats_stats_01_yxLJWH",
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
