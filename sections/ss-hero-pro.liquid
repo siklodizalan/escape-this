@@ -1760,13 +1760,28 @@ For inquiries or permissions, contact daniel@section.store
           {
             "type": "url",
             "id": "url",
-            "label": "Button link"
+            "label": "Button link",
+            "visible_if": "{{ block.settings.game_filter == blank }}"
           },
           {
             "type": "checkbox",
             "id": "open_in_new_tab",
             "label": "Open link in new tab",
-            "default": false
+            "default": false,
+            "visible_if": "{{ block.settings.game_filter == blank }}"
+          },
+          {
+            "type": "select",
+            "id": "game_filter",
+            "label": "Games filter",
+            "info": "When set, this button filters the games grid below by category instead of linking out. Requires the games grid section to have Game blocks with categories assigned.",
+            "default": "",
+            "options": [
+              { "label": "None (normal link)", "value": "" },
+              { "label": "All games", "value": "all" },
+              { "label": "City games", "value": "city" },
+              { "label": "Gastro games", "value": "gastro" }
+            ]
           },
           {
             "type": "select",

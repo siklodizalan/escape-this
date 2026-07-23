@@ -5,6 +5,10 @@
   `button_open` flag across loop iterations and {% render %} scope is
   isolated per-call.
 
+  When `block.settings.game_filter` is set, the button renders as a
+  <button> that filters the games grid below (see ss-games-grid-1.liquid)
+  instead of linking out.
+
   Accepts:
   - block: {Object} the button block
 
@@ -12,7 +16,17 @@
   {% render 'hero-pro-block-button', block: block %}
 {% endcomment %}
 {% if block.settings.button != blank %}
-  <{% if block.settings.url != blank %}a href={{ block.settings.url }} {% if block.settings.open_in_new_tab %}target="_blank"{% endif %} {% else %}div{% endif %} class="hero-button-{{ block.id }}">
+  {% if block.settings.game_filter != blank %}
+    <button
+      type="button"
+      class="hero-button-{{ block.id }}"
+      data-game-filter="{{ block.settings.game_filter }}"
+      aria-pressed="{% if block.settings.game_filter == 'all' %}true{% else %}false{% endif %}"
+      style="background: none; border: 0; padding: 0; margin: 0; font: inherit; text-align: inherit; display: inline-block;"
+    >
+  {% else %}
+    <{% if block.settings.url != blank %}a href={{ block.settings.url }} {% if block.settings.open_in_new_tab %}target="_blank"{% endif %} {% else %}div{% endif %} class="hero-button-{{ block.id }}">
+  {% endif %}
     <p class="hero-button-inner-{{ block.id }}">
       {{ block.settings.button }}
       {% if block.settings.button_style == "non_outline_arrow" or block.settings.button_style == "outline_arrow" %}
@@ -23,5 +37,9 @@
         </svg>
       {% endif %}
     </p>
+  {% if block.settings.game_filter != blank %}
+    </button>
+  {% else %}
     </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
   {% endif %}
+{% endif %}

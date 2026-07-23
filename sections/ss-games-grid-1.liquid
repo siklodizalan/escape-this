@@ -37,6 +37,22 @@
   if collection.all_products_count > products_to_show
     assign products_to_display = products_to_show
   endif
+
+  assign use_game_blocks = false
+  if section.blocks.size > 0
+    assign use_game_blocks = true
+  endif
+
+  assign has_city_game = false
+  assign has_gastro_game = false
+  for block in section.blocks
+    if block.settings.category == 'city'
+      assign has_city_game = true
+    endif
+    if block.settings.category == 'gastro'
+      assign has_gastro_game = true
+    endif
+  endfor
 -%}
 
 {%- style -%}
@@ -136,6 +152,30 @@
       padding-right: {{ padding_horizontal }}rem;
     }
   }
+
+  button[data-game-filter] {
+    cursor: pointer;
+  }
+
+  button[data-game-filter][aria-pressed="true"] > p {
+    background: #f9f544 !important;
+    border-color: #f9f544 !important;
+    color: #191919 !important;
+  }
+
+  button[data-game-filter][aria-pressed="true"] > p svg path {
+    fill: #191919 !important;
+  }
+
+  button[data-game-filter][aria-pressed="false"] > p {
+    background: transparent !important;
+    border: 1px solid #f9f544 !important;
+    color: #ffffff !important;
+  }
+
+  button[data-game-filter][aria-pressed="false"] > p svg path {
+    fill: #ffffff !important;
+  }
 {%- endstyle -%}
 
 {% unless full_width %}
@@ -148,10 +188,48 @@
 
 <div class="section-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
   <div class="section-{{ section.id }}-settings">
-    {% if collection != blank %}
+    {% if use_game_blocks %}
+      <div class="games-grid-{{ section.id }}">
+        {% for block in section.blocks %}
+          {% liquid
+            assign product = block.settings.product
+            assign category = block.settings.category | default: 'all'
+          %}
+          {% if product != blank %}
+            <a href="{{ product.url }}" class="games-card-{{ section.id }}" data-game-category="{{ category }}" {{ block.shopify_attributes }}>
+              {% if product.featured_media %}
+                <img
+                  srcset="
+                    {{ product.featured_media | image_url: width: 400 }} 400w,
+                    {{ product.featured_media | image_url: width: 700 }} 700w,
+                    {{ product.featured_media | image_url: width: 1000 }} 1000w
+                  "
+                  src="{{ product.featured_media | image_url: width: 700 }}"
+                  sizes="(min-width: 750px) calc(100vw / {{ columns_desktop }}), 100vw"
+                  alt="{{ product.featured_media.alt | escape }}"
+                  loading="lazy"
+                  width="{{ product.featured_media.width }}"
+                  height="{{ product.featured_media.height }}"
+                >
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+              {% endif %}
+              <span class="games-card-overlay-{{ section.id }}">
+                {{ product.title }}
+                {% if product.price_varies %}
+                  | AB {{ product.price_min | money }}
+                {% else %}
+                  | {{ product.price | money }}
+                {% endif %}
+              </span>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% elsif collection != blank %}
       <div class="games-grid-{{ section.id }}">
         {% for product in collection.products limit: products_to_display %}
-          <a href="{{ product.url }}" class="games-card-{{ section.id }}">
+          <a href="{{ product.url }}" class="games-card-{{ section.id }}" data-game-category="all">
             {% if product.featured_media %}
               <img
                 srcset="
@@ -184,6 +262,57 @@
   </div>
 </div>
 
+<script>
+  (function () {
+    var hasCity = {{ has_city_game | json }};
+    var hasGastro = {{ has_gastro_game | json }};
+
+    var mixed = hasCity && hasGastro;
+
+    document.querySelectorAll('[data-game-filter]').forEach(function (btn) {
+      var filter = btn.getAttribute('data-game-filter');
+      var visible;
+      if (mixed) {
+        visible = true;
+      } else if (hasCity) {
+        visible = filter === 'city';
+      } else if (hasGastro) {
+        visible = filter === 'gastro';
+      } else {
+        visible = filter === 'all';
+      }
+      btn.style.display = visible ? '' : 'none';
+
+      // Default active filter: "all" when categories are mixed, otherwise
+      // whichever single button remains visible (it's always the active one).
+      var isDefaultActive = mixed ? filter === 'all' : visible;
+      btn.setAttribute('aria-pressed', isDefaultActive ? 'true' : 'false');
+    });
+
+    if (window.__gamesFilterClickInit) return;
+    window.__gamesFilterClickInit = true;
+
+    document.addEventListener('click', function (event) {
+      var btn = event.target.closest('[data-game-filter]');
+      if (!btn) return;
+
+      var filter = btn.getAttribute('data-game-filter');
+      var group = btn.closest('[class*="hero-buttons-"]');
+      if (group) {
+        group.querySelectorAll('[data-game-filter]').forEach(function (b) {
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+        });
+      }
+
+      document.querySelectorAll('[data-game-category]').forEach(function (card) {
+        var category = card.getAttribute('data-game-category');
+        var show = filter === 'all' || category === 'all' || category === filter;
+        card.style.display = show ? '' : 'none';
+      });
+    });
+  })();
+</script>
+
 {% schema %}
   {
     "name": "SS - Games grid #1",
@@ -197,7 +326,8 @@
       {
         "type": "collection",
         "id": "collection",
-        "label": "Collection"
+        "label": "Collection",
+        "info": "Used only when no Game blocks are added below."
       },
       {
         "type": "range",
@@ -207,6 +337,10 @@
         "step": 1,
         "label": "Products to show",
         "default": 4
+      },
+      {
+        "type": "paragraph",
+        "content": "Add Game blocks below to manually pick games and assign each to a category (City / Gastro) for the filter buttons on the section above. When Game blocks are present they replace the Collection setting."
       },
       {
         "type": "header",
@@ -492,6 +626,31 @@
         "unit": "px",
         "label": "Section roundness",
         "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "game",
+        "name": "Game",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "select",
+            "id": "category",
+            "label": "Game category",
+            "info": "Used by the filter buttons above. If every game shares one category, the filter buttons hide automatically.",
+            "default": "all",
+            "options": [
+              { "label": "All / unassigned", "value": "all" },
+              { "label": "City game", "value": "city" },
+              { "label": "Gastro game", "value": "gastro" }
+            ]
+          }
+        ]
       }
     ],
     "presets": [
