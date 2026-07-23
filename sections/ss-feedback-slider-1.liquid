@@ -59,6 +59,14 @@
   assign arrow_icon_size = section.settings.arrow_icon_size
   assign arrow_color = section.settings.arrow_color
   assign arrow_bg_color = section.settings.arrow_bg_color
+
+  assign reverse_layout = section.settings.reverse_layout
+  assign pad_start_side = 'left'
+  assign pad_end_side = 'right'
+  if reverse_layout
+    assign pad_start_side = 'right'
+    assign pad_end_side = 'left'
+  endif
 -%}
 
 {%- style -%}
@@ -75,8 +83,8 @@
 
   .section-{{ section.id }}-settings {
     padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
-    padding-left: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal_mobile }}rem);
-    padding-right: 0;
+    padding-{{ pad_start_side }}: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal_mobile }}rem);
+    padding-{{ pad_end_side }}: 0;
   }
 
   .feedback-header-{{ section.id }} {
@@ -143,15 +151,27 @@
     transition: border-color .2s ease;
   }
 
-  .feedback-btn-next-{{ section.id }} .animate-icon {
-    border-left: {{ arrow_icon_size | times: 1.4 }}px solid currentColor;
-    margin-left: 2px;
-  }
+  {% if reverse_layout %}
+    .feedback-btn-next-{{ section.id }} .animate-icon {
+      border-right: {{ arrow_icon_size | times: 1.4 }}px solid currentColor;
+      margin-right: 2px;
+    }
 
-  .feedback-btn-prev-{{ section.id }} .animate-icon {
-    border-right: {{ arrow_icon_size | times: 1.4 }}px solid currentColor;
-    margin-right: 2px;
-  }
+    .feedback-btn-prev-{{ section.id }} .animate-icon {
+      border-left: {{ arrow_icon_size | times: 1.4 }}px solid currentColor;
+      margin-left: 2px;
+    }
+  {% else %}
+    .feedback-btn-next-{{ section.id }} .animate-icon {
+      border-left: {{ arrow_icon_size | times: 1.4 }}px solid currentColor;
+      margin-left: 2px;
+    }
+
+    .feedback-btn-prev-{{ section.id }} .animate-icon {
+      border-right: {{ arrow_icon_size | times: 1.4 }}px solid currentColor;
+      margin-right: 2px;
+    }
+  {% endif %}
 
   .feedback-btn-prev-{{ section.id }} span,
   .feedback-btn-next-{{ section.id }} span {
@@ -201,6 +221,8 @@
     padding: 16px;
     border-radius: {{ corner_radius }}px;
     background-color: {{ overlay_bg_color }};
+    direction: ltr;
+    text-align: left;
   }
 
   .feedback-stars-{{ section.id }} {
@@ -241,8 +263,8 @@
 
     .section-{{ section.id }}-settings {
       padding-bottom: {{ padding_bottom }}px;
-      padding-left: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal }}rem);
-      padding-right: 0;
+      padding-{{ pad_start_side }}: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal }}rem);
+      padding-{{ pad_end_side }}: 0;
     }
 
     .feedback-header-{{ section.id }} {
@@ -290,7 +312,7 @@
 <style>
   @media (max-width: 1023.98px) {
     .section-{{ section.id }}-settings {
-      padding-right: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal_mobile }}rem);
+      padding-{{ pad_end_side }}: calc((100% - clamp(100px, var(--page-content-width, var(--page-width)), 100%)) / 2 + {{ padding_horizontal_mobile }}rem);
     }
   }
 </style>
@@ -368,22 +390,33 @@
     </div>
 
     <div class="feedback-arrows-{{ section.id }}">
-      <button class="feedback-btn-prev-{{ section.id }}" aria-label="{{ 'general.slider.previous_slide' | t }}">
-        <span class="animate-icon"></span>
-      </button>
-      <button class="feedback-btn-next-{{ section.id }}" aria-label="{{ 'general.slider.next_slide' | t }}">
-        <span class="animate-icon"></span>
-      </button>
+      {% if reverse_layout %}
+        <button class="feedback-btn-next-{{ section.id }}" aria-label="{{ 'general.slider.next_slide' | t }}">
+          <span class="animate-icon"></span>
+        </button>
+        <button class="feedback-btn-prev-{{ section.id }}" aria-label="{{ 'general.slider.previous_slide' | t }}">
+          <span class="animate-icon"></span>
+        </button>
+      {% else %}
+        <button class="feedback-btn-prev-{{ section.id }}" aria-label="{{ 'general.slider.previous_slide' | t }}">
+          <span class="animate-icon"></span>
+        </button>
+        <button class="feedback-btn-next-{{ section.id }}" aria-label="{{ 'general.slider.next_slide' | t }}">
+          <span class="animate-icon"></span>
+        </button>
+      {% endif %}
     </div>
   </div>
 
   <div class="section-{{ section.id }}-settings">
     <div
       class="feedback-slider-{{ section.id }} preview swiper"
+      dir="{% if reverse_layout %}rtl{% else %}ltr{% endif %}"
       data-gap="{{ slider_gap }}"
       data-gap-mobile="{{ slider_gap_mobile }}"
       data-view="{{ slider_view }}"
       data-view-mobile="{{ slider_view_mobile }}"
+      data-rtl="{{ reverse_layout | json }}"
     >
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
@@ -488,6 +521,7 @@
       loop: true,
       loopAdditionalSlides: 2,
       roundLengths: true,
+      rtl: sliderEl.dataset.rtl === 'true',
       navigation: {
         nextEl: `.feedback-btn-next-{{ section.id }}`,
         prevEl: `.feedback-btn-prev-{{ section.id }}`,
@@ -537,6 +571,17 @@
       "id": "heading",
       "label": "Heading",
       "default": "Feedback, das zählt"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_layout",
+      "label": "Reverse layout",
+      "info": "Mirrors the slider: the first image starts on the right and overflow happens on the left instead. The header and arrows stay in place.",
+      "default": false
     },
     {
       "type": "header",
