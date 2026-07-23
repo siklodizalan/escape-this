@@ -1,0 +1,55 @@
+{% comment %}
+  Renders a single product card: image, title, price and a "select options"
+  button below the image. Styling is scoped via `section_id` — the calling
+  section is expected to define the matching CSS classes (see
+  `sections/ss-featured-collection-1.liquid` for the reference styles), the
+  same convention used by the other `hero-pro-block-*` snippets.
+
+  Accepts:
+  - product: {Object} the product to render
+  - section_id: {String} section.id, used to scope the CSS classes
+  - columns_desktop: {Number} section.settings.columns_desktop, used for the image sizes attribute
+  - loading_attribute: {String} 'lazy' or 'eager'
+  - button_label: {String} label for the "select options" pill
+
+  Usage:
+  {% render 'ss-product-card-1',
+    product: product,
+    section_id: section.id,
+    columns_desktop: columns_desktop,
+    loading_attribute: loading_attribute,
+    button_label: button_label
+  %}
+{% endcomment %}
+<a href="{{ product.url }}" class="product-card-{{ section_id }}">
+  <div class="product-card-image-{{ section_id }}">
+    {% if product.featured_media %}
+      <img
+        srcset="
+          {{ product.featured_media | image_url: width: 400 }} 400w,
+          {{ product.featured_media | image_url: width: 700 }} 700w,
+          {{ product.featured_media | image_url: width: 1000 }} 1000w
+        "
+        src="{{ product.featured_media | image_url: width: 700 }}"
+        sizes="(min-width: 750px) calc(100vw / {{ columns_desktop }}), 100vw"
+        alt="{{ product.featured_media.alt | escape }}"
+        loading="{{ loading_attribute }}"
+        width="{{ product.featured_media.width }}"
+        height="{{ product.featured_media.height }}"
+      >
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag }}
+    {% endif %}
+  </div>
+  <div class="product-card-info-{{ section_id }}">
+    <h3 class="product-card-title-{{ section_id }}">{{ product.title }}</h3>
+    <p class="product-card-price-{{ section_id }}">
+      {% if product.price_varies %}
+        AB {{ product.price_min | money }}
+      {% else %}
+        {{ product.price | money }}
+      {% endif %}
+    </p>
+    <span class="product-card-button-{{ section_id }}">{{ button_label }}</span>
+  </div>
+</a>
