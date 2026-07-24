@@ -1,0 +1,130 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .cart-trust {
+    text-align: left;
+  }
+
+  .cart-trust__title {
+    color: #3f3f46;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 0 1.2rem;
+    max-width: 38.4rem;
+  }
+
+  .cart-trust__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cart-trust__badges li {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .cart-trust__badges img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+{%- endstyle -%}
+
+<div class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="cart-trust">
+      <p class="cart-trust__title">{{ 'sections.cart.trust_title' | t }}</p>
+      <ul class="cart-trust__badges list-unstyled" role="list">
+        <li>
+          <img
+            src="{{ 'jochen-schweizer-trustbadge.png' | file_url }}"
+            alt="Jochen Schweizer"
+            width="60"
+            height="60"
+            loading="lazy"
+          >
+        </li>
+        <li>
+          <img
+            src="{{ 'mydays-partner.png' | file_url }}"
+            alt="mydays"
+            width="60"
+            height="60"
+            loading="lazy"
+          >
+        </li>
+        <li>
+          <img
+            src="{{ 'konfetti-partner.png' | file_url }}"
+            alt="konfetti"
+            width="60"
+            height="60"
+            loading="lazy"
+          >
+        </li>
+        <li>
+          <img
+            src="{{ 'tripadvisor-partner.png' | file_url }}"
+            alt="TripAdvisor"
+            width="60"
+            height="60"
+            loading="lazy"
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cart trust badges",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
