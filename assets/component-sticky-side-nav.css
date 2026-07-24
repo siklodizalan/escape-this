@@ -1,0 +1,125 @@
+.sticky-side-nav {
+  position: fixed;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sticky-side-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.sticky-side-nav__item:hover,
+.sticky-side-nav__item:focus-visible {
+  opacity: 0.85;
+}
+
+.sticky-side-nav__item--howto {
+  height: 141px;
+  gap: 14px;
+}
+
+.sticky-side-nav__item--games,
+.sticky-side-nav__item--cities {
+  height: 46px;
+}
+
+.sticky-side-nav__label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-heading-family);
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sticky-side-nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+  color: #f9f544;
+}
+
+.sticky-side-nav__icon svg {
+  display: block;
+}
+
+.sticky-side-nav__item--howto .sticky-side-nav__icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.sticky-side-nav__item--games .sticky-side-nav__icon svg {
+  width: 19px;
+  height: 14px;
+}
+
+.sticky-side-nav__item--cities .sticky-side-nav__icon svg {
+  width: 16px;
+  height: 14px;
+}
+
+@media screen and (max-width: 749px) {
+  .sticky-side-nav {
+    top: auto;
+    bottom: 16px;
+    right: 16px;
+    transform: none;
+    flex-direction: row-reverse;
+    gap: 8px;
+    transition: bottom 0.2s ease;
+  }
+
+  body:has(#rasu-button.rasu--is-active) .sticky-side-nav {
+    bottom: 88px;
+  }
+
+  .sticky-side-nav__item--howto,
+  .sticky-side-nav__item--games,
+  .sticky-side-nav__item--cities {
+    width: 33px;
+    height: 30px;
+    gap: 0;
+  }
+
+  .sticky-side-nav__label {
+    display: none;
+  }
+
+  .sticky-side-nav__icon {
+    transform: none;
+  }
+
+  .sticky-side-nav__item--howto .sticky-side-nav__icon svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .sticky-side-nav__item--games .sticky-side-nav__icon svg {
+    width: 14px;
+    height: 10px;
+  }
+
+  .sticky-side-nav__item--cities .sticky-side-nav__icon svg {
+    width: 12px;
+    height: 10px;
+  }
+}

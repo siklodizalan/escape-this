@@ -1,0 +1,21 @@
+{% comment %}
+  Renders the sticky vertical button stack fixed to the right edge of the viewport.
+
+  Usage:
+  {% render 'sticky-side-nav' %}
+{% endcomment %}
+
+<nav class="sticky-side-nav" aria-label="Schnellzugriff">
+  <a href="{{ pages['so-gehts'].url | default: '/pages/so-gehts' }}" class="sticky-side-nav__item sticky-side-nav__item--howto" aria-label="So geht's">
+    <span class="sticky-side-nav__label">So geht's</span>
+    <span class="sticky-side-nav__icon">{{ 'icon-sticky-howto.svg' | inline_asset_content }}</span>
+  </a>
+
+  <a href="{{ routes.all_collections_url | default: '/collections' }}" class="sticky-side-nav__item sticky-side-nav__item--games" aria-label="Spiele">
+    <span class="sticky-side-nav__icon">{{ 'icon-sticky-games.svg' | inline_asset_content }}</span>
+  </a>
+
+  <a href="{{ pages['stadte'].url | default: '/pages/stadte' }}" class="sticky-side-nav__item sticky-side-nav__item--cities" aria-label="Städte">
+    <span class="sticky-side-nav__icon">{{ 'icon-sticky-cities.svg' | inline_asset_content }}</span>
+  </a>
+</nav>
