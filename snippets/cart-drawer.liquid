@@ -575,6 +575,50 @@
             {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
+
+        <!-- Trust badges -->
+
+        <div class="cart-drawer__trust">
+          <p class="cart-drawer__trust-title">{{ 'sections.cart.trust_title' | t }}</p>
+          <ul class="cart-drawer__trust-badges list-unstyled" role="list">
+            <li>
+              <img
+                src="{{ 'jochen-schweizer-trustbadge.png' | file_url }}"
+                alt="Jochen Schweizer"
+                width="60"
+                height="60"
+                loading="lazy"
+              >
+            </li>
+            <li>
+              <img
+                src="{{ 'mydays-partner.png' | file_url }}"
+                alt="mydays"
+                width="60"
+                height="60"
+                loading="lazy"
+              >
+            </li>
+            <li>
+              <img
+                src="{{ 'konfetti-partner.png' | file_url }}"
+                alt="konfetti"
+                width="60"
+                height="60"
+                loading="lazy"
+              >
+            </li>
+            <li>
+              <img
+                src="{{ 'tripadvisor-partner.png' | file_url }}"
+                alt="TripAdvisor"
+                width="60"
+                height="60"
+                loading="lazy"
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
