@@ -296,6 +296,7 @@
             "name": "SS - Games grid #2",
             "settings": {
                 "collection": "gastro-escape-games",
+                "products_to_show": 12,
                 "columns_desktop": 3,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,
@@ -403,6 +404,7 @@
             "name": "SS - Games grid #2",
             "settings": {
                 "collection": "escape-games",
+                "products_to_show": 12,
                 "columns_desktop": 3,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,
@@ -539,6 +541,7 @@
             "name": "SS - Games grid #2",
             "settings": {
                 "collection": "gutschein",
+                "products_to_show": 12,
                 "columns_desktop": 3,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,

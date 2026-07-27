@@ -55,7 +55,8 @@
             ],
             "name": "SS - Games grid #2",
             "settings": {
-                "collection": "",
+                "collection": "gastro-escape-games",
+                "products_to_show": 4,
                 "columns_desktop": 4,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,
@@ -98,6 +99,42 @@
         },
         "cart-trust": {
             "type": "main-cart-trust",
+            "blocks": {
+                "badge_jochen": {
+                    "type": "badge",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/cart-jochen-schweizer.png",
+                        "alt": "Jochen Schweizer"
+                    }
+                },
+                "badge_mydays": {
+                    "type": "badge",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/cart-mydays.png",
+                        "alt": "mydays"
+                    }
+                },
+                "badge_konfetti": {
+                    "type": "badge",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/cart-konfetti.png",
+                        "alt": "konfetti"
+                    }
+                },
+                "badge_tripadvisor": {
+                    "type": "badge",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/cart-tripadvisor.png",
+                        "alt": "TripAdvisor"
+                    }
+                }
+            },
+            "block_order": [
+                "badge_jochen",
+                "badge_mydays",
+                "badge_konfetti",
+                "badge_tripadvisor"
+            ],
             "settings": {
                 "color_scheme": "background-1",
                 "padding_top": 0,

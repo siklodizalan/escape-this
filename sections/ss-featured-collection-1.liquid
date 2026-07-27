@@ -244,9 +244,14 @@
       {% endcase %}
     {% endfor %}
 
+    {%- liquid
+      assign product_blocks = section.blocks | where: 'type', 'product'
+      assign products_to_show = section.settings.products_to_show
+    -%}
+
     {% if collection != blank %}
       <div class="featured-collection-grid-{{ section.id }}">
-        {% for product in collection.products %}
+        {% for product in collection.products limit: products_to_show %}
           {% render 'ss-product-card-1',
             product: product,
             section_id: section.id,
@@ -254,6 +259,22 @@
             loading_attribute: loading_attribute,
             button_label: button_label
           %}
+        {% endfor %}
+      </div>
+    {% elsif product_blocks.size > 0 %}
+      <div class="featured-collection-grid-{{ section.id }}">
+        {% for block in product_blocks limit: products_to_show %}
+          {% if block.settings.product != blank %}
+            <div {{ block.shopify_attributes }}>
+              {% render 'ss-product-card-1',
+                product: block.settings.product,
+                section_id: section.id,
+                columns_desktop: columns_desktop,
+                loading_attribute: loading_attribute,
+                button_label: button_label
+              %}
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
     {% endif %}
@@ -273,11 +294,21 @@
       {
         "type": "collection",
         "id": "collection",
-        "label": "Collection"
+        "label": "Collection",
+        "info": "If a collection is selected, its products are shown here. Otherwise, the products chosen below (via Product blocks) are used."
       },
       {
         "type": "header",
         "content": "Grid settings"
+      },
+      {
+        "type": "range",
+        "id": "products_to_show",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "label": "Maximum products to show",
+        "default": 4
       },
       {
         "type": "range",
@@ -703,6 +734,18 @@
           { "type": "range", "id": "text_mt", "min": 0, "max": 60, "step": 2, "unit": "px", "label": "Margin top", "default": 30 },
           { "type": "range", "id": "text_mt_mobile", "min": 0, "max": 60, "step": 2, "unit": "px", "label": "Margin top - mobile", "default": 20 },
           { "type": "color", "id": "text_color", "label": "Color", "default": "#ffffff" }
+        ]
+      },
+      {
+        "type": "product",
+        "name": "Product",
+        "limit": 12,
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          }
         ]
       }
     ],
