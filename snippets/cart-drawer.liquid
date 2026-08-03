@@ -62,7 +62,9 @@
         </div>
       {%- endif -%}
       <div class="drawer__header">
-        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+        <a href="{{ routes.cart_url }}" class="drawer__heading-link">
+          <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+        </a>
         <button
           class="drawer__close"
           type="button"

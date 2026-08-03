@@ -26,15 +26,16 @@
 
   .cart-trust__badges {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
     margin: 0;
     padding: 0;
   }
 
   .cart-trust__badges li {
-    width: 12.2rem;
-    height: 8.5rem;
+    flex-shrink: 0;
+    width: 6rem;
+    height: 6rem;
   }
 
   .cart-trust__badges img {
@@ -42,6 +43,13 @@
     height: 100%;
     border-radius: 0.5rem;
     object-fit: cover;
+  }
+
+  @media screen and (min-width: 750px) {
+    .cart-trust__badges li {
+      width: 12.2rem;
+      height: 8.5rem;
+    }
   }
 {%- endstyle -%}
 

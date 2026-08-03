@@ -85,6 +85,11 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   margin: 0 0 1rem;
 }
 
+.drawer__heading-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .cart-drawer .drawer__heading {
   color: rgb(var(--color-button));
   text-transform: uppercase;
@@ -191,7 +196,7 @@ cart-drawer {
   width: 100%;
 }
 
-.cart-drawer thead {
+.cart-drawer .cart-items thead {
   display: inline-table;
   width: 100%;
 }
