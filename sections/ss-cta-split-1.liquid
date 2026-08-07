@@ -195,12 +195,13 @@
 
     .cta-split-image-{{ section.id }} {
       flex: {{ image_width }} 1 0;
-      height: auto;
-      min-height: {{ card_height }}px;
+      height: {{ card_height }}px;
     }
 
     .cta-split-card-{{ section.id }} {
       flex: {{ image_width | times: -1 | plus: 100 }} 1 0;
+      height: {{ card_height }}px;
+      overflow: hidden;
       padding: {{ card_padding }}px;
       display: flex;
       flex-direction: column;
