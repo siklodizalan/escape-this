@@ -1,6 +1,8 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  {{ section.settings.button_font | font_face: font_display: 'swap' }}
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -11,6 +13,67 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
+
+  .contact__button-{{ section.id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0;
+    font-family: {{ section.settings.button_font.family }}, {{ section.settings.button_font.fallback_families }};
+    font-weight: {{ section.settings.button_font.weight }};
+    font-style: {{ section.settings.button_font.style }};
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #191919;
+    background-color: #f9f544;
+    border: 1px solid #f9f544;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+  }
+
+  .contact__button-{{ section.id }}:hover {
+    color: #f9f544;
+    background-color: #2d2d2d;
+    border-color: #f9f544;
+  }
+
+  .section-{{ section.id }}-padding .title {
+    text-transform: uppercase;
+  }
+
+  .section-{{ section.id }}-padding .field__input {
+    background-color: transparent;
+    border: 1px solid #f9f544;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  .section-{{ section.id }}-padding .field:after,
+  .section-{{ section.id }}-padding .field:hover.field:after,
+  .section-{{ section.id }}-padding .field__input:focus-visible,
+  .section-{{ section.id }}-padding .field__input:focus {
+    box-shadow: none;
+    border-radius: 5px;
+  }
+
+  .section-{{ section.id }}-padding .field__input:-webkit-autofill,
+  .section-{{ section.id }}-padding .field__input:-webkit-autofill:hover,
+  .section-{{ section.id }}-padding .field__input:-webkit-autofill:focus,
+  .section-{{ section.id }}-padding .field__input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    caret-color: #ffffff;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+
+  .section-{{ section.id }}-padding .field__label {
+    text-transform: uppercase;
+    color: #ffffff;
   }
 {%- endstyle -%}
 
@@ -127,7 +190,7 @@
         </label>
       </div>
       <div class="contact__button">
-        <button type="submit" class="button">
+        <button type="submit" class="contact__button-{{ section.id }}">
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>
@@ -183,6 +246,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "font_picker",
+      "id": "button_font",
+      "label": "Button font",
+      "default": "red_hat_display_n8"
     },
     {
       "type": "header",
