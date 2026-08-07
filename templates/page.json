@@ -548,30 +548,31 @@
                 "section_radius": 0
             }
         },
-        "collapsible_content_zxG4bc": {
-            "type": "collapsible-content",
-            "settings": {
-                "caption": "",
-                "heading": "Häufige Fragen.",
-                "heading_size": "h1",
-                "heading_alignment": "center",
-                "layout": "none",
-                "container_color_scheme": "",
-                "color_scheme": "",
-                "open_first_collapsible_row": false,
-                "image_ratio": "adapt",
-                "desktop_layout": "image_second",
-                "padding_top": 36,
-                "padding_bottom": 0
-            }
-        },
-        "ss_faq_13_VqRf9F": {
-            "type": "ss-faq-13",
+        "ss_donations_1_faq": {
+            "type": "ss-donations-1-faq",
             "blocks": {
-                "tab_qCNnmH": {
-                    "type": "tab",
+                "caption_f4Qcpt": {
+                    "type": "caption",
                     "settings": {
-                        "tab": "Das Spiel"
+                        "caption": "FAQ"
+                    }
+                },
+                "heading_f4Qhd1": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Häufige Fragen."
+                    }
+                },
+                "text_f4Qtxt1": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Alles, was du über Escape This! wissen musst — übersichtlich und kompakt.</p>"
+                    }
+                },
+                "category_f4QC1": {
+                    "type": "category",
+                    "settings": {
+                        "tab_label": "Das Spiel"
                     }
                 },
                 "faq_item_bLP9hG": {
@@ -609,10 +610,10 @@
                         "answer": "<p>Auch Familien mit ihren kleinen Detektiven sind für unsere Escape Games willkommen. Es finden sich auch für die Kleinen Spiele mit Interaktion bei denen sie mitmachen können, jedoch werden auch einige Rätsel dabei sein, bei denen die Eltern im Vordergrund knobeln. Da die Gastro Escape Games in Bars spielen, empfehlen wir für Familien allerdings unsere City Escape Games. <\/p><p>Da unsere City Escape Game draußen und digital stattfindet, sind selbstverständlich Kinderwagen, Bollerwagen oder Ähnliches gewünscht! Die Wege, die du und deine Familie bestreiten werdet sind nicht nur kinderfreundlich, sondern auch gut gelegen.<\/p><p>Mehr Infos speziell für Familien findest du beim <a href=\"\/pages\/familienspass\" title=\"Familienspaß\">Familienspaß<\/a>.<\/p>"
                     }
                 },
-                "tab_3w7k3e": {
-                    "type": "tab",
+                "category_f4QC2": {
+                    "type": "category",
                     "settings": {
-                        "tab": "Ticket & Bezahlung"
+                        "tab_label": "Ticket & Bezahlung"
                     }
                 },
                 "faq_item_9Xte9Q": {
@@ -643,10 +644,10 @@
                         "answer": "<p>Keine Sorge, deine Daten, die bei der App-Nutzung entstehen, sind bei uns sicher! Sie werden nur kurzzeitig gespeichert, um deine Bewegung während des Spiels zu lokalisieren, die Funktionalität zu ermöglichen oder werden zu Analysezwecke gespeichert und nicht an Dritte weitergegeben. Eine Löschung deiner Daten kannst du jederzeit bei uns anfordern: Schreibe uns dafür einfach eine Nachricht über unser Kontaktformular oder per Mail.<\/p>"
                     }
                 },
-                "tab_q96GLy": {
-                    "type": "tab",
+                "category_f4QC3": {
+                    "type": "category",
                     "settings": {
-                        "tab": "Technik & App"
+                        "tab_label": "Technik & App"
                     }
                 },
                 "faq_item_zwt6gz": {
@@ -679,102 +680,53 @@
                 }
             },
             "block_order": [
-                "tab_qCNnmH",
+                "caption_f4Qcpt",
+                "heading_f4Qhd1",
+                "text_f4Qtxt1",
+                "category_f4QC1",
                 "faq_item_bLP9hG",
                 "faq_item_dP6PNj",
                 "faq_item_TfzRMp",
                 "faq_item_tHxgDK",
                 "faq_item_7gVxEq",
-                "tab_3w7k3e",
+                "category_f4QC2",
                 "faq_item_9Xte9Q",
                 "faq_item_mBXGyq",
                 "faq_item_9BnFgA",
                 "faq_item_YVaayf",
-                "tab_q96GLy",
+                "category_f4QC3",
                 "faq_item_zwt6gz",
                 "faq_item_edQfX6",
                 "faq_item_FJ47me",
                 "faq_item_J3EMXb"
             ],
-            "name": "SS - FAQ #13",
+            "name": "SS - FAQ (Donations style)",
             "settings": {
-                "content_align": "left",
-                "content_align_mobile": "left",
-                "sub_heading": "<p>FAQ<\/p>",
-                "sub_heading_custom": false,
-                "sub_heading_font": "josefin_sans_n4",
-                "sub_heading_size": 14,
-                "sub_heading_size_mobile": 14,
-                "sub_heading_height": 130,
-                "line_width": 500,
-                "line_width_mobile": 250,
-                "line_thickness": 1,
-                "heading": "<p>Alles, was du über Escape This! wissen musst — übersichtlich und kompakt.<\/p>",
-                "heading_custom": false,
-                "heading_font": "josefin_sans_n4",
-                "heading_size": 24,
-                "heading_size_mobile": 20,
-                "heading_height": 150,
-                "heading_mt": 24,
-                "heading_mt_mobile": 24,
-                "toggles_gap": 8,
-                "toggles_gap_mobile": 8,
-                "toggles_mt": 32,
-                "toggles_mt_mobile": 32,
-                "toggle_padding_horizontal": 12,
-                "toggle_padding_horizontal_mobile": 12,
-                "toggle_padding_vertical": 6,
-                "toggle_padding_vertical_mobile": 6,
-                "toggle_radius": 100,
-                "toggle_opacity": 0.5,
-                "toggle_custom": false,
-                "toggle_font": "josefin_sans_n4",
-                "toggle_size": 14,
-                "toggle_size_mobile": 14,
-                "toggle_height": 130,
-                "tabs_mt": 24,
-                "tabs_mt_mobile": 24,
-                "item_mt": 12,
-                "item_mt_mobile": 12,
-                "item_padding_horizontal": 24,
-                "item_padding_horizontal_mobile": 24,
-                "item_padding_vertical": 24,
-                "item_padding_vertical_mobile": 24,
-                "item_radius": 16,
-                "question_custom": false,
-                "question_font": "josefin_sans_n4",
-                "question_size": 14,
-                "question_size_mobile": 14,
-                "question_height": 150,
-                "icon_size": 16,
-                "icon_size_mobile": 16,
-                "icon_padding_horizontal": 12,
-                "icon_padding_horizontal_mobile": 12,
-                "icon_padding_vertical": 12,
-                "icon_padding_vertical_mobile": 12,
-                "icon_radius": 50,
-                "answer_custom": false,
-                "answer_font": "josefin_sans_n4",
-                "answer_size": 14,
-                "answer_size_mobile": 14,
-                "answer_height": 150,
-                "answer_padding_top": 30,
-                "heading_color": "#a1d9ee",
-                "sub_heading_color": "#f9f544",
-                "dot_color": "#f9f544",
-                "line_color": "#ffffff",
-                "toggle_color": "#1f1f21",
-                "toggle_active_color": "#1f1f21",
-                "toggle_bg_color": "#f9f544",
-                "question_color": "#ffffff",
-                "answer_color": "#f9f544",
-                "item_bg_color": "#4d4d4d",
-                "icon_color": "#1f1f21",
-                "icon_bg": "#a1d9ee",
-                "icon_active_bg": "#f9f544",
+                "tab_radius": 5,
+                "tab_active_bg": "#f9f544",
+                "tab_active_text": "#191919",
+                "tab_inactive_border": "#f9f544",
+                "tab_inactive_text": "#ffffff",
+                "faq_items_gap": 12,
+                "faq_items_gap_mobile": 12,
+                "faq_item_padding_horizontal": 24,
+                "faq_item_padding_horizontal_mobile": 24,
+                "faq_item_padding_vertical": 24,
+                "faq_item_padding_vertical_mobile": 24,
+                "faq_item_radius": 16,
+                "faq_question_color": "#ffffff",
+                "faq_question_size": 14,
+                "faq_question_size_mobile": 14,
+                "faq_answer_color": "#f9f544",
+                "faq_answer_size": 14,
+                "faq_answer_size_mobile": 14,
+                "faq_answer_padding_top": 30,
+                "faq_item_bg_color": "#1e1e1e",
+                "faq_icon_color": "#f9f544",
+                "faq_icon_size": 16,
                 "background_color": "#191919",
                 "background_gradient": "",
-                "border_color": "#000000",
+                "border_color": "#191919",
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "margin_horizontal": 0,
@@ -784,7 +736,6 @@
                 "padding_horizontal": 5,
                 "padding_horizontal_mobile": 1.5,
                 "full_width": false,
-                "content_width": 800,
                 "border_thickness": 0,
                 "section_radius": 0
             }
@@ -902,8 +853,7 @@
         "ss_hero_pro_dPNtLJ",
         "multicolumn_hKwEAn",
         "ss_cta_app_1_CzVQcN",
-        "collapsible_content_zxG4bc",
-        "ss_faq_13_VqRf9F",
+        "ss_donations_1_faq",
         "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
         "newsletter_nUFw98"
     ]
