@@ -14,15 +14,18 @@
   assign full_width = section.settings.full_width
   assign section_radius = section.settings.section_radius
   assign image_radius = section.settings.image_radius
+  assign button_font = section.settings.button_font
 
   assign caption_block = section.blocks | where: 'type', 'caption' | first
   assign heading_block = section.blocks | where: 'type', 'heading' | first
   assign text_block = section.blocks | where: 'type', 'text' | first
-  assign button_block = section.blocks | where: 'type', 'button' | first
+  assign button_blocks = section.blocks | where: 'type', 'button'
   assign image_block = section.blocks | where: 'type', 'image' | first
 -%}
 
 {%- style -%}
+  {{ button_font | font_face: font_display: 'swap' }}
+
   .section-{{ section.id }} {
     border-top: solid {{ border_color }} {{ border_thickness }}px;
     border-bottom: solid {{ border_color }} {{ border_thickness }}px;
@@ -83,21 +86,38 @@
     text-transform: uppercase;
   }
 
-  .cta-app-button-{{ section.id }} {
+  .cta-app-buttons-{{ section.id }} {
     margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .cta-app-button-{{ section.id }} {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 41px;
-    padding: 0 25px;
+    padding: 12px 20px;
+    line-height: 100%;
     border-radius: {{ image_radius }}px;
     background-color: #f9f544;
     color: #191919;
-    font-size: 16px;
-    font-weight: 800;
+    font-family: {{ button_font.family }}, {{ button_font.fallback_families }};
+    font-weight: {{ button_font.weight }};
+    font-style: {{ button_font.style }};
+    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 0;
+    border: 1px solid #f9f544;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .cta-app-button-{{ section.id }}:hover {
+    background-color: #2d2d2d;
+    color: #f9f544;
+    border-color: #f9f544;
   }
 
   .cta-app-image-{{ section.id }} {
@@ -141,6 +161,14 @@
       container-type: inline-size;
       align-items: flex-start;
       text-align: left;
+    }
+
+    .cta-app-buttons-{{ section.id }} {
+      justify-content: flex-start;
+    }
+
+    .cta-app-button-{{ section.id }} {
+      padding: 12px 24px;
     }
 
     .cta-app-caption-{{ section.id }} {
@@ -212,8 +240,14 @@
         {% if text_block and text_block.settings.text != blank %}
           <div class="cta-app-text-{{ section.id }}" {{ text_block.shopify_attributes }}>{{ text_block.settings.text }}</div>
         {% endif %}
-        {% if button_block and button_block.settings.label != blank %}
-          <a href="{{ button_block.settings.link }}" class="cta-app-button-{{ section.id }}" {{ button_block.shopify_attributes }}>{{ button_block.settings.label }}</a>
+        {% if button_blocks.size > 0 %}
+          <div class="cta-app-buttons-{{ section.id }}">
+            {% for button_block in button_blocks %}
+              {% if button_block.settings.label != blank %}
+                <a href="{{ button_block.settings.link }}" class="cta-app-button-{{ section.id }}" {{ button_block.shopify_attributes }}>{{ button_block.settings.label }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
         {% endif %}
       </div>
       {% if image_block %}
@@ -264,6 +298,12 @@
         "unit": "px",
         "label": "Button / image roundness",
         "default": 5
+      },
+      {
+        "type": "font_picker",
+        "id": "button_font",
+        "label": "Button font",
+        "default": "red_hat_display_n8"
       },
       {
         "type": "header",
@@ -412,7 +452,7 @@
       {
         "type": "button",
         "name": "Button",
-        "limit": 1,
+        "limit": 2,
         "settings": [
           { "type": "text", "id": "label", "label": "Label", "default": "SPIEL WÄHLEN" },
           { "type": "url", "id": "link", "label": "Link" }
