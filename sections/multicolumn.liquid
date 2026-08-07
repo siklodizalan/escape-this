@@ -74,6 +74,25 @@
     margin-right: 0;
     padding-top: 0;
   }
+
+  .section-{{ section.id }}-padding .title-wrapper-with-link .title {
+    text-transform: uppercase;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card__info {
+    text-align: center;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card__info .rte {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Slider-{{ section.id }} .multicolumn-card > .multicolumn-card__image-wrapper--full-width {
+    border-top-left-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
+    border-top-right-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
+    overflow: hidden;
+  }
 {%- endstyle -%}
 
 {%- liquid

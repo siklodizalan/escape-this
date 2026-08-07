@@ -711,7 +711,7 @@
                 "gap": 20,
                 "gap_mobile": 16,
                 "card_radius": 5,
-                "card_height": 200,
+                "card_height": 500,
                 "card_height_mobile": 220,
                 "card_padding": 40,
                 "card_padding_mobile": 24,
