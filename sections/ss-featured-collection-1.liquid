@@ -165,6 +165,12 @@
     color: #191919;
   }
 
+  .featured-collection-buttons-{{ section.id }} {
+    display: flex;
+    justify-content: center;
+    margin-top: {{ grid_mt_mobile }}px;
+  }
+
   @media(min-width: 750px) {
     .featured-collection-grid-{{ section.id }} {
       grid-template-columns: repeat({{ columns_desktop }}, minmax(0, 1fr));
@@ -196,6 +202,10 @@
       padding-bottom: {{ padding_bottom }}px;
       padding-left: {{ padding_horizontal }}rem;
       padding-right: {{ padding_horizontal }}rem;
+    }
+
+    .featured-collection-buttons-{{ section.id }} {
+      margin-top: {{ grid_mt }}px;
     }
   }
 {%- endstyle -%}
@@ -241,6 +251,8 @@
           <div class="hero-text-{{ block.id }}" {{ block.shopify_attributes }}>
             {{ block.settings.text }}
           </div>
+        {% when 'button' %}
+          {% render 'hero-pro-style-button', block: block %}
       {% endcase %}
     {% endfor %}
 
@@ -275,6 +287,17 @@
               %}
             </div>
           {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {%- liquid
+      assign button_blocks = section.blocks | where: 'type', 'button'
+    -%}
+    {% if button_blocks.size > 0 %}
+      <div class="featured-collection-buttons-{{ section.id }}">
+        {% for block in button_blocks %}
+          {% render 'hero-pro-block-button', block: block %}
         {% endfor %}
       </div>
     {% endif %}
@@ -745,6 +768,246 @@
             "type": "product",
             "id": "product",
             "label": "Product"
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "Button",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button",
+            "label": "Button label",
+            "default": "Alle anzeigen"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Button link"
+          },
+          {
+            "type": "checkbox",
+            "id": "open_in_new_tab",
+            "label": "Open link in new tab",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "Style",
+            "default": "outline",
+            "options": [
+              { "label": "Link", "value": "link" },
+              { "label": "Non-outline", "value": "non_outline" },
+              { "label": "Non-outline & arrow", "value": "non_outline_arrow" },
+              { "label": "Outline", "value": "outline" },
+              { "label": "Outline & arrow", "value": "outline_arrow" }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "button_custom",
+            "label": "Use custom font",
+            "default": true
+          },
+          {
+            "type": "font_picker",
+            "id": "button_font",
+            "label": "Font family",
+            "default": "red_hat_display_n8",
+            "visible_if": "{{ block.settings.button_custom }}"
+          },
+          {
+            "type": "range",
+            "id": "button_size",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "button_size_mobile",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size - mobile",
+            "default": 14
+          },
+          {
+            "type": "checkbox",
+            "id": "button_advanced",
+            "label": "Show advanced settings",
+            "default": false
+          },
+          {
+            "type": "range",
+            "id": "button_height",
+            "min": 50,
+            "max": 200,
+            "step": 10,
+            "unit": "%",
+            "label": "Line height",
+            "default": 100,
+            "visible_if": "{{ block.settings.button_advanced }}"
+          },
+          {
+            "type": "range",
+            "id": "button_padding_horizontal",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding horizontal",
+            "default": 24,
+            "visible_if": "{{ block.settings.button_style != 'link' and block.settings.button_advanced }}"
+          },
+          {
+            "type": "range",
+            "id": "button_padding_horizontal_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding horizontal - mobile",
+            "default": 20,
+            "visible_if": "{{ block.settings.button_style != 'link' and block.settings.button_advanced }}"
+          },
+          {
+            "type": "range",
+            "id": "button_padding_vertical",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding vertical",
+            "default": 12,
+            "visible_if": "{{ block.settings.button_style != 'link' and block.settings.button_advanced }}"
+          },
+          {
+            "type": "range",
+            "id": "button_padding_vertical_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding vertical - mobile",
+            "default": 12,
+            "visible_if": "{{ block.settings.button_style != 'link' and block.settings.button_advanced }}"
+          },
+          {
+            "type": "range",
+            "id": "button_radius",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Roundness",
+            "default": 6,
+            "visible_if": "{{ block.settings.button_style != 'link' }}"
+          },
+          {
+            "type": "range",
+            "id": "button_border_thickness",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "unit": "px",
+            "label": "Border thickness",
+            "default": 1,
+            "visible_if": "{{ block.settings.button_style == 'outline' or block.settings.button_style == 'outline_arrow' }}"
+          },
+          {
+            "type": "range",
+            "id": "button_mt",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Margin top",
+            "default": 24,
+            "visible_if": "{{ block.settings.button_advanced }}"
+          },
+          {
+            "type": "range",
+            "id": "button_mt_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "Margin top - mobile",
+            "default": 24,
+            "visible_if": "{{ block.settings.button_advanced }}"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_custom_styling",
+            "label": "Use custom styling",
+            "default": true,
+            "visible_if": "{{ block.settings.button_style != 'link' }}"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_full_width_mobile",
+            "label": "Full width on mobile",
+            "default": false,
+            "visible_if": "{{ block.settings.button_style != 'link' }}"
+          },
+          {
+            "type": "header",
+            "content": "Colors"
+          },
+          {
+            "type": "color",
+            "label": "Text",
+            "id": "button_color",
+            "default": "#f9f544"
+          },
+          {
+            "type": "color",
+            "label": "Text hover",
+            "id": "button_hover_color",
+            "default": "#191919"
+          },
+          {
+            "type": "color",
+            "label": "Background",
+            "id": "button_bg_color",
+            "default": "rgba(0,0,0,0)",
+            "visible_if": "{{ block.settings.button_style != 'link' }}"
+          },
+          {
+            "type": "color",
+            "label": "Background hover",
+            "id": "button_bg_hover_color",
+            "default": "#f9f544",
+            "visible_if": "{{ block.settings.button_style != 'link' }}"
+          },
+          {
+            "type": "color",
+            "label": "Border",
+            "id": "button_border_color",
+            "default": "#f9f544",
+            "visible_if": "{{ block.settings.button_style == 'outline' or block.settings.button_style == 'outline_arrow' }}"
+          },
+          {
+            "type": "color",
+            "label": "Border hover",
+            "id": "button_border_hover_color",
+            "default": "#f9f544",
+            "visible_if": "{{ block.settings.button_style == 'outline' or block.settings.button_style == 'outline_arrow' }}"
+          },
+          {
+            "type": "color",
+            "label": "Shadow",
+            "id": "button_shadow_color",
+            "default": "#000000",
+            "visible_if": "{{ block.settings.button_style != 'link' and block.settings.button_custom_styling }}"
           }
         ]
       }
