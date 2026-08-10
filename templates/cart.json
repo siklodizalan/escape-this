@@ -117,7 +117,7 @@
                 "badge_konfetti": {
                     "type": "badge",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/cart-konfetti.png",
+                        "image": "shopify:\/\/shop_images\/cart-konfetti.jpg",
                         "alt": "konfetti"
                     }
                 },
