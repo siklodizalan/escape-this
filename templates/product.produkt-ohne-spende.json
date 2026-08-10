@@ -126,66 +126,7 @@
                         "card_bg_color": "#1e1e1e",
                         "card_border_color": "#1e1e1e"
                     }
-                }
-            },
-            "block_order": [
-                "column_RzNQVc",
-                "column_MW6arx"
-            ],
-            "settings": {
-                "cards_gap": 20,
-                "cards_gap_mobile": 16,
-                "stagger_offset": 0,
-                "equal_height_cards": true,
-                "show_footprints": false,
-                "footprint_color": "#f9f544",
-                "card_padding_horizontal": 40,
-                "card_padding_horizontal_mobile": 24,
-                "card_padding_vertical": 40,
-                "card_padding_vertical_mobile": 28,
-                "card_radius": 6,
-                "card_border_thickness": 0,
-                "number_size": 56,
-                "number_size_mobile": 48,
-                "number_font_size": 36,
-                "number_font_size_mobile": 28,
-                "number_gap": 20,
-                "number_gap_mobile": 16,
-                "number_bg_color": "#f9f544",
-                "number_text_color": "#1f1f21",
-                "title_custom": true,
-                "title_font": "red_hat_display_n8",
-                "title_size": 24,
-                "title_size_mobile": 20,
-                "title_height": 130,
-                "title_color": "#ffffff",
-                "text_custom": true,
-                "text_font": "red_hat_display_n4",
-                "text_size": 16,
-                "text_size_mobile": 14,
-                "text_height": 150,
-                "text_mt": 12,
-                "text_mt_mobile": 10,
-                "text_color": "#ffffff",
-                "background_color": "#191919",
-                "background_gradient": "",
-                "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 0,
-                "padding_bottom": 12,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "full_width": false,
-                "border_thickness": 0,
-                "section_radius": 0
-            }
-        },
-        "ss_steps_2_FEtHAQ_2": {
-            "type": "ss-steps-2",
-            "blocks": {
+                },
                 "column_EKVQdU": {
                     "type": "step",
                     "settings": {
@@ -208,10 +149,14 @@
                 }
             },
             "block_order": [
+                "column_RzNQVc",
+                "column_MW6arx",
                 "column_EKVQdU",
                 "column_DxF47e"
             ],
             "settings": {
+                "rows": 2,
+                "items_per_row": 2,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,
                 "stagger_offset": 0,
@@ -400,7 +345,6 @@
         "main",
         "rich_text_so_gehts",
         "ss_steps_2_FEtHAQ",
-        "ss_steps_2_FEtHAQ_2",
         "related-products",
         "newsletter_LkNe4K"
     ]

@@ -351,6 +351,8 @@
             ],
             "name": "SS - Steps #2",
             "settings": {
+                "rows": 1,
+                "items_per_row": 3,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,
                 "stagger_offset": 0,
@@ -544,6 +546,8 @@
             ],
             "name": "SS - Steps #2",
             "settings": {
+                "rows": 1,
+                "items_per_row": 2,
                 "cards_gap": 20,
                 "cards_gap_mobile": 16,
                 "stagger_offset": 0,

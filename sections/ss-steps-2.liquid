@@ -54,7 +54,12 @@
   assign text_color = section.settings.text_color
   assign link_color = section.settings.link_color
 
+  assign items_per_row = section.settings.items_per_row
+  assign rows = section.settings.rows
+  assign max_items = rows | times: items_per_row
+
   assign step_blocks = section.blocks | where: 'type', 'step'
+  assign step_blocks = step_blocks | slice: 0, max_items
   assign step_count = step_blocks.size
 -%}
 
@@ -234,7 +239,8 @@
     }
 
     .steps-row-{{ section.id }} {
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat({{ items_per_row }}, 1fr);
       align-items: {% if equal_height_cards %}stretch{% else %}center{% endif %};
       gap: {{ cards_gap }}px;
     }
@@ -467,6 +473,24 @@
       {
         "type": "header",
         "content": "Layout settings"
+      },
+      {
+        "type": "range",
+        "id": "rows",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "Rows",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "items_per_row",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "label": "Items per row",
+        "default": 3
       },
       {
         "type": "range",
