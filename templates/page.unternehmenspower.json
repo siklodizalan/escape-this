@@ -198,11 +198,11 @@
                 "caption_gkMBKj": {
                     "type": "caption",
                     "settings": {
-                        "caption": "<h3>Warum Escape Games?<\/h3>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
+                        "caption": "<h3>WARUM ESCAPE GAMES?<\/h3>",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
                         "caption_advanced": false,
                         "caption_height": 130,
                         "caption_mt": 0,
@@ -224,12 +224,12 @@
                 "heading_BfEXAL": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>Mehr als nur ein Ausflug<strong>.<\/strong><\/h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
+                        "heading": "<h2>MEHR ALS NUR EIN AUSFLUG<strong>.<\/strong><\/h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 36,
+                        "heading_size_mobile": 28,
                         "heading_advanced": false,
                         "heading_height": 130,
                         "heading_mt": 8,
@@ -245,15 +245,15 @@
             ],
             "name": "SS - Hero pro 💎",
             "settings": {
-                "hero_height": "auto",
-                "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 600,
+                "hero_height": "fixed_height",
+                "hero_fixed_height": 200,
+                "hero_fixed_height_mobile": 200,
                 "content_max_width": 50,
                 "enable_split_layout": false,
-                "content_align": "center",
-                "content_align_mobile": "center",
+                "content_align": "left",
+                "content_align_mobile": "left",
                 "content_vertical_align": "center",
-                "content_vertical_align_mobile": "center",
+                "content_vertical_align_mobile": "end",
                 "features_advanced": false,
                 "features_mt": 20,
                 "features_mt_mobile": 20,
@@ -291,8 +291,8 @@
                 "margin_bottom": 0,
                 "margin_horizontal": 0,
                 "margin_horizontal_mobile": 0,
-                "padding_top": 36,
-                "padding_bottom": 36,
+                "padding_top": 32,
+                "padding_bottom": 4,
                 "padding_horizontal": 5,
                 "padding_horizontal_mobile": 1.5,
                 "width": "page",
@@ -311,36 +311,36 @@
             }
         },
         "11c90a0d-510a-43c2-8345-10f7f3b6463f": {
-            "type": "multicolumn",
+            "type": "ss-steps-2",
             "blocks": {
                 "template--20279500144982__11c90a0d-510a-43c2-8345-10f7f3b6463f-column-2": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/EscapeRoom_Teambuilding.png",
+                        "icon": "shopify:\/\/shop_images\/EscapeRoom_Teambuilding.png",
                         "title": "100% Teambuilding",
                         "text": "<p>Unsere Mini-Challenges fordern das gesamte Team heraus. Beim gemeinsamen Lösen der Rätsel werden effektive Kommunikation, kreatives Denken und ein strukturiertes Vorgehen ganz spielerisch und nebenbei gefördert.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "template--20279500144982__11c90a0d-510a-43c2-8345-10f7f3b6463f-column-3": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/EscapeRoom_Individualisiert.png",
+                        "icon": "shopify:\/\/shop_images\/EscapeRoom_Individualisiert.png",
                         "title": "Digital & Individualisierbar",
                         "text": "<p>Sparen Sie sich Location-Suche und Vorbereitungszeit. Mit unserer App startet Ihr Team direkt ins Abenteuer – ganz ohne Extra-Equipment. Für den perfekten Firmenkontext gestalten wir den digitalen Outdoor Escape Room gerne auch komplett individuell nach Ihren Wünschen.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "455b11e8-a358-4aec-8077-9ac2394efef4": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/Escape_Room_flexibel.png",
+                        "icon": "shopify:\/\/shop_images\/Escape_Room_flexibel.png",
                         "title": "Flexibilität",
                         "text": "<p>Escape This! ist von Grund auf so konzipiert, dass es sich komplett nach Ihnen richtet. Egal wann, wo oder wie Sie Ihr Event planen – unser System passt sich Ihren Bedürfnissen an, nicht umgekehrt.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 }
             },
@@ -349,21 +349,55 @@
                 "template--20279500144982__11c90a0d-510a-43c2-8345-10f7f3b6463f-column-3",
                 "455b11e8-a358-4aec-8077-9ac2394efef4"
             ],
+            "name": "SS - Steps #2",
             "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "stagger_offset": 0,
+                "show_footprints": false,
+                "footprint_color": "#f9f544",
+                "card_padding_horizontal": 40,
+                "card_padding_horizontal_mobile": 24,
+                "card_padding_vertical": 40,
+                "card_padding_vertical_mobile": 28,
+                "card_radius": 6,
+                "card_border_thickness": 0,
+                "number_size": 56,
+                "number_size_mobile": 48,
+                "number_font_size": 36,
+                "number_font_size_mobile": 28,
+                "number_gap": 20,
+                "number_gap_mobile": 16,
+                "number_bg_color": "#f9f544",
+                "number_text_color": "#1f1f21",
+                "title_custom": true,
+                "title_font": "red_hat_display_n8",
+                "title_size": 24,
+                "title_size_mobile": 20,
+                "title_height": 130,
+                "title_color": "#ffffff",
+                "text_custom": true,
+                "text_font": "red_hat_display_n4",
+                "text_size": 16,
+                "text_size_mobile": 14,
+                "text_height": 150,
+                "text_mt": 12,
+                "text_mt_mobile": 10,
+                "text_color": "#ffffff",
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
                 "padding_top": 0,
-                "padding_bottom": 36
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "ss_hero_pro_3XC6RA": {
@@ -372,11 +406,11 @@
                 "caption_ppLTPe": {
                     "type": "caption",
                     "settings": {
-                        "caption": "<h3>Nach Ihren Wünschen!<\/h3>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
+                        "caption": "<h3>NACH IHREN WÜNSCHEN!<\/h3>",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
                         "caption_advanced": false,
                         "caption_height": 130,
                         "caption_mt": 0,
@@ -398,12 +432,12 @@
                 "heading_Kf7FGa": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>Teamevent<\/h2><h2>Möglichkeiten<strong>.<\/strong><\/h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
+                        "heading": "<h2>TEAMEVENT<\/h2><h2>MÖGLICHKEITEN<strong>.<\/strong><\/h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 36,
+                        "heading_size_mobile": 28,
                         "heading_advanced": false,
                         "heading_height": 130,
                         "heading_mt": 8,
@@ -424,8 +458,8 @@
                 "hero_fixed_height_mobile": 600,
                 "content_max_width": 50,
                 "enable_split_layout": false,
-                "content_align": "center",
-                "content_align_mobile": "center",
+                "content_align": "left",
+                "content_align_mobile": "left",
                 "content_vertical_align": "center",
                 "content_vertical_align_mobile": "center",
                 "features_advanced": false,
@@ -477,24 +511,30 @@
             }
         },
         "multicolumn_q9aEBt": {
-            "type": "multicolumn",
+            "type": "ss-steps-2",
             "blocks": {
                 "column_fXtQKF": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
+                        "hide_number": true,
                         "title": "Bestehendes Erlebnis",
                         "text": "<p><strong>Gemeinsam lachen, knobeln und gewinnen: <\/strong>Schicken Sie Ihr Team auf eine unvergessliche Mission! In unseren regulären Escape Games ist Köpfchen und Zusammenhalt gefragt – denn nur als Einheit lassen sich die kniffligen Aufgaben meistern. Freuen Sie sich auf ein nachhaltiges Teamevent, das Generationen verbindet und den Teamgeist auf ein neues Level hebt.<\/p>",
-                        "link_label": "Zur Spielauswahl",
-                        "link": "shopify:\/\/collections"
+                        "link_label": "ZUR SPIELAUSWAHL",
+                        "link": "shopify:\/\/collections",
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "column_APRgJ9": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
+                        "hide_number": true,
                         "title": "Individuelles Erlebnis",
                         "text": "<p><strong>Ihre Idee, unser Know-how – das ultimative Teamevent: <\/strong>Wir erschaffen gemeinsam mit Ihnen ein maßgeschneidertes Outdoor Escape Game, das perfekt auf Ihr Unternehmen zugeschnitten ist. Welches Thema Sie auch bespielen möchten: Toben Sie sich kreativ aus, wir setzen es digital und interaktiv um. Klingt spannend? Dann wenden Sie sich einfach direkt an unseren unten stehenden Kontakt.<\/p>",
-                        "link_label": "Individuelle Anfrage stellen",
-                        "link": "mailto:business@escape-this.com"
+                        "link_label": "INDIVIDUELLE ANFRAGE STELLEN",
+                        "link": "mailto:business@escape-this.com",
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 }
             },
@@ -502,21 +542,56 @@
                 "column_fXtQKF",
                 "column_APRgJ9"
             ],
+            "name": "SS - Steps #2",
             "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 2,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "stagger_offset": 0,
+                "show_footprints": false,
+                "footprint_color": "#f9f544",
+                "card_padding_horizontal": 40,
+                "card_padding_horizontal_mobile": 24,
+                "card_padding_vertical": 40,
+                "card_padding_vertical_mobile": 28,
+                "card_radius": 6,
+                "card_border_thickness": 0,
+                "number_size": 56,
+                "number_size_mobile": 48,
+                "number_font_size": 36,
+                "number_font_size_mobile": 28,
+                "number_gap": 20,
+                "number_gap_mobile": 16,
+                "number_bg_color": "#f9f544",
+                "number_text_color": "#1f1f21",
+                "title_custom": true,
+                "title_font": "red_hat_display_n8",
+                "title_size": 24,
+                "title_size_mobile": 20,
+                "title_height": 130,
+                "title_color": "#ffffff",
+                "text_custom": true,
+                "text_font": "red_hat_display_n4",
+                "text_size": 16,
+                "text_size_mobile": 14,
+                "text_height": 150,
+                "text_mt": 12,
+                "text_mt_mobile": 10,
+                "text_color": "#ffffff",
+                "link_color": "#f9f544",
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
                 "padding_top": 0,
-                "padding_bottom": 36
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "ss_hero_pro_4Bck8f": {
@@ -525,11 +600,11 @@
                 "caption_KLX98G": {
                     "type": "caption",
                     "settings": {
-                        "caption": "<h3>Ablauf<\/h3>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
+                        "caption": "<h3>ABLAUF<\/h3>",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
                         "caption_advanced": false,
                         "caption_height": 130,
                         "caption_mt": 0,
@@ -551,12 +626,12 @@
                 "heading_xw76aV": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>So läuft ein Teamevent ab<strong>.<\/strong><\/h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
+                        "heading": "<h2>SO LÄUFT EIN TEAMEVENT AB<strong>.<\/strong><\/h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 36,
+                        "heading_size_mobile": 28,
                         "heading_advanced": false,
                         "heading_height": 130,
                         "heading_mt": 8,
@@ -572,15 +647,15 @@
             ],
             "name": "SS - Hero pro 💎",
             "settings": {
-                "hero_height": "auto",
-                "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 600,
+                "hero_height": "fixed_height",
+                "hero_fixed_height": 200,
+                "hero_fixed_height_mobile": 200,
                 "content_max_width": 50,
                 "enable_split_layout": false,
-                "content_align": "center",
-                "content_align_mobile": "center",
+                "content_align": "left",
+                "content_align_mobile": "left",
                 "content_vertical_align": "center",
-                "content_vertical_align_mobile": "center",
+                "content_vertical_align_mobile": "end",
                 "features_advanced": false,
                 "features_mt": 20,
                 "features_mt_mobile": 20,
@@ -615,11 +690,11 @@
                 "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
                 "border_color": "#191919",
                 "margin_top": 0,
-                "margin_bottom": 0,
+                "margin_bottom": 16,
                 "margin_horizontal": 0,
                 "margin_horizontal_mobile": 0,
-                "padding_top": 36,
-                "padding_bottom": 36,
+                "padding_top": 32,
+                "padding_bottom": 16,
                 "padding_horizontal": 5,
                 "padding_horizontal_mobile": 1.5,
                 "width": "page",
@@ -630,36 +705,33 @@
             }
         },
         "multicolumn_QQxXHA": {
-            "type": "multicolumn",
+            "type": "ss-steps-1",
             "blocks": {
                 "column_Gg6YNj": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-one.png",
                         "title": "Anfrage stellen",
                         "text": "<p>Kontaktieren Sie uns mit Teamgröße, Wunschstadt und Wunschtermin. Wir melden uns innerhalb von 24 Stunden bei Ihnen.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "column_kKVHCT": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-2.png",
                         "title": "Gemeinsam planen",
                         "text": "<p>Wir schnüren das perfekte Paket: Spielgestaltung, Weggestaltung, Gruppeneinteilung und optionale Extras wie Ranglisten, Gewinne oder auch Verpflegungsstationen auf dem Weg.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "column_Q3LCED": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/number-3.png",
                         "title": "Spieltag genießen",
                         "text": "<p>Am Event-Tag starten Sie einfach die App. Wir kümmern uns um den Rest — Sie und ihr Team müssen nur Spaß haben.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 }
             },
@@ -668,38 +740,71 @@
                 "column_kKVHCT",
                 "column_Q3LCED"
             ],
-            "name": "t:sections.multicolumn.presets.name",
+            "name": "SS - Steps #1",
             "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 36,
-                "padding_bottom": 36
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "stagger_offset": 200,
+                "show_footprints": true,
+                "footprint_color": "#f9f544",
+                "card_padding_horizontal": 40,
+                "card_padding_horizontal_mobile": 24,
+                "card_padding_vertical": 40,
+                "card_padding_vertical_mobile": 28,
+                "card_radius": 6,
+                "card_border_thickness": 0,
+                "number_size": 56,
+                "number_size_mobile": 48,
+                "number_font_size": 36,
+                "number_font_size_mobile": 28,
+                "number_gap": 20,
+                "number_gap_mobile": 16,
+                "number_bg_color": "#f9f544",
+                "number_text_color": "#1f1f21",
+                "title_custom": true,
+                "title_font": "red_hat_display_n8",
+                "title_size": 24,
+                "title_size_mobile": 20,
+                "title_height": 130,
+                "title_color": "#ffffff",
+                "text_custom": true,
+                "text_font": "red_hat_display_n4",
+                "text_size": 16,
+                "text_size_mobile": 14,
+                "text_height": 150,
+                "text_mt": 12,
+                "text_mt_mobile": 10,
+                "text_color": "#ffffff",
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 0,
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "c0d1fb27-0dd2-4374-ad3f-bdf3fb80ec3e": {
-            "type": "image-with-text",
+            "type": "image-with-text-2",
             "blocks": {
                 "template--20279500144982__c0d1fb27-0dd2-4374-ad3f-bdf3fb80ec3e-heading-1": {
                     "type": "heading",
                     "settings": {
-                        "heading": "Ihre persönliche Ansprechpartnerin:       Kim Ensmann",
+                        "heading": "IHRE PERSÖNLICHE ANSPRECHPARTNERIN:       KIM ENSMANN",
                         "heading_size": "h2"
                     }
                 },
                 "template--20279500144982__c0d1fb27-0dd2-4374-ad3f-bdf3fb80ec3e-text-1": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Scheuen Sie sich nicht, mich zu kontaktieren. <\/p><p>Gerne bieten wir Ihnen einen individuellen Service und Angebotsmöglichkeiten an.<\/p>",
+                        "text": "<p>SCHEUEN SIE SICH NICHT, MICH ZU KONTAKTIEREN. <\/p><p>GERNE BIETEN WIR IHNEN EINEN INDIVIDUELLEN SERVICE UND ANGEBOTSMÖGLICHKEITEN AN.<\/p>",
                         "text_style": "body"
                     }
                 },
@@ -708,7 +813,21 @@
                     "settings": {
                         "button_label": "business@escape-this.com",
                         "button_link": "mailto:business@escape-this.com",
-                        "button_style_secondary": false
+                        "button_font": "red_hat_display_n8",
+                        "button_size": 14,
+                        "button_size_mobile": 14,
+                        "button_radius": 6,
+                        "button_border_thickness": 1,
+                        "button_padding_horizontal": 24,
+                        "button_padding_horizontal_mobile": 20,
+                        "button_padding_vertical": 12,
+                        "button_padding_vertical_mobile": 12,
+                        "button_color": "#191919",
+                        "button_hover_color": "#f9f544",
+                        "button_bg_color": "#f9f544",
+                        "button_bg_hover_color": "#2d2d2d",
+                        "button_border_color": "#f9f544",
+                        "button_border_hover_color": "#f9f544"
                     }
                 }
             },
@@ -728,7 +847,7 @@
                 "desktop_content_alignment": "left",
                 "mobile_content_alignment": "left",
                 "section_color_scheme": "",
-                "color_scheme": "",
+                "color_scheme": "background-1",
                 "padding_top": 0,
                 "padding_bottom": 36
             }
@@ -773,11 +892,11 @@
                 "caption_EwEeTw": {
                     "type": "caption",
                     "settings": {
-                        "caption": "<h3>Jetzt anfragen<\/h3>",
-                        "caption_custom": false,
-                        "caption_font": "josefin_sans_n4",
-                        "caption_size": 12,
-                        "caption_size_mobile": 12,
+                        "caption": "<h3>JETZT ANFRAGEN<\/h3>",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
                         "caption_advanced": false,
                         "caption_height": 130,
                         "caption_mt": 0,
@@ -799,12 +918,12 @@
                 "heading_VWFBRb": {
                     "type": "heading",
                     "settings": {
-                        "heading": "<h2>Ihr Teamevent startet hier<strong>.<\/strong><\/h2>",
-                        "heading_custom": false,
-                        "heading_font": "josefin_sans_n4",
-                        "heading_accent_font": "playfair_n4",
-                        "heading_size": 56,
-                        "heading_size_mobile": 36,
+                        "heading": "<h2>IHR TEAMEVENT STARTET HIER<strong>.<\/strong><\/h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 36,
+                        "heading_size_mobile": 28,
                         "heading_advanced": false,
                         "heading_height": 130,
                         "heading_mt": 8,
@@ -816,7 +935,7 @@
                 "text_ye6EbE": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Füllen Sie das Formular aus und wir melden uns innerhalb 24 Stunden bei Ihnen!<\/p>",
+                        "text": "<p>FÜLLEN SIE DAS FORMULAR AUS UND WIR MELDEN UNS INNERHALB 24 STUNDEN BEI IHNEN!<\/p>",
                         "text_custom": false,
                         "text_font": "josefin_sans_n4",
                         "text_size": 18,
