@@ -45,13 +45,13 @@
                         "layout": "horizontal",
                         "icon_1": "silhouette",
                         "image_1": "shopify:\/\/shop_images\/friends.png",
-                        "heading_1": "Bis zu 8 Personen",
+                        "heading_1": "BIS ZU 8 PERSONEN",
                         "icon_2": "stopwatch",
                         "image_2": "shopify:\/\/shop_images\/wall-clock.png",
-                        "heading_2": "2-3h Spiel-erlebnis",
+                        "heading_2": "2-3H SPIEL-ERLEBNIS",
                         "icon_3": "check_mark",
                         "image_3": "shopify:\/\/shop_images\/check-mark.png",
-                        "heading_3": "Ab 18 Jahren"
+                        "heading_3": "AB 18 JAHREN"
                     }
                 }
             },
@@ -81,128 +81,326 @@
                 "padding_bottom": 12
             }
         },
-        "multicolumn_FEtHAQ": {
-            "type": "multicolumn",
+        "rich_text_so_gehts": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_so_gehts": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "SO GEHT'S:",
+                        "heading_size": "h1"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_so_gehts"
+            ],
+            "settings": {
+                "desktop_content_position": "left",
+                "content_alignment": "left",
+                "color_scheme": "scheme-1",
+                "full_width": true,
+                "padding_top": 36,
+                "padding_bottom": 12
+            }
+        },
+        "ss_steps_2_FEtHAQ": {
+            "type": "ss-steps-2",
             "blocks": {
                 "column_RzNQVc": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/ticket_1.png",
+                        "icon": "shopify:\/\/shop_images\/ticket_1.png",
                         "title": "1. Ticketkauf",
                         "text": "<p>Kaufe das Ticket für deine Stadt hier auf unserer Website.<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 },
                 "column_MW6arx": {
-                    "type": "column",
+                    "type": "step",
                     "settings": {
-                        "image": "shopify:\/\/shop_images\/password-input.png",
+                        "icon": "shopify:\/\/shop_images\/password-input.png",
                         "title": "2. Ticketcode",
                         "text": "<p>Du erhältst deinen individuelle Ticketcode per Mail, sobald du deine Zahlung durchgeführt hast.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_EKVQdU": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/download_1.png",
-                        "title": "3. App-Download",
-                        "text": "<p>Zum Spielstart müssen alle Mitspieler, die neuste Version der kostenlosen \"Escape This!\"-App herunterladen. Beachte: Eine Internetverbindung sowie ein voller Handyakku sollten während des Spiels gewährleistet sein.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_DxF47e": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/location_1.png",
-                        "title": "4. Spielstart",
-                        "text": "<p>Den Startpunkt deines Escape Games findest du auf deiner Ticketbestätigung. Alle Teammitglieder (bis zu 8 Smartphones) melden sich mit dem selben Ticketcode in der App an. Achtung: Du und dein Team habt bis zu 4 Monaten Zeit, das Ticket einzulösen. Have fun!<\/p>",
-                        "link_label": "",
-                        "link": ""
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
                     }
                 }
             },
             "block_order": [
                 "column_RzNQVc",
-                "column_MW6arx",
+                "column_MW6arx"
+            ],
+            "settings": {
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "stagger_offset": 0,
+                "equal_height_cards": true,
+                "show_footprints": false,
+                "footprint_color": "#f9f544",
+                "card_padding_horizontal": 40,
+                "card_padding_horizontal_mobile": 24,
+                "card_padding_vertical": 40,
+                "card_padding_vertical_mobile": 28,
+                "card_radius": 6,
+                "card_border_thickness": 0,
+                "number_size": 56,
+                "number_size_mobile": 48,
+                "number_font_size": 36,
+                "number_font_size_mobile": 28,
+                "number_gap": 20,
+                "number_gap_mobile": 16,
+                "number_bg_color": "#f9f544",
+                "number_text_color": "#1f1f21",
+                "title_custom": true,
+                "title_font": "red_hat_display_n8",
+                "title_size": 24,
+                "title_size_mobile": 20,
+                "title_height": 130,
+                "title_color": "#ffffff",
+                "text_custom": true,
+                "text_font": "red_hat_display_n4",
+                "text_size": 16,
+                "text_size_mobile": 14,
+                "text_height": 150,
+                "text_mt": 12,
+                "text_mt_mobile": 10,
+                "text_color": "#ffffff",
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 0,
+                "padding_bottom": 12,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
+            }
+        },
+        "ss_steps_2_FEtHAQ_2": {
+            "type": "ss-steps-2",
+            "blocks": {
+                "column_EKVQdU": {
+                    "type": "step",
+                    "settings": {
+                        "icon": "shopify:\/\/shop_images\/download_1.png",
+                        "title": "3. App-Download",
+                        "text": "<p>Zum Spielstart müssen alle Mitspieler, die neuste Version der kostenlosen \"Escape This!\"-App herunterladen. Beachte: Eine Internetverbindung sowie ein voller Handyakku sollten während des Spiels gewährleistet sein.<\/p>",
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
+                    }
+                },
+                "column_DxF47e": {
+                    "type": "step",
+                    "settings": {
+                        "icon": "shopify:\/\/shop_images\/location_1.png",
+                        "title": "4. Spielstart",
+                        "text": "<p>Den Startpunkt deines Escape Games findest du auf deiner Ticketbestätigung. Alle Teammitglieder (bis zu 8 Smartphones) melden sich mit dem selben Ticketcode in der App an. Achtung: Du und dein Team habt bis zu 4 Monaten Zeit, das Ticket einzulösen. Have fun!<\/p>",
+                        "card_bg_color": "#1e1e1e",
+                        "card_border_color": "#1e1e1e"
+                    }
+                }
+            },
+            "block_order": [
                 "column_EKVQdU",
                 "column_DxF47e"
             ],
             "settings": {
-                "title": "So geht's:",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 2,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 36,
-                "padding_bottom": 36
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "stagger_offset": 0,
+                "equal_height_cards": true,
+                "show_footprints": false,
+                "footprint_color": "#f9f544",
+                "card_padding_horizontal": 40,
+                "card_padding_horizontal_mobile": 24,
+                "card_padding_vertical": 40,
+                "card_padding_vertical_mobile": 28,
+                "card_radius": 6,
+                "card_border_thickness": 0,
+                "number_size": 56,
+                "number_size_mobile": 48,
+                "number_font_size": 36,
+                "number_font_size_mobile": 28,
+                "number_gap": 20,
+                "number_gap_mobile": 16,
+                "number_bg_color": "#f9f544",
+                "number_text_color": "#1f1f21",
+                "title_custom": true,
+                "title_font": "red_hat_display_n8",
+                "title_size": 24,
+                "title_size_mobile": 20,
+                "title_height": 130,
+                "title_color": "#ffffff",
+                "text_custom": true,
+                "text_font": "red_hat_display_n4",
+                "text_size": 16,
+                "text_size_mobile": 14,
+                "text_height": 150,
+                "text_mt": 12,
+                "text_mt_mobile": 10,
+                "text_color": "#ffffff",
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 0,
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         },
         "related-products": {
-            "type": "related-products",
-            "settings": {
-                "heading": "Schon gesehen?",
-                "heading_size": "h1",
-                "products_to_show": 4,
-                "columns_desktop": 4,
-                "columns_mobile": "2",
-                "color_scheme": "background-1",
-                "image_ratio": "portrait",
-                "image_shape": "default",
-                "show_secondary_image": true,
-                "show_vendor": false,
-                "show_rating": false,
-                "padding_top": 0,
-                "padding_bottom": 40
-            }
-        },
-        "newsletter_LkNe4K": {
-            "type": "newsletter",
+            "type": "ss-featured-collection-1",
             "blocks": {
-                "heading_7GA8XH": {
+                "heading_relProd1": {
                     "type": "heading",
                     "settings": {
-                        "heading": "10% Newsletter-Rabatt",
-                        "heading_size": "h2"
+                        "heading": "<h2>SCHON GESEHEN?</h2>",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_accent_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
+                        "heading_height": 130,
+                        "heading_mt": 8,
+                        "heading_mt_mobile": 8,
+                        "heading_color": "#ffffff",
+                        "heading_accent_color": "#f9f544"
                     }
-                },
-                "paragraph_nTHHJC": {
-                    "type": "paragraph",
-                    "settings": {
-                        "text": "<p>Es gibt Neues aus unserer Adventurewerkstatt. Bleibe mit unserem Newsletter auf dem Laufenden: Erfahre als Erster von neuen Games, Special Events, neuen Städten und besonderen Aktionen. Kein Spam! Als neues Mitglied der Escape This! Community erhältst du nach Newsletter-Anmeldung einen 10% Rabattcode für deine erste Escape This! Bestellung.<\/p>"
-                    }
-                },
-                "email_form_rEbhVc": {
-                    "type": "email_form",
-                    "settings": {}
                 }
             },
             "block_order": [
-                "heading_7GA8XH",
-                "paragraph_nTHHJC",
-                "email_form_rEbhVc"
+                "heading_relProd1"
             ],
+            "name": "SS - Games grid #2",
             "settings": {
-                "color_scheme": "accent-1",
-                "full_width": true,
+                "use_recommendations": true,
+                "collection": "",
+                "products_to_show": 4,
+                "columns_desktop": 4,
+                "cards_gap": 20,
+                "cards_gap_mobile": 16,
+                "cards_row_gap": 50,
+                "cards_row_gap_mobile": 32,
+                "grid_mt": 32,
+                "grid_mt_mobile": 24,
+                "image_ratio": "landscape",
+                "card_radius": 6,
+                "card_info_mt": 20,
+                "title_font": "red_hat_display_n8",
+                "title_size": 18,
+                "title_size_mobile": 15,
+                "title_color": "#f9f544",
+                "price_font": "red_hat_display_n4",
+                "price_size": 16,
+                "price_size_mobile": 14,
+                "price_color": "#ffffff",
+                "button_label": "OPTIONEN AUSWÄHLEN",
+                "button_font": "red_hat_display_n8",
+                "button_size": 12,
+                "button_radius": 5,
+                "button_color": "#f9f544",
+                "button_bg_color": "rgba(0,0,0,0)",
+                "button_border_color": "#f9f544",
+                "background_color": "#191919",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "padding_top": 36,
+                "padding_bottom": 36,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
+            }
+        },
+        "newsletter_LkNe4K": {
+            "type": "ss-newsletter-1",
+            "blocks": {
+                "caption_n3wsC01": {
+                    "type": "caption",
+                    "settings": {
+                        "caption": "ANMELDEN & SPAREN",
+                        "caption_custom": true,
+                        "caption_font": "red_hat_display_n7",
+                        "caption_size": 20,
+                        "caption_size_mobile": 16,
+                        "caption_color": "#f9f544"
+                    }
+                },
+                "heading_n3wsH01": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "10% NEWSLETTER-RABATT",
+                        "heading_custom": true,
+                        "heading_font": "red_hat_display_n8",
+                        "heading_size": 40,
+                        "heading_size_mobile": 28,
+                        "heading_color": "#ffffff"
+                    }
+                },
+                "text_n3wsT01": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>ES GIBT NEUES AUS UNSERER ADVENTUREWERKSTATT. BLEIBE MIT UNSEREM NEWSLETTER AUF DEM LAUFENDEN: ERFAHRE ALS ERSTER VON NEUEN GAMES, SPECIAL EVENTS, NEUEN STÄDTEN UND BESONDEREN AKTIONEN. KEIN SPAM! ALS NEUES MITGLIED DER ESCAPE THIS! COMMUNITY ERHÄLTST DU NACH NEWSLETTER-ANMELDUNG EINEN 10% RABATTCODE FÜR DEINE ERSTE ESCAPE THIS! BESTELLUNG.<\/p>"
+                    }
+                },
+                "email_form_n3wsF01": {
+                    "type": "email_form",
+                    "settings": {
+                        "placeholder": "EMAIL ADRESSE",
+                        "input_radius": 5,
+                        "input_border_color": "#f9f544",
+                        "input_text_color": "#ffffff"
+                    }
+                }
+            },
+            "block_order": [
+                "caption_n3wsC01",
+                "heading_n3wsH01",
+                "text_n3wsT01",
+                "email_form_n3wsF01"
+            ],
+            "name": "SS - Newsletter #1",
+            "settings": {
+                "background_color": "#191919",
+                "background_gradient": "",
+                "border_color": "#191919",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
                 "padding_top": 40,
-                "padding_bottom": 52
+                "padding_bottom": 52,
+                "padding_horizontal": 5,
+                "padding_horizontal_mobile": 1.5,
+                "full_width": false,
+                "border_thickness": 0,
+                "section_radius": 0
             }
         }
     },
     "order": [
         "main",
-        "multicolumn_FEtHAQ",
+        "rich_text_so_gehts",
+        "ss_steps_2_FEtHAQ",
+        "ss_steps_2_FEtHAQ_2",
         "related-products",
         "newsletter_LkNe4K"
     ]

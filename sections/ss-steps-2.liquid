@@ -17,6 +17,7 @@
   assign cards_gap = section.settings.cards_gap
   assign cards_gap_mobile = section.settings.cards_gap_mobile
   assign stagger_offset = section.settings.stagger_offset
+  assign equal_height_cards = section.settings.equal_height_cards
   assign show_footprints = section.settings.show_footprints
   assign footprint_color = section.settings.footprint_color
 
@@ -234,7 +235,7 @@
 
     .steps-row-{{ section.id }} {
       flex-direction: row;
-      align-items: center;
+      align-items: {% if equal_height_cards %}stretch{% else %}center{% endif %};
       gap: {{ cards_gap }}px;
     }
 
@@ -496,6 +497,13 @@
         "unit": "px",
         "label": "Stagger offset (alternating cards)",
         "default": 140
+      },
+      {
+        "type": "checkbox",
+        "id": "equal_height_cards",
+        "label": "Equal height cards",
+        "info": "Makes all cards in the row match the height of the tallest card (desktop only)",
+        "default": false
       },
       {
         "type": "checkbox",
