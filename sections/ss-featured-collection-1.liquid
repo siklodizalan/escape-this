@@ -261,7 +261,28 @@
       assign products_to_show = section.settings.products_to_show
     -%}
 
-    {% if collection != blank %}
+    {% if section.settings.use_recommendations %}
+      <product-recommendations
+        class="isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        data-url="{{ routes.product_recommendations_url }}?limit={{ products_to_show }}"
+        data-section-id="{{ section.id }}"
+        data-product-id="{{ product.id }}"
+      >
+        {% if recommendations.performed and recommendations.products_count > 0 %}
+          <div class="featured-collection-grid-{{ section.id }}">
+            {% for recommendation in recommendations.products limit: products_to_show %}
+              {% render 'ss-product-card-1',
+                product: recommendation,
+                section_id: section.id,
+                columns_desktop: columns_desktop,
+                loading_attribute: loading_attribute,
+                button_label: button_label
+              %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </product-recommendations>
+    {% elsif collection != blank %}
       <div class="featured-collection-grid-{{ section.id }}">
         {% for product in collection.products limit: products_to_show %}
           {% render 'ss-product-card-1',
@@ -313,6 +334,13 @@
       {
         "type": "header",
         "content": "Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_recommendations",
+        "label": "Use product recommendations",
+        "info": "Shows Shopify's dynamic product recommendations for the current product instead of a fixed collection. Only works on product pages, and takes priority over the collection/product settings below.",
+        "default": false
       },
       {
         "type": "collection",

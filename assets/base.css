@@ -1275,6 +1275,29 @@ button.shopify-payment-button__button--unbranded {
   --border-opacity: var(--buttons-border-opacity);
 }
 
+/* Primary button - match the hero yellow button: tighter radius, dark hover with lift */
+.button--primary,
+.button--primary:before,
+.button--primary:after {
+  border-radius: 0.6rem;
+}
+
+.button--primary {
+  transition: background-color var(--duration-short) ease, transform var(--duration-short) ease,
+    box-shadow var(--duration-short) ease;
+}
+
+.button--primary:not([disabled]):hover {
+  background-color: #2d2d2d;
+  color: #f9f544;
+  transform: translateY(-2px);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.4), 0 0.6rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.button--primary:not([disabled]):hover:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + 1px) rgba(249, 245, 68, 1);
+}
+
 .button:focus-visible,
 .button:focus,
 .button.focused,
