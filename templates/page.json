@@ -142,7 +142,7 @@
                 "content_align": "left",
                 "content_align_mobile": "center",
                 "content_vertical_align": "center",
-                "content_vertical_align_mobile": "end",
+                "content_vertical_align_mobile": "center",
                 "features_advanced": false,
                 "features_mt": 20,
                 "features_mt_mobile": 20,
