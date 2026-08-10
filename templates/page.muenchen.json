@@ -216,8 +216,8 @@
         "featured_collection_zCRNJU": {
             "type": "ss-games-grid-1",
             "blocks": {
-                "game_1": { "type": "game", "settings": { "product": "cellblock-x", "category": "all" } },
-                "game_2": { "type": "game", "settings": { "product": "raetsel-der-tierwelt", "category": "all" } }
+                "game_1": { "type": "game", "settings": { "product": "cellblock-x", "category": "city" } },
+                "game_2": { "type": "game", "settings": { "product": "raetsel-der-tierwelt", "category": "city" } }
             },
             "block_order": ["game_1", "game_2"],
             "name": "SS - Games grid #1",
