@@ -10,6 +10,11 @@
   - content_width: {Number} section.settings.content_width
   - loading_attribute: {String} 'lazy' or 'eager'
 
+  The literal token "[[product_count]]" inside block.settings.text is
+  replaced with the current collection's product count (blank on non-collection pages).
+  Written without {{ }} so Shopify's schema validator doesn't mistake it for
+  a Dynamic Source, which only allows a fixed whitelist of paths.
+
   Usage:
   {% render 'hero-pro-block-feature', block: block, section_id: section.id, content_width: content_width, loading_attribute: loading_attribute %}
 {% endcomment %}
@@ -25,6 +30,7 @@
     </div>
   {% endif %}
   {% if block.settings.text != blank %}
-    <p class="hero-feature-text-{{ section_id }}">{{ block.settings.text }}</p>
+    {% assign feature_text = block.settings.text | replace: '[[product_count]]', collection.products_count %}
+    <p class="hero-feature-text-{{ section_id }}">{{ feature_text }}</p>
   {% endif %}
 </div>

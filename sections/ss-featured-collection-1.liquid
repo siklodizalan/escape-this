@@ -13,7 +13,7 @@
   assign full_width = section.settings.full_width
   assign section_radius = section.settings.section_radius
 
-  assign collection = section.settings.collection
+  assign collection = section.settings.collection | default: collection
   assign columns_desktop = section.settings.columns_desktop
   assign cards_gap = section.settings.cards_gap
   assign cards_gap_mobile = section.settings.cards_gap_mobile
@@ -318,7 +318,7 @@
         "type": "collection",
         "id": "collection",
         "label": "Collection",
-        "info": "If a collection is selected, its products are shown here. Otherwise, the products chosen below (via Product blocks) are used."
+        "info": "If a collection is selected, its products are shown here. If left blank on a collection page, the current collection is used; otherwise the products chosen below (via Product blocks) are used."
       },
       {
         "type": "header",
