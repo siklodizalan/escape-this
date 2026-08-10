@@ -19,6 +19,7 @@
   assign text_block = section.blocks | where: 'type', 'text' | first
   assign feature_blocks = section.blocks | where: 'type', 'feature'
   assign category_blocks = section.blocks | where: 'type', 'category'
+  assign faq_item_blocks = section.blocks | where: 'type', 'faq_item'
 
   assign tab_active_bg = section.settings.tab_active_bg
   assign tab_active_text = section.settings.tab_active_text
@@ -515,6 +516,29 @@
         {% if inside_panel %}
           </div>
         {% endif %}
+      </div>
+    {% elsif faq_item_blocks.size > 0 %}
+      <div class="donations-panels-{{ section.id }}">
+        <div class="donations-panel-{{ section.id }} is-active">
+          {% for block in faq_item_blocks %}
+            <div class="donations-faq-item-{{ section.id }}" {{ block.shopify_attributes }}>
+              <div class="donations-faq-toggle-{{ section.id }}">
+                <p class="donations-faq-question-{{ section.id }}">{{ block.settings.question }}</p>
+                <div class="donations-faq-icon-{{ section.id }}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8.00045 8.78094L11.3003 5.48112L12.2431 6.42393L8.00045 10.6666L3.75781 6.42393L4.70063 5.48112L8.00045 8.78094Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="donations-faq-answer-{{ section.id }}" style="display: none; height: 0px; padding-top: 0px; padding-bottom: 0px;">
+                {{ block.settings.answer }}
+              </div>
+              <div class="donations-faq-height-cal-{{ section.id }}">
+                {{ block.settings.answer }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     {% endif %}
   </div>

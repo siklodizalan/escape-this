@@ -54,6 +54,32 @@
                 {{ block.settings.text }}
               </div>
             {%- when 'button' -%}
+              {%- if block.settings.button_custom_styling -%}
+                <style>
+                  .rich-text-button-custom-{{ block.id }} {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 800;
+                    line-height: 100%;
+                    padding: 12px 24px;
+                    background-color: {{ block.settings.button_bg_color }};
+                    color: {{ block.settings.button_text_color }};
+                    border: 1px solid {{ block.settings.button_border_color }};
+                    border-radius: {{ block.settings.button_radius }}px;
+                    transition: all 0.25s ease 0s;
+                  }
+
+                  .rich-text-button-custom-{{ block.id }}:hover {
+                    background-color: {{ block.settings.button_bg_hover_color }};
+                    color: {{ block.settings.button_text_hover_color }};
+                    border-color: {{ block.settings.button_border_color }};
+                  }
+                </style>
+              {%- endif -%}
               <div
                 class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
@@ -69,7 +95,7 @@
                     {% else %}
                       href="{{ block.settings.button_link }}"
                     {% endif %}
-                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                    class="{% if block.settings.button_custom_styling %}rich-text-button-custom-{{ block.id }}{% else %}button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}{% endif %}"
                   >
                     {{- block.settings.button_label | escape -}}
                   </a>
@@ -81,7 +107,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_2 }}"
                     {% endif %}
-                    class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                    class="{% if block.settings.button_custom_styling %}rich-text-button-custom-{{ block.id }}{% else %}button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}{% endif %}"
                   >
                     {{- block.settings.button_label_2 | escape -}}
                   </a>
@@ -331,6 +357,57 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "header",
+          "content": "Custom button style"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_custom_styling",
+          "default": false,
+          "label": "Use custom colors",
+          "info": "Overrides the theme button style above with the colors and roundness below."
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color",
+          "label": "Background",
+          "default": "#f9f544"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_hover_color",
+          "label": "Background (hover)",
+          "default": "#2d2d2d"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Text",
+          "default": "#191919"
+        },
+        {
+          "type": "color",
+          "id": "button_text_hover_color",
+          "label": "Text (hover)",
+          "default": "#f9f544"
+        },
+        {
+          "type": "color",
+          "id": "button_border_color",
+          "label": "Border",
+          "default": "#f9f544"
+        },
+        {
+          "type": "range",
+          "id": "button_radius",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Roundness",
+          "default": 6
         }
       ]
     }

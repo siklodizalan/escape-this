@@ -287,6 +287,17 @@
                     "secondary_button_label": "#1f1f21",
                     "shadow": "#ffffff"
                 }
+            },
+            "scheme-familienspass-card": {
+                "settings": {
+                    "background": "#1e1e1e",
+                    "background_gradient": "",
+                    "text": "#ffffff",
+                    "button": "#f9f544",
+                    "button_label": "#000000",
+                    "secondary_button_label": "#f9f544",
+                    "shadow": "#ffffff"
+                }
             }
         }
     },
