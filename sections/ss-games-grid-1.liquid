@@ -38,8 +38,9 @@
     assign products_to_display = products_to_show
   endif
 
+  assign product_source = section.settings.product_source | default: 'manual'
   assign use_game_blocks = false
-  if section.blocks.size > 0
+  if product_source == 'manual' and section.blocks.size > 0
     assign use_game_blocks = true
   endif
 
@@ -324,10 +325,20 @@
         "content": "Collection"
       },
       {
+        "type": "select",
+        "id": "product_source",
+        "label": "Product source",
+        "default": "manual",
+        "options": [
+          { "value": "collection", "label": "Collection (first X products)" },
+          { "value": "manual", "label": "Manual selection (Game blocks)" }
+        ]
+      },
+      {
         "type": "collection",
         "id": "collection",
         "label": "Collection",
-        "info": "Used only when no Game blocks are added below."
+        "info": "Used when Product source is 'Collection', or as a fallback if Manual is selected with no Game blocks added."
       },
       {
         "type": "range",
