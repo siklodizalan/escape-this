@@ -84,8 +84,9 @@
             "disabled": false,
             "settings": {
                 "hero_height": "full_screen",
+                "hero_height_mobile": "fixed_height",
                 "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 600,
+                "hero_fixed_height_mobile": 790,
                 "content_max_width": 60,
                 "enable_split_layout": false,
                 "content_align": "left",
