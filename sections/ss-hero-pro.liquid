@@ -32,6 +32,11 @@ For inquiries or permissions, contact daniel@section.store
   assign hero_fixed_height = section.settings.hero_fixed_height
   assign hero_fixed_height_mobile = section.settings.hero_fixed_height_mobile
 
+  assign hero_height_mobile = section.settings.hero_height_mobile
+  if hero_height_mobile == blank
+    assign hero_height_mobile = hero_height
+  endif
+
   assign layout_bg_type = section.settings.layout_bg_type  
   
   assign bg_image = section.settings.bg_image
@@ -420,12 +425,23 @@ For inquiries or permissions, contact daniel@section.store
   </style>
 {% endif %}
 
-{% if hero_height == "full_screen" %}
+{% if hero_height_mobile == "full_screen" %}
   <style>
     .hero-{{ section.id }} {
       height: 95vh;
     }
-    @media(min-width: 1024px) {      
+  </style>
+{% elsif hero_height_mobile == 'fixed_height' %}
+  <style>
+    .hero-{{ section.id }} {
+      height: {{ hero_fixed_height_mobile }}px;
+    }
+  </style>
+{% endif %}
+
+{% if hero_height == "full_screen" %}
+  <style>
+    @media(min-width: 1024px) {
       .section-{{ section.id }}-settings {
         height: 100%;
       }
@@ -435,12 +451,8 @@ For inquiries or permissions, contact daniel@section.store
       }
     }
   </style>
-{% elsif hero_height == 'fixed_height' %}  
-  <style>     
-    .hero-{{ section.id }} {
-      height: {{ hero_fixed_height_mobile }}px;
-    }
-
+{% elsif hero_height == 'fixed_height' %}
+  <style>
     @media(min-width: 1024px) {
       .section-{{ section.id }}-settings {
         height: 100%;
@@ -654,6 +666,31 @@ For inquiries or permissions, contact daniel@section.store
         "visible_if": "{{ section.settings.hero_height == 'fixed_height' }}"
       },
          {
+        "type": "select",
+        "id": "hero_height_mobile",
+        "label": "Height - mobile",
+        "default": "",
+        "info": "Overrides the desktop height setting above on mobile.",
+        "options": [
+          {
+            "label": "Same as desktop",
+            "value": ""
+          },
+          {
+            "label": "Full screen",
+            "value": "full_screen"
+          },
+          {
+            "label": "Fixed height",
+            "value": "fixed_height"
+          },
+          {
+            "label": "Auto",
+            "value": "auto"
+          }
+        ]
+      },
+      {
         "type": "range",
         "id": "hero_fixed_height_mobile",
         "min": 100,
@@ -662,8 +699,8 @@ For inquiries or permissions, contact daniel@section.store
         "unit": "px",
         "label": "Fixed height - mobile",
         "default": 600,
-        "visible_if": "{{ section.settings.hero_height == 'fixed_height' }}"
-      },   
+        "visible_if": "{{ section.settings.hero_height == 'fixed_height' or section.settings.hero_height_mobile == 'fixed_height' }}"
+      },
       {
         "type": "header",
         "content": "Content"
