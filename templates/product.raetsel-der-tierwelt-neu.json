@@ -109,7 +109,7 @@
         "content_max_width": 50,
         "enable_split_layout": false,
         "content_align": "left",
-        "content_align_mobile": "center",
+        "content_align_mobile": "left",
         "content_vertical_align": "center",
         "content_vertical_align_mobile": "end",
         "features_advanced": false,
