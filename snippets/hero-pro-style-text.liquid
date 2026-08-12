@@ -23,7 +23,7 @@
     font-size: {{ block.settings.text_size_mobile }}px;
     color: {{ block.settings.text_color }};
     line-height: {{ block.settings.text_height }}%;
-    text-transform: unset;
+    text-transform: {% if block.settings.text_uppercase %}uppercase{% else %}unset{% endif %};
   }
 
   @media(min-width: 1024px) {

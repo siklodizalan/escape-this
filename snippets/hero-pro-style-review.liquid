@@ -38,7 +38,7 @@
     color: {{ block.settings.review_color }};
     line-height: {{ block.settings.review_height }}%;
     text-align: {{ content_align_mobile }};
-    text-transform: unset;
+    text-transform: {% if block.settings.review_uppercase %}uppercase{% else %}unset{% endif %};
   }
 
   .hero-stars-{{ block.id }} {

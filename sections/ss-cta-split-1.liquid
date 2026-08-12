@@ -52,8 +52,14 @@
   assign content_align_mobile = 'left'
   assign content_horizontal_align = 'flex-start'
   assign content_horizontal_align_mobile = 'flex-start'
+
+  assign show_section = true
+  if section.settings.show_section == 'false'
+    assign show_section = false
+  endif
 -%}
 
+{% if show_section %}
 {%- style -%}
   .section-{{ section.id }} {
     border-top: solid {{ border_color }} {{ border_thickness }}px;
@@ -359,6 +365,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 
 {% schema %}
   {
@@ -366,6 +373,13 @@
     "tag": "section",
     "class": "section",
     "settings": [
+      {
+        "type": "text",
+        "id": "show_section",
+        "label": "Show section",
+        "default": "true",
+        "info": "Set to \"false\" to hide this section."
+      },
       {
         "type": "header",
         "content": "Image"

@@ -19,7 +19,8 @@
             "stars_size": 16,
             "stars_size_mobile": 16,
             "stars_gap": 2,
-            "review": "<p><strong>CITY ESCAPE GAME</strong></p>",
+            "review": "<p><strong>{{ product.metafields.custom.hero.value.pill_text.value }}</strong></p>",
+            "review_uppercase": true,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -47,7 +48,8 @@
         "heading_RtWtVl": {
           "type": "heading",
           "settings": {
-            "heading": "<h1>RÄTSEL DER TIERWELT.</h1>",
+            "heading": "<h1>{{ product.metafields.custom.hero.value.title.value }}</h1>",
+            "heading_uppercase": true,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -64,7 +66,8 @@
         "text_FcCeGm": {
           "type": "text",
           "settings": {
-            "text": "<p>FAMILY. CITY. ESCAPEGAMES.</p><p>ENTDECKE DEIN NÄCHSTES FAMILIEN-ABENTEUER!</p>",
+            "text": "<p>{{ product.metafields.custom.hero.value.description.value }}</p>",
+            "text_uppercase": true,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 20,
@@ -120,6 +123,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
+        "bg_image": "{{ product.metafields.custom.hero.value.image.value }}",
         "bg_video_url": "",
         "bg_overlay": 0.8,
         "bg_overlay_color": "#000000",
@@ -366,7 +370,7 @@
         "heading_WmrRBx": {
           "type": "heading",
           "settings": {
-            "heading": "<h2>EURE MISSION BEGINNT JETZT</h2>",
+            "heading": "<h2>{{ product.metafields.custom.section.value.title.value }}</h2>",
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -383,7 +387,7 @@
         "text_dtHRQE": {
           "type": "text",
           "settings": {
-            "text": "<p>BEGIB DICH MIT DEINER FAMILIE AUF EINE SPANNENDE MISSION DURCH DIE RÄTSEL DES DSCHUNGELS: EURE FREUNDE SIND IM DSCHUNGEL GEFANGEN - NUR WENN IHR GEMEINSAM DIE RÄTSEL DER TIERWELT LÖST, FINDEN SIE DAS PORTAL ZURÜCK NACH HAUSE.</p><p>TREFFT GEHEIMNISVOLLE TIERE, SAMMELT HINWEISE UND KNOBELT EUCH SCHRITT FÜR SCHRITT DURCH DEN</p><p>DSCHUNGEL. DOCH ACHTUNG: NUR WER DIE KNIFFLIGEN AUFGABEN MEISTERT, ERHÄLT DEN NÄCHSTEN HINWEIS.</p><p>SEID IHR BEREIT, DAS RÄTSEL DES DSCHUNGELS ZU ENTSCHLÜSSELN? EURE REISE BEGINNT JETZT!</p>",
+            "text": "<p>{{ product.metafields.custom.section.value.description.value }}</p>",
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -402,7 +406,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
-        "image": "shopify://shop_images/raetsel-der-tierwelt_Familienspiel.png",
+        "image": "{{ product.metafields.custom.section.value.image.value }}",
         "image_overlay_opacity": 0,
         "image_overlay_color": "#000000",
         "image_position": "left",
@@ -820,6 +824,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "{{ product.metafields.custom.show_familienspass_section.value }}",
         "image": "shopify://shop_images/Fav1.heic",
         "image_overlay_opacity": 0,
         "image_overlay_color": "#000000",
