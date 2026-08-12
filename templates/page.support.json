@@ -1,712 +1,730 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "disabled": true,
-            "settings": {
-                "padding_top": 28,
-                "padding_bottom": 0
-            }
-        },
-        "ss_hero_pro_z6yztG": {
-            "type": "ss-hero-pro",
-            "blocks": {
-                "review_Cbqtx3": {
-                    "type": "review",
-                    "settings": {
-                        "stars_count": 0,
-                        "stars_size": 16,
-                        "stars_size_mobile": 16,
-                        "stars_gap": 2,
-                        "review": "<p><strong>KONTAKT ZU UNS<\/strong><\/p>",
-                        "review_custom": false,
-                        "review_font": "red_hat_display_n8",
-                        "review_size": 14,
-                        "review_size_mobile": 13,
-                        "review_height": 130,
-                        "background": true,
-                        "review_bg_opacity": 0.75,
-                        "enable_blur": true,
-                        "review_radius": 4,
-                        "review_border_thickness": 0,
-                        "review_mt": 0,
-                        "review_mt_mobile": 0,
-                        "review_padding_horizontal": 16,
-                        "review_padding_horizontal_mobile": 16,
-                        "review_padding_vertical": 10,
-                        "review_padding_vertical_mobile": 10,
-                        "review_color": "#ffffff",
-                        "review_bg_color": "#191919",
-                        "review_border_color": "#191919",
-                        "stars_color": "#f9f544",
-                        "stars_bg_color": "rgba(0,0,0,0)",
-                        "stars_bg_half_color": "rgba(0,0,0,0)"
-                    }
-                },
-                "heading_NRGwGJ": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "<h1>WIR SIND FÜR<br\/><strong>DICH DA.<\/strong><\/h1>",
-                        "heading_custom": true,
-                        "heading_font": "red_hat_display_n8",
-                        "heading_accent_font": "red_hat_display_n8",
-                        "heading_size": 60,
-                        "heading_size_mobile": 36,
-                        "heading_advanced": true,
-                        "heading_height": 130,
-                        "heading_mt": 24,
-                        "heading_mt_mobile": 16,
-                        "heading_color": "#ffffff",
-                        "heading_accent_color": "#f9f544"
-                    }
-                },
-                "text_aYt3hT": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>FRAGEN, FEEDBACK ODER EINFACH HALLO SAGEN — WIR FREUEN UNS, VON DIR ZU HÖREN.<\/p>",
-                        "text_custom": true,
-                        "text_font": "red_hat_display_n8",
-                        "text_size": 20,
-                        "text_size_mobile": 14,
-                        "text_advanced": false,
-                        "text_height": 150,
-                        "text_mt": 20,
-                        "text_mt_mobile": 20,
-                        "text_color": "#ffffff"
-                    }
-                },
-                "button_984iQY": {
-                    "type": "button",
-                    "settings": {
-                        "button": "service@escape-this.com",
-                        "url": "mailto:service@escape-this.com",
-                        "open_in_new_tab": false,
-                        "button_style": "outline",
-                        "button_custom": true,
-                        "button_font": "red_hat_display_n8",
-                        "button_size": 14,
-                        "button_size_mobile": 14,
-                        "button_advanced": false,
-                        "button_height": 100,
-                        "button_padding_horizontal": 24,
-                        "button_padding_horizontal_mobile": 20,
-                        "button_padding_vertical": 12,
-                        "button_padding_vertical_mobile": 12,
-                        "button_radius": 6,
-                        "button_border_thickness": 1,
-                        "button_mt": 24,
-                        "button_mt_mobile": 24,
-                        "button_custom_styling": false,
-                        "button_full_width_mobile": false,
-                        "button_color": "#191919",
-                        "button_hover_color": "#f9f544",
-                        "button_bg_color": "#f9f544",
-                        "button_bg_hover_color": "#2d2d2d",
-                        "button_border_color": "#f9f544",
-                        "button_border_hover_color": "#f9f544",
-                        "button_shadow_color": "#000000"
-                    }
-                },
-                "button_BJa8HE": {
-                    "type": "button",
-                    "settings": {
-                        "button": "+49 172 6077173",
-                        "url": "tel:+491726077173",
-                        "open_in_new_tab": false,
-                        "button_style": "outline",
-                        "button_custom": true,
-                        "button_font": "red_hat_display_n8",
-                        "button_size": 14,
-                        "button_size_mobile": 14,
-                        "button_advanced": false,
-                        "button_height": 100,
-                        "button_padding_horizontal": 24,
-                        "button_padding_horizontal_mobile": 20,
-                        "button_padding_vertical": 12,
-                        "button_padding_vertical_mobile": 12,
-                        "button_radius": 6,
-                        "button_border_thickness": 1,
-                        "button_mt": 24,
-                        "button_mt_mobile": 24,
-                        "button_custom_styling": false,
-                        "button_full_width_mobile": false,
-                        "button_color": "#ffffff",
-                        "button_hover_color": "#f9f544",
-                        "button_bg_color": "rgba(0,0,0,0)",
-                        "button_bg_hover_color": "rgba(0,0,0,0)",
-                        "button_border_color": "#f9f544",
-                        "button_border_hover_color": "#f9f544",
-                        "button_shadow_color": "#000000"
-                    }
-                }
-            },
-            "block_order": [
-                "review_Cbqtx3",
-                "heading_NRGwGJ",
-                "text_aYt3hT",
-                "button_984iQY",
-                "button_BJa8HE"
-            ],
-            "name": "SS - Hero pro 💎",
-            "settings": {
-                "hero_height": "full_screen",
-                "hero_height_mobile": "fixed_height",
-                "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 790,
-                "content_max_width": 50,
-                "enable_split_layout": false,
-                "content_align": "left",
-                "content_align_mobile": "left",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "center",
-                "features_advanced": false,
-                "features_mt": 20,
-                "features_mt_mobile": 20,
-                "features_gap": 24,
-                "features_gap_mobile": 12,
-                "feature_background": false,
-                "feature_bg_opacity": 0.3,
-                "feature_enable_blur": true,
-                "feature_radius": 100,
-                "feature_border_thickness": 1,
-                "feature_padding_horizontal": 12,
-                "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 6,
-                "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 18,
-                "feature_icon_size_mobile": 16,
-                "feature_text_custom": false,
-                "feature_text_font": "josefin_sans_n4",
-                "feature_text_size": 16,
-                "feature_text_size_mobile": 14,
-                "feature_text_height": 150,
-                "feature_icon_color": "#ffffff",
-                "feature_text_color": "#ffffff",
-                "feature_bg_color": "#ffffff",
-                "feature_border_color": "#ffffff",
-                "layout_bg_type": "image",
-                "bg_video_url": "",
-                "bg_overlay": 0.2,
-                "bg_overlay_color": "#121212",
-                "background_style": "solid",
-                "background_color": "#121212",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#121212",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 24,
-                "padding_bottom": 12,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "width": "page",
-                "content_width": 1200,
-                "border_thickness": 0,
-                "section_radius": 0,
-                "lazy": false
-            }
-        },
-        "7ace989c-b05a-47db-8840-b2bc73aff8bb": {
-            "type": "rich-text",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "",
-                "full_width": true,
-                "padding_top": 40,
-                "padding_bottom": 0
-            }
-        },
-        "09e4383b-a5c2-49c5-90b3-dbf5b660aa13": {
-            "type": "collapsible-content",
-            "disabled": true,
-            "settings": {
-                "caption": "",
-                "heading": "Häufige Fragen.",
-                "heading_size": "h1",
-                "heading_alignment": "center",
-                "layout": "none",
-                "container_color_scheme": "",
-                "color_scheme": "",
-                "open_first_collapsible_row": false,
-                "image_ratio": "adapt",
-                "desktop_layout": "image_second",
-                "padding_top": 36,
-                "padding_bottom": 0
-            }
-        },
-        "ss_faq_13_ANgt3i": {
-            "type": "ss-donations-1-faq",
-            "blocks": {
-                "caption_f4Qcpt": {
-                    "type": "caption",
-                    "settings": {
-                        "caption": "FAQ"
-                    }
-                },
-                "heading_f4Qhd1": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Häufige Fragen."
-                    }
-                },
-                "text_f4Qtxt1": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Alles, was du über Escape This! wissen musst — übersichtlich und kompakt.</p>"
-                    }
-                },
-                "category_E7xD9L": {
-                    "type": "category",
-                    "settings": {
-                        "tab_label": "Das Spiel"
-                    }
-                },
-                "faq_item_fBmehC": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Wie kann ich euch bei Fragen oder Problemen erreichen?",
-                        "answer": "<p>Solltest du Fragen oder Probleme vor, während oder nach deinem Spielerlebnis haben, kannst du uns ganz einfach anrufen (+49 172 6077173) oder uns eine Mail schreiben (service@escape-this.com). Wir werden dir dann schnellst möglich zur Hilfe eilen. (Antwortzeit per Mail max. 1-2 Werktage)<\/p>"
-                    }
-                },
-                "faq_item_rbh9QD": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Findet das Escape Game nur Online statt?",
-                        "answer": "<p>Das Spielerlebnis findet vollumfänglich online statt. Jedoch kommt bei unserem digitalen Outdoor Escape Room auch der Outdoor-Aspekt nicht zu kurz: Unsere App leitet dich und dein Team von dem Startpunkt in deiner Stadt zu den verschiedenen Hinweispunkten. Faul auf der Couch liegen, gibt es bei uns also nicht. ;)<\/p><p>Nach Erwerb eines Tickets kannst du wann immer du möchtest das Spiel starten. Du bist ausschließlich beim Gastro Escape Game an die Öffnungszeiten der Bars gebunden und ansonsten voll flexibel. Über dein Handy steuerst du nicht nur die Bedienung, sondern erlebst auch spannende Rätsel und Abenteuer.<\/p><p>Lass auch du dich von der Neugier greifen und durchlaufe noch heute dein Abenteuer.<\/p>"
-                    }
-                },
-                "faq_item_Exykae": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Wie lange dauert das Escape Game?",
-                        "answer": "<p>Das ist natürlich immer voll und ganz von deiner Spielweise abhängig. Grundsätzlich kann man jedoch sagen, dass ein City Escape Game im Durchschnitt ungefähr 2 - 3 Stunden dauert, wobei die reine Laufzeit dabei max. 50 Minuten beträgt. Beachte, dass der Endpunkt des Games bis zu 30min. zu Fuß vom Startpunkt entfernt sein kann. Bei einem Gastro Escape Game kannst du mit 2 - 3 Stunden Spielzeit rechnen, wobei die Laufzeit max. bei 25min liegt.<\/p>"
-                    }
-                },
-                "faq_item_njYGzG": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Kann ich das Escape Game pausieren?",
-                        "answer": "<p>Ja, du kannst jederzeit pausieren und später genau dort weitermachen, wo du aufgehört hast. Perfekt für eine Kaffee- oder Eispause zwischendurch. <\/p><p>Sollte es mal regnen, kannst du das Spiel sogar unterbrechen und an einem anderen Tag fortsetzen.<\/p>"
-                    }
-                },
-                "faq_item_YN3xBW": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Ist das Escape Game auch für Familien mit Kindern geeignet?",
-                        "answer": "<p>Auch Familien mit ihren kleinen Detektiven sind für unsere Escape Games willkommen. Es finden sich auch für die Kleinen Spiele mit Interaktion bei denen sie mitmachen können, jedoch werden auch einige Rätsel dabei sein, bei denen die Eltern im Vordergrund knobeln. Da die Gastro Escape Games in Bars spielen, empfehlen wir für Familien allerdings unsere City Escape Games. <\/p><p>Da unsere City Escape Game draußen und digital stattfindet, sind selbstverständlich Kinderwagen, Bollerwagen oder Ähnliches gewünscht! Die Wege, die du und deine Familie bestreiten werdet sind nicht nur kinderfreundlich, sondern auch gut gelegen.<\/p><p>Mehr Infos speziell für Familien findest du beim <a href=\"\/pages\/familienspass\" title=\"Familienspaß\">Familienspaß<\/a>.<\/p>"
-                    }
-                },
-                "category_7Jt73r": {
-                    "type": "category",
-                    "settings": {
-                        "tab_label": "Ticket & Bezahlung"
-                    }
-                },
-                "faq_item_6dtL7y": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Wie lange ist mein Ticket gültig?",
-                        "answer": "<p>Dein Ticket ist vier Monate ab Kaufdatum gültig. Du brauchst kein festes Datum und keinen Zeitslot — spiel einfach, wann es dir passt.<\/p>"
-                    }
-                },
-                "faq_item_BMLQwj": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Welche Zahlungsmittel werden akzeptiert?",
-                        "answer": "<p>Alle gängigen Zahlungsmittel werden von uns akzeptiert. Wir wollen dir das Spielerlebnis so einfach und unkompliziert gestalten, wie nur möglich.<\/p><p>*Als gängige Zahlungsmittel gelten: PayPal, Überweisung, Kreditkarte, Apple Pay und Google Pay.<\/p>"
-                    }
-                },
-                "faq_item_qPEcQx": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Wie erhalte ich eine Rechnung?",
-                        "answer": "<p>Du benötigst eine Rechnung? Schreibe uns einfach eine Nachricht  mit deiner Bestellnummer und deiner Rechnungsanschrift an service@escape-this.com. Wir senden dir deine Rechnung im Anschluss per E-Mail zu.<\/p>"
-                    }
-                },
-                "faq_item_PHVDGU": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Was passiert mit meinen Daten?",
-                        "answer": "<p>Keine Sorge, deine Daten, die bei der App-Nutzung entstehen, sind bei uns sicher! Sie werden nur kurzzeitig gespeichert, um deine Bewegung während des Spiels zu lokalisieren, die Funktionalität zu ermöglichen oder werden zu Analysezwecke gespeichert und nicht an Dritte weitergegeben. Eine Löschung deiner Daten kannst du jederzeit bei uns anfordern: Schreibe uns dafür einfach eine Nachricht über unser Kontaktformular oder per Mail.<\/p>"
-                    }
-                },
-                "category_9qMLJf": {
-                    "type": "category",
-                    "settings": {
-                        "tab_label": "Technik & App"
-                    }
-                },
-                "faq_item_UEPxQG": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Was mache ich bei technischen Problemen?",
-                        "answer": "<p>Starte die App neu und überprüfe deine Internetverbindung. Falls das nicht hilft, kannst du uns ganz einfach anrufen (+49 172 6077173) oder uns eine Mail schreiben (service@escape-this.com).<\/p>"
-                    }
-                },
-                "faq_item_nNFfQn": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Was benötige ich für ein Escape Game?",
-                        "answer": "<p>Du und dein Team benötigt mindestens ein Smartphone, auf dem die neuste Version der \"Escape This!\"-App heruntergeladen werden kann. Um in der App loszuspielen, müsst ihr ein Ticket online erwerben. Mit dem Ticket erhaltet ihr dann einen Spiel-Code, mit dem ihr euer Adventure in der App starten könnt. Zur Nutzung der App ist eine Internetverbindung sowie eine Erlaubnis des Zugriffs auf deine Bewegungsdaten und deinen Standort erforderlich. Achte darauf, mit einem möglichst vollen Handyakku zu starten oder dir eine Powerbank mitzunehmen.<\/p>"
-                    }
-                },
-                "faq_item_g3gtDL": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Welche Geräte werden unterstützt?",
-                        "answer": "<p>Die EscapeThis-App läuft auf allen gängigen Apple- und Android-Betriebssystemen. Dein Gerät benötigt eine stabile Internetverbindung und GPS.<\/p>"
-                    }
-                },
-                "faq_item_3Y6eqj": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Was passiert, wenn ich bei einem Rätsel nicht weiter komme?",
-                        "answer": "<p>Die App bietet ein gestuftes Hinweissystem: Erst ein sanfter Tipp, dann ein deutlicherer Hinweis, und als letzten Ausweg die Lösung. So bleibt das Spielerlebnis erhalten, ohne dass du frustriert aufgibst. Außerdem gibt es immer einen Button um das Rätsel zu überspringen.<\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "caption_f4Qcpt",
-                "heading_f4Qhd1",
-                "text_f4Qtxt1",
-                "category_E7xD9L",
-                "faq_item_fBmehC",
-                "faq_item_rbh9QD",
-                "faq_item_Exykae",
-                "faq_item_njYGzG",
-                "faq_item_YN3xBW",
-                "category_7Jt73r",
-                "faq_item_6dtL7y",
-                "faq_item_BMLQwj",
-                "faq_item_qPEcQx",
-                "faq_item_PHVDGU",
-                "category_9qMLJf",
-                "faq_item_UEPxQG",
-                "faq_item_nNFfQn",
-                "faq_item_g3gtDL",
-                "faq_item_3Y6eqj"
-            ],
-            "name": "SS - FAQ (Donations style)",
-            "settings": {
-                "tab_radius": 5,
-                "tab_active_bg": "#f9f544",
-                "tab_active_text": "#191919",
-                "tab_inactive_border": "#f9f544",
-                "tab_inactive_text": "#ffffff",
-                "faq_items_gap": 12,
-                "faq_items_gap_mobile": 12,
-                "faq_item_padding_horizontal": 24,
-                "faq_item_padding_horizontal_mobile": 24,
-                "faq_item_padding_vertical": 24,
-                "faq_item_padding_vertical_mobile": 24,
-                "faq_item_radius": 16,
-                "faq_question_color": "#ffffff",
-                "faq_question_size": 14,
-                "faq_question_size_mobile": 14,
-                "faq_answer_color": "#f9f544",
-                "faq_answer_size": 14,
-                "faq_answer_size_mobile": 14,
-                "faq_answer_padding_top": 30,
-                "faq_item_bg_color": "#1e1e1e",
-                "faq_icon_color": "#f9f544",
-                "faq_icon_size": 16,
-                "background_color": "#191919",
-                "background_gradient": "",
-                "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 36,
-                "padding_bottom": 36,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "full_width": false,
-                "border_thickness": 0,
-                "section_radius": 0
-            }
-        },
-        "6d92c153-4d05-401b-af14-8f6462ea1af0": {
-            "type": "contact-form",
-            "settings": {
-                "heading": "Oder schreibe uns direkt hier.",
-                "heading_size": "h1",
-                "color_scheme": "",
-                "padding_top": 36,
-                "padding_bottom": 36
-            }
-        },
-        "ss_hero_pro_socials": {
-            "type": "ss-hero-pro",
-            "blocks": {
-                "caption_bdGbR6": {
-                    "type": "caption",
-                    "settings": {
-                        "caption": "<h3>SOCIAL MEDIA<\/h3>",
-                        "caption_custom": true,
-                        "caption_font": "red_hat_display_n7",
-                        "caption_size": 20,
-                        "caption_size_mobile": 16,
-                        "caption_advanced": false,
-                        "caption_height": 130,
-                        "caption_mt": 0,
-                        "caption_mt_mobile": 0,
-                        "background": false,
-                        "caption_bg_opacity": 0.3,
-                        "enable_blur": true,
-                        "caption_radius": 100,
-                        "caption_border_thickness": 1,
-                        "caption_padding_horizontal": 12,
-                        "caption_padding_horizontal_mobile": 12,
-                        "caption_padding_vertical": 6,
-                        "caption_padding_vertical_mobile": 6,
-                        "caption_color": "#f9f544",
-                        "caption_bg_color": "#ffffff",
-                        "caption_border_color": "#ffffff"
-                    }
-                },
-                "heading_LiHbh9": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "<h2>FOLLOW US ON SOCIALS<\/h2>",
-                        "heading_custom": true,
-                        "heading_font": "red_hat_display_n8",
-                        "heading_accent_font": "red_hat_display_n8",
-                        "heading_size": 36,
-                        "heading_size_mobile": 28,
-                        "heading_advanced": false,
-                        "heading_height": 130,
-                        "heading_mt": 8,
-                        "heading_mt_mobile": 8,
-                        "heading_color": "#ffffff",
-                        "heading_accent_color": "#f9f544"
-                    }
-                },
-                "social_icons_9pXqZa": {
-                    "type": "social_icons",
-                    "settings": {
-                        "tiktok_link": "https:\/\/www.tiktok.com\/@escape.this?is_from_webapp=1&sender_device=pc",
-                        "instagram_link": "https:\/\/www.instagram.com\/escape.this.gmbh\/",
-                        "facebook_link": "https:\/\/www.facebook.com\/people\/Escape-This\/61554502874126\/",
-                        "youtube_link": "",
-                        "pinterest_link": "",
-                        "icon_size": 16,
-                        "icon_size_mobile": 14,
-                        "icon_gap": 8,
-                        "icon_color": "#f9f544",
-                        "icon_bg_color": "#1c1c1c"
-                    }
-                }
-            },
-            "block_order": [
-                "caption_bdGbR6",
-                "heading_LiHbh9",
-                "social_icons_9pXqZa"
-            ],
-            "name": "SS - Hero pro 💎",
-            "settings": {
-                "hero_height": "fixed_height",
-                "hero_fixed_height": 100,
-                "hero_fixed_height_mobile": 200,
-                "content_max_width": 100,
-                "enable_split_layout": false,
-                "content_align": "left",
-                "content_align_mobile": "left",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "end",
-                "features_advanced": false,
-                "features_mt": 20,
-                "features_mt_mobile": 20,
-                "features_gap": 24,
-                "features_gap_mobile": 12,
-                "feature_background": false,
-                "feature_bg_opacity": 0.3,
-                "feature_enable_blur": true,
-                "feature_radius": 100,
-                "feature_border_thickness": 1,
-                "feature_padding_horizontal": 12,
-                "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 6,
-                "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 18,
-                "feature_icon_size_mobile": 16,
-                "feature_text_custom": false,
-                "feature_text_font": "josefin_sans_n4",
-                "feature_text_size": 16,
-                "feature_text_size_mobile": 14,
-                "feature_text_height": 150,
-                "feature_icon_color": "#ffffff",
-                "feature_text_color": "#ffffff",
-                "feature_bg_color": "#ffffff",
-                "feature_border_color": "#ffffff",
-                "layout_bg_type": "color",
-                "bg_video_url": "",
-                "bg_overlay": 0.2,
-                "bg_overlay_color": "#121212",
-                "background_style": "solid",
-                "background_color": "#191919",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 32,
-                "padding_bottom": 8,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "padding_right_none": false,
-                "width": "page",
-                "content_width": 1200,
-                "border_thickness": 0,
-                "section_radius": 0,
-                "lazy": false
-            }
-        },
-        "ss_video_grid_socials_6_WR7B98": {
-            "type": "ss-video-grid-socials-6",
-            "blocks": {
-                "slide_gcAMY3": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/728c6e14f47e4acea8386134c56e6bdf.mov",
-                        "video_url": "",
-                        "icon": "instagram",
-                        "url": ""
-                    }
-                },
-                "slide_VykFCG": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/city-erklarvideo_komprimiert.mov",
-                        "video_url": "",
-                        "icon": "instagram",
-                        "url": ""
-                    }
-                },
-                "slide_QEGxP6": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/88c7034cb30540d1acceb1bb81b8dc11.mov",
-                        "video_url": "",
-                        "icon": "tiktok",
-                        "url": ""
-                    }
-                },
-                "slide_U6h7by": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/date-idee_komprimiert.mov",
-                        "video_url": "",
-                        "icon": "tiktok",
-                        "url": ""
-                    }
-                },
-                "slide_cyckrN": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/rechen-ratsel_komprimiert.mov",
-                        "video_url": "",
-                        "icon": "instagram",
-                        "url": ""
-                    }
-                },
-                "slide_zYLTQF": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/your-sign_komprimiert.mov",
-                        "video_url": "",
-                        "icon": "instagram",
-                        "url": ""
-                    }
-                },
-                "slide_7rDXKY": {
-                    "type": "slide",
-                    "settings": {
-                        "video": "shopify:\/\/files\/videos\/fitness-challenge_komprimiert.mov",
-                        "video_url": "",
-                        "icon": "instagram",
-                        "url": ""
-                    }
-                }
-            },
-            "block_order": [
-                "slide_gcAMY3",
-                "slide_VykFCG",
-                "slide_QEGxP6",
-                "slide_U6h7by",
-                "slide_cyckrN",
-                "slide_zYLTQF",
-                "slide_7rDXKY"
-            ],
-            "name": "SS - Video grid from social #6",
-            "settings": {
-                "slider_view": 2.2,
-                "slider_view_mobile": 1,
-                "slider_gap": 16,
-                "slider_gap_mobile": 20,
-                "video_radius": 0,
-                "video_border_thickness": 2,
-                "video_ratio": "custom_750_650",
-                "video_ratio_mobile": "portrait",
-                "use_shadow": false,
-                "use_sound": true,
-                "icon_size": 32,
-                "icon_size_mobile": 28,
-                "icon_border_thickness": 1,
-                "icon_use_hover": false,
-                "arrow_size": 36,
-                "arrow_size_mobile": 28,
-                "arrow_icon_size": 7,
-                "arrow_icon_size_mobile": 7,
-                "arrow_border_thickness": 0,
-                "arrow_radius": 8,
-                "arrow_hover_effect": "color",
-                "arrow_shadow": true,
-                "arrow_show_desktop": true,
-                "arrow_show_mobile": true,
-                "video_border_color": "#121212",
-                "icon_color": "#f9f544",
-                "icon_hover_color": "#f9f544",
-                "icon_bg_color": "#121212",
-                "icon_bg_hover_color": "#121212",
-                "icon_border_color": "#121212",
-                "icon_border_hover_color": "#121212",
-                "arrow_color": "#121212",
-                "arrow_hover_color": "#f9f544",
-                "arrow_bg_color": "#f9f544",
-                "arrow_bg_hover_color": "#191919",
-                "arrow_border_color": "#121212",
-                "arrow_border_hover_color": "#121212",
-                "background_color": "#191919",
-                "background_gradient": "",
-                "border_color": "#121212",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 8,
-                "padding_bottom": 36,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "full_width": true,
-                "content_width": 1200,
-                "border_thickness": 0,
-                "section_radius": 0,
-                "lazy": false
-            }
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
     },
-    "order": [
-        "main",
-        "ss_hero_pro_z6yztG",
-        "7ace989c-b05a-47db-8840-b2bc73aff8bb",
-        "09e4383b-a5c2-49c5-90b3-dbf5b660aa13",
-        "ss_faq_13_ANgt3i",
-        "6d92c153-4d05-401b-af14-8f6462ea1af0",
-        "ss_hero_pro_socials",
-        "ss_video_grid_socials_6_WR7B98"
-    ]
+    "ss_hero_pro_z6yztG": {
+      "type": "ss-hero-pro",
+      "blocks": {
+        "review_Cbqtx3": {
+          "type": "review",
+          "settings": {
+            "stars_count": 0,
+            "stars_size": 16,
+            "stars_size_mobile": 16,
+            "stars_gap": 2,
+            "review": "<p><strong>KONTAKT ZU UNS</strong></p>",
+            "review_custom": false,
+            "review_font": "red_hat_display_n8",
+            "review_size": 14,
+            "review_size_mobile": 13,
+            "review_height": 130,
+            "background": true,
+            "review_bg_opacity": 0.8,
+            "enable_blur": true,
+            "review_radius": 4,
+            "review_border_thickness": 0,
+            "review_mt": 0,
+            "review_mt_mobile": 0,
+            "review_padding_horizontal": 16,
+            "review_padding_horizontal_mobile": 16,
+            "review_padding_vertical": 10,
+            "review_padding_vertical_mobile": 10,
+            "review_color": "#ffffff",
+            "review_bg_color": "#191919",
+            "review_border_color": "#191919",
+            "stars_color": "#f9f544",
+            "stars_bg_color": "rgba(0,0,0,0)",
+            "stars_bg_half_color": "rgba(0,0,0,0)"
+          }
+        },
+        "heading_NRGwGJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>WIR SIND FÜR<br/><strong>DICH DA.</strong></h1>",
+            "heading_custom": true,
+            "heading_font": "red_hat_display_n8",
+            "heading_accent_font": "red_hat_display_n8",
+            "heading_size": 60,
+            "heading_size_mobile": 36,
+            "heading_advanced": true,
+            "heading_height": 130,
+            "heading_mt": 24,
+            "heading_mt_mobile": 16,
+            "heading_color": "#ffffff",
+            "heading_accent_color": "#f9f544"
+          }
+        },
+        "text_aYt3hT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FRAGEN, FEEDBACK ODER EINFACH HALLO SAGEN — WIR FREUEN UNS, VON DIR ZU HÖREN.</p>",
+            "text_custom": true,
+            "text_font": "red_hat_display_n8",
+            "text_size": 20,
+            "text_size_mobile": 14,
+            "text_advanced": false,
+            "text_height": 150,
+            "text_mt": 20,
+            "text_mt_mobile": 20,
+            "text_color": "#ffffff"
+          }
+        },
+        "button_984iQY": {
+          "type": "button",
+          "settings": {
+            "button": "service@escape-this.com",
+            "url": "mailto:service@escape-this.com",
+            "open_in_new_tab": false,
+            "game_filter": "",
+            "button_style": "outline",
+            "button_custom": true,
+            "button_font": "red_hat_display_n8",
+            "button_size": 14,
+            "button_size_mobile": 14,
+            "button_advanced": false,
+            "button_height": 100,
+            "button_padding_horizontal": 24,
+            "button_padding_horizontal_mobile": 20,
+            "button_padding_vertical": 12,
+            "button_padding_vertical_mobile": 12,
+            "button_radius": 6,
+            "button_border_thickness": 1,
+            "button_mt": 24,
+            "button_mt_mobile": 24,
+            "button_custom_styling": false,
+            "button_full_width_mobile": false,
+            "button_color": "#191919",
+            "button_hover_color": "#f9f544",
+            "button_bg_color": "#f9f544",
+            "button_bg_hover_color": "#2d2d2d",
+            "button_border_color": "#f9f544",
+            "button_border_hover_color": "#f9f544",
+            "button_shadow_color": "#000000"
+          }
+        },
+        "button_BJa8HE": {
+          "type": "button",
+          "settings": {
+            "button": "+49 172 6077173",
+            "url": "tel:+491726077173",
+            "open_in_new_tab": false,
+            "game_filter": "",
+            "button_style": "outline",
+            "button_custom": true,
+            "button_font": "red_hat_display_n8",
+            "button_size": 14,
+            "button_size_mobile": 14,
+            "button_advanced": false,
+            "button_height": 100,
+            "button_padding_horizontal": 24,
+            "button_padding_horizontal_mobile": 20,
+            "button_padding_vertical": 12,
+            "button_padding_vertical_mobile": 12,
+            "button_radius": 6,
+            "button_border_thickness": 1,
+            "button_mt": 24,
+            "button_mt_mobile": 24,
+            "button_custom_styling": false,
+            "button_full_width_mobile": false,
+            "button_color": "#ffffff",
+            "button_hover_color": "#f9f544",
+            "button_bg_color": "rgba(0,0,0,0)",
+            "button_bg_hover_color": "rgba(0,0,0,0)",
+            "button_border_color": "#f9f544",
+            "button_border_hover_color": "#f9f544",
+            "button_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "review_Cbqtx3",
+        "heading_NRGwGJ",
+        "text_aYt3hT",
+        "button_984iQY",
+        "button_BJa8HE"
+      ],
+      "name": "SS - Hero pro 💎",
+      "settings": {
+        "hero_height": "full_screen",
+        "hero_fixed_height": 600,
+        "hero_height_mobile": "fixed_height",
+        "hero_fixed_height_mobile": 790,
+        "content_max_width": 50,
+        "enable_split_layout": false,
+        "content_align": "left",
+        "content_align_mobile": "left",
+        "content_vertical_align": "center",
+        "content_vertical_align_mobile": "center",
+        "features_advanced": false,
+        "features_mt": 20,
+        "features_mt_mobile": 20,
+        "features_gap": 24,
+        "features_gap_mobile": 12,
+        "feature_background": false,
+        "feature_bg_opacity": 0.3,
+        "feature_enable_blur": true,
+        "feature_radius": 100,
+        "feature_border_thickness": 1,
+        "feature_padding_horizontal": 12,
+        "feature_padding_horizontal_mobile": 12,
+        "feature_padding_vertical": 6,
+        "feature_padding_vertical_mobile": 6,
+        "feature_icon_size": 18,
+        "feature_icon_size_mobile": 16,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 16,
+        "feature_text_size_mobile": 14,
+        "feature_text_height": 150,
+        "feature_icon_color": "#ffffff",
+        "feature_text_color": "#ffffff",
+        "feature_bg_color": "#ffffff",
+        "feature_border_color": "#ffffff",
+        "layout_bg_type": "image",
+        "bg_image": "shopify://shop_images/20240422_080138000_iOS_1.jpg",
+        "bg_video_url": "",
+        "bg_overlay": 0.7,
+        "bg_overlay_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#121212",
+        "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 24,
+        "padding_bottom": 12,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "padding_right_none": false,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "7ace989c-b05a-47db-8840-b2bc73aff8bb": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "09e4383b-a5c2-49c5-90b3-dbf5b660aa13": {
+      "type": "collapsible-content",
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Häufige Fragen.",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "ss_faq_13_ANgt3i": {
+      "type": "ss-donations-1-faq",
+      "blocks": {
+        "caption_f4Qcpt": {
+          "type": "caption",
+          "settings": {
+            "caption": "FAQ"
+          }
+        },
+        "heading_f4Qhd1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Häufige Fragen."
+          }
+        },
+        "text_f4Qtxt1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alles, was du über Escape This! wissen musst — übersichtlich und kompakt.</p>"
+          }
+        },
+        "category_E7xD9L": {
+          "type": "category",
+          "settings": {
+            "tab_label": "Das Spiel"
+          }
+        },
+        "faq_item_fBmehC": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Wie kann ich euch bei Fragen oder Problemen erreichen?",
+            "answer": "<p>Solltest du Fragen oder Probleme vor, während oder nach deinem Spielerlebnis haben, kannst du uns ganz einfach anrufen (+49 172 6077173) oder uns eine Mail schreiben (service@escape-this.com). Wir werden dir dann schnellst möglich zur Hilfe eilen. (Antwortzeit per Mail max. 1-2 Werktage)</p>"
+          }
+        },
+        "faq_item_rbh9QD": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Findet das Escape Game nur Online statt?",
+            "answer": "<p>Das Spielerlebnis findet vollumfänglich online statt. Jedoch kommt bei unserem digitalen Outdoor Escape Room auch der Outdoor-Aspekt nicht zu kurz: Unsere App leitet dich und dein Team von dem Startpunkt in deiner Stadt zu den verschiedenen Hinweispunkten. Faul auf der Couch liegen, gibt es bei uns also nicht. ;)</p><p>Nach Erwerb eines Tickets kannst du wann immer du möchtest das Spiel starten. Du bist ausschließlich beim Gastro Escape Game an die Öffnungszeiten der Bars gebunden und ansonsten voll flexibel. Über dein Handy steuerst du nicht nur die Bedienung, sondern erlebst auch spannende Rätsel und Abenteuer.</p><p>Lass auch du dich von der Neugier greifen und durchlaufe noch heute dein Abenteuer.</p>"
+          }
+        },
+        "faq_item_Exykae": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Wie lange dauert das Escape Game?",
+            "answer": "<p>Das ist natürlich immer voll und ganz von deiner Spielweise abhängig. Grundsätzlich kann man jedoch sagen, dass ein City Escape Game im Durchschnitt ungefähr 2 - 3 Stunden dauert, wobei die reine Laufzeit dabei max. 50 Minuten beträgt. Beachte, dass der Endpunkt des Games bis zu 30min. zu Fuß vom Startpunkt entfernt sein kann. Bei einem Gastro Escape Game kannst du mit 2 - 3 Stunden Spielzeit rechnen, wobei die Laufzeit max. bei 25min liegt.</p>"
+          }
+        },
+        "faq_item_njYGzG": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Kann ich das Escape Game pausieren?",
+            "answer": "<p>Ja, du kannst jederzeit pausieren und später genau dort weitermachen, wo du aufgehört hast. Perfekt für eine Kaffee- oder Eispause zwischendurch. </p><p>Sollte es mal regnen, kannst du das Spiel sogar unterbrechen und an einem anderen Tag fortsetzen.</p>"
+          }
+        },
+        "faq_item_YN3xBW": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Ist das Escape Game auch für Familien mit Kindern geeignet?",
+            "answer": "<p>Auch Familien mit ihren kleinen Detektiven sind für unsere Escape Games willkommen. Es finden sich auch für die Kleinen Spiele mit Interaktion bei denen sie mitmachen können, jedoch werden auch einige Rätsel dabei sein, bei denen die Eltern im Vordergrund knobeln. Da die Gastro Escape Games in Bars spielen, empfehlen wir für Familien allerdings unsere City Escape Games. </p><p>Da unsere City Escape Game draußen und digital stattfindet, sind selbstverständlich Kinderwagen, Bollerwagen oder Ähnliches gewünscht! Die Wege, die du und deine Familie bestreiten werdet sind nicht nur kinderfreundlich, sondern auch gut gelegen.</p><p>Mehr Infos speziell für Familien findest du beim <a href=\"/pages/familienspass\" title=\"Familienspaß\">Familienspaß</a>.</p>"
+          }
+        },
+        "category_7Jt73r": {
+          "type": "category",
+          "settings": {
+            "tab_label": "Ticket & Bezahlung"
+          }
+        },
+        "faq_item_6dtL7y": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Wie lange ist mein Ticket gültig?",
+            "answer": "<p>Dein Ticket ist vier Monate ab Kaufdatum gültig. Du brauchst kein festes Datum und keinen Zeitslot — spiel einfach, wann es dir passt.</p>"
+          }
+        },
+        "faq_item_BMLQwj": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Welche Zahlungsmittel werden akzeptiert?",
+            "answer": "<p>Alle gängigen Zahlungsmittel werden von uns akzeptiert. Wir wollen dir das Spielerlebnis so einfach und unkompliziert gestalten, wie nur möglich.</p><p>*Als gängige Zahlungsmittel gelten: PayPal, Überweisung, Kreditkarte, Apple Pay und Google Pay.</p>"
+          }
+        },
+        "faq_item_qPEcQx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Wie erhalte ich eine Rechnung?",
+            "answer": "<p>Du benötigst eine Rechnung? Schreibe uns einfach eine Nachricht  mit deiner Bestellnummer und deiner Rechnungsanschrift an service@escape-this.com. Wir senden dir deine Rechnung im Anschluss per E-Mail zu.</p>"
+          }
+        },
+        "faq_item_PHVDGU": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Was passiert mit meinen Daten?",
+            "answer": "<p>Keine Sorge, deine Daten, die bei der App-Nutzung entstehen, sind bei uns sicher! Sie werden nur kurzzeitig gespeichert, um deine Bewegung während des Spiels zu lokalisieren, die Funktionalität zu ermöglichen oder werden zu Analysezwecke gespeichert und nicht an Dritte weitergegeben. Eine Löschung deiner Daten kannst du jederzeit bei uns anfordern: Schreibe uns dafür einfach eine Nachricht über unser Kontaktformular oder per Mail.</p>"
+          }
+        },
+        "category_9qMLJf": {
+          "type": "category",
+          "settings": {
+            "tab_label": "Technik & App"
+          }
+        },
+        "faq_item_UEPxQG": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Was mache ich bei technischen Problemen?",
+            "answer": "<p>Starte die App neu und überprüfe deine Internetverbindung. Falls das nicht hilft, kannst du uns ganz einfach anrufen (+49 172 6077173) oder uns eine Mail schreiben (service@escape-this.com).</p>"
+          }
+        },
+        "faq_item_nNFfQn": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Was benötige ich für ein Escape Game?",
+            "answer": "<p>Du und dein Team benötigt mindestens ein Smartphone, auf dem die neuste Version der \"Escape This!\"-App heruntergeladen werden kann. Um in der App loszuspielen, müsst ihr ein Ticket online erwerben. Mit dem Ticket erhaltet ihr dann einen Spiel-Code, mit dem ihr euer Adventure in der App starten könnt. Zur Nutzung der App ist eine Internetverbindung sowie eine Erlaubnis des Zugriffs auf deine Bewegungsdaten und deinen Standort erforderlich. Achte darauf, mit einem möglichst vollen Handyakku zu starten oder dir eine Powerbank mitzunehmen.</p>"
+          }
+        },
+        "faq_item_g3gtDL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Welche Geräte werden unterstützt?",
+            "answer": "<p>Die EscapeThis-App läuft auf allen gängigen Apple- und Android-Betriebssystemen. Dein Gerät benötigt eine stabile Internetverbindung und GPS.</p>"
+          }
+        },
+        "faq_item_3Y6eqj": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Was passiert, wenn ich bei einem Rätsel nicht weiter komme?",
+            "answer": "<p>Die App bietet ein gestuftes Hinweissystem: Erst ein sanfter Tipp, dann ein deutlicherer Hinweis, und als letzten Ausweg die Lösung. So bleibt das Spielerlebnis erhalten, ohne dass du frustriert aufgibst. Außerdem gibt es immer einen Button um das Rätsel zu überspringen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_f4Qcpt",
+        "heading_f4Qhd1",
+        "text_f4Qtxt1",
+        "category_E7xD9L",
+        "faq_item_fBmehC",
+        "faq_item_rbh9QD",
+        "faq_item_Exykae",
+        "faq_item_njYGzG",
+        "faq_item_YN3xBW",
+        "category_7Jt73r",
+        "faq_item_6dtL7y",
+        "faq_item_BMLQwj",
+        "faq_item_qPEcQx",
+        "faq_item_PHVDGU",
+        "category_9qMLJf",
+        "faq_item_UEPxQG",
+        "faq_item_nNFfQn",
+        "faq_item_g3gtDL",
+        "faq_item_3Y6eqj"
+      ],
+      "name": "SS - FAQ (Donations style)",
+      "settings": {
+        "feature_icon_bg_color": "#1c1c1c",
+        "feature_icon_color": "#f9f544",
+        "feature_text_color": "#ffffff",
+        "tab_radius": 5,
+        "tab_active_bg": "#f9f544",
+        "tab_active_text": "#191919",
+        "tab_inactive_border": "#f9f544",
+        "tab_inactive_text": "#ffffff",
+        "faq_items_gap": 12,
+        "faq_items_gap_mobile": 12,
+        "faq_item_padding_horizontal": 24,
+        "faq_item_padding_horizontal_mobile": 24,
+        "faq_item_padding_vertical": 24,
+        "faq_item_padding_vertical_mobile": 24,
+        "faq_item_radius": 16,
+        "faq_question_color": "#ffffff",
+        "faq_question_size": 14,
+        "faq_question_size_mobile": 14,
+        "faq_answer_color": "#f9f544",
+        "faq_answer_size": 14,
+        "faq_answer_size_mobile": 14,
+        "faq_answer_padding_top": 30,
+        "faq_item_bg_color": "#1e1e1e",
+        "faq_icon_color": "#f9f544",
+        "faq_icon_size": 16,
+        "background_color": "#191919",
+        "background_gradient": "",
+        "border_color": "#191919",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "border_thickness": 0,
+        "section_radius": 0
+      }
+    },
+    "6d92c153-4d05-401b-af14-8f6462ea1af0": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Oder schreibe uns direkt hier.",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "button_font": "red_hat_display_n8",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_hero_pro_socials": {
+      "type": "ss-hero-pro",
+      "blocks": {
+        "caption_bdGbR6": {
+          "type": "caption",
+          "settings": {
+            "caption": "<h3>SOCIAL MEDIA</h3>",
+            "caption_custom": true,
+            "caption_font": "red_hat_display_n7",
+            "caption_size": 20,
+            "caption_size_mobile": 16,
+            "caption_advanced": false,
+            "caption_height": 130,
+            "caption_mt": 0,
+            "caption_mt_mobile": 0,
+            "background": false,
+            "caption_bg_opacity": 0.3,
+            "enable_blur": true,
+            "caption_radius": 100,
+            "caption_border_thickness": 1,
+            "caption_padding_horizontal": 12,
+            "caption_padding_horizontal_mobile": 12,
+            "caption_padding_vertical": 6,
+            "caption_padding_vertical_mobile": 6,
+            "caption_color": "#f9f544",
+            "caption_bg_color": "#ffffff",
+            "caption_border_color": "#ffffff"
+          }
+        },
+        "heading_LiHbh9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>FOLLOW US ON SOCIALS</h2>",
+            "heading_custom": true,
+            "heading_font": "red_hat_display_n8",
+            "heading_accent_font": "red_hat_display_n8",
+            "heading_size": 36,
+            "heading_size_mobile": 28,
+            "heading_advanced": false,
+            "heading_height": 130,
+            "heading_mt": 8,
+            "heading_mt_mobile": 8,
+            "heading_color": "#ffffff",
+            "heading_accent_color": "#f9f544"
+          }
+        },
+        "social_icons_9pXqZa": {
+          "type": "social_icons",
+          "settings": {
+            "tiktok_link": "https://www.tiktok.com/@escape.this?is_from_webapp=1&sender_device=pc",
+            "instagram_link": "https://www.instagram.com/escape.this.gmbh/",
+            "facebook_link": "https://www.facebook.com/people/Escape-This/61554502874126/",
+            "youtube_link": "",
+            "pinterest_link": "",
+            "icon_size": 16,
+            "icon_size_mobile": 14,
+            "icon_gap": 8,
+            "icon_color": "#f9f544",
+            "icon_bg_color": "#1c1c1c"
+          }
+        }
+      },
+      "block_order": [
+        "caption_bdGbR6",
+        "heading_LiHbh9",
+        "social_icons_9pXqZa"
+      ],
+      "name": "SS - Hero pro 💎",
+      "settings": {
+        "hero_height": "fixed_height",
+        "hero_fixed_height": 100,
+        "hero_height_mobile": "",
+        "hero_fixed_height_mobile": 200,
+        "content_max_width": 100,
+        "enable_split_layout": false,
+        "content_align": "left",
+        "content_align_mobile": "left",
+        "content_vertical_align": "center",
+        "content_vertical_align_mobile": "end",
+        "features_advanced": false,
+        "features_mt": 20,
+        "features_mt_mobile": 20,
+        "features_gap": 24,
+        "features_gap_mobile": 12,
+        "feature_background": false,
+        "feature_bg_opacity": 0.3,
+        "feature_enable_blur": true,
+        "feature_radius": 100,
+        "feature_border_thickness": 1,
+        "feature_padding_horizontal": 12,
+        "feature_padding_horizontal_mobile": 12,
+        "feature_padding_vertical": 6,
+        "feature_padding_vertical_mobile": 6,
+        "feature_icon_size": 18,
+        "feature_icon_size_mobile": 16,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 16,
+        "feature_text_size_mobile": 14,
+        "feature_text_height": 150,
+        "feature_icon_color": "#ffffff",
+        "feature_text_color": "#ffffff",
+        "feature_bg_color": "#ffffff",
+        "feature_border_color": "#ffffff",
+        "layout_bg_type": "color",
+        "bg_video_url": "",
+        "bg_overlay": 0.2,
+        "bg_overlay_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#191919",
+        "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+        "border_color": "#191919",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 32,
+        "padding_bottom": 8,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "padding_right_none": false,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "ss_video_grid_socials_6_WR7B98": {
+      "type": "ss-video-grid-socials-6",
+      "blocks": {
+        "slide_gcAMY3": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/728c6e14f47e4acea8386134c56e6bdf.mov",
+            "video_url": "",
+            "icon": "instagram",
+            "url": ""
+          }
+        },
+        "slide_VykFCG": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/city-erklarvideo_komprimiert.mov",
+            "video_url": "",
+            "icon": "instagram",
+            "url": ""
+          }
+        },
+        "slide_QEGxP6": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/88c7034cb30540d1acceb1bb81b8dc11.mov",
+            "video_url": "",
+            "icon": "tiktok",
+            "url": ""
+          }
+        },
+        "slide_U6h7by": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/date-idee_komprimiert.mov",
+            "video_url": "",
+            "icon": "tiktok",
+            "url": ""
+          }
+        },
+        "slide_cyckrN": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/rechen-ratsel_komprimiert.mov",
+            "video_url": "",
+            "icon": "instagram",
+            "url": ""
+          }
+        },
+        "slide_zYLTQF": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/your-sign_komprimiert.mov",
+            "video_url": "",
+            "icon": "instagram",
+            "url": ""
+          }
+        },
+        "slide_7rDXKY": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/fitness-challenge_komprimiert.mov",
+            "video_url": "",
+            "icon": "instagram",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_gcAMY3",
+        "slide_VykFCG",
+        "slide_QEGxP6",
+        "slide_U6h7by",
+        "slide_cyckrN",
+        "slide_zYLTQF",
+        "slide_7rDXKY"
+      ],
+      "name": "SS - Video grid from social #6",
+      "settings": {
+        "slider_view": 2.2,
+        "slider_view_mobile": 1,
+        "slider_gap": 16,
+        "slider_gap_mobile": 20,
+        "video_radius": 0,
+        "video_border_thickness": 2,
+        "video_ratio": "custom_750_650",
+        "video_ratio_mobile": "portrait",
+        "use_shadow": false,
+        "use_sound": true,
+        "icon_size": 32,
+        "icon_size_mobile": 28,
+        "icon_border_thickness": 1,
+        "icon_use_hover": false,
+        "arrow_size": 36,
+        "arrow_size_mobile": 28,
+        "arrow_icon_size": 7,
+        "arrow_icon_size_mobile": 7,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 8,
+        "arrow_hover_effect": "color",
+        "arrow_shadow": true,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "video_border_color": "#121212",
+        "icon_color": "#f9f544",
+        "icon_hover_color": "#f9f544",
+        "icon_bg_color": "#121212",
+        "icon_bg_hover_color": "#121212",
+        "icon_border_color": "#121212",
+        "icon_border_hover_color": "#121212",
+        "arrow_color": "#121212",
+        "arrow_hover_color": "#f9f544",
+        "arrow_bg_color": "#f9f544",
+        "arrow_bg_hover_color": "#191919",
+        "arrow_border_color": "#121212",
+        "arrow_border_hover_color": "#121212",
+        "background_color": "#191919",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 8,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_hero_pro_z6yztG",
+    "7ace989c-b05a-47db-8840-b2bc73aff8bb",
+    "09e4383b-a5c2-49c5-90b3-dbf5b660aa13",
+    "ss_faq_13_ANgt3i",
+    "6d92c153-4d05-401b-af14-8f6462ea1af0",
+    "ss_hero_pro_socials",
+    "ss_video_grid_socials_6_WR7B98"
+  ]
 }

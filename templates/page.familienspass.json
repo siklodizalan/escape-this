@@ -1,743 +1,758 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "disabled": true,
-            "settings": {
-                "padding_top": 28,
-                "padding_bottom": 28
-            }
-        },
-        "ss_hero_pro_mgcNbq": {
-            "type": "ss-hero-pro",
-            "blocks": {
-                "review_FAMILIE": {
-                    "type": "review",
-                    "settings": {
-                        "stars_count": 0,
-                        "stars_size": 16,
-                        "stars_size_mobile": 16,
-                        "stars_gap": 2,
-                        "review": "<p><strong>FAMILIE<\/strong><\/p>",
-                        "review_custom": false,
-                        "review_font": "red_hat_display_n8",
-                        "review_size": 14,
-                        "review_size_mobile": 13,
-                        "review_height": 130,
-                        "background": true,
-                        "review_bg_opacity": 0.75,
-                        "enable_blur": true,
-                        "review_radius": 4,
-                        "review_border_thickness": 0,
-                        "review_mt": 0,
-                        "review_mt_mobile": 0,
-                        "review_padding_horizontal": 16,
-                        "review_padding_horizontal_mobile": 16,
-                        "review_padding_vertical": 10,
-                        "review_padding_vertical_mobile": 10,
-                        "review_color": "#ffffff",
-                        "review_bg_color": "#191919",
-                        "review_border_color": "#191919",
-                        "stars_color": "#f9f544",
-                        "stars_bg_color": "rgba(0,0,0,0)",
-                        "stars_bg_half_color": "rgba(0,0,0,0)"
-                    }
-                },
-                "heading_Q4Px4i": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "<h1>FAMILIENZEIT IST DIE <strong>SCHÖNSTE ZEIT.<\/strong><\/h1>",
-                        "heading_custom": true,
-                        "heading_font": "red_hat_display_n8",
-                        "heading_accent_font": "red_hat_display_n8",
-                        "heading_size": 60,
-                        "heading_size_mobile": 36,
-                        "heading_advanced": true,
-                        "heading_height": 130,
-                        "heading_mt": 24,
-                        "heading_mt_mobile": 16,
-                        "heading_color": "#ffffff",
-                        "heading_accent_color": "#f9f544"
-                    }
-                },
-                "text_Ykd4iV": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>WIR SCHAFFEN UNVERGESSLICHE MOMENTE FÜR GROSS UND KLEIN. GENIESST ALS FAMILIE EINE GEMEINSAME ZEIT VOLLER LACHEN, ENTDECKUNGEN, CHALLENGES UND TEAMARBEIT.<\/p>",
-                        "text_custom": true,
-                        "text_font": "red_hat_display_n8",
-                        "text_size": 20,
-                        "text_size_mobile": 14,
-                        "text_advanced": false,
-                        "text_height": 150,
-                        "text_mt": 20,
-                        "text_mt_mobile": 20,
-                        "text_color": "#ffffff"
-                    }
-                },
-                "feature_RiYgXF": {
-                    "type": "feature",
-                    "settings": {
-                        "icon": "heart_hand",
-                        "text": "FÜR KINDER AB 6 JAHREN"
-                    }
-                },
-                "feature_3pTHRC": {
-                    "type": "feature",
-                    "settings": {
-                        "icon": "leaf",
-                        "text": "DRAUSSEN UNTERWEGS"
-                    }
-                },
-                "feature_y7hceV": {
-                    "type": "feature",
-                    "settings": {
-                        "icon": "rocket",
-                        "text": "FORDERNDER RÄTSELSPASS FÜR GROSS & KLEIN"
-                    }
-                },
-                "button_kmWeit": {
-                    "type": "button",
-                    "settings": {
-                        "button": "ZUM FAMILIENSPIEL",
-                        "url": "shopify:\/\/products\/raetsel-der-tierwelt",
-                        "open_in_new_tab": false,
-                        "button_style": "outline",
-                        "button_custom": true,
-                        "button_font": "red_hat_display_n8",
-                        "button_size": 14,
-                        "button_size_mobile": 14,
-                        "button_advanced": false,
-                        "button_height": 100,
-                        "button_padding_horizontal": 24,
-                        "button_padding_horizontal_mobile": 20,
-                        "button_padding_vertical": 12,
-                        "button_padding_vertical_mobile": 12,
-                        "button_radius": 6,
-                        "button_border_thickness": 1,
-                        "button_mt": 24,
-                        "button_mt_mobile": 24,
-                        "button_custom_styling": false,
-                        "button_full_width_mobile": false,
-                        "button_color": "#191919",
-                        "button_hover_color": "#f9f544",
-                        "button_bg_color": "#f9f544",
-                        "button_bg_hover_color": "#2d2d2d",
-                        "button_border_color": "#f9f544",
-                        "button_border_hover_color": "#f9f544",
-                        "button_shadow_color": "#000000"
-                    }
-                }
-            },
-            "block_order": [
-                "review_FAMILIE",
-                "heading_Q4Px4i",
-                "text_Ykd4iV",
-                "feature_RiYgXF",
-                "feature_3pTHRC",
-                "feature_y7hceV",
-                "button_kmWeit"
-            ],
-            "name": "SS - Hero pro 💎",
-            "settings": {
-                "hero_height": "full_screen",
-                "hero_height_mobile": "fixed_height",
-                "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 790,
-                "content_max_width": 50,
-                "enable_split_layout": false,
-                "content_align": "left",
-                "content_align_mobile": "left",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "center",
-                "features_advanced": false,
-                "features_mt": 20,
-                "features_mt_mobile": 20,
-                "features_gap": 24,
-                "features_gap_mobile": 12,
-                "feature_background": true,
-                "feature_bg_opacity": 1,
-                "feature_enable_blur": false,
-                "feature_radius": 6,
-                "feature_border_thickness": 0,
-                "feature_padding_horizontal": 12,
-                "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 7,
-                "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 30,
-                "feature_icon_size_mobile": 26,
-                "feature_text_custom": false,
-                "feature_text_font": "red_hat_display_n8",
-                "feature_text_size": 16,
-                "feature_text_size_mobile": 14,
-                "feature_text_height": 150,
-                "feature_icon_color": "#f9f544",
-                "feature_text_color": "#ffffff",
-                "feature_bg_color": "#1c1c1c",
-                "feature_border_color": "#1c1c1c",
-                "layout_bg_type": "image",
-                "bg_video_url": "",
-                "bg_overlay": 0.2,
-                "bg_overlay_color": "#121212",
-                "background_style": "solid",
-                "background_color": "#121212",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#121212",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 24,
-                "padding_bottom": 12,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "width": "page",
-                "content_width": 1200,
-                "border_thickness": 0,
-                "section_radius": 0,
-                "lazy": false
-            }
-        },
-        "ss_faq_13_7Hfajn": {
-            "type": "ss-donations-1-faq",
-            "blocks": {
-                "caption_f4Qcpt": {
-                    "type": "caption",
-                    "settings": {
-                        "caption": "FAQ"
-                    }
-                },
-                "heading_f4Qhd1": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Wissenswertes für Eltern"
-                    }
-                },
-                "text_f4Qtxt1": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Alles, was du über unser Familienspiel wissen musst — übersichtlich und kompakt.<\/p>"
-                    }
-                },
-                "faq_item_UQxpcd": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Wie lange dauert ein Spielerlebnis?",
-                        "answer": "<p>Ein Spielerlebnis dauert 2 bis 3 Stunden<\/p>"
-                    }
-                },
-                "faq_item_XxpYwb": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Was mache ich wenn wir das Spiel unterbrechen müssen?",
-                        "answer": "<p>Das Spiel kann jederzeit pausiert werden, um beispielsweise eine Pause zu machen. Sollte deine Familie an dem Tag aber nicht weiterspielen möchten, könnt ihr das Spiel auch ganz flexibel an einem anderen Tag fortsetzen.<\/p>"
-                    }
-                },
-                "faq_item_7Rn3mi": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Benötigen alle Familienmitglieder ein Handy?",
-                        "answer": "<p>Nein, prinzipiell kann das Spiel auch mit nur einem Handy gespielt werden. Da viele Spiele sowieso vom ernannten \"Spielleiter\" eingeloggt werden, funktioniert der Spielspaß auch ohne das alle Familienmitglieder ein eigenes Handy dabei haben.<\/p>"
-                    }
-                },
-                "faq_item_YRQbk6": {
-                    "type": "faq_item",
-                    "settings": {
-                        "question": "Wenn das Spiel für Kinder ab 6 Jahren geeignet ist, ist es dann für meine älteren Kinder nicht mehr geeignet?",
-                        "answer": "<p>Doch, das Spiel bietet den perfekten Mix für die ganze Familie: Während die Kleinen schon fleißig mitknobbeln oder lustige Interaktionen lösen – wie das Pusten ins Mikrofon –, fordern schwerere Rätsel das gesamte Team heraus. So kann sich jedes Kind altersgerecht einbringen, und auch die Erwachsenen haben garantiert ihren Spaß.<\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "caption_f4Qcpt",
-                "heading_f4Qhd1",
-                "text_f4Qtxt1",
-                "faq_item_UQxpcd",
-                "faq_item_XxpYwb",
-                "faq_item_7Rn3mi",
-                "faq_item_YRQbk6"
-            ],
-            "name": "SS - FAQ (Donations style)",
-            "settings": {
-                "tab_radius": 5,
-                "tab_active_bg": "#f9f544",
-                "tab_active_text": "#191919",
-                "tab_inactive_border": "#f9f544",
-                "tab_inactive_text": "#ffffff",
-                "faq_items_gap": 12,
-                "faq_items_gap_mobile": 12,
-                "faq_item_padding_horizontal": 24,
-                "faq_item_padding_horizontal_mobile": 24,
-                "faq_item_padding_vertical": 24,
-                "faq_item_padding_vertical_mobile": 24,
-                "faq_item_radius": 16,
-                "faq_question_color": "#ffffff",
-                "faq_question_size": 14,
-                "faq_question_size_mobile": 14,
-                "faq_answer_color": "#f9f544",
-                "faq_answer_size": 14,
-                "faq_answer_size_mobile": 14,
-                "faq_answer_padding_top": 30,
-                "faq_item_bg_color": "#1e1e1e",
-                "faq_icon_color": "#f9f544",
-                "faq_icon_size": 16,
-                "background_color": "#191919",
-                "background_gradient": "",
-                "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 36,
-                "padding_bottom": 36,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "full_width": false,
-                "border_thickness": 0,
-                "section_radius": 0
-            }
-        },
-        "f53d90e6-b2ae-42ca-a7db-ee766ab4cfac": {
-            "type": "multirow",
-            "blocks": {
-                "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-1": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "DIGITALER KNOBELSPASS",
-                        "text": "<p>Fordere deine Familie mit spannenden Challenges heraus. Eine Familienaktivität, die den Zusammenhalt stärkt und die reale mit der virtuellen Welt verbindet. <\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-2": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "NERVENKITZEL FÜR JEDES ALTER",
-                        "text": "<p>Von kleinen Detektiven bis zu erfahrenen Abenteurern: Escape This! fesselt die Welt der Jugendlichen, während spielerische Elemente die Jüngsten begeistern. Mit unseren altersgerechten Rätseln und verschiedenen Schwierigkeitsgraden findet sich Action für jedes Familienmitglied.<\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-3": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "BEWEGUNG IM FREIEN",
-                        "text": "<p>Escape This! bringt Familien nach draußen. Wir verbinden Spaß mit Bewegung im Freien - ideal zum Auspowern!<\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "row_jGBgfn": {
-                    "type": "row",
-                    "settings": {
-                        "caption": "Caption",
-                        "heading": "ROW",
-                        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-                        "button_label": "Button label",
-                        "button_link": ""
-                    }
-                },
-                "e89bf9ac-1e31-4227-90a5-2d014d20905d": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "EIN TICKET FÜR DIE GANZE FAMILIE",
-                        "text": "<p>Kaufe dein erschwingliches Ticket mit Festpreis und spiele mit bis zu 8 Smartphones. Begleiter ohne eigenes Handy, wie Nachwuchs oder Vierbeiner, können somit natürlich kostenlos mit dabei sein!<\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "05b63a94-b6a4-4252-9295-f21b97d2c49b": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "FAMILIEN-FREUNDLICHE WEGE",
-                        "text": "<p>Escape This! bietet familienfreundliche Wege in Innenstadtnähe – bequem erreichbar mit öffentlichen Verkehrsmitteln. Entdecke auf spielerische Art die schönen Orte deiner Stadt.<\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "f4e9fb06-eea2-412b-9937-47c70a43e9e9": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "FLEXIBLES SPIELERLEBNIS",
-                        "text": "<p>Familienspaß, wann es euch passt! Wähle deine Stadt aus und löse das Ticket innerhalb eines Jahres ein - so passt unser Spiel perfekt in den Zeitplan jeder Familie. <\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "3e822ae6-1748-4cee-b76b-013265260480": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "SPIELERISCHE WISSENS-VERMITTLUNG",
-                        "text": "<p>Durch unsere Minispiele und Quizfragen fördert unser Spiel nicht nur Soft Skills, wie Teamfähigkeit, analytisches Denken und Zielorientierung, sondern stärkt auch die Allgemeinbildung. Ein Abenteuer, das die ganze Familie voranbringt!<\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                },
-                "08b9b1c7-648e-405d-a9bb-54e54262628f": {
-                    "type": "row",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-01-05_um_09.22.49.png",
-                        "caption": "",
-                        "heading": "SICHER, VERLÄSSLICH, UNKOMPLIZIERT",
-                        "text": "<p>Bei Escape This! ist Sicherheit die Basis. Wir bieten ein verlässliches und sicheres Erlebnis, gewährleisten Datenschutz sowie keine externe Werbung. Wir schaffen ein einfaches Handling für unbeschwerten Familienspaß.<\/p>",
-                        "button_label": "",
-                        "button_link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-1",
-                "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-2",
-                "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-3",
-                "row_jGBgfn",
-                "e89bf9ac-1e31-4227-90a5-2d014d20905d",
-                "05b63a94-b6a4-4252-9295-f21b97d2c49b",
-                "f4e9fb06-eea2-412b-9937-47c70a43e9e9",
-                "3e822ae6-1748-4cee-b76b-013265260480",
-                "08b9b1c7-648e-405d-a9bb-54e54262628f"
-            ],
-            "disabled": true,
-            "settings": {
-                "image_height": "small",
-                "desktop_image_width": "medium",
-                "image_layout": "alternate-right",
-                "heading_size": "h1",
-                "text_style": "body",
-                "button_style": "secondary",
-                "desktop_content_position": "middle",
-                "desktop_content_alignment": "center",
-                "mobile_content_alignment": "left",
-                "section_color_scheme": "",
-                "row_color_scheme": "scheme-familienspass-card",
-                "padding_top": 20,
-                "padding_bottom": 20
-            }
-        },
-        "image_banner_LReWwp": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/1.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": false,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_FiXhaB": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/2.1.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_Q6UVmM": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/3.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_chJNtH": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/4.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_f4wpee": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/5.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_7T4z9q": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/6.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_tNTwJL": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/7.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_3atwza": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/8.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "image_banner_cnqJNB": {
-            "type": "image-banner",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/9.svg",
-                "image_overlay_opacity": 0,
-                "image_height": "adapt",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": true,
-                "color_scheme": "",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
-        },
-        "1b607eaf-2e65-4bed-8691-1cd100408715": {
-            "type": "rich-text",
-            "blocks": {
-                "template--20347560395094__1b607eaf-2e65-4bed-8691-1cd100408715-button-1": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "FAMILIENSPIEL ENTDECKEN",
-                        "button_link": "shopify:\/\/products\/raetsel-der-tierwelt",
-                        "button_style_secondary": false,
-                        "button_label_2": "",
-                        "button_link_2": "",
-                        "button_style_secondary_2": false,
-                        "button_custom_styling": true,
-                        "button_bg_color": "#f9f544",
-                        "button_bg_hover_color": "#2d2d2d",
-                        "button_text_color": "#191919",
-                        "button_text_hover_color": "#f9f544",
-                        "button_border_color": "#f9f544",
-                        "button_radius": 6
-                    }
-                }
-            },
-            "block_order": [
-                "template--20347560395094__1b607eaf-2e65-4bed-8691-1cd100408715-button-1"
-            ],
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "",
-                "full_width": true,
-                "padding_top": 0,
-                "padding_bottom": 52
-            }
-        },
-        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
-            "type": "ss-newsletter-1",
-            "blocks": {
-                "caption_n3wsC01": {
-                    "type": "caption",
-                    "settings": {
-                        "caption": "ANMELDEN & SPAREN",
-                        "caption_custom": true,
-                        "caption_font": "red_hat_display_n7",
-                        "caption_size": 20,
-                        "caption_size_mobile": 16,
-                        "caption_color": "#f9f544"
-                    }
-                },
-                "heading_n3wsH01": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "10% NEWSLETTER-RABATT",
-                        "heading_custom": true,
-                        "heading_font": "red_hat_display_n8",
-                        "heading_size": 40,
-                        "heading_size_mobile": 28,
-                        "heading_color": "#ffffff"
-                    }
-                },
-                "text_n3wsT01": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>JETZT ANMELDEN & 10% AUF DEIN ERSTES ABENTEUER SPAREN! ERFAHRE ALS ERSTER VON NEUEN GAMES, EVENTS UND AKTIONEN AUS UNSERER ADVENTUREWERKSTATT.<\/p>",
-                        "text_custom": true,
-                        "text_font": "red_hat_display_n4",
-                        "text_size": 16,
-                        "text_size_mobile": 14,
-                        "text_color": "#ffffff"
-                    }
-                },
-                "email_form_n3wsF01": {
-                    "type": "email_form",
-                    "settings": {
-                        "placeholder": "EMAIL ADRESSE",
-                        "input_radius": 5,
-                        "input_border_color": "#f9f544",
-                        "input_text_color": "#ffffff"
-                    }
-                }
-            },
-            "block_order": [
-                "caption_n3wsC01",
-                "heading_n3wsH01",
-                "text_n3wsT01",
-                "email_form_n3wsF01"
-            ],
-            "name": "SS - Newsletter #1",
-            "settings": {
-                "background_color": "#191919",
-                "background_gradient": "",
-                "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 40,
-                "padding_bottom": 52,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "full_width": false,
-                "border_thickness": 0,
-                "section_radius": 0
-            }
-        },
-        "psb_gallery_gallery_01_UVVzTH": {
-            "type": "psb-gallery-gallery-01",
-            "blocks": {
-                "image_EftN4n": {
-                    "type": "image",
-                    "settings": {
-                        "background_image": "shopify:\/\/shop_images\/Escape_Room_digital_Familien.jpg",
-                        "link_to": ""
-                    }
-                },
-                "image_bxnDBx": {
-                    "type": "image",
-                    "settings": {
-                        "background_image": "shopify:\/\/shop_images\/Escape_Room_familienfreundlich.jpg",
-                        "link_to": ""
-                    }
-                },
-                "image_pRathM": {
-                    "type": "image",
-                    "settings": {
-                        "background_image": "shopify:\/\/shop_images\/Escape_Room_fuer_Familien.jpg",
-                        "link_to": ""
-                    }
-                }
-            },
-            "block_order": [
-                "image_EftN4n",
-                "image_bxnDBx",
-                "image_pRathM"
-            ],
-            "settings": {
-                "container_width": "psb-container-fluid",
-                "enable_keep_layout": false,
-                "img_proportion": "100%",
-                "heading_text": "",
-                "heading_tag": "h2",
-                "inherit_fonts": false,
-                "text_color": "#262424",
-                "background_color": "rgba(0,0,0,0)",
-                "text_align": "center",
-                "section_padding_top": 50,
-                "section_padding_bottom": 100,
-                "section_padding_top_mobile": 50,
-                "section_padding_bottom_mobile": 60
-            }
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     },
-    "order": [
-        "main",
-        "ss_hero_pro_mgcNbq",
-        "ss_faq_13_7Hfajn",
-        "f53d90e6-b2ae-42ca-a7db-ee766ab4cfac",
-        "image_banner_LReWwp",
-        "image_banner_FiXhaB",
-        "image_banner_Q6UVmM",
-        "image_banner_chJNtH",
-        "image_banner_f4wpee",
-        "image_banner_7T4z9q",
-        "image_banner_tNTwJL",
-        "image_banner_3atwza",
-        "image_banner_cnqJNB",
-        "1b607eaf-2e65-4bed-8691-1cd100408715",
-        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
-        "psb_gallery_gallery_01_UVVzTH"
-    ]
+    "ss_hero_pro_mgcNbq": {
+      "type": "ss-hero-pro",
+      "blocks": {
+        "review_FAMILIE": {
+          "type": "review",
+          "settings": {
+            "stars_count": 0,
+            "stars_size": 16,
+            "stars_size_mobile": 16,
+            "stars_gap": 2,
+            "review": "<p><strong>FAMILIE</strong></p>",
+            "review_custom": false,
+            "review_font": "red_hat_display_n8",
+            "review_size": 14,
+            "review_size_mobile": 13,
+            "review_height": 130,
+            "background": true,
+            "review_bg_opacity": 0.8,
+            "enable_blur": true,
+            "review_radius": 4,
+            "review_border_thickness": 0,
+            "review_mt": 0,
+            "review_mt_mobile": 0,
+            "review_padding_horizontal": 16,
+            "review_padding_horizontal_mobile": 16,
+            "review_padding_vertical": 10,
+            "review_padding_vertical_mobile": 10,
+            "review_color": "#ffffff",
+            "review_bg_color": "#191919",
+            "review_border_color": "#191919",
+            "stars_color": "#f9f544",
+            "stars_bg_color": "rgba(0,0,0,0)",
+            "stars_bg_half_color": "rgba(0,0,0,0)"
+          }
+        },
+        "heading_Q4Px4i": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>FAMILIENZEIT IST DIE <strong>SCHÖNSTE ZEIT.</strong></h1>",
+            "heading_custom": true,
+            "heading_font": "red_hat_display_n8",
+            "heading_accent_font": "red_hat_display_n8",
+            "heading_size": 60,
+            "heading_size_mobile": 36,
+            "heading_advanced": true,
+            "heading_height": 130,
+            "heading_mt": 24,
+            "heading_mt_mobile": 16,
+            "heading_color": "#ffffff",
+            "heading_accent_color": "#f9f544"
+          }
+        },
+        "text_Ykd4iV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WIR SCHAFFEN UNVERGESSLICHE MOMENTE FÜR GROSS UND KLEIN. GENIESST ALS FAMILIE EINE GEMEINSAME ZEIT VOLLER LACHEN, ENTDECKUNGEN, CHALLENGES UND TEAMARBEIT.</p>",
+            "text_custom": true,
+            "text_font": "red_hat_display_n8",
+            "text_size": 20,
+            "text_size_mobile": 14,
+            "text_advanced": false,
+            "text_height": 150,
+            "text_mt": 20,
+            "text_mt_mobile": 20,
+            "text_color": "#ffffff"
+          }
+        },
+        "feature_RiYgXF": {
+          "type": "feature",
+          "settings": {
+            "icon": "heart_hand",
+            "text": "FÜR KINDER AB 6 JAHREN"
+          }
+        },
+        "feature_3pTHRC": {
+          "type": "feature",
+          "settings": {
+            "icon": "leaf",
+            "text": "DRAUSSEN UNTERWEGS"
+          }
+        },
+        "feature_y7hceV": {
+          "type": "feature",
+          "settings": {
+            "icon": "rocket",
+            "text": "FORDERNDER RÄTSELSPASS FÜR GROSS & KLEIN"
+          }
+        },
+        "button_kmWeit": {
+          "type": "button",
+          "settings": {
+            "button": "ZUM FAMILIENSPIEL",
+            "url": "shopify://products/raetsel-der-tierwelt",
+            "open_in_new_tab": false,
+            "game_filter": "",
+            "button_style": "outline",
+            "button_custom": true,
+            "button_font": "red_hat_display_n8",
+            "button_size": 14,
+            "button_size_mobile": 14,
+            "button_advanced": false,
+            "button_height": 100,
+            "button_padding_horizontal": 24,
+            "button_padding_horizontal_mobile": 20,
+            "button_padding_vertical": 12,
+            "button_padding_vertical_mobile": 12,
+            "button_radius": 6,
+            "button_border_thickness": 1,
+            "button_mt": 24,
+            "button_mt_mobile": 24,
+            "button_custom_styling": false,
+            "button_full_width_mobile": false,
+            "button_color": "#191919",
+            "button_hover_color": "#f9f544",
+            "button_bg_color": "#f9f544",
+            "button_bg_hover_color": "#2d2d2d",
+            "button_border_color": "#f9f544",
+            "button_border_hover_color": "#f9f544",
+            "button_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "review_FAMILIE",
+        "heading_Q4Px4i",
+        "text_Ykd4iV",
+        "feature_RiYgXF",
+        "feature_3pTHRC",
+        "feature_y7hceV",
+        "button_kmWeit"
+      ],
+      "name": "SS - Hero pro 💎",
+      "settings": {
+        "hero_height": "full_screen",
+        "hero_fixed_height": 600,
+        "hero_height_mobile": "fixed_height",
+        "hero_fixed_height_mobile": 790,
+        "content_max_width": 50,
+        "enable_split_layout": false,
+        "content_align": "left",
+        "content_align_mobile": "left",
+        "content_vertical_align": "center",
+        "content_vertical_align_mobile": "center",
+        "features_advanced": false,
+        "features_mt": 20,
+        "features_mt_mobile": 20,
+        "features_gap": 24,
+        "features_gap_mobile": 12,
+        "feature_background": true,
+        "feature_bg_opacity": 1,
+        "feature_enable_blur": false,
+        "feature_radius": 6,
+        "feature_border_thickness": 0,
+        "feature_padding_horizontal": 12,
+        "feature_padding_horizontal_mobile": 12,
+        "feature_padding_vertical": 7,
+        "feature_padding_vertical_mobile": 6,
+        "feature_icon_size": 30,
+        "feature_icon_size_mobile": 26,
+        "feature_text_custom": false,
+        "feature_text_font": "red_hat_display_n8",
+        "feature_text_size": 16,
+        "feature_text_size_mobile": 14,
+        "feature_text_height": 150,
+        "feature_icon_color": "#f9f544",
+        "feature_text_color": "#ffffff",
+        "feature_bg_color": "#1c1c1c",
+        "feature_border_color": "#1c1c1c",
+        "layout_bg_type": "image",
+        "bg_image": "shopify://shop_images/Fav2.heic",
+        "bg_video_url": "",
+        "bg_overlay": 0.5,
+        "bg_overlay_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#121212",
+        "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 24,
+        "padding_bottom": 12,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "padding_right_none": false,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "ss_faq_13_7Hfajn": {
+      "type": "ss-donations-1-faq",
+      "blocks": {
+        "caption_f4Qcpt": {
+          "type": "caption",
+          "settings": {
+            "caption": "FAQ"
+          }
+        },
+        "heading_f4Qhd1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wissenswertes für Eltern"
+          }
+        },
+        "text_f4Qtxt1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alles, was du über unser Familienspiel wissen musst — übersichtlich und kompakt.</p>"
+          }
+        },
+        "faq_item_UQxpcd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Wie lange dauert ein Spielerlebnis?",
+            "answer": "<p>Ein Spielerlebnis dauert 2 bis 3 Stunden</p>"
+          }
+        },
+        "faq_item_XxpYwb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Was mache ich wenn wir das Spiel unterbrechen müssen?",
+            "answer": "<p>Das Spiel kann jederzeit pausiert werden, um beispielsweise eine Pause zu machen. Sollte deine Familie an dem Tag aber nicht weiterspielen möchten, könnt ihr das Spiel auch ganz flexibel an einem anderen Tag fortsetzen.</p>"
+          }
+        },
+        "faq_item_7Rn3mi": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Benötigen alle Familienmitglieder ein Handy?",
+            "answer": "<p>Nein, prinzipiell kann das Spiel auch mit nur einem Handy gespielt werden. Da viele Spiele sowieso vom ernannten \"Spielleiter\" eingeloggt werden, funktioniert der Spielspaß auch ohne das alle Familienmitglieder ein eigenes Handy dabei haben.</p>"
+          }
+        },
+        "faq_item_YRQbk6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Wenn das Spiel für Kinder ab 6 Jahren geeignet ist, ist es dann für meine älteren Kinder nicht mehr geeignet?",
+            "answer": "<p>Doch, das Spiel bietet den perfekten Mix für die ganze Familie: Während die Kleinen schon fleißig mitknobbeln oder lustige Interaktionen lösen – wie das Pusten ins Mikrofon –, fordern schwerere Rätsel das gesamte Team heraus. So kann sich jedes Kind altersgerecht einbringen, und auch die Erwachsenen haben garantiert ihren Spaß.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_f4Qcpt",
+        "heading_f4Qhd1",
+        "text_f4Qtxt1",
+        "faq_item_UQxpcd",
+        "faq_item_XxpYwb",
+        "faq_item_7Rn3mi",
+        "faq_item_YRQbk6"
+      ],
+      "name": "SS - FAQ (Donations style)",
+      "settings": {
+        "feature_icon_bg_color": "#1c1c1c",
+        "feature_icon_color": "#f9f544",
+        "feature_text_color": "#ffffff",
+        "tab_radius": 5,
+        "tab_active_bg": "#f9f544",
+        "tab_active_text": "#191919",
+        "tab_inactive_border": "#f9f544",
+        "tab_inactive_text": "#ffffff",
+        "faq_items_gap": 12,
+        "faq_items_gap_mobile": 12,
+        "faq_item_padding_horizontal": 24,
+        "faq_item_padding_horizontal_mobile": 24,
+        "faq_item_padding_vertical": 24,
+        "faq_item_padding_vertical_mobile": 24,
+        "faq_item_radius": 16,
+        "faq_question_color": "#ffffff",
+        "faq_question_size": 14,
+        "faq_question_size_mobile": 14,
+        "faq_answer_color": "#f9f544",
+        "faq_answer_size": 14,
+        "faq_answer_size_mobile": 14,
+        "faq_answer_padding_top": 30,
+        "faq_item_bg_color": "#1e1e1e",
+        "faq_icon_color": "#f9f544",
+        "faq_icon_size": 16,
+        "background_color": "#191919",
+        "background_gradient": "",
+        "border_color": "#191919",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "border_thickness": 0,
+        "section_radius": 0
+      }
+    },
+    "f53d90e6-b2ae-42ca-a7db-ee766ab4cfac": {
+      "type": "multirow",
+      "blocks": {
+        "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "DIGITALER KNOBELSPASS",
+            "text": "<p>Fordere deine Familie mit spannenden Challenges heraus. Eine Familienaktivität, die den Zusammenhalt stärkt und die reale mit der virtuellen Welt verbindet. </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "NERVENKITZEL FÜR JEDES ALTER",
+            "text": "<p>Von kleinen Detektiven bis zu erfahrenen Abenteurern: Escape This! fesselt die Welt der Jugendlichen, während spielerische Elemente die Jüngsten begeistern. Mit unseren altersgerechten Rätseln und verschiedenen Schwierigkeitsgraden findet sich Action für jedes Familienmitglied.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "BEWEGUNG IM FREIEN",
+            "text": "<p>Escape This! bringt Familien nach draußen. Wir verbinden Spaß mit Bewegung im Freien - ideal zum Auspowern!</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_jGBgfn": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "ROW",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "e89bf9ac-1e31-4227-90a5-2d014d20905d": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "EIN TICKET FÜR DIE GANZE FAMILIE",
+            "text": "<p>Kaufe dein erschwingliches Ticket mit Festpreis und spiele mit bis zu 8 Smartphones. Begleiter ohne eigenes Handy, wie Nachwuchs oder Vierbeiner, können somit natürlich kostenlos mit dabei sein!</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "05b63a94-b6a4-4252-9295-f21b97d2c49b": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "FAMILIEN-FREUNDLICHE WEGE",
+            "text": "<p>Escape This! bietet familienfreundliche Wege in Innenstadtnähe – bequem erreichbar mit öffentlichen Verkehrsmitteln. Entdecke auf spielerische Art die schönen Orte deiner Stadt.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "f4e9fb06-eea2-412b-9937-47c70a43e9e9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "FLEXIBLES SPIELERLEBNIS",
+            "text": "<p>Familienspaß, wann es euch passt! Wähle deine Stadt aus und löse das Ticket innerhalb eines Jahres ein - so passt unser Spiel perfekt in den Zeitplan jeder Familie. </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "3e822ae6-1748-4cee-b76b-013265260480": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "SPIELERISCHE WISSENS-VERMITTLUNG",
+            "text": "<p>Durch unsere Minispiele und Quizfragen fördert unser Spiel nicht nur Soft Skills, wie Teamfähigkeit, analytisches Denken und Zielorientierung, sondern stärkt auch die Allgemeinbildung. Ein Abenteuer, das die ganze Familie voranbringt!</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "08b9b1c7-648e-405d-a9bb-54e54262628f": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2024-01-05_um_09.22.49.png",
+            "caption": "",
+            "heading": "SICHER, VERLÄSSLICH, UNKOMPLIZIERT",
+            "text": "<p>Bei Escape This! ist Sicherheit die Basis. Wir bieten ein verlässliches und sicheres Erlebnis, gewährleisten Datenschutz sowie keine externe Werbung. Wir schaffen ein einfaches Handling für unbeschwerten Familienspaß.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-1",
+        "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-2",
+        "template--20347560395094__f53d90e6-b2ae-42ca-a7db-ee766ab4cfac-row-3",
+        "row_jGBgfn",
+        "e89bf9ac-1e31-4227-90a5-2d014d20905d",
+        "05b63a94-b6a4-4252-9295-f21b97d2c49b",
+        "f4e9fb06-eea2-412b-9937-47c70a43e9e9",
+        "3e822ae6-1748-4cee-b76b-013265260480",
+        "08b9b1c7-648e-405d-a9bb-54e54262628f"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "scheme-familienspass-card",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "image_banner_LReWwp": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/1.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_FiXhaB": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/2.1.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_Q6UVmM": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/3.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_chJNtH": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/4.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_f4wpee": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/5.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_7T4z9q": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/6.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_tNTwJL": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/7.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_3atwza": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/8.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_cnqJNB": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/9.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "1b607eaf-2e65-4bed-8691-1cd100408715": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20347560395094__1b607eaf-2e65-4bed-8691-1cd100408715-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "FAMILIENSPIEL ENTDECKEN",
+            "button_link": "shopify://products/raetsel-der-tierwelt",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_custom_styling": true,
+            "button_bg_color": "#f9f544",
+            "button_bg_hover_color": "#2d2d2d",
+            "button_text_color": "#191919",
+            "button_text_hover_color": "#f9f544",
+            "button_border_color": "#f9f544",
+            "button_radius": 6
+          }
+        }
+      },
+      "block_order": [
+        "template--20347560395094__1b607eaf-2e65-4bed-8691-1cd100408715-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
+      "type": "ss-newsletter-1",
+      "blocks": {
+        "caption_n3wsC01": {
+          "type": "caption",
+          "settings": {
+            "caption": "ANMELDEN & SPAREN",
+            "caption_custom": true,
+            "caption_font": "red_hat_display_n7",
+            "caption_size": 20,
+            "caption_size_mobile": 16,
+            "caption_color": "#f9f544"
+          }
+        },
+        "heading_n3wsH01": {
+          "type": "heading",
+          "settings": {
+            "heading": "10% NEWSLETTER-RABATT",
+            "heading_custom": true,
+            "heading_font": "red_hat_display_n8",
+            "heading_size": 40,
+            "heading_size_mobile": 28,
+            "heading_color": "#ffffff"
+          }
+        },
+        "text_n3wsT01": {
+          "type": "text",
+          "settings": {
+            "text": "<p>JETZT ANMELDEN & 10% AUF DEIN ERSTES ABENTEUER SPAREN! ERFAHRE ALS ERSTER VON NEUEN GAMES, EVENTS UND AKTIONEN AUS UNSERER ADVENTUREWERKSTATT.</p>",
+            "text_custom": true,
+            "text_font": "red_hat_display_n4",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_color": "#ffffff"
+          }
+        },
+        "email_form_n3wsF01": {
+          "type": "email_form",
+          "settings": {
+            "placeholder": "EMAIL ADRESSE",
+            "input_radius": 5,
+            "input_border_color": "#f9f544",
+            "input_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "caption_n3wsC01",
+        "heading_n3wsH01",
+        "text_n3wsT01",
+        "email_form_n3wsF01"
+      ],
+      "name": "SS - Newsletter #1",
+      "settings": {
+        "background_color": "#191919",
+        "background_gradient": "",
+        "border_color": "#191919",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "border_thickness": 0,
+        "section_radius": 0
+      }
+    },
+    "psb_gallery_gallery_01_UVVzTH": {
+      "type": "psb-gallery-gallery-01",
+      "blocks": {
+        "image_EftN4n": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify://shop_images/Escape_Room_digital_Familien.jpg",
+            "link_to": ""
+          }
+        },
+        "image_bxnDBx": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify://shop_images/Escape_Room_familienfreundlich.jpg",
+            "link_to": ""
+          }
+        },
+        "image_pRathM": {
+          "type": "image",
+          "settings": {
+            "background_image": "shopify://shop_images/Escape_Room_fuer_Familien.jpg",
+            "link_to": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_EftN4n",
+        "image_bxnDBx",
+        "image_pRathM"
+      ],
+      "settings": {
+        "container_width": "psb-container-fluid",
+        "enable_keep_layout": false,
+        "img_proportion": "100%",
+        "heading_text": "",
+        "heading_tag": "h2",
+        "inherit_fonts": false,
+        "text_color": "#262424",
+        "background_color": "rgba(0,0,0,0)",
+        "text_align": "center",
+        "section_padding_top": 50,
+        "section_padding_bottom": 100,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_hero_pro_mgcNbq",
+    "ss_faq_13_7Hfajn",
+    "f53d90e6-b2ae-42ca-a7db-ee766ab4cfac",
+    "image_banner_LReWwp",
+    "image_banner_FiXhaB",
+    "image_banner_Q6UVmM",
+    "image_banner_chJNtH",
+    "image_banner_f4wpee",
+    "image_banner_7T4z9q",
+    "image_banner_tNTwJL",
+    "image_banner_3atwza",
+    "image_banner_cnqJNB",
+    "1b607eaf-2e65-4bed-8691-1cd100408715",
+    "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
+    "psb_gallery_gallery_01_UVVzTH"
+  ]
 }

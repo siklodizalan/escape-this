@@ -1,503 +1,529 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "disabled": true,
-            "settings": {
-                "padding_top": 36,
-                "padding_bottom": 24
-            }
-        },
-        "ss_hero_pro_XYTDai": {
-            "type": "ss-hero-pro",
-            "blocks": {
-                "review_4eUJCh": {
-                    "type": "review",
-                    "settings": {
-                        "stars_count": 0,
-                        "stars_size": 16,
-                        "stars_size_mobile": 16,
-                        "stars_gap": 2,
-                        "review": "<p><strong>ÜBER UNS</strong></p>",
-                        "review_custom": true,
-                        "review_font": "red_hat_display_n8",
-                        "review_size": 14,
-                        "review_size_mobile": 13,
-                        "review_height": 130,
-                        "background": true,
-                        "review_bg_opacity": 0.75,
-                        "enable_blur": true,
-                        "review_radius": 4,
-                        "review_border_thickness": 0,
-                        "review_mt": 0,
-                        "review_mt_mobile": 0,
-                        "review_padding_horizontal": 16,
-                        "review_padding_horizontal_mobile": 16,
-                        "review_padding_vertical": 10,
-                        "review_padding_vertical_mobile": 10,
-                        "review_color": "#ffffff",
-                        "review_bg_color": "#191919",
-                        "review_border_color": "#191919",
-                        "stars_color": "#f9f544",
-                        "stars_bg_color": "rgba(0,0,0,0)",
-                        "stars_bg_half_color": "rgba(0,0,0,0)"
-                    }
-                },
-                "heading_yxXdeG": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "<h1>DREI FRAUEN, EINE MISSION:<br/><strong>STÄDTE IN ABENTEUER VERWANDELN.</strong></h1>",
-                        "heading_custom": true,
-                        "heading_font": "red_hat_display_n8",
-                        "heading_accent_font": "red_hat_display_n8",
-                        "heading_size": 60,
-                        "heading_size_mobile": 36,
-                        "heading_advanced": true,
-                        "heading_height": 130,
-                        "heading_mt": 24,
-                        "heading_mt_mobile": 16,
-                        "heading_color": "#ffffff",
-                        "heading_accent_color": "#f9f544"
-                    }
-                },
-                "feature_FDiqqp": {
-                    "type": "feature",
-                    "settings": {
-                        "icon": "feather",
-                        "text": "2023: ERSTE PAPIER-RÄTSELKARTEN FÜR FREUNDE"
-                    }
-                },
-                "feature_9Bjfix": {
-                    "type": "feature",
-                    "settings": {
-                        "icon": "scallop_checkmark",
-                        "text": "2024-2025: APP-ENTWICKLUNG & LAUNCH"
-                    }
-                },
-                "feature_NBmEWm": {
-                    "type": "feature",
-                    "settings": {
-                        "icon": "rocket",
-                        "text": "2026: IN 11 STÄDTEN, 27 SPIELE & ÜBER 25.000 SPIELER"
-                    }
-                }
-            },
-            "block_order": [
-                "review_4eUJCh",
-                "heading_yxXdeG",
-                "feature_FDiqqp",
-                "feature_9Bjfix",
-                "feature_NBmEWm"
-            ],
-            "name": "SS - Hero pro 💎",
-            "settings": {
-                "hero_height": "full_screen",
-                "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 600,
-                "content_max_width": 50,
-                "enable_split_layout": false,
-                "content_align": "left",
-                "content_align_mobile": "left",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "center",
-                "features_advanced": false,
-                "features_mt": 20,
-                "features_mt_mobile": 20,
-                "features_gap": 24,
-                "features_gap_mobile": 12,
-                "feature_background": true,
-                "feature_bg_opacity": 1,
-                "feature_enable_blur": false,
-                "feature_radius": 6,
-                "feature_border_thickness": 0,
-                "feature_padding_horizontal": 12,
-                "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 7,
-                "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 30,
-                "feature_icon_size_mobile": 26,
-                "feature_text_custom": false,
-                "feature_text_font": "red_hat_display_n8",
-                "feature_text_size": 16,
-                "feature_text_size_mobile": 14,
-                "feature_text_height": 150,
-                "feature_icon_color": "#f9f544",
-                "feature_text_color": "#ffffff",
-                "feature_bg_color": "#1c1c1c",
-                "feature_border_color": "#1c1c1c",
-                "layout_bg_type": "image",
-                "bg_video_url": "",
-                "bg_overlay": 0.75,
-                "bg_overlay_color": "#000000",
-                "background_style": "solid",
-                "background_color": "#121212",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#121212",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 24,
-                "padding_bottom": 12,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "width": "page",
-                "content_width": 1200,
-                "border_thickness": 0,
-                "section_radius": 0,
-                "lazy": false
-            }
-        },
-        "6f80baa8-3644-43fc-87fd-203e791794bb": {
-            "type": "rich-text",
-            "blocks": {
-                "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-heading-1": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "UNSERE GESCHICHTE.",
-                        "heading_size": "h1"
-                    }
-                },
-                "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-text-1": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p><strong>„DAS MUSS DOCH BESSER GEHEN!“</strong> – DIESER SATZ VON RONJA AUF EINER ZIEMLICH LANGWEILIGEN STADTFÜHRUNG IN BARCELONA 2023 HAT ALLES VERÄNDERT.</p><p>WIR KENNEN UNS SEIT DER SCHULZEIT UND SIND EIGENTLICH GRUNDVERSCHIEDEN. ABER WIR WAREN UNS EINIG: WIR BRAUCHEN ENDLICH COOLERE FREIZEITAKTIVITÄTEN IN DEN STÄDTEN! NOCH AM SELBEN ABEND SASSEN WIR IM JUNI 2023 IN EINER KNEIPE UND HABEN DIE ERSTEN STADTRÄTSEL AUF BIERDECKEL GEKRITZELT.</p><p>AUS AUSGEDRUCKTEN RÄTSELN IN BRIEFUMSCHLÄGEN FÜR FREUNDE WURDE SCHNELL EIN ECHTES HERZENSPROJEKT. UNSERE ALLERERSTE APP-VERSION HABEN WIR MIT GEFÜHLT NULL PLAN, ABER TONNENWEISE KOFFEIN UND LEIDENSCHAFT ZUSAMMENGESCHUSTERT.</p><p>DREI JAHRE SPÄTER FLIEGEN WIR FAST WEG VOR STOLZ: ÜBER 25.000 SPIELER IN MEHR ALS 11 STÄDTEN SIND SCHON MIT UNS AUF TOUR GEWESEN. DANKE AN UNSERE GENIALE COMMUNITY – IHR TREIBT UNS AN, JEDEN TAG NOCH BESSERE ABENTEUER ZU ENTWICKELN!</p>"
-                    }
-                }
-            },
-            "block_order": [
-                "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-heading-1",
-                "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-text-1"
-            ],
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "background-1",
-                "full_width": true,
-                "padding_top": 40,
-                "padding_bottom": 12
-            }
-        },
-        "multicolumn_HRPitB": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_a4RhHV": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify://shop_images/Facetune_13-01-2026-14-25-46.jpg",
-                        "title": "Lisa",
-                        "text": "<p>Die Visionärin von Escape This!</p><p>Lisa ist spezialisiert auf Unternehmensentwicklung und plant das Heute, sowie Morgen. </p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_HpibrH": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify://shop_images/PHOTO-2024-01-09-19-14-36.jpg",
-                        "title": "Kim",
-                        "text": "<p>Das Zahlengenie von Escape This! Kim beschäftigt sich leidenschaftlich gerne mit dem Thema Finanzen und behält außerdem das Rechtliche im Blick.</p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_97Pfgy": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify://shop_images/Digitaler_Outdoor_Escape_Room_Service.jpg",
-                        "title": "Ronja",
-                        "text": "<p>Der Kreativkopf von Escape This!. Ronja ist unsere kreative Seele, welche nicht nur absoluter Profi im Marketing ist, sondern auch viel Spaß und Dynamik mitbringt, um dich zu begeistern.</p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_a4RhHV",
-                "column_HpibrH",
-                "column_97Pfgy"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "Die Köpfe hinter den Rätseln.",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "background-1",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 36,
-                "padding_bottom": 36
-            }
-        },
-        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
-            "type": "newsletter",
-            "blocks": {
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "10% Newsletter-Rabatt",
-                        "heading_size": "h1"
-                    }
-                },
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
-                    "type": "paragraph",
-                    "settings": {
-                        "text": "<p><strong>Jetzt anmelden & 10% auf dein erstes Abenteuer sparen! </strong>Erfahre als Erster von neuen Games, Events und Aktionen aus unserer Adventurewerkstatt. </p>"
-                    }
-                },
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
-                    "type": "email_form",
-                    "settings": {}
-                }
-            },
-            "block_order": [
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
-                "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
-            ],
-            "disabled": true,
-            "settings": {
-                "color_scheme": "scheme-c830f276-9546-4455-aeac-0933ad1dce39",
-                "full_width": true,
-                "padding_top": 40,
-                "padding_bottom": 52
-            }
-        },
-        "psb_stats_stats_01_xTWcad": {
-            "type": "psb-stats-stats-01",
-            "blocks": {
-                "stats_YhgYYJ": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "11",
-                        "heading": "<p>Städte</p>",
-                        "prefix": "",
-                        "suffix": "+"
-                    }
-                },
-                "stats_tjq4ep": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "25000",
-                        "heading": "<p>Spieler</p>",
-                        "prefix": "",
-                        "suffix": "+"
-                    }
-                },
-                "stats_YpYUiW": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "100",
-                        "heading": "<p>Team Events</p>",
-                        "prefix": "",
-                        "suffix": "+"
-                    }
-                },
-                "stats_nT4YHy": {
-                    "type": "stats",
-                    "settings": {
-                        "number": "365",
-                        "heading": "<p>Tage Spielspaß</p>",
-                        "prefix": "",
-                        "suffix": ""
-                    }
-                }
-            },
-            "block_order": [
-                "stats_YhgYYJ",
-                "stats_tjq4ep",
-                "stats_YpYUiW",
-                "stats_nT4YHy"
-            ],
-            "name": "⚡︎PSB: Stats 01",
-            "settings": {
-                "container_width": "psb-container",
-                "inherit_fonts": false,
-                "background_color": "#191919",
-                "number_color": "#f9f544",
-                "heading_color": "#ffffff",
-                "number_font_size_desktop": 70,
-                "section_padding_top": 100,
-                "section_padding_bottom": 100,
-                "number_font_size_mobile": 58,
-                "section_padding_top_mobile": 100,
-                "section_padding_bottom_mobile": 100
-            }
-        },
-        "ss_hero_pro_story_button": {
-            "type": "ss-hero-pro",
-            "blocks": {
-                "button_story_cta": {
-                    "type": "button",
-                    "settings": {
-                        "button": "ZU DEN GAMES",
-                        "url": "shopify://collections",
-                        "open_in_new_tab": false,
-                        "button_style": "outline",
-                        "button_custom": true,
-                        "button_font": "red_hat_display_n8",
-                        "button_size": 14,
-                        "button_size_mobile": 14,
-                        "button_advanced": false,
-                        "button_height": 100,
-                        "button_padding_horizontal": 24,
-                        "button_padding_horizontal_mobile": 20,
-                        "button_padding_vertical": 12,
-                        "button_padding_vertical_mobile": 12,
-                        "button_radius": 6,
-                        "button_border_thickness": 1,
-                        "button_mt": 0,
-                        "button_mt_mobile": 0,
-                        "button_custom_styling": false,
-                        "button_full_width_mobile": false,
-                        "button_color": "#191919",
-                        "button_hover_color": "#f9f544",
-                        "button_bg_color": "#f9f544",
-                        "button_bg_hover_color": "#2d2d2d",
-                        "button_border_color": "#f9f544",
-                        "button_border_hover_color": "#f9f544",
-                        "button_shadow_color": "#000000"
-                    }
-                }
-            },
-            "block_order": [
-                "button_story_cta"
-            ],
-            "name": "SS - Hero pro 💎",
-            "settings": {
-                "hero_height": "auto",
-                "hero_fixed_height": 600,
-                "hero_fixed_height_mobile": 600,
-                "content_max_width": 72,
-                "enable_split_layout": false,
-                "content_align": "center",
-                "content_align_mobile": "center",
-                "content_vertical_align": "center",
-                "content_vertical_align_mobile": "center",
-                "features_advanced": false,
-                "features_mt": 20,
-                "features_mt_mobile": 20,
-                "features_gap": 24,
-                "features_gap_mobile": 12,
-                "feature_background": true,
-                "feature_bg_opacity": 1,
-                "feature_enable_blur": false,
-                "feature_radius": 6,
-                "feature_border_thickness": 0,
-                "feature_padding_horizontal": 12,
-                "feature_padding_horizontal_mobile": 12,
-                "feature_padding_vertical": 7,
-                "feature_padding_vertical_mobile": 6,
-                "feature_icon_size": 30,
-                "feature_icon_size_mobile": 26,
-                "feature_text_custom": false,
-                "feature_text_font": "red_hat_display_n8",
-                "feature_text_size": 16,
-                "feature_text_size_mobile": 14,
-                "feature_text_height": 150,
-                "feature_icon_color": "#f9f544",
-                "feature_text_color": "#ffffff",
-                "feature_bg_color": "#1c1c1c",
-                "feature_border_color": "#1c1c1c",
-                "layout_bg_type": "color",
-                "bg_video_url": "",
-                "bg_overlay": 0.2,
-                "bg_overlay_color": "#121212",
-                "background_style": "solid",
-                "background_color": "#191919",
-                "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
-                "border_color": "#191919",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 0,
-                "padding_bottom": 36,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "width": "page",
-                "content_width": 1200,
-                "border_thickness": 0,
-                "section_radius": 0,
-                "lazy": false
-            }
-        },
-        "ss_cta_app_1_games": {
-            "type": "ss-cta-app-1",
-            "blocks": {
-                "caption_ctaApp1": {
-                    "type": "caption",
-                    "settings": {
-                        "caption": "JETZT LOSSPIELEN"
-                    }
-                },
-                "heading_ctaApp1": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "BEREIT FÜR DEIN ABENTEUER?"
-                    }
-                },
-                "text_ctaApp1": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>WÄHLE DEIN SPIEL UND STARTE DEIN NÄCHSTES ESCAPE GAME — DIREKT IN DEINER STADT.</p>"
-                    }
-                },
-                "button_ctaApp1": {
-                    "type": "button",
-                    "settings": {
-                        "label": "SPIEL WÄHLEN",
-                        "link": "shopify://pages/stadte"
-                    }
-                },
-                "image_ctaApp1": {
-                    "type": "image",
-                    "settings": {
-                        "image": "shopify://shop_images/Escape-This-App-Einblick.svg"
-                    }
-                }
-            },
-            "block_order": [
-                "caption_ctaApp1",
-                "heading_ctaApp1",
-                "text_ctaApp1",
-                "button_ctaApp1",
-                "image_ctaApp1"
-            ],
-            "name": "SS - CTA App #1",
-            "settings": {
-                "background_color": "#191919",
-                "background_gradient": "",
-                "border_color": "#191919",
-                "image_radius": 5,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_horizontal": 0,
-                "margin_horizontal_mobile": 0,
-                "padding_top": 36,
-                "padding_bottom": 36,
-                "padding_horizontal": 5,
-                "padding_horizontal_mobile": 1.5,
-                "full_width": false,
-                "border_thickness": 0,
-                "section_radius": 0
-            }
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
     },
-    "order": [
-        "main",
-        "ss_hero_pro_XYTDai",
-        "6f80baa8-3644-43fc-87fd-203e791794bb",
-        "ss_hero_pro_story_button",
-        "multicolumn_HRPitB",
-        "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
-        "psb_stats_stats_01_xTWcad",
-        "ss_cta_app_1_games",
-    ]
+    "ss_hero_pro_XYTDai": {
+      "type": "ss-hero-pro",
+      "blocks": {
+        "review_4eUJCh": {
+          "type": "review",
+          "settings": {
+            "stars_count": 0,
+            "stars_size": 16,
+            "stars_size_mobile": 16,
+            "stars_gap": 2,
+            "review": "<p><strong>ÜBER UNS</strong></p>",
+            "review_custom": true,
+            "review_font": "red_hat_display_n8",
+            "review_size": 14,
+            "review_size_mobile": 13,
+            "review_height": 130,
+            "background": true,
+            "review_bg_opacity": 0.8,
+            "enable_blur": true,
+            "review_radius": 4,
+            "review_border_thickness": 0,
+            "review_mt": 0,
+            "review_mt_mobile": 0,
+            "review_padding_horizontal": 16,
+            "review_padding_horizontal_mobile": 16,
+            "review_padding_vertical": 10,
+            "review_padding_vertical_mobile": 10,
+            "review_color": "#ffffff",
+            "review_bg_color": "#191919",
+            "review_border_color": "#191919",
+            "stars_color": "#f9f544",
+            "stars_bg_color": "rgba(0,0,0,0)",
+            "stars_bg_half_color": "rgba(0,0,0,0)"
+          }
+        },
+        "heading_yxXdeG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>DREI FRAUEN, EINE MISSION:<br/><strong>STÄDTE IN ABENTEUER VERWANDELN.</strong></h1>",
+            "heading_custom": true,
+            "heading_font": "red_hat_display_n8",
+            "heading_accent_font": "red_hat_display_n8",
+            "heading_size": 60,
+            "heading_size_mobile": 36,
+            "heading_advanced": true,
+            "heading_height": 130,
+            "heading_mt": 24,
+            "heading_mt_mobile": 16,
+            "heading_color": "#ffffff",
+            "heading_accent_color": "#f9f544"
+          }
+        },
+        "feature_FDiqqp": {
+          "type": "feature",
+          "settings": {
+            "icon": "feather",
+            "text": "2023: ERSTE PAPIER-RÄTSELKARTEN FÜR FREUNDE"
+          }
+        },
+        "feature_9Bjfix": {
+          "type": "feature",
+          "settings": {
+            "icon": "scallop_checkmark",
+            "text": "2024-2025: APP-ENTWICKLUNG & LAUNCH"
+          }
+        },
+        "feature_NBmEWm": {
+          "type": "feature",
+          "settings": {
+            "icon": "rocket",
+            "text": "2026: IN 11 STÄDTEN, 27 SPIELE & ÜBER 25.000 SPIELER"
+          }
+        }
+      },
+      "block_order": [
+        "review_4eUJCh",
+        "heading_yxXdeG",
+        "feature_FDiqqp",
+        "feature_9Bjfix",
+        "feature_NBmEWm"
+      ],
+      "name": "SS - Hero pro 💎",
+      "settings": {
+        "hero_height": "full_screen",
+        "hero_fixed_height": 600,
+        "hero_height_mobile": "",
+        "hero_fixed_height_mobile": 600,
+        "content_max_width": 50,
+        "enable_split_layout": false,
+        "content_align": "left",
+        "content_align_mobile": "left",
+        "content_vertical_align": "center",
+        "content_vertical_align_mobile": "center",
+        "features_advanced": false,
+        "features_mt": 20,
+        "features_mt_mobile": 20,
+        "features_gap": 24,
+        "features_gap_mobile": 12,
+        "feature_background": true,
+        "feature_bg_opacity": 1,
+        "feature_enable_blur": false,
+        "feature_radius": 6,
+        "feature_border_thickness": 0,
+        "feature_padding_horizontal": 12,
+        "feature_padding_horizontal_mobile": 12,
+        "feature_padding_vertical": 7,
+        "feature_padding_vertical_mobile": 6,
+        "feature_icon_size": 30,
+        "feature_icon_size_mobile": 26,
+        "feature_text_custom": false,
+        "feature_text_font": "red_hat_display_n8",
+        "feature_text_size": 16,
+        "feature_text_size_mobile": 14,
+        "feature_text_height": 150,
+        "feature_icon_color": "#f9f544",
+        "feature_text_color": "#ffffff",
+        "feature_bg_color": "#1c1c1c",
+        "feature_border_color": "#1c1c1c",
+        "layout_bg_type": "image",
+        "bg_image": "shopify://shop_images/IMG_7017.png",
+        "bg_video_url": "",
+        "bg_overlay": 0.8,
+        "bg_overlay_color": "#000000",
+        "background_style": "solid",
+        "background_color": "#121212",
+        "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 24,
+        "padding_bottom": 12,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "padding_right_none": false,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "6f80baa8-3644-43fc-87fd-203e791794bb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "UNSERE GESCHICHTE.",
+            "heading_size": "h1"
+          }
+        },
+        "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>„DAS MUSS DOCH BESSER GEHEN!“</strong> – DIESER SATZ VON RONJA AUF EINER ZIEMLICH LANGWEILIGEN STADTFÜHRUNG IN BARCELONA 2023 HAT ALLES VERÄNDERT.</p><p>WIR KENNEN UNS SEIT DER SCHULZEIT UND SIND EIGENTLICH GRUNDVERSCHIEDEN. ABER WIR WAREN UNS EINIG: WIR BRAUCHEN ENDLICH COOLERE FREIZEITAKTIVITÄTEN IN DEN STÄDTEN! NOCH AM SELBEN ABEND SASSEN WIR IM JUNI 2023 IN EINER KNEIPE UND HABEN DIE ERSTEN STADTRÄTSEL AUF BIERDECKEL GEKRITZELT.</p><p>AUS AUSGEDRUCKTEN RÄTSELN IN BRIEFUMSCHLÄGEN FÜR FREUNDE WURDE SCHNELL EIN ECHTES HERZENSPROJEKT. UNSERE ALLERERSTE APP-VERSION HABEN WIR MIT GEFÜHLT NULL PLAN, ABER TONNENWEISE KOFFEIN UND LEIDENSCHAFT ZUSAMMENGESCHUSTERT.</p><p>DREI JAHRE SPÄTER FLIEGEN WIR FAST WEG VOR STOLZ: ÜBER 25.000 SPIELER IN MEHR ALS 11 STÄDTEN SIND SCHON MIT UNS AUF TOUR GEWESEN. DANKE AN UNSERE GENIALE COMMUNITY – IHR TREIBT UNS AN, JEDEN TAG NOCH BESSERE ABENTEUER ZU ENTWICKELN!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-heading-1",
+        "template--20347558494550__6f80baa8-3644-43fc-87fd-203e791794bb-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "ss_hero_pro_story_button": {
+      "type": "ss-hero-pro",
+      "blocks": {
+        "button_story_cta": {
+          "type": "button",
+          "settings": {
+            "button": "ZU DEN GAMES",
+            "url": "shopify://collections",
+            "open_in_new_tab": false,
+            "game_filter": "",
+            "button_style": "outline",
+            "button_custom": true,
+            "button_font": "red_hat_display_n8",
+            "button_size": 14,
+            "button_size_mobile": 14,
+            "button_advanced": false,
+            "button_height": 100,
+            "button_padding_horizontal": 24,
+            "button_padding_horizontal_mobile": 20,
+            "button_padding_vertical": 12,
+            "button_padding_vertical_mobile": 12,
+            "button_radius": 6,
+            "button_border_thickness": 1,
+            "button_mt": 0,
+            "button_mt_mobile": 0,
+            "button_custom_styling": false,
+            "button_full_width_mobile": false,
+            "button_color": "#191919",
+            "button_hover_color": "#f9f544",
+            "button_bg_color": "#f9f544",
+            "button_bg_hover_color": "#2d2d2d",
+            "button_border_color": "#f9f544",
+            "button_border_hover_color": "#f9f544",
+            "button_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "button_story_cta"
+      ],
+      "name": "SS - Hero pro 💎",
+      "settings": {
+        "hero_height": "auto",
+        "hero_fixed_height": 600,
+        "hero_height_mobile": "",
+        "hero_fixed_height_mobile": 600,
+        "content_max_width": 72,
+        "enable_split_layout": false,
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "content_vertical_align": "center",
+        "content_vertical_align_mobile": "center",
+        "features_advanced": false,
+        "features_mt": 20,
+        "features_mt_mobile": 20,
+        "features_gap": 24,
+        "features_gap_mobile": 12,
+        "feature_background": true,
+        "feature_bg_opacity": 1,
+        "feature_enable_blur": false,
+        "feature_radius": 6,
+        "feature_border_thickness": 0,
+        "feature_padding_horizontal": 12,
+        "feature_padding_horizontal_mobile": 12,
+        "feature_padding_vertical": 7,
+        "feature_padding_vertical_mobile": 6,
+        "feature_icon_size": 30,
+        "feature_icon_size_mobile": 26,
+        "feature_text_custom": false,
+        "feature_text_font": "red_hat_display_n8",
+        "feature_text_size": 16,
+        "feature_text_size_mobile": 14,
+        "feature_text_height": 150,
+        "feature_icon_color": "#f9f544",
+        "feature_text_color": "#ffffff",
+        "feature_bg_color": "#1c1c1c",
+        "feature_border_color": "#1c1c1c",
+        "layout_bg_type": "color",
+        "bg_video_url": "",
+        "bg_overlay": 0.2,
+        "bg_overlay_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#191919",
+        "background_gradient": "radial-gradient(rgba(30, 30, 36, 1), rgba(5, 5, 5, 1) 100%)",
+        "border_color": "#191919",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "padding_right_none": false,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "multicolumn_HRPitB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_a4RhHV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Facetune_13-01-2026-14-25-46.jpg",
+            "caption": "",
+            "title": "Lisa",
+            "text": "<p>Die Visionärin von Escape This!</p><p>Lisa ist spezialisiert auf Unternehmensentwicklung und plant das Heute, sowie Morgen. </p>",
+            "link_label": "",
+            "link": "",
+            "button_style": "link"
+          }
+        },
+        "column_HpibrH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2024-01-09-19-14-36.jpg",
+            "caption": "",
+            "title": "Kim",
+            "text": "<p>Das Zahlengenie von Escape This! Kim beschäftigt sich leidenschaftlich gerne mit dem Thema Finanzen und behält außerdem das Rechtliche im Blick.</p>",
+            "link_label": "",
+            "link": "",
+            "button_style": "link"
+          }
+        },
+        "column_97Pfgy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Digitaler_Outdoor_Escape_Room_Service.jpg",
+            "caption": "",
+            "title": "Ronja",
+            "text": "<p>Der Kreativkopf von Escape This!. Ronja ist unsere kreative Seele, welche nicht nur absoluter Profi im Marketing ist, sondern auch viel Spaß und Dynamik mitbringt, um dich zu begeistern.</p>",
+            "link_label": "",
+            "link": "",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "column_a4RhHV",
+        "column_HpibrH",
+        "column_97Pfgy"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Die Köpfe hinter den Rätseln.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "vertical_center_columns": false,
+        "background_style": "primary",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
+      "type": "newsletter",
+      "blocks": {
+        "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "10% Newsletter-Rabatt",
+            "heading_size": "h1"
+          }
+        },
+        "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>Jetzt anmelden & 10% auf dein erstes Abenteuer sparen! </strong>Erfahre als Erster von neuen Games, Events und Aktionen aus unserer Adventurewerkstatt. </p>"
+          }
+        },
+        "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-heading-1",
+        "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-paragraph-1",
+        "template--20232998879574__bab84565-f8be-4cbc-a4c8-bdfff3d3f302-email_form-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-c830f276-9546-4455-aeac-0933ad1dce39",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "psb_stats_stats_01_xTWcad": {
+      "type": "psb-stats-stats-01",
+      "blocks": {
+        "stats_YhgYYJ": {
+          "type": "stats",
+          "settings": {
+            "number": "11",
+            "heading": "<p>Städte</p>",
+            "prefix": "",
+            "suffix": "+"
+          }
+        },
+        "stats_tjq4ep": {
+          "type": "stats",
+          "settings": {
+            "number": "25000",
+            "heading": "<p>Spieler</p>",
+            "prefix": "",
+            "suffix": "+"
+          }
+        },
+        "stats_YpYUiW": {
+          "type": "stats",
+          "settings": {
+            "number": "100",
+            "heading": "<p>Team Events</p>",
+            "prefix": "",
+            "suffix": "+"
+          }
+        },
+        "stats_nT4YHy": {
+          "type": "stats",
+          "settings": {
+            "number": "365",
+            "heading": "<p>Tage Spielspaß</p>",
+            "prefix": "",
+            "suffix": ""
+          }
+        }
+      },
+      "block_order": [
+        "stats_YhgYYJ",
+        "stats_tjq4ep",
+        "stats_YpYUiW",
+        "stats_nT4YHy"
+      ],
+      "name": "⚡︎PSB: Stats 01",
+      "settings": {
+        "container_width": "psb-container",
+        "inherit_fonts": false,
+        "background_color": "#191919",
+        "number_color": "#f9f544",
+        "heading_color": "#ffffff",
+        "divider_color": "#1f1f1f",
+        "number_font": "red_hat_display_n8",
+        "heading_font": "red_hat_display_n4",
+        "number_font_size_desktop": 70,
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "number_font_size_mobile": 58,
+        "section_padding_top_mobile": 100,
+        "section_padding_bottom_mobile": 100
+      }
+    },
+    "ss_cta_app_1_games": {
+      "type": "ss-cta-app-1",
+      "blocks": {
+        "caption_ctaApp1": {
+          "type": "caption",
+          "settings": {
+            "caption": "JETZT LOSSPIELEN"
+          }
+        },
+        "heading_ctaApp1": {
+          "type": "heading",
+          "settings": {
+            "heading": "BEREIT FÜR DEIN ABENTEUER?"
+          }
+        },
+        "text_ctaApp1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WÄHLE DEIN SPIEL UND STARTE DEIN NÄCHSTES ESCAPE GAME — DIREKT IN DEINER STADT.</p>"
+          }
+        },
+        "button_ctaApp1": {
+          "type": "button",
+          "settings": {
+            "label": "SPIEL WÄHLEN",
+            "link": "shopify://pages/stadte"
+          }
+        },
+        "image_ctaApp1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Escape-This-App-Einblick.svg"
+          }
+        }
+      },
+      "block_order": [
+        "caption_ctaApp1",
+        "heading_ctaApp1",
+        "text_ctaApp1",
+        "button_ctaApp1",
+        "image_ctaApp1"
+      ],
+      "name": "SS - CTA App #1",
+      "settings": {
+        "background_color": "#191919",
+        "background_gradient": "",
+        "border_color": "#191919",
+        "image_radius": 5,
+        "button_font": "red_hat_display_n8",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "border_thickness": 0,
+        "section_radius": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_hero_pro_XYTDai",
+    "6f80baa8-3644-43fc-87fd-203e791794bb",
+    "ss_hero_pro_story_button",
+    "multicolumn_HRPitB",
+    "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
+    "psb_stats_stats_01_xTWcad",
+    "ss_cta_app_1_games"
+  ]
 }
