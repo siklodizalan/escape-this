@@ -15,7 +15,7 @@
         "heading_col_h1": {
           "type": "heading",
           "settings": {
-            "heading": "<h1>DEIN NÄCHSTES ABENTEUER WARTET</h1>",
+            "heading": "<h1>{{ collection.metafields.custom.hero.value.title.value }}</h1>",
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -32,7 +32,7 @@
         "text_col_t1": {
           "type": "text",
           "settings": {
-            "text": "<p>SICHERE DIR JETZT DEIN TICKET UND ERLEBE SPANNENDE RÄTSEL MIT DEINEM TEAM.</p>",
+            "text": "<p>{{ collection.metafields.custom.hero.value.description.value }}</p>",
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -103,7 +103,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
-        "bg_image": "shopify://shop_images/20240422_080956000_iOS_1.jpg",
+        "bg_image": "{{ collection.metafields.custom.hero.value.image.value }}",
         "bg_video_url": "",
         "bg_overlay": 0.7,
         "bg_overlay_color": "#000000",
@@ -200,7 +200,7 @@
         "caption_col_fc1": {
           "type": "caption",
           "settings": {
-            "caption": "<h3>DEINE GAMES</h3>",
+            "caption": "<h3>{{ collection.metafields.custom.headline_above_the_games.value }}</h3>",
             "caption_custom": true,
             "caption_font": "red_hat_display_n7",
             "caption_size": 20,
@@ -225,7 +225,7 @@
         "heading_col_fc1": {
           "type": "heading",
           "settings": {
-            "heading": "<p>BIST DU BEREIT FÜR DEIN ABENTEUER?</p>",
+            "heading": "<p>{{ collection.metafields.custom.subtext_above_the_games.value }}</p>",
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",

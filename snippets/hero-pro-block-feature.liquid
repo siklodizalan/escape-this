@@ -11,7 +11,11 @@
   - loading_attribute: {String} 'lazy' or 'eager'
 
   The literal token "[[product_count]]" inside block.settings.text is
-  replaced with the current collection's product count (blank on non-collection pages).
+  replaced with the count of unique products in the collection (blank on
+  non-collection pages). Products whose title only differs by a "|"-separated
+  location suffix (e.g. "The Lucky Killer | Heidelberg" vs "The Lucky Killer |
+  Mainz") are counted once, since they're the same game offered at different
+  venues.
   Written without {{ }} so Shopify's schema validator doesn't mistake it for
   a Dynamic Source, which only allows a fixed whitelist of paths.
 
@@ -30,7 +34,17 @@
     </div>
   {% endif %}
   {% if block.settings.text != blank %}
-    {% assign feature_text = block.settings.text | replace: '[[product_count]]', collection.products_count %}
+    {% assign product_count = '' %}
+    {% if collection.products_count %}
+      {% assign base_titles = '' %}
+      {% for product in collection.products %}
+        {% assign base_title = product.title | split: '|' | first | strip %}
+        {% assign base_titles = base_titles | append: base_title | append: '||' %}
+      {% endfor %}
+      {% assign unique_titles = base_titles | split: '||' | uniq %}
+      {% assign product_count = unique_titles.size %}
+    {% endif %}
+    {% assign feature_text = block.settings.text | replace: '[[product_count]]', product_count %}
     <p class="hero-feature-text-{{ section_id }}">{{ feature_text }}</p>
   {% endif %}
 </div>
