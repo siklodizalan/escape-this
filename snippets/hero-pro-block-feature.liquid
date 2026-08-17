@@ -23,11 +23,17 @@
   {% render 'hero-pro-block-feature', block: block, section_id: section.id, content_width: content_width, loading_attribute: loading_attribute %}
 {% endcomment %}
 <div class="hero-feature-{{ block.id }} hero-feature-{{ section_id }}">
-  {% if block.settings.custom_icon != blank or block.settings.icon != "none" %}
+  {% liquid
+    assign icon = block.settings.icon
+    if block.settings.icon_metafield != blank
+      assign icon = block.settings.icon_metafield
+    endif
+  %}
+  {% if block.settings.custom_icon != blank or icon != "none" %}
     <div class="hero-feature-icon-{{ section_id }}">
       {% render 'hero-pro-icon',
         custom_icon: block.settings.custom_icon,
-        icon: block.settings.icon,
+        icon: icon,
         content_width: content_width,
         loading_attribute: loading_attribute
       %}

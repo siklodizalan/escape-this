@@ -593,7 +593,7 @@ For inquiries or permissions, contact daniel@section.store
                   <div class="hero-buttons-{{ section.id }}">
                 {% endunless %}
 
-                {% render 'hero-pro-block-button', block: block %}
+                {% render 'hero-pro-block-button', block: block, section_id: section.id %}
 
                 {% assign button_open = true %}
 
@@ -1827,6 +1827,13 @@ For inquiries or permissions, contact daniel@section.store
             "visible_if": "{{ block.settings.game_filter == blank }}"
           },
           {
+            "type": "text",
+            "id": "scroll_to_section",
+            "label": "Scroll to section (advanced)",
+            "info": "Enter the target section's JSON key (e.g. ss_logo_cloud_2_gHbDMW) to smooth-scroll to it instead of using the Button link above. Only works for a section on the same page.",
+            "visible_if": "{{ block.settings.game_filter == blank }}"
+          },
+          {
             "type": "checkbox",
             "id": "open_in_new_tab",
             "label": "Open link in new tab",
@@ -2328,9 +2335,15 @@ For inquiries or permissions, contact daniel@section.store
           },
           {
             "type": "text",
+            "label": "Icon (metafield override)",
+            "id": "icon_metafield",
+            "info": "Advanced: bind this feature's icon to a metafield value. Leave blank to use the Icon dropdown above."
+          },
+          {
+            "type": "text",
             "label": "Text",
             "id": "text",
-            "default": "Feature text"            
+            "default": "Feature text"
           }
         ]
       },

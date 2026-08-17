@@ -199,11 +199,11 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "text_AmLgFd": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<strong>Das perfekte Escape-Abenteuer wartet auf dich! Entdecke deine Stadt und löse dabei knifflige Rätsel.</strong>",
             "text_style": "subtitle"
@@ -211,6 +211,7 @@
         },
         "text_fD7yGU": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Anbieter: Escape This! GmbH | Kranichstraße 9,75203 Königsbach-Stein, Germany |info@escape-this.com",
             "text_style": "body"
@@ -388,6 +389,7 @@
           "type": "text",
           "settings": {
             "text": "<p>{{ product.metafields.custom.section.value.description.value }}</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -776,7 +778,8 @@
         "text_fmTagT1": {
           "type": "text",
           "settings": {
-            "text": "<p>WIR ZEIGEN DIR AN WAS DU DENKEN MUSST, DASS DU VORBEREITET IN DEIN SPIEL STARTEN KANNST.</p>",
+            "text": "<p>Wir zeigen dir an was du denken musst, dass du vorbereitet in dein spiel starten kannst.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,

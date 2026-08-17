@@ -50,14 +50,24 @@
           "type": "feature",
           "settings": {
             "icon": "controller",
-            "text": "4 BARS PRO TOUR"
+            "icon_metafield": "{{ collection.metafields.custom.feature_1.value.icon.value }}",
+            "text": "{{ collection.metafields.custom.feature_1.value.text.value }}"
           }
         },
         "feature_col_f2": {
           "type": "feature",
           "settings": {
-            "icon": "family",
-            "text": "AB 16 JAHREN EMPFOHLEN"
+            "icon": "none",
+            "icon_metafield": "{{ collection.metafields.custom.feature_2.value.icon.value }}",
+            "text": "{{ collection.metafields.custom.feature_2.value.text.value }}"
+          }
+        },
+        "feature_col_f3": {
+          "type": "feature",
+          "settings": {
+            "icon": "none",
+            "icon_metafield": "{{ collection.metafields.custom.feature_3.value.icon.value }}",
+            "text": "{{ collection.metafields.custom.feature_3.value.text.value }}"
           }
         }
       },
@@ -65,7 +75,8 @@
         "heading_col_h1",
         "text_col_t1",
         "feature_col_f1",
-        "feature_col_f2"
+        "feature_col_f2",
+        "feature_col_f3"
       ],
       "name": "SS - Hero pro 💎",
       "settings": {

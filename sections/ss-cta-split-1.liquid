@@ -110,7 +110,6 @@
     background-color: {{ card_bg_color }};
     border-radius: {{ card_radius }}px;
     padding: {{ card_padding_mobile }}px;
-    text-transform: uppercase;
   }
 
   .cta-split-buttons-{{ section.id }} {
@@ -327,11 +326,17 @@
               {% endunless %}
 
               <div class="cta-split-feature-{{ section.id }}" {{ block.shopify_attributes }}>
-                {% if block.settings.custom_icon != blank or block.settings.icon != "none" %}
+                {% liquid
+                  assign feature_icon = block.settings.icon
+                  if block.settings.icon_metafield != blank
+                    assign feature_icon = block.settings.icon_metafield
+                  endif
+                %}
+                {% if block.settings.custom_icon != blank or feature_icon != "none" %}
                   <div class="cta-split-feature-icon-{{ section.id }}">
                     {% render 'hero-pro-icon',
                       custom_icon: block.settings.custom_icon,
-                      icon: block.settings.icon,
+                      icon: feature_icon,
                       content_width: 1200,
                       loading_attribute: 'lazy'
                     %}
@@ -357,7 +362,7 @@
         {% if button_blocks.size > 0 %}
           <div class="cta-split-buttons-{{ section.id }}">
             {% for block in button_blocks %}
-              {% render 'hero-pro-block-button', block: block %}
+              {% render 'hero-pro-block-button', block: block, section_id: section.id %}
             {% endfor %}
           </div>
         {% endif %}
@@ -877,6 +882,7 @@
         "limit": 1,
         "settings": [
           { "type": "richtext", "id": "heading", "label": "Heading", "default": "<h2>Heading</h2>" },
+          { "type": "checkbox", "id": "heading_uppercase", "label": "Uppercase text", "default": true },
           { "type": "checkbox", "id": "heading_custom", "label": "Use custom font", "default": true },
           { "type": "font_picker", "id": "heading_font", "label": "Font family", "default": "red_hat_display_n8" },
           { "type": "font_picker", "id": "heading_accent_font", "label": "Accent font family", "default": "red_hat_display_n8" },
@@ -896,6 +902,7 @@
         "limit": 1,
         "settings": [
           { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Text</p>" },
+          { "type": "checkbox", "id": "text_uppercase", "label": "Uppercase text", "default": true },
           { "type": "checkbox", "id": "text_custom", "label": "Use custom font", "default": true },
           { "type": "font_picker", "id": "text_font", "label": "Font family", "default": "red_hat_display_n4" },
           { "type": "range", "id": "text_size", "min": 10, "max": 40, "step": 1, "unit": "px", "label": "Font size", "default": 16 },
@@ -1154,6 +1161,12 @@
           },
           {
             "type": "text",
+            "label": "Icon (metafield override)",
+            "id": "icon_metafield",
+            "info": "Advanced: bind this feature's icon to a metafield value. Leave blank to use the Icon dropdown above."
+          },
+          {
+            "type": "text",
             "id": "text",
             "label": "Text",
             "default": "Feature"
@@ -1167,6 +1180,7 @@
         "settings": [
           { "type": "text", "id": "button", "label": "Label", "default": "Button" },
           { "type": "url", "id": "url", "label": "Link" },
+          { "type": "text", "id": "scroll_to_section", "label": "Scroll to section (advanced)", "info": "Enter the target section's JSON key (e.g. ss_logo_cloud_2_gHbDMW) to smooth-scroll to it instead of using the Link above. Only works for a section on the same page." },
           { "type": "checkbox", "id": "open_in_new_tab", "label": "Open in new tab", "default": false },
           {
             "type": "select",

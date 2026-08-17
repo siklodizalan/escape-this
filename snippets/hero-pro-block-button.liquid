@@ -9,11 +9,19 @@
   <button> that filters the games grid below (see ss-games-grid-1.liquid)
   instead of linking out.
 
+  When `block.settings.scroll_to_section` is set (to another section's JSON
+  key, e.g. "ss_logo_cloud_2_gHbDMW"), the button smooth-scrolls to that
+  section instead of following the Link setting. This is computed from
+  `section_id`'s own template/section-group prefix (the part before the
+  first "__"), since Shopify's rendered section wrapper id is
+  "shopify-section-<prefix>__<key>", not just the JSON key itself.
+
   Accepts:
   - block: {Object} the button block
+  - section_id: {String} section.id of the section rendering this block
 
   Usage:
-  {% render 'hero-pro-block-button', block: block %}
+  {% render 'hero-pro-block-button', block: block, section_id: section.id %}
 {% endcomment %}
 {% if block.settings.button != blank %}
   {% if block.settings.game_filter != blank %}
@@ -25,7 +33,7 @@
       style="background: none; border: 0; padding: 0; margin: 0; font: inherit; text-align: inherit; display: inline-block;"
     >
   {% else %}
-    <{% if block.settings.url != blank %}a href={{ block.settings.url }} {% if block.settings.open_in_new_tab %}target="_blank"{% endif %} {% else %}div{% endif %} class="hero-button-{{ block.id }}">
+    <{% if block.settings.url != blank or block.settings.scroll_to_section != blank %}a href="{{ block.settings.url }}" {% if block.settings.open_in_new_tab %}target="_blank"{% endif %} {% else %}div{% endif %} class="hero-button-{{ block.id }}">
   {% endif %}
     <p class="hero-button-inner-{{ block.id }}">
       {{ block.settings.button }}
@@ -40,6 +48,26 @@
   {% if block.settings.game_filter != blank %}
     </button>
   {% else %}
-    </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
+    </{% if block.settings.url != blank or block.settings.scroll_to_section != blank %}a{% else %}div{% endif %}>
   {% endif %}
+{% endif %}
+
+{% if block.settings.scroll_to_section != blank %}
+  {% liquid
+    assign id_parts = section_id | split: '__'
+    assign template_prefix = id_parts | first
+    assign scroll_target_id = template_prefix | append: '__' | append: block.settings.scroll_to_section
+  %}
+  <script>
+    (function () {
+      var button = document.querySelector('.hero-button-{{ block.id }}');
+      if (!button) return;
+      button.addEventListener('click', function (event) {
+        var target = document.getElementById('shopify-section-{{ scroll_target_id }}');
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+  </script>
 {% endif %}

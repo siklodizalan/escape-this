@@ -97,6 +97,7 @@
           "settings": {
             "button": "STADT WÄHLEN",
             "url": "",
+            "scroll_to_section": "ss_logo_cloud_2_gHbDMW",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",

@@ -120,6 +120,7 @@
                     "settings": {
                         "button": "SPIEL WÄHLEN",
                         "url": "",
+                        "scroll_to_section": "featured_collection_f9dV6U",
                         "open_in_new_tab": false,
                         "button_style": "outline",
                         "button_custom": true,
