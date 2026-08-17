@@ -40,6 +40,12 @@ For inquiries or permissions, contact daniel@section.store
   assign layout_bg_type = section.settings.layout_bg_type  
   
   assign bg_image = section.settings.bg_image
+  if section.settings.bg_image_use_metafield
+    assign metafield_image = product.metafields.custom.hero.value.image.value | default: collection.metafields.custom.hero.value.image.value
+    if metafield_image != blank
+      assign bg_image = metafield_image
+    endif
+  endif
   assign bg_image_mobile = section.settings.bg_image_mobile
   assign bg_video = section.settings.bg_video
   assign bg_video_url = section.settings.bg_video_url
@@ -1050,6 +1056,14 @@ For inquiries or permissions, contact daniel@section.store
           }
         ]
       }, 
+      {
+        "type": "checkbox",
+        "id": "bg_image_use_metafield",
+        "label": "Use hero metafield image",
+        "info": "Automatically uses the image from the product/collection's Hero metafield. Turn off to pick a custom image below.",
+        "default": false,
+        "visible_if": "{{ section.settings.layout_bg_type == 'image' }}"
+      },
       {
         "type": "image_picker",
         "id": "bg_image",

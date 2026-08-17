@@ -124,6 +124,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
+        "bg_image_use_metafield": true,
         "bg_video_url": "",
         "bg_overlay": 0.8,
         "bg_overlay_color": "#000000",

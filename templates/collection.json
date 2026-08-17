@@ -105,7 +105,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
-        "bg_image": "shopify://shop_images/20241213_185856464_iOS.jpg",
+        "bg_image_use_metafield": true,
         "bg_video_url": "",
         "bg_overlay": 0.7,
         "bg_overlay_color": "#000000",
