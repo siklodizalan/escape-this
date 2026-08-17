@@ -85,7 +85,6 @@
         "heading_RtWtVl",
         "text_FcCeGm"
       ],
-      "disabled": true,
       "name": "SS - Hero pro 💎",
       "settings": {
         "hero_height": "full_screen",
@@ -548,6 +547,7 @@
         "feature_bg_color": "#ffffff",
         "feature_border_color": "#ffffff",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",
