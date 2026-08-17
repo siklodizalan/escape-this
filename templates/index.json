@@ -20,6 +20,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -48,6 +49,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>DEINE STADT.<br/>DEIN ABENTEUER.<br/><strong>DEIN ESCAPE GAME.</strong></h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -65,6 +67,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE DEUTSCHLANDS STÄDTE AUF VÖLLIG NEUE ART — MIT RÄTSELN AUF DEINEM HANDY, DIE DICH DURCH VERBORGENE ECKEN FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 20,
@@ -100,7 +103,7 @@
         "button_6imGkz": {
           "type": "button",
           "settings": {
-            "button": "SPIEL WÄHLEN",
+            "button": "STADT WÄHLEN",
             "url": "shopify://pages/stadte",
             "open_in_new_tab": false,
             "game_filter": "",
@@ -297,6 +300,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -496,6 +500,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>ESCAPE GAMES IN GANZ DEUTSCHLAND<strong>.</strong></h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -807,6 +812,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>FOLLOW US ON SOCIALS</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -1447,6 +1453,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h3>WELCHES ABENTEUER WARTET AUF DICH<strong>?</strong></h3>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -1751,7 +1758,7 @@
           "type": "button",
           "settings": {
             "label": "SPIEL WÄHLEN",
-            "link": "shopify://pages/stadte"
+            "link": "shopify://collections"
           }
         },
         "image_ctaApp1": {
@@ -1821,6 +1828,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>BEREIT FÜR DEIN ABENTEUER<strong>?</strong></h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -1838,6 +1846,7 @@
           "type": "text",
           "settings": {
             "text": "<p>WÄHLE DEINE STADT UND DEIN SPIEL UND STARTE DEIN NÄCHSTES ESCAPE GAME — DIREKT IN DEINER STADT.</p>",
+            "text_uppercase": false,
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 18,

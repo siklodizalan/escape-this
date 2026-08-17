@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>ENTDECKE OUTDOOR ESCAPE GAMES<br/>IN FRANKFURT.</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE FRANKFURT WIE NIE ZUVOR – MIT RÄTSELN, DIE DICH DURCH VERBORGENE ECKEN DEINER STADT FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -219,6 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -418,6 +422,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>SPIELE IN FRANKFURT.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -435,6 +440,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ZWEI EINZIGARTIGE STORIES, EINE STADT VOLLER GEHEIMNISSE.<br/>WELCHES ABENTEUER WARTET AUF DICH?</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -688,40 +694,40 @@
     "ss_feedback_slider_1": {
       "type": "ss-feedback-slider-1",
       "blocks": {
-        "slide_1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/EscapeGame_Frankfurt.heic",
-            "video_url": "",
-            "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
-          }
-        },
         "slide_2": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Frankfurt11.heic",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
-            "author": "Name"
+            "quote": "Wir haben letzte Woche Cellblock X in Frankfurt gespielt und hatten einen wirklich schönen Familientag! Die Kinder hatten alle super viel Spaß aber auch für uns war es eine gelungene Abwechslung. Zwischendrin haben wir auch mal eine Pause gemacht und ein Eis gegessen.",
+            "author": "Kathrin"
+          }
+        },
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/EscapeGame_Frankfurt.heic",
+            "video_url": "",
+            "stars_count": 5,
+            "quote": "",
+            "author": ""
           }
         },
         "slide_3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Frankfurt_Escape_Welt.jpg",
+            "video": "shopify://files/videos/IMG_1544.MOV",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "",
+            "author": ""
           }
         }
       },
       "block_order": [
-        "slide_1",
         "slide_2",
+        "slide_1",
         "slide_3"
       ],
       "settings": {
@@ -936,6 +942,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/Frankfurt5.heic",
         "image_overlay_opacity": 0.5,
         "image_overlay_color": "#000000",
@@ -1174,6 +1181,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>In 3 Schritten zum Abenteuer.</h2>",
+            "heading_uppercase": false,
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_accent_font": "playfair_n4",
@@ -1598,6 +1606,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>Bereit für dein Abenteuer?</h2>",
+            "heading_uppercase": false,
             "heading_custom": false,
             "heading_font": "josefin_sans_n4",
             "heading_accent_font": "playfair_n4",
@@ -1615,6 +1624,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Wähle dein Spiel und starte dein nächstes Escape Game — direkt in deiner Stadt.</p>",
+            "text_uppercase": false,
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 18,

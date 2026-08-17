@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>ENTDECKE OUTDOOR ESCAPE GAMES<br/>IN HEIDELBERG.</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE HEIDELBERG WIE NIE ZUVOR – MIT RÄTSELN, DIE DICH DURCH VERBORGENE ECKEN DEINER STADT FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -219,6 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -418,6 +422,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>SPIELE IN HEIDELBERG.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -435,6 +440,7 @@
           "type": "text",
           "settings": {
             "text": "<p>SPANNENDE ESCAPE GAMES MITTEN IN HEIDELBERG<br/>– WELCHES ABENTEUER WARTET AUF DICH?</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -767,31 +773,31 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Stadtrallye.png",
+            "image": "shopify://shop_images/Heidelberg11.jpg",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "Heidelberg mal anders erlebt. Tolles Spiel!!!",
+            "author": "!F!R!A!N!K!"
           }
         },
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Schatzsuche.jpg",
+            "video": "shopify://files/videos/copy_B66EFC67-8EE2-401D-837F-EAA0A81688C1 2.mov",
             "video_url": "",
-            "stars_count": 5,
-            "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
-            "author": "Name"
+            "stars_count": 0,
+            "quote": "Mitarbeiterin Mia vom Heynlin Kindergarten in Königsbach-Stein während ihres Team Events",
+            "author": ""
           }
         },
         "slide_3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Escape_Welt.png",
+            "image": "shopify://shop_images/20250405_202324233_iOS.heic",
             "video_url": "",
-            "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "stars_count": 0,
+            "quote": "Bucht unser Gastro Escape Game und holt euch euren Belohnungsshot im Shooter Stars.",
+            "author": ""
           }
         }
       },
@@ -1012,6 +1018,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/IMG_7017.png",
         "image_overlay_opacity": 0.5,
         "image_overlay_color": "#000000",

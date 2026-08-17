@@ -16,6 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>{{ collection.metafields.custom.hero.value.title.value }}</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -33,6 +34,7 @@
           "type": "text",
           "settings": {
             "text": "<p>{{ collection.metafields.custom.hero.value.description.value }}</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -48,14 +50,14 @@
           "type": "feature",
           "settings": {
             "icon": "controller",
-            "text": "[[product_count]] SPIELE"
+            "text": "4 BARS PRO TOUR"
           }
         },
         "feature_col_f2": {
           "type": "feature",
           "settings": {
             "icon": "family",
-            "text": "AUCH SPIELE FÜR KINDER AB 6 JAHREN"
+            "text": "AB 16 JAHREN EMPFOHLEN"
           }
         }
       },
@@ -103,7 +105,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
-        "bg_image": "{{ collection.metafields.custom.hero.value.image.value }}",
+        "bg_image": "shopify://shop_images/20241213_185856464_iOS.jpg",
         "bg_video_url": "",
         "bg_overlay": 0.7,
         "bg_overlay_color": "#000000",
@@ -412,6 +414,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/Teambuilding.jpg",
         "image_overlay_opacity": 0,
         "image_overlay_color": "#000000",

@@ -160,11 +160,6 @@
         "disabled": false,
         "settings": {}
       },
-      "12196260394306439754": {
-        "type": "shopify://apps/adcell-tracking-remarketing/blocks/theme_extension/578397e0-3e42-4c27-add7-dfc15023b09b",
-        "disabled": false,
-        "settings": {}
-      },
       "13440586637131102011": {
         "type": "shopify://apps/tinycookie/blocks/cookie-embed/b65baef5-7248-4353-8fd9-b676240311dc",
         "disabled": false,
@@ -177,11 +172,6 @@
       "8698817763995941236": {
         "type": "shopify://apps/fordeer-sales-popup/blocks/popup/10ad4a26-87fb-43fd-8aa9-dd53e003ed28",
         "disabled": true,
-        "settings": {}
-      },
-      "6610233760104865948": {
-        "type": "shopify://apps/pushowl-brevo-email-push-sms/blocks/pushowl-app-embed-3d2ff2b5/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
-        "disabled": false,
         "settings": {}
       },
       "13762318497758424536": {
@@ -201,6 +191,21 @@
           "hover_effect": "opacity",
           "hide_outside_eu": false
         }
+      },
+      "6251270934270006384": {
+        "type": "shopify://apps/stape-conversion-tracking/blocks/gtm/7e13c847-7971-409d-8fe0-29ec14d5f048",
+        "disabled": false,
+        "settings": {}
+      },
+      "6610233760104865948": {
+        "type": "shopify://apps/brevo-pushowl/blocks/pushowl-app-embed-3d2ff2b5/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
+        "disabled": false,
+        "settings": {}
+      },
+      "12196260394306439754": {
+        "type": "shopify://apps/adcell-tracking-remarketing/blocks/theme_extension/578397e0-3e42-4c27-add7-dfc15023b09b",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {

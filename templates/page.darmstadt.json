@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>ENTDECKE OUTDOOR ESCAPE GAMES<br/>IN DARMSTADT.</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE DARMSTADT WIE NIE ZUVOR – MIT RÄTSELN, DIE DICH DURCH VERBORGENE ECKEN DEINER STADT FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -128,6 +131,7 @@
       "settings": {
         "hero_height": "fixed_height",
         "hero_fixed_height": 700,
+        "hero_height_mobile": "",
         "hero_fixed_height_mobile": 500,
         "content_max_width": 50,
         "enable_split_layout": false,
@@ -218,6 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -240,6 +245,7 @@
       "settings": {
         "hero_height": "fixed_height",
         "hero_fixed_height": 200,
+        "hero_height_mobile": "",
         "hero_fixed_height_mobile": 200,
         "content_max_width": 50,
         "enable_split_layout": false,
@@ -416,6 +422,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>SPIELE IN DARMSTADT.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -433,6 +440,7 @@
           "type": "text",
           "settings": {
             "text": "<p>SPANNENDE ESCAPE GAMES MITTEN IN DARMSTADT<br/>– WELCHES ABENTEUER WARTET AUF DICH?</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -504,6 +512,7 @@
       "settings": {
         "hero_height": "auto",
         "hero_fixed_height": 600,
+        "hero_height_mobile": "",
         "hero_fixed_height_mobile": 600,
         "content_max_width": 50,
         "enable_split_layout": false,
@@ -691,18 +700,8 @@
             "image": "shopify://shop_images/Escape_Room_in_der_Naehe_178d8c01-1194-492a-86cf-2a374e30c015.jpg",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
-          }
-        },
-        "slide_2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Exit_Spiele_Darmstadt.jpg",
-            "video_url": "",
-            "stars_count": 5,
-            "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
-            "author": "Name"
+            "quote": "Meine Frau und ich haben den Gefängnisausbruch in Darmstadt gespielt. Wir hatten viel Spaß und spielen gerne wieder. Super App",
+            "author": "DieterJabo"
           }
         },
         "slide_3": {
@@ -711,14 +710,13 @@
             "image": "shopify://shop_images/Moegliche_Aktivitaeten_Darmstadt.jpg",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "",
+            "author": ""
           }
         }
       },
       "block_order": [
         "slide_1",
-        "slide_2",
         "slide_3"
       ],
       "settings": {
@@ -933,6 +931,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/PHOTO-2024-08-13-12-05-23.jpg",
         "image_overlay_opacity": 0.5,
         "image_overlay_color": "#000000",

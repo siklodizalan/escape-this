@@ -85,6 +85,7 @@
         "heading_RtWtVl",
         "text_FcCeGm"
       ],
+      "disabled": true,
       "name": "SS - Hero pro 💎",
       "settings": {
         "hero_height": "full_screen",
@@ -123,7 +124,6 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
-        "bg_image": "{{ product.metafields.custom.hero.value.image.value }}",
         "bg_video_url": "",
         "bg_overlay": 0.8,
         "bg_overlay_color": "#000000",
@@ -205,7 +205,7 @@
         "text_AmLgFd": {
           "type": "text",
           "settings": {
-            "text": "<strong>Das perfekte Outdoor-Abenteuer für die ganze Familie!</strong> Unsere App verwandelt eure Lieblingsstadt in ein interaktives Spielfeld. Ihr kommt an der frischen Luft in Bewegung, löst gemeinsam knifflige Games und lernt spielerisch, um die Ecke zu denken!",
+            "text": "<strong>Das perfekte Escape-Abenteuer wartet auf dich! Entdecke deine Stadt und löse dabei knifflige Rätsel.</strong>",
             "text_style": "subtitle"
           }
         },
@@ -406,7 +406,8 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
-        "image": "{{ product.metafields.custom.section.value.image.value }}",
+        "show_section": "true",
+        "image": "shopify://shop_images/20240422_080424000_iOS_1.jpg",
         "image_overlay_opacity": 0,
         "image_overlay_color": "#000000",
         "image_position": "left",
@@ -489,6 +490,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -575,7 +577,7 @@
           "type": "step",
           "settings": {
             "title": "SPIEL WÄHLEN",
-            "text": "<p>Wähle zwischen Cellblock X und Rätsel der Tierwelt. Dein Ticket ist dann ganz flexibel ein ganzes Jahr gültig und ohne Zeitfenster spielbereit.</p>",
+            "text": "<p>Wähle das Game aus. Dein Ticket ist dann ganz flexibel ein ganzes Jahr gültig und ohne Zeitfenster spielbereit.</p>",
             "card_bg_color": "#1e1e1e",
             "card_border_color": "#1e1e1e"
           }
@@ -592,8 +594,8 @@
         "step_St3ps03": {
           "type": "step",
           "settings": {
-            "title": "Düsseldorf erkunden",
-            "text": "<p>Folge den Hinweisen, löse Rätsel an echten Orten und entdecke Düsseldorf auf völlig neue Art.</p>",
+            "title": "Stadt erkunden",
+            "text": "<p>Folge den Hinweisen, löse Rätsel an echten Orten und entdecke deine Stadt auf völlig neue Art.</p>",
             "card_bg_color": "#1e1e1e",
             "card_border_color": "#1e1e1e"
           }

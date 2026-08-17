@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>ENTDECKE OUTDOOR ESCAPE GAMES<br/>IN HEILBRONN.</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE HEILBRONN WIE NIE ZUVOR – MIT RÄTSELN, DIE DICH DURCH VERBORGENE ECKEN DEINER STADT FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -219,6 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -418,6 +422,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>SPIELE IN HEILBRONN.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -435,6 +440,7 @@
           "type": "text",
           "settings": {
             "text": "<p>SPANNENDE ESCAPE GAMES MITTEN IN HEILBRONN<br/>– WELCHES ABENTEUER WARTET AUF DICH?</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -770,35 +776,46 @@
             "image": "shopify://shop_images/20240829_162506363_iOS.heic",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "(...) Besonders gut gefällt mir, die Kombination aus spannenden Rätseln und der Erkundung der Umgebung. Man lernt die Stadt noch mal von einer ganz neuen Seite kennen und wird auf Details aufmerksam, an denen man sonst einfach vorbeilaufen würde. Die Rätsel sind kreativ und der Schwierigkeitsgrad ist sehr angenehm. Nicht zu leicht und manchmal hat man auch zu kämpfen. (...)",
+            "author": "Paula S."
           }
         },
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Escape_This_Hamburg.png",
+            "image": "shopify://shop_images/20250425_190133926_iOS.heic",
             "video_url": "",
-            "stars_count": 5,
-            "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
-            "author": "Name"
+            "stars_count": 0,
+            "quote": "Die Sitt Wein Bar in Heilbronn freut sich auf euch. Bucht das Gastro Escape Game in Heilbronn und holt euch eure Überraschung ab.",
+            "author": ""
           }
         },
         "slide_3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/20240829_164820814_iOS.heic",
+            "video": "shopify://files/videos/weihnachtsmarkt-escape-game-heilbronn.MOV",
             "video_url": "",
-            "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "stars_count": 0,
+            "quote": "Das Weihnachtsmarkt Special Game in Heilbronn",
+            "author": ""
+          }
+        },
+        "slide_RgipMR": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/Heilbronn-Escape-This-Trip.MOV",
+            "video_url": "",
+            "stars_count": 0,
+            "quote": "\"Escape This war eine super Beschäftigung für mein letztes Wochenende, um die Sonnenstrahlen zu genießen, draußen unterwegs zu sein und viele Schritte zu sammeln.\"",
+            "author": ""
           }
         }
       },
       "block_order": [
         "slide_1",
         "slide_2",
-        "slide_3"
+        "slide_3",
+        "slide_RgipMR"
       ],
       "settings": {
         "caption": "KUNDEN-INSIGHTS",
@@ -1012,6 +1029,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/20240829_162506363_iOS.heic",
         "image_overlay_opacity": 0.5,
         "image_overlay_color": "#000000",

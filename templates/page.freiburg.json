@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>ENTDECKE OUTDOOR ESCAPE GAMES<br/>IN FREIBURG.</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE FREIBURG WIE NIE ZUVOR – MIT RÄTSELN, DIE DICH DURCH VERBORGENE ECKEN DEINER STADT FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -219,6 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -418,6 +422,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>SPIELE IN FREIBURG.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -435,6 +440,7 @@
           "type": "text",
           "settings": {
             "text": "<p>SPANNENDE ESCAPE GAMES MITTEN IN FREIBURG<br/>– WELCHES ABENTEUER WARTET AUF DICH?</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -770,28 +776,28 @@
             "image": "shopify://shop_images/Escape_This__Digitale_Schnitzeljagd_Escape.jpg",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "Die neue Bar-Tour in Freiburg ist echt nice. In den Bars sind wir immer wieder unterwegs, aber das Escape Game zu spielen und dabei von Bar zu Bar unterwegs zu sein, war echt mal ganz cool. [...].",
+            "author": "Schorsches"
           }
         },
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/CellblockX-Outdoor.jpg",
+            "image": "shopify://shop_images/20250405_202324233_iOS.heic",
             "video_url": "",
-            "stars_count": 5,
-            "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
-            "author": "Name"
+            "stars_count": 0,
+            "quote": "Im Shooter Stars Freiburg gibt es den Signature Shot als Belohnung für die Spieler",
+            "author": ""
           }
         },
         "slide_3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Escape_Welt.png",
+            "video": "shopify://files/videos/City Game Freiburg .MOV",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "",
+            "author": ""
           }
         }
       },
@@ -1012,6 +1018,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/Escape_This__Digitale_Schnitzeljagd_Escape.jpg",
         "image_overlay_opacity": 0.5,
         "image_overlay_color": "#000000",

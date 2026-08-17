@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>4.8 STERNE</strong> | 25.000+ SPIELER</p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>ENTDECKE OUTDOOR ESCAPE GAMES<br/>IN KARLSRUHE.</h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>ERKUNDE KARLSRUHE WIE NIE ZUVOR – MIT RÄTSELN, DIE DICH DURCH VERBORGENE ECKEN DEINER STADT FÜHREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 18,
@@ -219,6 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -418,6 +422,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>SPIELE IN KARLSRUHE.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -435,6 +440,7 @@
           "type": "text",
           "settings": {
             "text": "<p>SPANNENDE ESCAPE GAMES MITTEN IN KARLSRUHE<br/>– WELCHES ABENTEUER WARTET AUF DICH?</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -691,21 +697,21 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Stadtrallye.png",
+            "image": "shopify://shop_images/Kalsruhe1.jpg",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "Habe das Spiel mit der Familie in Karlsruhe gespielt und wir hatten super viel Spaß die Stadt auf eine ganz neue Weise zu erleben, obwohl wir schon ewig hier zu Hause sind. Auch unsere Teenies waren begeistert. Wir werden das wiederholen... vielleicht in einer anderen Stadt.Kann ich nur weiterempfehlen!",
+            "author": "Annegarb"
           }
         },
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Schatzsuche.jpg",
+            "video": "shopify://files/videos/karlsruhe-spieleinblick.MOV",
             "video_url": "",
-            "stars_count": 5,
-            "quote": "Erinnert ihr euch an eure letzte Schnitzeljagd? Hier kommt das Upgrade...",
-            "author": "Name"
+            "stars_count": 0,
+            "quote": "",
+            "author": ""
           }
         },
         "slide_3": {
@@ -714,8 +720,8 @@
             "image": "shopify://shop_images/Escape_Welt.png",
             "video_url": "",
             "stars_count": 5,
-            "quote": "Wir hatten einen tollen Tag und möchten gerne morgen nochmal spiele.",
-            "author": "Nik & Tom"
+            "quote": "",
+            "author": ""
           }
         }
       },
@@ -936,6 +942,7 @@
       ],
       "name": "SS - CTA Split #1",
       "settings": {
+        "show_section": "true",
         "image": "shopify://shop_images/20260604_175411000_iOS.jpg",
         "image_overlay_opacity": 0.5,
         "image_overlay_color": "#000000",
