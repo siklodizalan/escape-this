@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>ÜBER UNS</strong></p>",
+            "review_uppercase": false,
             "review_custom": true,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>DREI FRAUEN, EINE MISSION:<br/><strong>STÄDTE IN ABENTEUER VERWANDELN.</strong></h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "feature",
           "settings": {
             "icon": "feather",
+            "icon_metafield": "",
             "text": "2023: ERSTE PAPIER-RÄTSELKARTEN FÜR FREUNDE"
           }
         },
@@ -80,6 +83,7 @@
           "type": "feature",
           "settings": {
             "icon": "scallop_checkmark",
+            "icon_metafield": "",
             "text": "2024-2025: APP-ENTWICKLUNG & LAUNCH"
           }
         },
@@ -87,6 +91,7 @@
           "type": "feature",
           "settings": {
             "icon": "rocket",
+            "icon_metafield": "",
             "text": "2026: IN 11 STÄDTEN, 27 SPIELE & ÜBER 25.000 SPIELER"
           }
         }
@@ -136,9 +141,10 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
-        "bg_image": "shopify://shop_images/IMG_7017.png",
+        "bg_image_use_metafield": false,
+        "bg_image": "shopify://shop_images/gruenderinnen-escape-this.jpg",
         "bg_video_url": "",
-        "bg_overlay": 0.8,
+        "bg_overlay": 0.6,
         "bg_overlay_color": "#000000",
         "background_style": "solid",
         "background_color": "#121212",
@@ -198,6 +204,7 @@
           "settings": {
             "button": "ZU DEN GAMES",
             "url": "shopify://collections",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",
@@ -268,6 +275,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",

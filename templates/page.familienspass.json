@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>FAMILIE</strong></p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>FAMILIENZEIT IST DIE <strong>SCHÖNSTE ZEIT.</strong></h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>WIR SCHAFFEN UNVERGESSLICHE MOMENTE FÜR GROSS UND KLEIN. GENIESST ALS FAMILIE EINE GEMEINSAME ZEIT VOLLER LACHEN, ENTDECKUNGEN, CHALLENGES UND TEAMARBEIT.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 20,
@@ -88,6 +91,7 @@
           "type": "feature",
           "settings": {
             "icon": "heart_hand",
+            "icon_metafield": "",
             "text": "FÜR KINDER AB 6 JAHREN"
           }
         },
@@ -95,6 +99,7 @@
           "type": "feature",
           "settings": {
             "icon": "leaf",
+            "icon_metafield": "",
             "text": "DRAUSSEN UNTERWEGS"
           }
         },
@@ -102,6 +107,7 @@
           "type": "feature",
           "settings": {
             "icon": "rocket",
+            "icon_metafield": "",
             "text": "FORDERNDER RÄTSELSPASS FÜR GROSS & KLEIN"
           }
         },
@@ -110,6 +116,7 @@
           "settings": {
             "button": "ZUM FAMILIENSPIEL",
             "url": "shopify://products/raetsel-der-tierwelt",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",
@@ -186,9 +193,10 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
+        "bg_image_use_metafield": false,
         "bg_image": "shopify://shop_images/Fav2.heic",
         "bg_video_url": "",
-        "bg_overlay": 0.5,
+        "bg_overlay": 0.6,
         "bg_overlay_color": "#121212",
         "background_style": "solid",
         "background_color": "#121212",
@@ -444,6 +452,7 @@
     },
     "image_banner_LReWwp": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/1.svg",
         "image_overlay_opacity": 0,
@@ -460,6 +469,7 @@
     },
     "image_banner_FiXhaB": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/2.1.svg",
         "image_overlay_opacity": 0,
@@ -476,6 +486,7 @@
     },
     "image_banner_Q6UVmM": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/3.svg",
         "image_overlay_opacity": 0,
@@ -492,6 +503,7 @@
     },
     "image_banner_chJNtH": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/4.svg",
         "image_overlay_opacity": 0,
@@ -508,6 +520,7 @@
     },
     "image_banner_f4wpee": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/5.svg",
         "image_overlay_opacity": 0,
@@ -522,40 +535,9 @@
         "show_text_below": true
       }
     },
-    "image_banner_7T4z9q": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/6.svg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "image_banner_tNTwJL": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/7.svg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
     "image_banner_3atwza": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/8.svg",
         "image_overlay_opacity": 0,
@@ -570,8 +552,43 @@
         "show_text_below": true
       }
     },
+    "image_banner_tNTwJL": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/7.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_7T4z9q": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/6.svg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "image_banner_cnqJNB": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/9.svg",
         "image_overlay_opacity": 0,
@@ -586,38 +603,242 @@
         "show_text_below": true
       }
     },
-    "1b607eaf-2e65-4bed-8691-1cd100408715": {
-      "type": "rich-text",
+    "ss_slider_7_jUN4RU": {
+      "type": "ss-slider-7",
       "blocks": {
-        "template--20347560395094__1b607eaf-2e65-4bed-8691-1cd100408715-button-1": {
-          "type": "button",
+        "card_DNLP7b": {
+          "type": "card",
           "settings": {
-            "button_label": "FAMILIENSPIEL ENTDECKEN",
-            "button_link": "shopify://products/raetsel-der-tierwelt",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "button_custom_styling": true,
-            "button_bg_color": "#f9f544",
-            "button_bg_hover_color": "#2d2d2d",
-            "button_text_color": "#191919",
-            "button_text_hover_color": "#f9f544",
-            "button_border_color": "#f9f544",
-            "button_radius": 6
+            "tag": "",
+            "heading": "<h3>FLEXIBLES SPIELERLEBNIS</h3>",
+            "text": "<p>Familienspaß, wann es dir passt! Wähle deine Stadt aus und löse das Ticket innerhalb eines Jahres ein - so passt unser Spiel perfekt in den Zeitplan jeder Familie.</p>",
+            "image": "shopify://shop_images/Schnapstour-Escapegame_Escape-This_d3feec2e-2f96-426b-9f37-a18b29a12ffd.jpg",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_B36Emb": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>SPIELERISCHE WISSENS-VERMITTLUNG</h3>",
+            "text": "<p>Durch Minispiele und Quizfragen fördert unser Spiel nicht nur Soft Skills, wie Teamfähigkeit, analytisches Denken und Zielorientierung, sondern stärkt auch die Allgemeinbildung. Ein Abenteuer, das die ganze Familie bewegt!</p>",
+            "image": "shopify://shop_images/Escape_Familienaktivitaet_Duesseldorf.heic",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_x4rK8E": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>SICHER, VERLÄSSLICH, UNKOMPLIZIERT</h3>",
+            "text": "<p>Bei Escape This! ist Sicherheit die Basis. Wir bieten ein verlässliches und sicheres Erlebnis, gewährleisten Datenschutz sowie keine externe Werbung. Wir schaffen ein einfaches Handling für unbeschwerten Familienspaß.</p>",
+            "image": "shopify://shop_images/raetsel-der-tierwelt_Familiengame.png",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_zPGhRY": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>DIGITALER KNOBELSPASS</h3>",
+            "text": "<p>Fordere deine Familie mit spannenden Challenges heraus. Eine Familienaktivität, die den Zusammenhalt stärkt und die reale mit der virtuellen Welt verbindet.</p>",
+            "image": "shopify://shop_images/Fav1.heic",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_RFMKjk": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>NERVENKITZEL FÜR JEDES ALTER</h3>",
+            "text": "<p>Von kleinen Detektiven bis zu erfahrenen Abenteurern: Escape This! fesselt die Welt der Jugendlichen, während spielerische Elemente die Jüngsten begeistern. Mit unseren altersgerechten Rätseln und verschiedenen Schwierigkeitsgraden findet sich Action für jedes Familienmitglied.</p>",
+            "image": "shopify://shop_images/20240608_091924756_iOS.heic",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_Bznz74": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>BEWEGUNG IM FREIEN</h3>",
+            "text": "<p>Escape This! bringt Familien nach draußen. Wir verbinden Spaß mit Bewegung im Freien  - ideal zum Auspowern!</p>",
+            "image": "shopify://shop_images/Fav1.heic",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_aVj6X7": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>EIN TICKET FÜR DIE GANZE FAMILIE</h3>",
+            "text": "<p>Kaufe dein erschwingliches Ticket mit Festpreis und spiele mit bis zu 8 Smartphones. Begleiter ohne eigenes Handy, wie Nachwuchs oder Vierbeiner, können somit natürlich kostenlos mit dabei sein!</p>",
+            "image": "shopify://shop_images/EscapeAbenteuer_Duesseldorf.heic",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_DUNhLt": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>FAMILIEN-FREUNDLICHE WEGE</h3>",
+            "text": "<p>Escape This! bietet familienfreundliche Wege in Innenstadtnähe - bequem erreichbar mit öffentlichen Verkehrsmitteln oder dem eigenen Auto. Entdecke auf spielerische Art die schönen Orte deiner Stadt.</p>",
+            "image": "shopify://shop_images/IMG_1463.jpg",
+            "url": "",
+            "card_bg_color": "#FFFFFF",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
           }
         }
       },
       "block_order": [
-        "template--20347560395094__1b607eaf-2e65-4bed-8691-1cd100408715-button-1"
+        "card_DNLP7b",
+        "card_B36Emb",
+        "card_x4rK8E",
+        "card_zPGhRY",
+        "card_RFMKjk",
+        "card_Bznz74",
+        "card_aVj6X7",
+        "card_DUNhLt"
       ],
+      "name": "SS - Slider #7",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 52
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_mt": 24,
+        "slider_mt_mobile": 20,
+        "card_padding_top": 14,
+        "card_padding_top_mobile": 30,
+        "card_padding_bottom": 30,
+        "card_padding_bottom_mobile": 30,
+        "card_radius": 12,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_height": false,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "start",
+        "content_padding_horizontal": 30,
+        "content_padding_horizontal_mobile": 30,
+        "tag_custom": false,
+        "tag_font": "josefin_sans_n4",
+        "tag_size": 12,
+        "tag_size_mobile": 12,
+        "tag_height": 130,
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 28,
+        "heading_size_mobile": 28,
+        "heading_height": 130,
+        "heading_mt": 12,
+        "heading_mt_mobile": 12,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 17,
+        "text_size_mobile": 14,
+        "text_height": 130,
+        "text_mt": 20,
+        "text_mt_mobile": 20,
+        "image_mt": 20,
+        "image_mt_mobile": 20,
+        "image_radius": 12,
+        "image_border_thickness": 0,
+        "image_padding_horizontal": 30,
+        "image_padding_horizontal_mobile": 30,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "pagination_padding_vertical": 10,
+        "pagination_padding_vertical_mobile": 10,
+        "pagination_padding_horizontal": 10,
+        "pagination_padding_horizontal_mobile": 10,
+        "pagination_radius": 10,
+        "pagination_border_thickness": 0,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 16,
+        "pagination_size_mobile": 16,
+        "pagination_height": 130,
+        "pagination_show_desktop": true,
+        "pagination_show_mobile": true,
+        "arrow_size": 48,
+        "arrow_size_mobile": 48,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 1,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "color",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "pagination_bg_color": "#FFFFFF",
+        "pagination_border_color": "#000000",
+        "pagination_color": "#F9F544",
+        "arrow_color": "#F9F544",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#F8F8F8",
+        "arrow_bg_hover_color": "#FAFAFA",
+        "arrow_border_color": "#EAEAEA",
+        "arrow_border_hover_color": "#CBCBCB",
+        "background_color": "#191919",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
       }
     },
     "bab84565-f8be-4cbc-a4c8-bdfff3d3f302": {
@@ -735,6 +956,68 @@
         "section_padding_top_mobile": 50,
         "section_padding_bottom_mobile": 60
       }
+    },
+    "ss_cta_app_1_cVwFTP": {
+      "type": "ss-cta-app-1",
+      "blocks": {
+        "caption_QbTVdq": {
+          "type": "caption",
+          "settings": {
+            "caption": "JETZT LOSSPIELEN"
+          }
+        },
+        "heading_hYDVUB": {
+          "type": "heading",
+          "settings": {
+            "heading": "BEREIT FÜR DEIN ABENTEUER?"
+          }
+        },
+        "text_4PibYP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>plane deinen nächsten Familien-tag und  erlebt gemeinsam ein einzigartiges Abenteuer</p>"
+          }
+        },
+        "button_LQziRH": {
+          "type": "button",
+          "settings": {
+            "label": "FAMILIENSPIEL WÄHLEN",
+            "link": "shopify://products/raetsel-der-tierwelt"
+          }
+        },
+        "image_WahAGY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Escape-This-App-Einblick.svg"
+          }
+        }
+      },
+      "block_order": [
+        "caption_QbTVdq",
+        "heading_hYDVUB",
+        "text_4PibYP",
+        "button_LQziRH",
+        "image_WahAGY"
+      ],
+      "name": "SS - CTA App #1",
+      "settings": {
+        "background_color": "#1f1f21",
+        "background_gradient": "",
+        "border_color": "#1f1f21",
+        "image_radius": 5,
+        "button_font": "red_hat_display_n8",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "border_thickness": 0,
+        "section_radius": 0
+      }
     }
   },
   "order": [
@@ -747,12 +1030,13 @@
     "image_banner_Q6UVmM",
     "image_banner_chJNtH",
     "image_banner_f4wpee",
-    "image_banner_7T4z9q",
-    "image_banner_tNTwJL",
     "image_banner_3atwza",
+    "image_banner_tNTwJL",
+    "image_banner_7T4z9q",
     "image_banner_cnqJNB",
-    "1b607eaf-2e65-4bed-8691-1cd100408715",
+    "ss_slider_7_jUN4RU",
     "bab84565-f8be-4cbc-a4c8-bdfff3d3f302",
-    "psb_gallery_gallery_01_UVVzTH"
+    "psb_gallery_gallery_01_UVVzTH",
+    "ss_cta_app_1_cVwFTP"
   ]
 }

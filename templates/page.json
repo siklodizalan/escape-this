@@ -50,6 +50,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>SO EINFACH GEHT'S<strong>.</strong></h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -67,6 +68,7 @@
           "type": "text",
           "settings": {
             "text": "<p>HIER FINDEST DU ALLES WICHTIGE ÜR DEINEN PERFEKTEN ESCAPE THIS! TAG.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 20,
@@ -82,6 +84,7 @@
           "type": "feature",
           "settings": {
             "icon": "rocket",
+            "icon_metafield": "",
             "text": "IN 3 SCHRITTEN ZUM SPIEL"
           }
         },
@@ -89,6 +92,7 @@
           "type": "feature",
           "settings": {
             "icon": "tags",
+            "icon_metafield": "",
             "text": "TICKET DIREKT NACH WENIGEN MINUTEN"
           }
         },
@@ -96,6 +100,7 @@
           "type": "feature",
           "settings": {
             "icon": "gem_sparkle",
+            "icon_metafield": "",
             "text": "FLEXIBEL LOSSPIELEN OHNE FESTEN ZEITSLOT"
           }
         },
@@ -104,6 +109,7 @@
           "settings": {
             "button": "ZU DEN SPIELEN",
             "url": "shopify://collections",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",
@@ -180,6 +186,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
+        "bg_image_use_metafield": false,
         "bg_image": "shopify://shop_images/EscapeRoom_Hamburg.png",
         "bg_video_url": "",
         "bg_overlay": 0.8,
@@ -211,6 +218,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>ALLES WAS DU WISSEN MUSST.</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -266,6 +274,7 @@
         "feature_bg_color": "#ffffff",
         "feature_border_color": "#ffffff",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",
@@ -337,6 +346,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>IN 3 SCHRITTEN ZUM<br/>ABENTEUER</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -393,6 +403,7 @@
         "feature_bg_color": "#ffffff",
         "feature_border_color": "#ffffff",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",
@@ -638,7 +649,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Wie lange ist mein Ticket gültig?",
-            "answer": "<p>Dein Ticket ist vier Monate ab Kaufdatum gültig. Du brauchst kein festes Datum und keinen Zeitslot — spiel einfach, wann es dir passt.</p>"
+            "answer": "<p>Dein Ticket ist ein Jahr ab Kaufdatum gültig. Du brauchst kein festes Datum und keinen Zeitslot — spiel einfach, wann es dir passt.</p>"
           }
         },
         "faq_item_mBXGyq": {

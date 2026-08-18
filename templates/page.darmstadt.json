@@ -92,6 +92,7 @@
           "settings": {
             "button": "SPIEL WÄHLEN",
             "url": "shopify://collections/escape-games",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",
@@ -165,6 +166,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "image",
+        "bg_image_use_metafield": false,
         "bg_image": "shopify://shop_images/Aktivitaeten_Darmstadt.jpg",
         "bg_video_url": "",
         "bg_overlay": 0.8,
@@ -279,6 +281,7 @@
         "feature_bg_color": "#ffffff",
         "feature_border_color": "#ffffff",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",
@@ -456,6 +459,7 @@
           "type": "feature",
           "settings": {
             "icon": "clock",
+            "icon_metafield": "",
             "text": "2-3 STUNDEN SPIELSPASS"
           }
         },
@@ -463,6 +467,7 @@
           "type": "feature",
           "settings": {
             "icon": "person",
+            "icon_metafield": "",
             "text": "BIS ZU 8 SPIELER"
           }
         },
@@ -471,6 +476,7 @@
           "settings": {
             "button": "ALLE SPIELE",
             "url": "",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "all",
             "button_style": "non_outline",
@@ -546,6 +552,7 @@
         "feature_bg_color": "#1c1c1c",
         "feature_border_color": "#1c1c1c",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",
@@ -633,7 +640,7 @@
         "stats_aLzxhJ": {
           "type": "stats",
           "settings": {
-            "number": "500",
+            "number": "1500",
             "heading": "<p>Spieler in Darmstadt</p>",
             "prefix": "",
             "suffix": "+"
@@ -642,7 +649,7 @@
         "stats_iGPFpN": {
           "type": "stats",
           "settings": {
-            "number": "10",
+            "number": "5",
             "heading": "<p>Teamevents</p>",
             "prefix": "",
             "suffix": "+"
@@ -704,6 +711,16 @@
             "author": "DieterJabo"
           }
         },
+        "slide_UqVXgb": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/Darmstadt_City-Erklärvideo.MOV",
+            "video_url": "",
+            "stars_count": 5,
+            "quote": "",
+            "author": ""
+          }
+        },
         "slide_3": {
           "type": "slide",
           "settings": {
@@ -717,6 +734,7 @@
       },
       "block_order": [
         "slide_1",
+        "slide_UqVXgb",
         "slide_3"
       ],
       "settings": {
@@ -864,6 +882,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>FINDET IHR DIE LÖSUNG?</h2>",
+            "heading_uppercase": true,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -881,6 +900,7 @@
           "type": "text",
           "settings": {
             "text": "<p>DEINE UMGEBUNG ZEIGT WICHTIGE HINWEISE. ALSO BLEIB AUF DEINEM WEG DURCH DIE STADT IMMER WACHSAM!</p>",
+            "text_uppercase": true,
             "text_custom": true,
             "text_font": "red_hat_display_n4",
             "text_size": 16,
@@ -896,6 +916,7 @@
           "settings": {
             "button": "BUCHE JETZT DEINE TOUR",
             "url": "shopify://collections/escape-games",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "button_style": "outline",
             "button_custom": true,

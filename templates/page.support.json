@@ -28,6 +28,7 @@
             "stars_size_mobile": 16,
             "stars_gap": 2,
             "review": "<p><strong>KONTAKT ZU UNS</strong></p>",
+            "review_uppercase": false,
             "review_custom": false,
             "review_font": "red_hat_display_n8",
             "review_size": 14,
@@ -56,6 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h1>WIR SIND FÜR<br/><strong>DICH DA.</strong></h1>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -73,6 +75,7 @@
           "type": "text",
           "settings": {
             "text": "<p>FRAGEN, FEEDBACK ODER EINFACH HALLO SAGEN — WIR FREUEN UNS, VON DIR ZU HÖREN.</p>",
+            "text_uppercase": false,
             "text_custom": true,
             "text_font": "red_hat_display_n8",
             "text_size": 20,
@@ -89,6 +92,7 @@
           "settings": {
             "button": "service@escape-this.com",
             "url": "mailto:service@escape-this.com",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",
@@ -122,6 +126,7 @@
           "settings": {
             "button": "+49 172 6077173",
             "url": "tel:+491726077173",
+            "scroll_to_section": "",
             "open_in_new_tab": false,
             "game_filter": "",
             "button_style": "outline",
@@ -196,6 +201,7 @@
         "feature_bg_color": "#ffffff",
         "feature_border_color": "#ffffff",
         "layout_bg_type": "image",
+        "bg_image_use_metafield": false,
         "bg_image": "shopify://shop_images/20240422_080138000_iOS_1.jpg",
         "bg_video_url": "",
         "bg_overlay": 0.7,
@@ -321,7 +327,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Wie lange ist mein Ticket gültig?",
-            "answer": "<p>Dein Ticket ist vier Monate ab Kaufdatum gültig. Du brauchst kein festes Datum und keinen Zeitslot — spiel einfach, wann es dir passt.</p>"
+            "answer": "<p>Dein Ticket ist ein Jahr ab Kaufdatum gültig. Du brauchst kein festes Datum und keinen Zeitslot — spiel einfach, wann es dir passt.</p>"
           }
         },
         "faq_item_BMLQwj": {
@@ -488,6 +494,7 @@
           "type": "heading",
           "settings": {
             "heading": "<h2>FOLLOW US ON SOCIALS</h2>",
+            "heading_uppercase": false,
             "heading_custom": true,
             "heading_font": "red_hat_display_n8",
             "heading_accent_font": "red_hat_display_n8",
@@ -560,6 +567,7 @@
         "feature_bg_color": "#ffffff",
         "feature_border_color": "#ffffff",
         "layout_bg_type": "color",
+        "bg_image_use_metafield": false,
         "bg_video_url": "",
         "bg_overlay": 0.2,
         "bg_overlay_color": "#121212",
