@@ -37,10 +37,20 @@
             "settings": {
                 "include_margins": true
             }
+        },
+        "hide_eu_widerruf_watermark": {
+            "type": "custom-liquid",
+            "settings": {
+                "custom_liquid": "<script>(function(){function hideWidget(){document.querySelectorAll('a[href=\"https:\/\/apps.shopify.com\/eu-widerrufsbutton\"]').forEach(function(link){var wrapper=link.closest('div');if(wrapper){wrapper.style.setProperty('display','none','important');}});}hideWidget();document.addEventListener('DOMContentLoaded',hideWidget);new MutationObserver(hideWidget).observe(document.documentElement,{childList:true,subtree:true});})();<\/script>",
+                "color_scheme": "scheme-1",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
         }
     },
     "order": [
         "main",
-        "1782298278db79df1d"
+        "1782298278db79df1d",
+        "hide_eu_widerruf_watermark"
     ]
 }
